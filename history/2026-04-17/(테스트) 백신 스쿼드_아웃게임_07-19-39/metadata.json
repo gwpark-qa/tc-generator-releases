@@ -1,0 +1,20 @@
+{
+  "contentName": "(테스트) 백신 스쿼드_아웃게임",
+  "testCaseCount": 120,
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "유저 경험 흐름에 따라 제작해주세요\n튜토리얼 -> 칭호 획득 -> 칭호 획득 가능한 상태 > 칭호 획득하지 않고, 리셋 선택할 경우 -> 칭호 획득 후, 파티 리셋 시 -> 칭호 가이드 팝업 -> 칭호 장착 팝업",
+  "elapsedSeconds": 363,
+  "tokenUsage": {
+    "inputTokens": 38,
+    "outputTokens": 35544,
+    "cacheReadTokens": 418768,
+    "cacheCreationTokens": 107100,
+    "totalCostUsd": 1.8103730000000002
+  },
+  "cost": "$2.6664",
+  "appVersion": "1.2.0",
+  "generatedAt": "2026-04-17T07:19:39.767Z"
+}
