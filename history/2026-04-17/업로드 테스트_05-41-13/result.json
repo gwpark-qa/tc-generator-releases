@@ -1,0 +1,28 @@
+{
+  "contentName": "업로드 테스트",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "High",
+      "main": "로그인",
+      "sub1": "이메일 로그인",
+      "sub2": "정상 입력",
+      "sub3": "",
+      "expectationResult": "로그인 성공 후 메인 화면 이동"
+    },
+    {
+      "no": 2,
+      "priority": "Medium",
+      "main": "로그인",
+      "sub1": "이메일 로그인",
+      "sub2": "비밀번호 오류",
+      "sub3": "",
+      "expectationResult": "에러 메시지 표시"
+    }
+  ],
+  "generatedAt": "2026-04-17T05:41:13.805Z",
+  "tokenUsage": {
+    "inputTokens": 5000,
+    "outputTokens": 2000
+  }
+}
