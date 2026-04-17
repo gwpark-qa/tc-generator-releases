@@ -1,0 +1,17 @@
+{
+  "contentName": "업로드 테스트",
+  "testCaseCount": 2,
+  "mode": "api",
+  "model": "claude-sonnet-4-20250514",
+  "promptId": "outgame",
+  "promptName": "콘텐츠_아웃게임",
+  "focusPoints": "로그인 기능 중점 테스트",
+  "elapsedSeconds": null,
+  "tokenUsage": {
+    "inputTokens": 5000,
+    "outputTokens": 2000
+  },
+  "cost": "$0.0450",
+  "appVersion": "1.1.3",
+  "generatedAt": "2026-04-17T05:41:13.805Z"
+}
