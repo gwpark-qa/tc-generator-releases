@@ -1,0 +1,1493 @@
+{
+  "contentName": "달빛술사 쿠키 체크리스트",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Critical",
+      "main": "신규 속성 '신비'",
+      "sub1": "속성 아이콘 및 표식",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키의 캐릭터 정보에서 신비 속성 아이콘이 정상 출력된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 2,
+      "priority": "Critical",
+      "main": "신규 속성 '신비'",
+      "sub1": "인게임 강타 적용",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 표식이 부여된 적에게 신비 속성 공격 시 강타 추가 피해가 적용된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 3,
+      "priority": "Major",
+      "main": "신규 속성 '신비'",
+      "sub1": "아웃게임 UI 연동",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "아웃게임 캐릭터 상세 정보에서 신비 속성 공격력 스탯이 정상 표시된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 4,
+      "priority": "Major",
+      "main": "신규 속성 '신비'",
+      "sub1": "아웃게임 UI 연동",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "아웃게임 캐릭터 상세 정보에서 신비 속성 내성 스탯이 정상 표시된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 5,
+      "priority": "Major",
+      "main": "신규 속성 '신비'",
+      "sub1": "아웃게임 UI 연동",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "아웃게임 캐릭터 상세 정보에서 신비 속성 피해 스탯이 정상 표시된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 6,
+      "priority": "Major",
+      "main": "신규 속성 '신비'",
+      "sub1": "속성 아이콘 및 표식",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "전투 중 신비 속성 표식이 적에게 부여될 때 표식 아이콘이 대상 위에 정상 표시된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 7,
+      "priority": "Normal",
+      "main": "신규 속성 '신비'",
+      "sub1": "인게임 강타 적용",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 강타 발동 시 전용 강타 VFX가 출력된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 8,
+      "priority": "Normal",
+      "main": "신규 속성 '신비'",
+      "sub1": "속성 아이콘 및 표식",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 아이콘이 기존 속성 아이콘들과 시각적으로 구분되어 출력된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 9,
+      "priority": "Critical",
+      "main": "인게임 UI/UX",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계(오라) 사용 시 만월 게이지바가 화면에 정상 출력된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 10,
+      "priority": "Critical",
+      "main": "인게임 UI/UX",
+      "sub1": "헤일로 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "4단계 헤일로 UI가 현재 단계에 맞게 정상 변화하여 출력된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 11,
+      "priority": "Major",
+      "main": "인게임 UI/UX",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "만월 게이지바가 기존 게이지 UI를 대체(Override)하여 표시된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 12,
+      "priority": "Major",
+      "main": "인게임 UI/UX",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "만월 게이지 충전량이 전투 중 실시간으로 갱신되어 표시된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 13,
+      "priority": "Major",
+      "main": "인게임 UI/UX",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "만월 게이지 완충 시 2단계 변신 궁 활성화 상태가 UI에 표시된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 14,
+      "priority": "Major",
+      "main": "인게임 UI/UX",
+      "sub1": "궁극기 외곽 화면 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 사용 시 외곽 화면 효과가 정상 출력된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 15,
+      "priority": "Normal",
+      "main": "인게임 UI/UX",
+      "sub1": "궁극기 외곽 화면 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 외곽 화면 효과가 다른 화면 효과와 동시 발생 시 설정된 우선순위에 따라 정상 표시된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 16,
+      "priority": "Normal",
+      "main": "인게임 UI/UX",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "만월 게이지바 Override 종료 후 기존 게이지 UI가 정상 복구된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 17,
+      "priority": "Normal",
+      "main": "인게임 UI/UX",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "만월 게이지가 0에 도달 시 게이지바 UI가 정상적으로 비활성화된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 18,
+      "priority": "Normal",
+      "main": "인게임 UI/UX",
+      "sub1": "헤일로 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "헤일로 UI 단계 전환 시 전환 애니메이션이 출력된다",
+      "comment": "2. 신규 시스템 요구사항 - UI/UX"
+    },
+    {
+      "no": 19,
+      "priority": "Critical",
+      "main": "패시브",
+      "sub1": "기본 폼 패시브",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "기본 폼 상태에서 적에게 부여된 디버프 수에 비례하여 최종 피해가 증가한다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 20,
+      "priority": "Critical",
+      "main": "패시브",
+      "sub1": "각성 폼 패시브",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각성 폼 상태에서 치명타 확률이 100% 증가한다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 21,
+      "priority": "Major",
+      "main": "패시브",
+      "sub1": "기본 폼 패시브",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "기본 폼에서 각성 폼으로 전환 시 패시브 효과가 즉시 각성 폼 패시브(치명타 확률 100% 증가)로 변경된다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 22,
+      "priority": "Major",
+      "main": "패시브",
+      "sub1": "각성 폼 패시브",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각성 폼 종료 후 기본 폼 복귀 시 패시브 효과가 기본 폼 패시브(디버프 비례 최종 피해 증가)로 원복된다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 23,
+      "priority": "Normal",
+      "main": "패시브",
+      "sub1": "기본 폼 패시브",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "적에게 부여된 디버프 수가 증가할수록 최종 피해 증가량이 정상적으로 변동된다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 24,
+      "priority": "Critical",
+      "main": "대시",
+      "sub1": "일반 대시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "대시 버튼 입력 시 일반 대시가 정상 발동된다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 25,
+      "priority": "Critical",
+      "main": "대시",
+      "sub1": "홀드 대시",
+      "sub2": "이동 및 조작",
+      "sub3": "",
+      "expectationResult": "대시 버튼 홀드 시 홀드 대시가 발동되어 최대 5초간 고속 이동한다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "대시",
+      "sub1": "홀드 대시",
+      "sub2": "이동 및 조작",
+      "sub3": "",
+      "expectationResult": "홀드 대시 중 낙사 구역으로의 이동이 차단된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 27,
+      "priority": "Major",
+      "main": "대시",
+      "sub1": "홀드 대시",
+      "sub2": "무적 판정",
+      "sub3": "",
+      "expectationResult": "홀드 대시 중 적의 공격에 무적 판정이 적용된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 28,
+      "priority": "Major",
+      "main": "대시",
+      "sub1": "홀드 대시",
+      "sub2": "무적 판정",
+      "sub3": "",
+      "expectationResult": "홀드 대시의 무적 판정이 이동 전 구간에 걸쳐 유지된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 29,
+      "priority": "Major",
+      "main": "대시",
+      "sub1": "홀드 대시",
+      "sub2": "이동 및 조작",
+      "sub3": "",
+      "expectationResult": "홀드 대시 5초 지속시간 만료 시 캐릭터가 정상 대기 상태로 복귀된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 30,
+      "priority": "Major",
+      "main": "대시",
+      "sub1": "홀드 대시",
+      "sub2": "이동 및 조작",
+      "sub3": "",
+      "expectationResult": "홀드 대시 중 이동 방향 조작이 정상적으로 반영된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 31,
+      "priority": "Normal",
+      "main": "대시",
+      "sub1": "일반 대시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일반 대시 발동 시 잔상 이펙트가 출력된다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 32,
+      "priority": "Normal",
+      "main": "대시",
+      "sub1": "홀드 대시",
+      "sub2": "이펙트",
+      "sub3": "",
+      "expectationResult": "홀드 대시 중 잔상 이펙트가 출력된다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 33,
+      "priority": "Normal",
+      "main": "대시",
+      "sub1": "홀드 대시",
+      "sub2": "이동 및 조작",
+      "sub3": "",
+      "expectationResult": "홀드 대시 종료 후 공격, 스킬 등 다른 행동으로 즉시 전환이 가능하다",
+      "comment": "3-1. 패시브 & 대시"
+    },
+    {
+      "no": 34,
+      "priority": "Critical",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "기본 공격 (2콤보)",
+      "sub3": "",
+      "expectationResult": "기본 폼에서 공격 버튼 입력 시 2콤보 별빛 투사체가 순차적으로 발사된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 35,
+      "priority": "Critical",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "차지 공격",
+      "sub3": "",
+      "expectationResult": "기본 폼에서 공격 버튼 차지 시 장판이 생성되며 차지 공격이 발동된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 36,
+      "priority": "Critical",
+      "main": "일반 공격",
+      "sub1": "각성 폼",
+      "sub2": "기본 공격 (3타)",
+      "sub3": "",
+      "expectationResult": "각성 폼에서 공격 버튼 입력 시 검기 마법/참격 공격이 발동된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 37,
+      "priority": "Critical",
+      "main": "일반 공격",
+      "sub1": "각성 폼",
+      "sub2": "차지 공격",
+      "sub3": "",
+      "expectationResult": "각성 폼에서 공격 버튼 차지 시 피해 면역 상태에서 별빛 폭발(스타폴)이 연속 투사된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 38,
+      "priority": "Major",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "기본 공격 (2콤보)",
+      "sub3": "",
+      "expectationResult": "2콤보 별빛 투사체가 각각 적에게 정상적으로 피해를 준다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 39,
+      "priority": "Major",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "차지 공격",
+      "sub3": "장판 및 인력",
+      "expectationResult": "차지 공격으로 생성된 장판이 범위 내 적을 끌어당긴다(인력)",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 40,
+      "priority": "Major",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "차지 공격",
+      "sub3": "수면 부여",
+      "expectationResult": "기본 폼 차지 공격이 장판 범위 내 적에게 수면 상태를 부여한다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 41,
+      "priority": "Major",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "차지 공격",
+      "sub3": "자가 수면 및 회복",
+      "expectationResult": "기본 폼 차지 공격 사용 시 달빛술사 자신에게 2초간 수면이 부여된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 42,
+      "priority": "Major",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "차지 공격",
+      "sub3": "자가 수면 및 회복",
+      "expectationResult": "자가 수면 중 달빛술사의 HP가 회복된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 43,
+      "priority": "Major",
+      "main": "일반 공격",
+      "sub1": "각성 폼",
+      "sub2": "기본 공격 (3타)",
+      "sub3": "",
+      "expectationResult": "각성 폼 기본 공격 1~2타가 다단히트로 적에게 피해를 준다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 44,
+      "priority": "Major",
+      "main": "일반 공격",
+      "sub1": "각성 폼",
+      "sub2": "기본 공격 (3타)",
+      "sub3": "",
+      "expectationResult": "각성 폼 기본 공격 3타가 범위 공격으로 주변 적에게 피해를 준다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 45,
+      "priority": "Major",
+      "main": "일반 공격",
+      "sub1": "각성 폼",
+      "sub2": "차지 공격",
+      "sub3": "피해 면역",
+      "expectationResult": "각성 폼 차지 공격 중 최대 4초간 피해 면역 상태가 유지된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 46,
+      "priority": "Normal",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "기본 공격 (2콤보)",
+      "sub3": "",
+      "expectationResult": "별빛 투사체 발사 시 투사체 전용 VFX가 출력된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 47,
+      "priority": "Normal",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "차지 공격",
+      "sub3": "장판 및 인력",
+      "expectationResult": "차지 공격 장판 생성 시 장판 VFX가 출력된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 48,
+      "priority": "Normal",
+      "main": "일반 공격",
+      "sub1": "각성 폼",
+      "sub2": "기본 공격 (3타)",
+      "sub3": "",
+      "expectationResult": "각성 폼 기본 공격 시 검기 전용 VFX가 출력된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 49,
+      "priority": "Normal",
+      "main": "일반 공격",
+      "sub1": "각성 폼",
+      "sub2": "차지 공격",
+      "sub3": "스타폴 투사",
+      "expectationResult": "스타폴 투사 시 별빛 폭발 VFX가 출력된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 50,
+      "priority": "Normal",
+      "main": "일반 공격",
+      "sub1": "기본 폼",
+      "sub2": "차지 공격",
+      "sub3": "수면 부여",
+      "expectationResult": "차지 공격으로 수면 부여 시 수면 상태이상 아이콘이 적 위에 표시된다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 51,
+      "priority": "Normal",
+      "main": "일반 공격",
+      "sub1": "각성 폼",
+      "sub2": "차지 공격",
+      "sub3": "스타폴 투사",
+      "expectationResult": "스타폴 연속 투사 중 각 투사체가 적에게 다중 히트 피해를 정상 적용한다",
+      "comment": "3-2. 일반 공격"
+    },
+    {
+      "no": 52,
+      "priority": "Critical",
+      "main": "특수 스킬",
+      "sub1": "초승달 관통 투사체",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 스킬 사용 시 초승달 관통 투사체가 발사되어 경로상의 적을 관통하며 피해를 준다",
+      "comment": "3-3. 특수 스킬"
+    },
+    {
+      "no": 53,
+      "priority": "Critical",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 스킬 사용 시 주변 아군에게 달빛 보호막이 생성된다",
+      "comment": "3-3. 특수 스킬"
+    },
+    {
+      "no": 54,
+      "priority": "Major",
+      "main": "특수 스킬",
+      "sub1": "초승달 관통 투사체",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "초승달 투사체가 다수의 적을 관통하며 각 적에게 개별적으로 피해를 준다",
+      "comment": "3-3. 특수 스킬"
+    },
+    {
+      "no": 55,
+      "priority": "Major",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛 보호막이 아군이 받는 피해를 흡수한다",
+      "comment": "3-3. 특수 스킬"
+    },
+    {
+      "no": 56,
+      "priority": "Major",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛 보호막이 범위 내 모든 아군에게 정상 적용된다",
+      "comment": "3-3. 특수 스킬"
+    },
+    {
+      "no": 57,
+      "priority": "Normal",
+      "main": "특수 스킬",
+      "sub1": "초승달 관통 투사체",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "초승달 투사체 발사 시 초승달 웨이브 트레일 VFX가 출력된다",
+      "comment": "3-3. 특수 스킬"
+    },
+    {
+      "no": 58,
+      "priority": "Normal",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛 보호막 생성 시 보호막 VFX가 아군에게 정상 출력된다",
+      "comment": "3-3. 특수 스킬"
+    },
+    {
+      "no": 59,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "1단계 - 짧은 궁(오라)",
+      "sub2": "방어력 감소 장판",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계 사용 시 방어력 감소 장판이 생성되어 범위 내 적의 방어력이 감소한다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 60,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "1단계 - 짧은 궁(오라)",
+      "sub2": "수면 부여",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계 오라 범위 내 적에게 수면이 부여된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 61,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "1단계 - 짧은 궁(오라)",
+      "sub2": "만월 게이지 빌드업",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계 사용 시 만월 게이지 빌드업이 시작된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 62,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "1단계 - 짧은 궁(오라)",
+      "sub2": "방어력 감소 장판",
+      "sub3": "",
+      "expectationResult": "방어력 감소 장판이 지속시간 동안 유지되며 범위 내 적에게 지속 적용된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 63,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "1단계 - 짧은 궁(오라)",
+      "sub2": "방어력 감소 장판",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계 오라 장판 생성 시 오라 VFX가 출력된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 64,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "2단계 - 변신 궁(각성)",
+      "sub2": "게이지 완충 조건",
+      "sub3": "",
+      "expectationResult": "만월 게이지 완충 시 2단계 변신 궁이 활성화된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 65,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 - 변신 궁(각성)",
+      "sub2": "외형 변경",
+      "sub3": "",
+      "expectationResult": "2단계 변신 궁 발동 시 달빛술사의 외형이 각성 폼으로 변경된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 66,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 - 변신 궁(각성)",
+      "sub2": "파장 및 수면",
+      "sub3": "",
+      "expectationResult": "2단계 변신 궁 발동 시 파장이 생성되어 범위 내 적에게 수면이 부여된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 67,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 - 변신 궁(각성)",
+      "sub2": "외형 변경",
+      "sub3": "",
+      "expectationResult": "2단계 변신으로 외형 변경 시 각성 폼의 스킬셋(일반 공격, 차지 공격)이 적용된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 68,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "2단계 - 변신 궁(각성)",
+      "sub2": "외형 변경",
+      "sub3": "",
+      "expectationResult": "2단계 변신 시 외형 변경 연출 VFX가 출력된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 69,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "2단계 - 변신 궁(각성)",
+      "sub2": "파장 및 수면",
+      "sub3": "",
+      "expectationResult": "2단계 변신 궁의 파장 생성 시 파장 VFX가 출력된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 70,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "3단계 - 마무리 공격(컷신)",
+      "sub2": "자동 발동 조건",
+      "sub3": "",
+      "expectationResult": "만월 게이지가 0에 도달 시 3단계 마무리 공격이 자동으로 발동된��",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 71,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "3단계 - 마무리 공격(컷신)",
+      "sub2": "확정 치명타",
+      "sub3": "",
+      "expectationResult": "마무리 공격이 확정 치명타로 적에게 피해를 준다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 72,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "3단계 - 마무리 공격(컷신)",
+      "sub2": "무적 연출",
+      "sub3": "",
+      "expectationResult": "마무리 공격 발동 시 달빛술사가 무적 상태로 컷신 연출이 재생된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 73,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "3단계 - 마무리 공격(컷신)",
+      "sub2": "확정 치명타",
+      "sub3": "",
+      "expectationResult": "마무리 공격이 범위 내 적에게 강력한 피해를 정상 적용한다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 74,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "3단계 - 마무리 공격(컷신)",
+      "sub2": "무적 연출",
+      "sub3": "",
+      "expectationResult": "마무리 공격 컷신이 빠른 템포로 재생되며 연출이 정상 출력된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 75,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "3단계 - 마무리 공격(컷신)",
+      "sub2": "자동 발동 조건",
+      "sub3": "",
+      "expectationResult": "마무리 공격 시 별빛 낙하 VFX가 출력된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 76,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "궁극기 시퀀스 연계",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "1단계(오라) → 2단계(각성) → 3단계(마무리)가 순차적으로 정상 전환된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 77,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "궁극기 시퀀스 연계",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "만월 게이지 빌드업 → 완충 → 0 도달까지의 게이지 흐름이 끊김 없이 연결된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 78,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "궁극기 시퀀스 연계",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각 시퀀스 단계 전환 시 폼(외형) 변경, 스킬셋 전환, 패시브 전환이 동기화되어 적용된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 79,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "궁극기 시퀀스 연계",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 시퀀스 단계 전환 시 화면 연출 효과가 출력된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 80,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "궁극기 시퀀스 연계",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 시퀀스 도중 사망 또는 CC(군중 제어)가 발생할 경우 시퀀스가 정상 처리된다",
+      "comment": "3-4. 궁극기"
+    },
+    {
+      "no": 81,
+      "priority": "Critical",
+      "main": "특수 회피",
+      "sub1": "자동 회피 발동",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "30초마다 피격 시 자동으로 회피가 발동된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 82,
+      "priority": "Major",
+      "main": "특수 회피",
+      "sub1": "무적 처리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 회피 발동 시 무적 처리가 적용되어 피해를 받지 않는다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 83,
+      "priority": "Major",
+      "main": "특수 회피",
+      "sub1": "자동 회피 발동",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 회피의 30초 쿨타임이 정확히 적용된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 84,
+      "priority": "Major",
+      "main": "특수 회피",
+      "sub1": "자동 회피 발동",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 회피 발동 시 잔상을 남기며 자동으로 위치를 이동한다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 85,
+      "priority": "Normal",
+      "main": "특수 회피",
+      "sub1": "잔상 이펙트",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 회피 발동 시 잔상 VFX가 출력된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 86,
+      "priority": "Normal",
+      "main": "특수 회피",
+      "sub1": "자동 회피 발동",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 회피 발동 후 캐릭터가 정상 대기 상태로 복귀된다",
+      "comment": "2. 신규 시스템 요구사항"
+    },
+    {
+      "no": 87,
+      "priority": "Critical",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "적 수면 효과",
+      "sub2": "적용 대상 범위",
+      "sub3": "",
+      "expectationResult": "기본 몬스터에게 수면 상태가 정상 적용된다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 88,
+      "priority": "Critical",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "적 수면 효과",
+      "sub2": "적용 대상 범위",
+      "sub3": "",
+      "expectationResult": "엘리트 몬스터에게 수면 상태가 정상 적용된다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 89,
+      "priority": "Critical",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "적 수면 효과",
+      "sub2": "적용 대상 범위",
+      "sub3": "",
+      "expectationResult": "중간 보스에게 수면 상태가 정상 적용된다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "적 수면 효과",
+      "sub2": "적용 대상 범위",
+      "sub3": "",
+      "expectationResult": "수면 상태의 적이 무력화되어 행동이 정지된다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 91,
+      "priority": "Major",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "적 수면 효과",
+      "sub2": "깨어날 때 '받는 피해 증가' 부여",
+      "sub3": "",
+      "expectationResult": "적이 수면에서 깨어날 때 '받는 피해 증가' 디버프가 부여된다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 92,
+      "priority": "Major",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "달빛술사 자가 수면 효과",
+      "sub2": "수면 중 이동",
+      "sub3": "",
+      "expectationResult": "달빛술사의 자가 수면 중 이동이 가능하다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 93,
+      "priority": "Major",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "달빛술사 자가 수면 효과",
+      "sub2": "깨어날 때 HP 회복",
+      "sub3": "",
+      "expectationResult": "달빛술사가 자가 수면에서 깨어날 때 HP가 회복된다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 94,
+      "priority": "Major",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "적 수면 효과",
+      "sub2": "적용 대상 범위",
+      "sub3": "",
+      "expectationResult": "다중 수면 소스(차지 공격, 궁극기, 메모리 잼 등)가 동시에 적용될 때 중첩 또는 갱신 규칙이 정상 동작한다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 95,
+      "priority": "Normal",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "적 수면 효과",
+      "sub2": "적용 대상 범위",
+      "sub3": "",
+      "expectationResult": "수면 부여 시 수면 상태이상 아이콘이 적 위에 정상 표시된다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 96,
+      "priority": "Normal",
+      "main": "수면 (신규 상태이상)",
+      "sub1": "적 수면 효과",
+      "sub2": "깨어날 때 '받는 피해 증가' 부여",
+      "sub3": "",
+      "expectationResult": "수면 해제 시 '받는 피해 증가' 디버프 아이콘이 적 위에 정상 표시된다",
+      "comment": "1. 개요 및 핵심 컨셉 - 수면"
+    },
+    {
+      "no": 97,
+      "priority": "Critical",
+      "main": "성급 특성",
+      "sub1": "2성 특성",
+      "sub2": "자동 회피 활성화",
+      "sub3": "",
+      "expectationResult": "2성 달성 시 자동 회피 기능이 활성화된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 98,
+      "priority": "Critical",
+      "main": "성급 특성",
+      "sub1": "2성 특성",
+      "sub2": "신비 쿠키 비례 스탯 보너스",
+      "sub3": "",
+      "expectationResult": "파티 내 신비 속성 쿠키 수에 비례하여 스탯 보너스가 적용된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 99,
+      "priority": "Major",
+      "main": "성급 특성",
+      "sub1": "2성 특성",
+      "sub2": "자동 회피 활성화",
+      "sub3": "",
+      "expectationResult": "2성 자동 회피가 특수 회피와 동일한 무적 처리 및 잔상 동작으로 발동된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 100,
+      "priority": "Major",
+      "main": "성급 특성",
+      "sub1": "2성 특성",
+      "sub2": "신비 쿠키 비례 스탯 보너스",
+      "sub3": "",
+      "expectationResult": "파티 내 신비 속성 쿠키가 증가할수록 스탯 보너스가 비례하여 증가한다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 101,
+      "priority": "Critical",
+      "main": "성급 특성",
+      "sub1": "3성 특성",
+      "sub2": "궁극기 장판 최종 피해 증가 버프",
+      "sub3": "",
+      "expectationResult": "3성 달성 시 궁극기 장판에 '최종 피해 증가' 버프가 추가된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 102,
+      "priority": "Major",
+      "main": "성급 특성",
+      "sub1": "3성 특성",
+      "sub2": "궁극기 장판 최종 피해 증가 버프",
+      "sub3": "",
+      "expectationResult": "궁극기 장판 범위 내 아군에게 최종 피해 증가 버프가 적용된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 103,
+      "priority": "Major",
+      "main": "성급 특성",
+      "sub1": "3성 특성",
+      "sub2": "궁극기 장판 최종 피해 증가 버프",
+      "sub3": "",
+      "expectationResult": "궁극기 장판 위에 다수의 아군이 위치할 경우 모든 아군에게 최종 피해 증가 버프가 동시에 적용된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 104,
+      "priority": "Major",
+      "main": "성급 특성",
+      "sub1": "4성 특성",
+      "sub2": "각성 폼 피해 증가",
+      "sub3": "",
+      "expectationResult": "4성 달성 시 각성 폼에서의 공격 피해가 증가한다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 105,
+      "priority": "Major",
+      "main": "성급 특성",
+      "sub1": "4성 특성",
+      "sub2": "각성 진입 시 특수 스킬 쿨타임 초기화",
+      "sub3": "",
+      "expectationResult": "4성 달성 상태에서 각성 폼 진입 시 특수 스킬 쿨타임이 초기화된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 106,
+      "priority": "Normal",
+      "main": "성급 특성",
+      "sub1": "2성 특성",
+      "sub2": "신비 쿠키 비례 스탯 보너스",
+      "sub3": "",
+      "expectationResult": "신비 쿠키 비례 스탯 보너스가 캐릭터 상세 정보에 정상 반영되어 표시된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 107,
+      "priority": "Normal",
+      "main": "성급 특성",
+      "sub1": "3성 특성",
+      "sub2": "궁극기 장판 최종 피해 증가 버프",
+      "sub3": "",
+      "expectationResult": "최종 피해 증가 버프 적용 시 버프 아이콘이 아군에게 정상 표시된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 108,
+      "priority": "Normal",
+      "main": "성급 특성",
+      "sub1": "4성 특성",
+      "sub2": "각성 진입 시 특수 스킬 쿨타임 초기화",
+      "sub3": "",
+      "expectationResult": "쿨타임 초기화 시 특수 스킬 UI가 즉시 사용 가능 상태로 변경된다",
+      "comment": "4-1. 성급 특성"
+    },
+    {
+      "no": 109,
+      "priority": "Critical",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "기본 효과",
+      "sub3": "",
+      "expectationResult": "잼 A 장착 시 수면 상태의 적을 공격하면 추가 피해가 적용된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 110,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "기본 효과",
+      "sub3": "",
+      "expectationResult": "잼 A 장착 시 수면 상태의 적에게 신비 속성 내성 감소가 적용된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 111,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "[해] 강화 - 특수 스킬 수면 부여",
+      "sub3": "",
+      "expectationResult": "잼 A [해] 강화 장착 시 특수 스킬(초승달 투사체) 적중 시 적에게 수면이 부여된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 112,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "[해] 강화 - 특수 스킬 수면 부여",
+      "sub3": "기존 특수 스킬 데이터 덮어쓰기 검증",
+      "expectationResult": "[해] 강화 장착 시 특수 스킬의 기존 동작(관통 투사체 발사, 보호막 생성)이 유지되면서 수면 부여 기능만 추가된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 113,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "[해] 강화 - 특수 스킬 수면 부여",
+      "sub3": "기존 특수 스킬 데이터 덮어쓰기 검증",
+      "expectationResult": "[해] 강화 해제 시 특수 스킬에서 수면 부여 기능이 정상 제거되고 기본 동작으로 복구된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 114,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "[해] 강화 - 특수 스킬 수면 부여",
+      "sub3": "",
+      "expectationResult": "[해] 강화 특수 스킬로 수면 부여 시 수면 상태 이펙트가 출력된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 115,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "[달] 강화 - 홀드 대시 수면 부여",
+      "sub3": "",
+      "expectationResult": "잼 A [달] 강화 장착 시 홀드 대시 중 주변 적에게 수면이 부여된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 116,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "[달] 강화 - 홀드 대시 수면 부여",
+      "sub3": "기존 홀드 대시 데이터 덮어쓰기 검증",
+      "expectationResult": "[달] 강화 장착 시 홀드 대시의 기존 동작(고속 이동, 무적 판정, 낙사 구역 이동 불가)이 유지되면서 수면 부여만 추가된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 117,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "[달] 강화 - 홀드 대시 수면 부여",
+      "sub3": "기존 홀드 대시 데이터 덮어쓰기 검증",
+      "expectationResult": "[달] 강화 해제 시 홀드 대시에서 수면 부여 기능이 정상 제거되고 기본 동작으로 복구된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 118,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 A (수면 특화)",
+      "sub2": "[달] 강화 - 홀드 대시 수면 부여",
+      "sub3": "",
+      "expectationResult": "[달] 강화 홀드 대시로 수면 부여 시 주변 적에게 수면 이펙트가 출력된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 119,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "기본 효과",
+      "sub3": "",
+      "expectationResult": "잼 B 장착 시 궁극기 오라 효과 강화 상태가 스킬 정보에 반영된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 120,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "[해] 강화 - 오라 적 지속 피해",
+      "sub3": "",
+      "expectationResult": "잼 B [해] 강화 장착 시 궁극기 오라 범위 내 적에게 지속 피해가 적용된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 121,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "[해] 강화 - 오라 적 지속 피해",
+      "sub3": "궁극기 오라 데이터 덮어쓰기 검증",
+      "expectationResult": "[해] 강화 장착 시 기존 궁극기 오라 효과(방어력 감소, 수면 부여) 위에 지속 피해가 정상 중첩 적용된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 122,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "[해] 강화 - 오라 적 지속 피해",
+      "sub3": "궁극기 오라 데이터 덮어쓰기 검증",
+      "expectationResult": "[해] 강화 해제 시 오라의 지속 피해가 제거되고 기존 오라 효과(방어력 감소, 수면)만 유지된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 123,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "[해] 강화 - 오라 적 지속 피해",
+      "sub3": "",
+      "expectationResult": "[해] 강화 오라 지속 피해 적용 시 피해 VFX가 출력된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 124,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "[달] 강화 - 오라 내 아군 지속 힐",
+      "sub3": "",
+      "expectationResult": "잼 B [달] 강화 장착 시 궁극기 오라 범위 내 아군에게 지속 HP 회복이 적용된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 125,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "[달] 강화 - 오라 내 아군 지속 힐",
+      "sub3": "궁극기 오라 데이터 덮어쓰기 검증",
+      "expectationResult": "[달] 강화 장착 시 기존 적 대상 오라 효과(방어력 감소, 수면)와 아군 대상 지속 힐이 동시에 정상 작동한다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 126,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "[달] 강화 - 오라 내 아군 지속 힐",
+      "sub3": "궁극기 오라 데이터 덮어쓰기 검증",
+      "expectationResult": "[달] 강화 해제 시 아군 지속 힐이 제거되고 기존 오라 효과만 유지된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 127,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 B (서포팅 특화)",
+      "sub2": "[달] 강화 - 오라 내 아군 지속 힐",
+      "sub3": "",
+      "expectationResult": "[달] 강화 오라 내 아군 지속 힐 적용 시 회복 VFX가 출력된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 128,
+      "priority": "Critical",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "기본 효과",
+      "sub3": "",
+      "expectationResult": "잼 C 장착 시 궁극기 쿨타임이 감소한다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 129,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "기본 효과",
+      "sub3": "",
+      "expectationResult": "잼 C 장착 시 변신(각성) 중 최종 피해 증가 효과가 스탯에 정상 반영된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 130,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[해] 강화 - 공속 증가 및 각성 차지 피해 강화",
+      "sub3": "",
+      "expectationResult": "잼 C [해] 강화 장착 시 각성 폼에서 공격 속도가 증가한다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 131,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[해] 강화 - 공속 증가 및 각성 차지 피해 강화",
+      "sub3": "",
+      "expectationResult": "잼 C [해] 강화 장착 시 각성 폼 차지 공격(스타폴) 피해가 강화된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 132,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[해] 강화 - 공속 증가 및 각성 차지 피해 강화",
+      "sub3": "각성 폼 차지 공격 데이터 덮어쓰기 검증",
+      "expectationResult": "[해] 강화 장착 시 각성 차지 공격의 기존 동작(피해 면역, 스타폴 투사)이 유지되면서 공속 및 피해 강화만 추가된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 133,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[해] 강화 - 공속 증가 및 각성 차지 피해 강화",
+      "sub3": "각성 폼 차지 공격 데이터 덮어쓰기 검증",
+      "expectationResult": "[해] 강화 해제 시 공속 및 피해 강화가 제거되고 기본 각성 차지 동작으로 복구된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 134,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[해] 강화 - 공속 증가 및 각성 차지 피해 강화",
+      "sub3": "",
+      "expectationResult": "[해] 강화 공속 증가 시 공격 모션이 빨라진 것이 시각적으로 확인된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 135,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[달] 강화 - 마무리 궁 레이저 낙하",
+      "sub3": "",
+      "expectationResult": "잼 C [달] 강화 장착 시 마무리 공격(3단계 궁극기) 사용 시 지속 레이저가 낙하한다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 136,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[달] 강화 - 마무리 궁 레이저 낙하",
+      "sub3": "마무리 공격 데이터 덮어쓰기 검증",
+      "expectationResult": "[달] 강화 장착 시 기존 마무리 공격 컷신 연출(무적, 확정 치명타) 위에 레이저 낙하 효과가 정상 추가된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 137,
+      "priority": "Major",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[달] 강화 - 마무리 궁 레이저 낙하",
+      "sub3": "마무리 공격 데이터 덮어쓰기 검증",
+      "expectationResult": "[달] 강화 해제 시 레이저 낙하가 제거되고 기본 마무리 공격으로 복구된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 138,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "[달] 강화 - 마무리 궁 레이저 낙하",
+      "sub3": "",
+      "expectationResult": "[달] 강화 마무리 궁 사용 시 지속 레이저 낙하 VFX가 출력된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 139,
+      "priority": "Normal",
+      "main": "메모리 잼",
+      "sub1": "잼 C (딜링 특화)",
+      "sub2": "기본 효과",
+      "sub3": "",
+      "expectationResult": "잼 C 장착 시 궁극기 쿨타임 감소가 스킬 UI에 정상 반영된다",
+      "comment": "4-2. 메모리 잼"
+    },
+    {
+      "no": 140,
+      "priority": "Critical",
+      "main": "메모리 잼",
+      "sub1": "잼 교체 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "메모리 잼 교체 시 이전 잼의 강화 데이터가 완전히 제거되고 새 잼의 데이터로 정상 교체된다",
+      "comment": "4-2. 메모리 잼 - 데이터 덮어쓰기 검증"
+    },
+    {
+      "no": 141,
+      "priority": "Critical",
+      "main": "사운드 및 연출",
+      "sub1": "BGM",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 사용 시 달빛술사 고유 테마곡이 재생된다",
+      "comment": "5. 사운드 및 이펙트 리서치"
+    },
+    {
+      "no": 142,
+      "priority": "Major",
+      "main": "사운드 및 연출",
+      "sub1": "VFX",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "스킬 이펙트 전반에 '새벽' 컨셉의 밝고 옅은 색감이 적용되어 출력된다",
+      "comment": "5. 사운드 및 이펙트 리서치"
+    },
+    {
+      "no": 143,
+      "priority": "Major",
+      "main": "사운드 및 연출",
+      "sub1": "컷신 연출",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "마무리 공격 컷신이 '아침이 밝아오는' 연출 컨셉으로 재생된다",
+      "comment": "5. 사운드 및 이펙트 리서치"
+    },
+    {
+      "no": 144,
+      "priority": "Normal",
+      "main": "사운드 및 연출",
+      "sub1": "BGM",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 종료 후 기존 스테이지 BGM으로 정상 복귀된다",
+      "comment": "5. 사운드 및 이펙트 리서치"
+    },
+    {
+      "no": 145,
+      "priority": "Normal",
+      "main": "사운드 및 연출",
+      "sub1": "VFX",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "별빛 낙하 이펙트가 해당 스킬 사용 시 정상 출력된다",
+      "comment": "5. 사운드 및 이펙트 리서치"
+    },
+    {
+      "no": 146,
+      "priority": "Normal",
+      "main": "사운드 및 연출",
+      "sub1": "VFX",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "초승달 웨이브 트레일 이펙트가 특수 스킬 사용 시 정상 출력된다",
+      "comment": "5. 사운드 및 이펙트 리서치"
+    },
+    {
+      "no": 147,
+      "priority": "Normal",
+      "main": "사운드 및 연출",
+      "sub1": "컷신 연출",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "마무리 공격 컷신이 3초 이내의 빠른 템포로 재생된다",
+      "comment": "5. 사운드 및 이펙트 리서치"
+    },
+    {
+      "no": 148,
+      "priority": "Normal",
+      "main": "사운드 및 연출",
+      "sub1": "컷신 연출",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "컷신 재생 중 캐릭터 모델 및 배경 연출이 정상 표시된다",
+      "comment": "5. 사운드 및 이펙트 리서치"
+    }
+  ],
+  "generatedAt": "2026-05-08T02:02:35.487Z",
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 64734,
+    "cacheReadTokens": 22226,
+    "cacheCreationTokens": 25888,
+    "totalCostUsd": 1.791293
+  }
+}
