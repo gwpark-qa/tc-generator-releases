@@ -1,0 +1,1063 @@
+{
+  "contentName": "신비 속성 추가",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Major",
+      "main": "가이드북",
+      "sub1": "속성 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "가이드북 진입 후 속성 탭 선택 시, 신비 속성 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 가이드북"
+    },
+    {
+      "no": 2,
+      "priority": "Major",
+      "main": "가이드북",
+      "sub1": "속성 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "가이드북 속성 탭에서 신비 속성은 기존 6가지 속성과 분리된 '특수 속성' 영역에 분류되어 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 가이드북"
+    },
+    {
+      "no": 3,
+      "priority": "Major",
+      "main": "가이드북",
+      "sub1": "속성 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "가이드북 속성 탭에서 신비 속성 선택 시, 신비 속성 상세 설명 화면이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 가이드북"
+    },
+    {
+      "no": 4,
+      "priority": "Major",
+      "main": "가이드북",
+      "sub1": "속성 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 상세 설명 화면에서 신비 속성이 신비 외 추가 속성으로 구성됨을 안내하는 문구가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 가이드북"
+    },
+    {
+      "no": 5,
+      "priority": "Normal",
+      "main": "가이드북",
+      "sub1": "속성 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 상세 설명 화면에서 입장 조건 충족 시에만 다중 속성이 적용되며 추천 속성 혜택은 미적용된다는 안내 문구가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 가이드북"
+    },
+    {
+      "no": 6,
+      "priority": "Normal",
+      "main": "가이드북",
+      "sub1": "속성 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "가이드북 속성 탭에서 신비 속성 아이콘 터치 시, 효과음이 재생된다.",
+      "comment": "신비 속성 추가 기획서 - 가이드북"
+    },
+    {
+      "no": 7,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드 로비 길드전 현황 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드 로비 진입 시, 길드전 현황 UI에 '빛+신비' 속성 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 8,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드 로비 길드전 현황 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드 로비 진입 시, 길드전 현황 UI에 '어둠+신비' 속성 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 9,
+      "priority": "Normal",
+      "main": "길드전",
+      "sub1": "길드 로비 길드전 현황 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드 로비 길드전 현황 UI에서 신비 속성 아이콘과 다른 속성 아이콘이 함께 출력될 때 두 속성 아이콘이 겹치지 않고 분리되어 표시된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 10,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드전 로비 던전 깃발",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 로비 진입 시, 어둠+신비 속성 던전 깃발(DarkMystic)이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 11,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드전 로비 던전 깃발",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 로비 진입 시, 빛+신비 속성 던전 깃발(LightMystic)이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 12,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드전 로비 던전 깃발",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 로비 진입 시, 신비 속성 단독 던전 깃발(Mystic)이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 13,
+      "priority": "Normal",
+      "main": "길드전",
+      "sub1": "길드전 로비 던전 깃발",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 로비 던전 깃발 출력 시, 각 속성 조합에 맞는 깃발 이미지 리소스가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 14,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드전 던전 플레이 로비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 로비에서 빛+신비 속성 던전 깃발 선택 시, 빛+신비 던전 플레이 로비로 이동된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 15,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드전 던전 플레이 로비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 로비에서 어둠+신비 속성 던전 깃발 선택 시, 어둠+신비 던전 플레이 로비로 이동된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 16,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드전 던전 플레이 로비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "빛+신비 던전 플레이 로비 진입 시, 추천 속성 영역에 빛 속성과 신비 속성 아이콘이 모두 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 17,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "길드전 던전 플레이 로비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "어둠+신비 던전 플레이 로비 진입 시, 추천 속성 영역에 어둠 속성과 신비 속성 아이콘이 모두 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 18,
+      "priority": "Critical",
+      "main": "길드전",
+      "sub1": "길드전 던전 플레이 로비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 던전 플레이 로비에서 출전 버튼 터치 시, 인게임으로 진입되는 로딩 화면이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 19,
+      "priority": "Normal",
+      "main": "길드전",
+      "sub1": "길드전 던전 플레이 로비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 던전 플레이 로비에서 신비 속성 추천 안내 시, 추천 속성 보너스가 미적용된다는 안내 문구가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 20,
+      "priority": "Critical",
+      "main": "길드전",
+      "sub1": "2주년 빌드 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 빌드 길드전에서 빛 단독 속성 던전이 출력되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 21,
+      "priority": "Critical",
+      "main": "길드전",
+      "sub1": "2주년 빌드 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 빌드 길드전에서 어둠 단독 속성 던전이 출력되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 22,
+      "priority": "Critical",
+      "main": "길드전",
+      "sub1": "2주년 빌드 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 빌드 길드전에서 신비 단독 속성 던전이 출력되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 23,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "2주년 빌드 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 빌드 길드전에서 빛+어둠 단독 편성 던전이 출력되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 24,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "2주년 빌드 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 빌드 길드전 속성 편성 시, 빛+신비 또는 어둠+신비 조합으로만 운영된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 25,
+      "priority": "Normal",
+      "main": "길드전",
+      "sub1": "2주년 빌드 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 빌드 길드전 일정 진입 시, 운영 정책에 맞는 속성 조합 던전 깃발만 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "2주년 이후 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 이후 빌드 길드전에서 신비 단독 속성 던전이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 27,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "2주년 이후 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 이후 빌드 길드전에서 신비+다른 속성 조합 던전이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 28,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "2주년 이후 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 이후 빌드 길드전 신비 단독 던전 깃발 선택 시, 신비 단독 던전 플레이 로비로 이동된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 29,
+      "priority": "Normal",
+      "main": "길드전",
+      "sub1": "2주년 이후 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 이후 빌드 길드전 신비 단독 던전 플레이 로비에서 추천 속성에 신비 속성 아이콘만 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 30,
+      "priority": "Normal",
+      "main": "길드전",
+      "sub1": "2주년 이후 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 이후 빌드 길드전 일정 진입 시, 신비 단독 또는 신비+다른 속성 조합 던전 깃발이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 31,
+      "priority": "Major",
+      "main": "길드전",
+      "sub1": "2주년 이후 길드전 속성 운영",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "2주년 이후 빌드 길드전 신비+다른 속성 던전 플레이 로비에서 추천 속성 영역에 두 속성 아이콘이 모두 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 32,
+      "priority": "Normal",
+      "main": "길드전",
+      "sub1": "길드전 던전 플레이 로비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "길드전 던전 플레이 로비에서 뒤로가기 버튼 터치 시, 길드전 로비로 이동된다.",
+      "comment": "신비 속성 추가 기획서 - 길드전"
+    },
+    {
+      "no": 33,
+      "priority": "Critical",
+      "main": "레이드 챌린지 모드",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 챌린지 모드 진입 시, 추천 속성 영역에 신비 속성 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 레이드 챌린지 모드"
+    },
+    {
+      "no": 34,
+      "priority": "Major",
+      "main": "레이드 챌린지 모드",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 챌린지 모드 추천 속성 UI에서 최대 3개의 속성 아이콘이 한 줄에 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 레이드 챌린지 모드"
+    },
+    {
+      "no": 35,
+      "priority": "Major",
+      "main": "레이드 챌린지 모드",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 챌린지 모드 추천 속성 UI에 3개의 속성이 출력될 때 각 속성 아이콘이 정렬되어 표시된다.",
+      "comment": "신비 속성 추가 기획서 - 레이드 챌린지 모드"
+    },
+    {
+      "no": 36,
+      "priority": "Major",
+      "main": "레이드 챌린지 모드",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 출시 빌드 레이드 챌린지 모드의 추천 속성 1개는 신비 속성으로 고정 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 레이드 챌린지 모드"
+    },
+    {
+      "no": 37,
+      "priority": "Major",
+      "main": "레이드 챌린지 모드",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 출시 빌드 레이드 챌린지 모드의 추천 속성 중 신비 외 속성은 로테이션되어 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 레이드 챌린지 모드"
+    },
+    {
+      "no": 38,
+      "priority": "Normal",
+      "main": "레이드 챌린지 모드",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 챌린지 모드 추천 속성 UI에서 신비 속성 아이콘 터치 시, 효과음이 재생된다.",
+      "comment": "신비 속성 추가 기획서 - 레이드 챌린지 모드"
+    },
+    {
+      "no": 39,
+      "priority": "Normal",
+      "main": "레이드 챌린지 모드",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 챌린지 모드 추천 속성에 신비 속성 출력 시, 다른 속성 아이콘과 동일한 크기로 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 레이드 챌린지 모드"
+    },
+    {
+      "no": 40,
+      "priority": "Critical",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 진입 시, 추천 속성 영역에 신비 속성 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 41,
+      "priority": "Major",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 추천 속성 UI에 최대 2개의 속성 아이콘이 한 줄에 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 42,
+      "priority": "Major",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 추천 속성 UI에 신비 속성과 다른 속성 1종이 함께 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 43,
+      "priority": "Normal",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 추천 속성 UI에서 신비 속성 아이콘이 다른 속성 아이콘과 동일한 크기로 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 44,
+      "priority": "Major",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 인포 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 추천 속성 영역의 인포 버튼 터치 시, 추천 속성 인포 팝업이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 45,
+      "priority": "Major",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 인포 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 추천 속성 인포 팝업에 신비 속성에 대한 안내 항목이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 46,
+      "priority": "Major",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 인포 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 추천 속성 인포 팝업에 신비 속성 아이콘과 설명 문구가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 47,
+      "priority": "Normal",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 인포 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 추천 속성 인포 팝업의 닫기 버튼 터치 시, 팝업이 닫힌다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 48,
+      "priority": "Normal",
+      "main": "탑의 균열",
+      "sub1": "추천 속성 인포 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑의 균열 추천 속성 인포 팝업에서 디바이스 뒤로가기 입력 시, 팝업이 닫힌다.",
+      "comment": "신비 속성 추가 기획서 - 탑의 균열"
+    },
+    {
+      "no": 49,
+      "priority": "Major",
+      "main": "유리미궁",
+      "sub1": "무한의 미궁 단전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "유리미궁 진입 후 무한의 미궁 단전 선택 시, 추천 속성에 신비 속성 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 유리미궁"
+    },
+    {
+      "no": 50,
+      "priority": "Major",
+      "main": "유리미궁",
+      "sub1": "무한의 미궁 단전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "무한의 미궁 단전 추천 속성 영역에 신비 속성과 기존 속성이 함께 출력될 때 모든 아이콘이 누락 없이 표시된다.",
+      "comment": "신비 속성 추가 기획서 - 유리미궁"
+    },
+    {
+      "no": 51,
+      "priority": "Major",
+      "main": "유리미궁",
+      "sub1": "무한의 미궁 단전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "유리미궁 단전 리스트에서 신비 속성 전용 단전이 별도로 추가되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 유리미궁"
+    },
+    {
+      "no": 52,
+      "priority": "Normal",
+      "main": "유리미궁",
+      "sub1": "무한의 미궁 단전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "무한의 미궁 단전 추천 속성에서 신비 속성 아이콘이 다른 속성 아이콘과 동일한 크기로 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 유리미궁"
+    },
+    {
+      "no": 53,
+      "priority": "Normal",
+      "main": "유리미궁",
+      "sub1": "무한의 미궁 단전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "무한의 미궁 단전 화면에서 뒤로가기 버튼 터치 시, 유리미궁 로비로 이동된다.",
+      "comment": "신비 속성 추가 기획서 - 유리미궁"
+    },
+    {
+      "no": 54,
+      "priority": "Major",
+      "main": "돌파석 채광장",
+      "sub1": "채광장 속성 선택",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "돌파석 채광장 진입 시, 좌측 속성 선택 영역에 신비 속성 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 55,
+      "priority": "Major",
+      "main": "돌파석 채광장",
+      "sub1": "채광장 속성 선택",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "돌파석 채광장 좌측 속성 선택 영역에 7개의 던전 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 56,
+      "priority": "Major",
+      "main": "돌파석 채광장",
+      "sub1": "채광장 속성 선택",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "돌파석 채광장 좌측 속성 선택 영역에서 상하 스와이프 시, 던전 리스트가 스크롤된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 57,
+      "priority": "Normal",
+      "main": "돌파석 채광장",
+      "sub1": "채광장 속성 선택",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "돌파석 채광장 좌측 속성 선택 영역 스크롤 시, 스크롤 인디케이터가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 58,
+      "priority": "Critical",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 채광장 진입",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "돌파석 채광장 좌측 속성 선택 영역에서 신비 속성 던전 선택 시, 신비 속성 채광장 플레이 로비가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 59,
+      "priority": "Major",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 채광장 진입",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 채광장 플레이 로비에 신비 속성 채광장 명칭과 정보가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 60,
+      "priority": "Major",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 채광장 진입",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 채광장 플레이 로비의 보상 정보 영역에 신비 속성 쿠키 돌파석 아이템이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 61,
+      "priority": "Critical",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 채광장 진입",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 채광장 플레이 로비에서 출전 버튼 터치 시, 인게임으로 진입되는 로딩 화면이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 62,
+      "priority": "Major",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 쿠키 돌파석 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 쿠키 돌파석 아이템 아이콘 터치 시, 아이템 상세 팝업이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 63,
+      "priority": "Major",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 쿠키 돌파석 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 쿠키 돌파석 아이템 상세 팝업에 레어 등급이 표시된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 64,
+      "priority": "Major",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 쿠키 돌파석 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "랜덤 돌파석 상자 사용 시, 결과 목록에 신비 속성 쿠키 돌파석이 포함되어 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 65,
+      "priority": "Normal",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 쿠키 돌파석 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 쿠키 돌파석 아이템 상세 팝업에 아이템 설명 문구가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 66,
+      "priority": "Normal",
+      "main": "돌파석 채광장",
+      "sub1": "신비 속성 채광장 진입",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 채광장 플레이 로비에서 뒤로가기 버튼 터치 시, 돌파석 채광장 로비로 이동된다.",
+      "comment": "신비 속성 추가 기획서 - 돌파석 채광장"
+    },
+    {
+      "no": 67,
+      "priority": "Critical",
+      "main": "잠재력",
+      "sub1": "잠재력 주문서 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 화면에서 신비 속성 잠재력 주문서 아이템이 보유 목록에 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 68,
+      "priority": "Major",
+      "main": "잠재력",
+      "sub1": "잠재력 주문서 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 잠재력 주문서 아이템 아이콘 터치 시, 에픽 등급으로 표시된 아이템 상세 팝업이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 69,
+      "priority": "Major",
+      "main": "잠재력",
+      "sub1": "잠재력 주문서 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 화면에서 상급 신비 속성 잠재력 주문서 아이템이 보유 목록에 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 70,
+      "priority": "Major",
+      "main": "잠재력",
+      "sub1": "잠재력 주문서 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "상급 신비 속성 잠재력 주문서 아이템 아이콘 터치 시, 슈퍼 에픽 등급으로 표시된 아이템 상세 팝업이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 71,
+      "priority": "Normal",
+      "main": "잠재력",
+      "sub1": "잠재력 주문서 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 잠재력 주문서 아이템 상세 팝업에 아이템 설명 문구가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 72,
+      "priority": "Normal",
+      "main": "잠재력",
+      "sub1": "잠재력 주문서 아이템",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "상급 신비 속성 잠재력 주문서 아이템 상세 팝업에 아이템 설명 문구가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 73,
+      "priority": "Major",
+      "main": "잠재력",
+      "sub1": "잠재력 선택 상자",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 선택 상자 사용 시, 선택 가능한 주문서 목록에 신비 속성 잠재력 주문서가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 74,
+      "priority": "Major",
+      "main": "잠재력",
+      "sub1": "잠재력 선택 상자",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 선택 상자 화면에서 신비 속성 잠재력 주문서 선택 시, 신비 속성 주문서가 활성화 상태로 표시된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 75,
+      "priority": "Critical",
+      "main": "잠재력",
+      "sub1": "잠재력 선택 상자",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 선택 상자에서 신비 속성 잠재력 주문서 선택 후 확정 시, 보유 인벤토리에 신비 속성 잠재력 주문서가 지급된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 76,
+      "priority": "Normal",
+      "main": "잠재력",
+      "sub1": "잠재력 선택 상자",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 선택 상자에서 신비 속성 잠재력 주문서 아이콘 터치 시, 효과음이 재생된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 77,
+      "priority": "Major",
+      "main": "잠재력",
+      "sub1": "잠재력 설정 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 설정 화면에서 신비 속성 잠재력 적용 시, 신비 속성 잠재력 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 78,
+      "priority": "Major",
+      "main": "잠재력",
+      "sub1": "잠재력 설정 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 설정 화면에서 신비 속성 잠재력 세트 효과 활성화 조건 충족 시, 세트 효과 아이콘이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 79,
+      "priority": "Normal",
+      "main": "잠재력",
+      "sub1": "잠재력 설정 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 설정 화면 신비 속성 잠재력 아이콘 터치 시, 잠재력 상세 정보 툴팁이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 80,
+      "priority": "Normal",
+      "main": "잠재력",
+      "sub1": "잠재력 설정 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 설정 화면 신비 속성 세트 효과 아이콘 터치 시, 세트 효과 상세 정보 툴팁이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 잠재력"
+    },
+    {
+      "no": 81,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "잠재력 카테고리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작소 진입 후 잠재력 카테고리 선택 시, 제작 가능 목록에 상급 신비 속성 잠재력 주문서 제작식이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 제작소"
+    },
+    {
+      "no": 82,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "잠재력 카테고리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "상급 신비 속성 잠재력 주문서 제작식 선택 시, 필요 재료로 신비 속성 잠재력 주문서가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 제작소"
+    },
+    {
+      "no": 83,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "잠재력 카테고리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "상급 신비 속성 잠재력 주문서 제작식의 재료 필요 수량이 5개로 표시된다.",
+      "comment": "신비 속성 추가 기획서 - 제작소"
+    },
+    {
+      "no": 84,
+      "priority": "Critical",
+      "main": "제작소",
+      "sub1": "잠재력 카테고리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "상급 신비 속성 잠재력 주문서 제작 완료 시, 보유 인벤토리에 상급 신비 속성 잠재력 주문서가 지급된다.",
+      "comment": "신비 속성 추가 기획서 - 제작소"
+    },
+    {
+      "no": 85,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "잠재력 변환 옵션",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작소 잠재력 카테고리에서 일반 속성 잠재력 주문서를 상급 속성 잠재력 주문서로 변환하는 옵션이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 제작소"
+    },
+    {
+      "no": 86,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "잠재력 변환 옵션",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 변환 옵션 선택 시, 변환 대상 주문서와 변환 결과 주문서가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 제작소"
+    },
+    {
+      "no": 87,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "잠재력 변환 옵션",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "잠재력 변환 옵션 진입 시, 변환에 대한 안내 문구가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 제작소"
+    },
+    {
+      "no": 88,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "잠재력 카테고리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "상급 신비 속성 잠재력 주문서 제작 완료 시, 제작 완료 연출이 재생된다.",
+      "comment": "신비 속성 추가 기획서 - 제작소"
+    },
+    {
+      "no": 89,
+      "priority": "Major",
+      "main": "뽑기 연출",
+      "sub1": "신비 속성 에픽 쿠키 뽑기 배경",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "에픽 등급 신비 속성 쿠키 뽑기 시, 신비 속성 전용 연출 배경이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 뽑기 연출"
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "뽑기 연출",
+      "sub1": "신비 속성 에픽 쿠키 뽑기 배경",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "에픽 등급이 아닌 다른 등급의 신비 속성 쿠키 뽑기 시, 신비 속성 전용 연출 배경이 출력되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 뽑기 연출"
+    },
+    {
+      "no": 91,
+      "priority": "Normal",
+      "main": "뽑기 연출",
+      "sub1": "신비 속성 에픽 쿠키 뽑기 배경",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "에픽 등급 신비 속성 쿠키 뽑기 연출 시, 낮 또는 밤 배경 1종이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 뽑기 연출"
+    },
+    {
+      "no": 92,
+      "priority": "Normal",
+      "main": "뽑기 연출",
+      "sub1": "신비 속성 에픽 쿠키 뽑기 배경",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "에픽 등급 신비 속성 쿠키 뽑기 연출 재생 시, 신비 속성 전용 효과음이 재생된다.",
+      "comment": "신비 속성 추가 기획서 - 뽑기 연출"
+    },
+    {
+      "no": 93,
+      "priority": "Normal",
+      "main": "뽑기 연출",
+      "sub1": "신비 속성 에픽 쿠키 뽑기 배경",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "에픽 등급 신비 속성 쿠키 뽑기 연출 종료 시, 결과 화면으로 전환된다.",
+      "comment": "신비 속성 추가 기획서 - 뽑기 연출"
+    },
+    {
+      "no": 94,
+      "priority": "Normal",
+      "main": "뽑기 연출",
+      "sub1": "신비 속성 에픽 쿠키 뽑기 배경",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키 뽑기 시, 에픽 신비 속성 쿠키 뽑기 연출 배경이 사용되지 않고 별도의 전용 연출이 재생된다.",
+      "comment": "신비 속성 추가 기획서 - 뽑기 연출"
+    },
+    {
+      "no": 95,
+      "priority": "Major",
+      "main": "필터",
+      "sub1": "속성 필터",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "쿠키 또는 아이템 필터 화면 진입 시, 속성 필터 항목에 신비 속성이 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 필터"
+    },
+    {
+      "no": 96,
+      "priority": "Major",
+      "main": "필터",
+      "sub1": "속성 필터",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "속성 필터에서 신비 속성 선택 시, 신비 속성에 해당하는 대상만 리스트에 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 필터"
+    },
+    {
+      "no": 97,
+      "priority": "Normal",
+      "main": "필터",
+      "sub1": "속성 필터",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "속성 필터에서 신비 속성 선택 시, 선택 표시(체크 또는 활성화 상태)가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 필터"
+    },
+    {
+      "no": 98,
+      "priority": "Normal",
+      "main": "필터",
+      "sub1": "속성 필터",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "속성 필터에서 신비 속성 선택 해제 시, 신비 속성 대상이 리스트에서 제외된다.",
+      "comment": "신비 속성 추가 기획서 - 필터"
+    },
+    {
+      "no": 99,
+      "priority": "Major",
+      "main": "기타 사항",
+      "sub1": "성장 던전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "돌파석 채광장을 제외한 성장 던전의 추천 속성 영역에 ALL 표시가 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 기타"
+    },
+    {
+      "no": 100,
+      "priority": "Major",
+      "main": "기타 사항",
+      "sub1": "성장 던전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "돌파석 채광장을 제외한 성장 던전 추천 속성 영역에 개별 속성 아이콘이 출력되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 기타"
+    },
+    {
+      "no": 101,
+      "priority": "Normal",
+      "main": "기타 사항",
+      "sub1": "성장 던전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "성장 던전 추천 속성 영역의 ALL 표시가 모든 성장 던전에 동일한 형태로 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 기타"
+    },
+    {
+      "no": 102,
+      "priority": "Major",
+      "main": "기타 사항",
+      "sub1": "성장 던전 추천 속성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "돌파석 채광장은 ALL 변경 정책에서 제외되어 기존 속성별 추천 표시가 유지된다.",
+      "comment": "신비 속성 추가 기획서 - 기타"
+    },
+    {
+      "no": 103,
+      "priority": "Critical",
+      "main": "기타 사항",
+      "sub1": "신비 속성 장비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 제작 메뉴 진입 시, 신비 속성 전용 장비 제작식이 출력되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 기타"
+    },
+    {
+      "no": 104,
+      "priority": "Major",
+      "main": "기타 사항",
+      "sub1": "신비 속성 장비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 카테고리 필터 화면에서 신비 속성 장비 항목이 출력되지 않는다.",
+      "comment": "신비 속성 추가 기획서 - 기타"
+    },
+    {
+      "no": 105,
+      "priority": "Normal",
+      "main": "기타 사항",
+      "sub1": "신비 속성 장비",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 쿠키 장비 슬롯 확인 시, 일반 속성 장비가 장착 가능 대상으로 출력된다.",
+      "comment": "신비 속성 추가 기획서 - 기타"
+    }
+  ],
+  "generatedAt": "2026-05-08T02:33:24.996Z",
+  "tokenUsage": {
+    "inputTokens": 114,
+    "outputTokens": 39732,
+    "cacheReadTokens": 3850151,
+    "cacheCreationTokens": 101837,
+    "totalCostUsd": 3.5738767499999993
+  }
+}
