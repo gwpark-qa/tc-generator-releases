@@ -1,0 +1,20 @@
+{
+  "contentName": "달빛술사 쿠키 체크리스트",
+  "testCaseCount": 148,
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1775639992053_f28229",
+  "promptName": "체크리스트(CTA 쿠키)",
+  "focusPoints": "\"이 기획서에는 신규 상태 이상인 **'수면'**과 이를 활용한 '메모리 잼' 강화 로직이 복잡하게 구성되어 있어. 개발 체크리스트 작성 시, 각 메모리 잼(해/달 강화)의 기능이 기존 스킬(특수 스킬, 대시 홀드 등)에 정상적으로 데이터가 덮어씌워지는지 검토 항목을 꼭 넣어줘.\"",
+  "elapsedSeconds": 779,
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 64734,
+    "cacheReadTokens": 22226,
+    "cacheCreationTokens": 25888,
+    "totalCostUsd": 1.791293
+  },
+  "cost": "$4.8551",
+  "appVersion": "1.2.1",
+  "generatedAt": "2026-05-08T02:02:35.487Z"
+}
