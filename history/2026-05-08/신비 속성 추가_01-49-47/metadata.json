@@ -1,0 +1,20 @@
+{
+  "contentName": "신비 속성 추가",
+  "testCaseCount": 108,
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": null,
+  "elapsedSeconds": 344,
+  "tokenUsage": {
+    "inputTokens": 48,
+    "outputTokens": 28079,
+    "cacheReadTokens": 937171,
+    "cacheCreationTokens": 105402,
+    "totalCostUsd": 1.847246
+  },
+  "cost": "$2.1066",
+  "appVersion": "1.2.1",
+  "generatedAt": "2026-05-08T01:49:47.943Z"
+}
