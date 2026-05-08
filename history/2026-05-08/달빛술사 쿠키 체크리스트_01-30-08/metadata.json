@@ -1,0 +1,20 @@
+{
+  "contentName": "달빛술사 쿠키 체크리스트",
+  "testCaseCount": 120,
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1775639992053_f28229",
+  "promptName": "체크리스트(CTA 쿠키)",
+  "focusPoints": null,
+  "elapsedSeconds": 315,
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 26759,
+    "cacheReadTokens": 22226,
+    "cacheCreationTokens": 23106,
+    "totalCostUsd": 0.8245305
+  },
+  "cost": "$2.0070",
+  "appVersion": "1.2.1",
+  "generatedAt": "2026-05-08T01:30:08.882Z"
+}
