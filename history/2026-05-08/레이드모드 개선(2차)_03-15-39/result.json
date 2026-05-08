@@ -1,0 +1,1313 @@
+{
+  "contentName": "레이드모드 개선(2차)",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Major",
+      "main": "진입경로 (탑레벨)",
+      "sub1": "탑 레벨 메인 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "메인 로비에서 탑레벨 진입 시, 탑 레벨 화면이 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 2,
+      "priority": "Normal",
+      "main": "진입경로 (탑레벨)",
+      "sub1": "탑 레벨 메인 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면 좌측 상단에 뒤로가기 버튼과 \"탑 레벨\" 헤더가 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 3,
+      "priority": "Normal",
+      "main": "진입경로 (탑레벨)",
+      "sub1": "탑 레벨 메인 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면 좌하단에 캐릭터 일러스트와 안내 텍스트가 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 4,
+      "priority": "Major",
+      "main": "진입경로 (탑레벨)",
+      "sub1": "좌측 탭 메뉴",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면 좌측에 \"탑 레벨\", \"성장\", \"도전\" 3종의 탭이 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 5,
+      "priority": "Major",
+      "main": "진입경로 (탑레벨)",
+      "sub1": "좌측 탭 메뉴",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "좌측 탭 메뉴에서 \"성장\" 탭 선택 시, 노란색 강조 상태로 활성화된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 6,
+      "priority": "Major",
+      "main": "진입경로 (탑레벨)",
+      "sub1": "레이드 모드 카드 영역",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면 중앙에 성장 던전, 레이드 모드, 탑의 균열, 어비스 던전 4종의 모드 카드가 세로로 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 7,
+      "priority": "Major",
+      "main": "진입경로 (탑레벨)",
+      "sub1": "레이드 모드 카드 영역",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각 모드 카드에 진행도(레이드 모드 5/5, 탑의 균열 2/2 등)가 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 8,
+      "priority": "Critical",
+      "main": "진입경로 (탑레벨)",
+      "sub1": "레이드 모드 카드 영역",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면에서 \"레이드 모드\" 카드 터치 시, 레이드 로비 화면으로 이동된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 9,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "로비 진입 및 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 진입 시, 상단에 \"레이드 모드\" 타이틀이 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 10,
+      "priority": "Normal",
+      "main": "레이드 로비",
+      "sub1": "로비 진입 및 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 화면 상단 우측에 닫기(X) 버튼이 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 11,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "로비 진입 및 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 화면에서 닫기(X) 버튼 터치 시, 상위 화면으로 이탈된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 12,
+      "priority": "Normal",
+      "main": "레이드 로비",
+      "sub1": "로비 진입 및 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 화면 상단에 재화 게이지가 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 13,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "싱글/멀티 토글",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 진입 시, 싱글/멀티 전환 토글 버튼이 \"싱글\" 모드 활성화 상태로 기본 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 14,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "싱글/멀티 토글",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "싱글/멀티 토글 버튼에서 \"멀티\" 선택 시, 멀티 모드의 레이드 로비 화면으로 변환되어 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 15,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "싱글/멀티 토글",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "멀티 모드 진입 시, 매칭 인원이 2인 형태로 구성된다.",
+      "comment": "참고 화면: 레이드 로비 / 인게임 모드 변동 메모"
+    },
+    {
+      "no": 16,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "보스 정보 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 화면 중앙에 선택된 보스의 포트레이트가 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 17,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "보스 정보 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 화면에 보스명과 보스 부가 설명이 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 18,
+      "priority": "Normal",
+      "main": "레이드 로비",
+      "sub1": "보스 정보 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 화면 배경에 보스 등장 스테이지 배경 이미지가 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 19,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "보스 정보 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 정보 영역에 해당 보스에서 드랍되는 슈퍼레어 보상 세트 정보가 최대 3종까지 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 20,
+      "priority": "Normal",
+      "main": "레이드 로비",
+      "sub1": "보스 정보 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "드랍 보상 슈퍼레어 세트 중 인기 보상 항목에 \"인기\" 태그가 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 21,
+      "priority": "Normal",
+      "main": "레이드 로비",
+      "sub1": "보스 정보 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "드랍 보상 장비 이미지 터치 시, 세부 정보 툴팁이 출력된다.",
+      "comment": "참고 화면: 레이드 로비"
+    },
+    {
+      "no": 22,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "보스 카드 그리드",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 선택 화면에서 6종의 보스 카드가 3x2 그리드 형태로 출력된다.",
+      "comment": "참고 화면: 레이드 로비 보스 선택"
+    },
+    {
+      "no": 23,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "보스 카드 그리드",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각 보스 카드 하단에 해당 보스의 추천 속성 아이콘이 출력된다.",
+      "comment": "참고 화면: 레이드 로비 보스 선택"
+    },
+    {
+      "no": 24,
+      "priority": "Major",
+      "main": "레이드 로비",
+      "sub1": "보스 카드 그리드",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "해금되지 않은 보스 카드에 잠금 표시가 출력된다.",
+      "comment": "참고 화면: 레이드 로비 보스 선택"
+    },
+    {
+      "no": 25,
+      "priority": "Critical",
+      "main": "레이드 로비",
+      "sub1": "보스 카드 그리드",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 카드 터치 시, 해당 보스의 레이드 진입 팝업이 출력된다.",
+      "comment": "참고 화면: 레이드 로비 보스 선택"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 슬롯 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 진입 팝업 상단에 \"레이드 모드\" 타이틀과 보스 이름이 출력된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 27,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 슬롯 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 진입 팝업에 단계별 입장료 정보가 출력된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 28,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 슬롯 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 진입 팝업 사이드에 6단계 난이도 리스트가 출력된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 29,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 슬롯 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각 단계 슬롯에 해당 단계의 체력 정보 및 진입권 정보가 출력된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 30,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 슬롯 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "단계 슬롯 선택 시, 해당 단계의 보상 정보로 우측 보상 슬롯이 갱신된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 31,
+      "priority": "Normal",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 슬롯 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 진입 팝업 상단 우측에 보상 슬롯이 출력된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 32,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 슬롯 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 진입 팝업 하단의 입장 버튼 터치 시, 해당 보스/단계로 입장된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 33,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 슬롯 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 진입 팝업 하단의 취소 버튼 터치 시, 팝업이 닫히고 보스 선택 화면으로 이동된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 34,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 해금 조건",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "해금되지 않은 단계 슬롯에 자물쇠 잠금 아이콘이 출력된다.",
+      "comment": "참고 화면: 레이드 진입 팝업"
+    },
+    {
+      "no": 35,
+      "priority": "Critical",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 해금 조건",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "이전 단계 클리어 시, 다음 단계가 해금되어 입장 가능 상태로 전환된다.",
+      "comment": "참고 화면: 레이드 진입 팝업 / 단계 해금 조건"
+    },
+    {
+      "no": 36,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "단계 해금 조건",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특정 보스에서 단계 해금 시, 다른 보스에서도 동일 단계가 공유 해금된다.",
+      "comment": "참고 화면: 단계 해금 조건"
+    },
+    {
+      "no": 37,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "잠금 단계 클릭 분기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "사용 불가 상태의 난이도 슬롯 터치 시, \"사용 가능하지 않습니다\" 토스트 메시지가 출력된다.",
+      "comment": "참고 화면: 토스트 분기 (Sui.strings.equipment.dungeon.host)"
+    },
+    {
+      "no": 38,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "잠금 단계 클릭 분기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "이전 난이도를 클리어하지 않은 단계 슬롯 터치 시, \"이전 난이도를 클리어해야 도전 가능합니다\" 토스트 메시지가 출력된다.",
+      "comment": "참고 화면: 토스트 분기 (Sui.strings.single_boss_challenge.locked)"
+    },
+    {
+      "no": 39,
+      "priority": "Major",
+      "main": "난이도 선택 / 진입 팝업",
+      "sub1": "잠금 단계 클릭 분기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "최고 난이도 이후의 다음 단계 슬롯 터치 시, \"다음 난이도가 존재하지 않습니다\" 토스트 메시지가 출력된다.",
+      "comment": "참고 화면: 토스트 분기 (Sui.strings.last.difficulty.not)"
+    },
+    {
+      "no": 40,
+      "priority": "Major",
+      "main": "보상 정보 팝업",
+      "sub1": "보상 미리보기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비의 보상 정보 영역 터치 시, 보상 상세 팝업이 출력된다.",
+      "comment": "참고 화면: 보상 상세 팝업 03-A"
+    },
+    {
+      "no": 41,
+      "priority": "Major",
+      "main": "보상 정보 팝업",
+      "sub1": "보상 미리보기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 상세 팝업 상단에 보상 미리보기 타이틀이 출력된다.",
+      "comment": "참고 화면: 보상 상세 팝업 03-A"
+    },
+    {
+      "no": 42,
+      "priority": "Major",
+      "main": "보상 정보 팝업",
+      "sub1": "보상 미리보기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 상세 팝업에 클리어 기본 보상 정보가 출력된다.",
+      "comment": "참고 화면: 보상 상세 팝업 03-A"
+    },
+    {
+      "no": 43,
+      "priority": "Major",
+      "main": "보상 정보 팝업",
+      "sub1": "보상 미리보기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 상세 팝업에 클리어 별 보상 정보가 출력된다.",
+      "comment": "참고 화면: 보상 상세 팝업 03-A"
+    },
+    {
+      "no": 44,
+      "priority": "Normal",
+      "main": "보상 정보 팝업",
+      "sub1": "보상 미리보기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 상세 팝업의 우측 상세 리스트에 차등 보상 아이템 슬롯과 수량이 출력된다.",
+      "comment": "참고 화면: 보상 상세 팝업 03-A"
+    },
+    {
+      "no": 45,
+      "priority": "Normal",
+      "main": "보상 정보 팝업",
+      "sub1": "보상 미리보기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 상세 팝업 우측 상단 닫기(X) 버튼 터치 시, 팝업이 닫힌다.",
+      "comment": "참고 화면: 보상 상세 팝업 03-A"
+    },
+    {
+      "no": 46,
+      "priority": "Major",
+      "main": "보상 정보 팝업",
+      "sub1": "보스/난이도 변경",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 상세 팝업의 좌/우 보스 변경 버튼 터치 시, 다른 보스의 보상 정보로 갱신된다.",
+      "comment": "참고 화면: 보상 상세 팝업 03-A"
+    },
+    {
+      "no": 47,
+      "priority": "Normal",
+      "main": "보상 정보 팝업",
+      "sub1": "보스/난이도 변경",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 상세 팝업 진입 시, 기본값으로 현재 진입한 보스의 보상 정보가 출력된다.",
+      "comment": "참고 화면: 보상 상세 팝업 03-A"
+    },
+    {
+      "no": 48,
+      "priority": "Critical",
+      "main": "Play / 티켓 설정",
+      "sub1": "Play 버튼 동작",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비 화면의 PLAY 버튼 터치 시, 해당 보스/난이도의 레이드 전투로 진입된다.",
+      "comment": "참고 화면: Play 버튼"
+    },
+    {
+      "no": 49,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "Play 버튼 동작",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "PLAY 버튼 터치 시, 설정된 티켓 개수만큼 입장 티켓이 차감된다.",
+      "comment": "참고 화면: Play 버튼"
+    },
+    {
+      "no": 50,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "Play 버튼 동작",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "PLAY 버튼은 활성/비활성 상태에 따라 색상이 구분되어 출력된다.",
+      "comment": "참고 화면: Play 버튼"
+    },
+    {
+      "no": 51,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "패스/티켓 설정 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "패스 설정 버튼 터치 시, 티켓 개수 설정 팝업이 출력된다.",
+      "comment": "참고 화면: 패스 설정 팝업"
+    },
+    {
+      "no": 52,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "패스/티켓 설정 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "티켓 개수 설정 팝업 진입 시, 기본값 1로 출력된다.",
+      "comment": "참고 화면: 패스 설정 팝업"
+    },
+    {
+      "no": 53,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "패스/티켓 설정 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "티켓 개수 설정 팝업의 + 버튼 터치 시, 티켓 사용 개수가 1씩 증가한다.",
+      "comment": "참고 화면: 패스 설정 팝업"
+    },
+    {
+      "no": 54,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "패스/티켓 설정 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "티켓 개수 설정 팝업의 - 버튼 터치 시, 티켓 사용 개수가 1씩 감소한다.",
+      "comment": "참고 화면: 패스 설정 팝업"
+    },
+    {
+      "no": 55,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "패스/티켓 설정 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "티켓 개수 설정 팝업에 \"1번 클릭당 (n)개씩 티켓이 사용됩니다\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: 패스 설정 팝업"
+    },
+    {
+      "no": 56,
+      "priority": "Normal",
+      "main": "Play / 티켓 설정",
+      "sub1": "패스/티켓 설정 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "이지/하드/스페셜 모드별로 별도의 티켓 개수 설정이 가능하다.",
+      "comment": "참고 화면: 패스 설정 팝업"
+    },
+    {
+      "no": 57,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "패스/티켓 설정 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "패스 구매 상태에서 티켓 설정 시, 회차당 추가 티켓 개수가 적용되어 출력된다.",
+      "comment": "참고 화면: 패스 설정 팝업"
+    },
+    {
+      "no": 58,
+      "priority": "Normal",
+      "main": "Play / 티켓 설정",
+      "sub1": "패스/티켓 설정 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "티켓 개수 설정 팝업 우측 상단 닫기(X) 버튼 터치 시, 팝업이 닫힌다.",
+      "comment": "참고 화면: 패스 설정 팝업"
+    },
+    {
+      "no": 59,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "Play 시도 예외 처리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "이전 난이도를 클리어하지 않은 상태에서 PLAY 버튼 터치 시, \"이전 난이도를 클리어해야 도전 가능합니다\" 토스트 메시지가 출력된다.",
+      "comment": "참고 화면: Play 버튼 동작 (Sui.strings.single_boss_challenge.locked)"
+    },
+    {
+      "no": 60,
+      "priority": "Major",
+      "main": "Play / 티켓 설정",
+      "sub1": "Play 시도 예외 처리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "입장 자원이 부족한 상태에서 PLAY 버튼 터치 시, 해당 난이도로 입장이 차단된다.",
+      "comment": "참고 화면: 스테이지 인게임 정보"
+    },
+    {
+      "no": 61,
+      "priority": "Critical",
+      "main": "보상 드랍 연출",
+      "sub1": "보스 처치 후 드랍",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 처치 시, 보상 아이템이 필드에 드랍되는 연출이 재생된다.",
+      "comment": "참고 화면: 보상 드랍 연출"
+    },
+    {
+      "no": 62,
+      "priority": "Major",
+      "main": "보상 드랍 연출",
+      "sub1": "보스 처치 후 드랍",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 처치 후 약 3초간 보상 드랍 연출이 재생된다.",
+      "comment": "참고 화면: 보상 드랍 연출"
+    },
+    {
+      "no": 63,
+      "priority": "Major",
+      "main": "보상 드랍 연출",
+      "sub1": "보스 처치 후 드랍",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 드랍 연출 중 화면 상단에 \"OOO이 ㅇㅇㅇ을 획득했습니다\" 형식의 안내 메시지가 출력된다.",
+      "comment": "참고 화면: 보상 드랍 연출"
+    },
+    {
+      "no": 64,
+      "priority": "Normal",
+      "main": "보상 드랍 연출",
+      "sub1": "보스 처치 후 드랍",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "드랍 연출 종료 후 \"COMPLETED!\" 골드 글자와 트로피 컷이 출력된다.",
+      "comment": "참고 화면: 보상 드랍 연출"
+    },
+    {
+      "no": 65,
+      "priority": "Normal",
+      "main": "보상 드랍 연출",
+      "sub1": "보스 처치 후 드랍",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 처치 시, 어비스 던전 방식과 동일한 형태로 보상 아이템이 필드 드랍 연출로 출력된다.",
+      "comment": "참고 화면: 인게임 드랍 연출 변경"
+    },
+    {
+      "no": 66,
+      "priority": "Normal",
+      "main": "보상 드랍 연출",
+      "sub1": "등급별 연출",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "커먼/레어/에픽/슈퍼에픽/유니크 등급별로 구분된 드랍 연출이 출력된다.",
+      "comment": "참고 화면: 보상 드랍 규칙"
+    },
+    {
+      "no": 67,
+      "priority": "Normal",
+      "main": "보상 드랍 연출",
+      "sub1": "등급별 연출",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "설계도/장비조각 아이템 드랍 시, 신규 제작된 드랍 연출이 출력된다.",
+      "comment": "참고 화면: 보상 드랍 규칙"
+    },
+    {
+      "no": 68,
+      "priority": "Normal",
+      "main": "보상 드랍 연출",
+      "sub1": "등급별 연출",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 드랍 연출 중 보스 자리에서 빛/스파클 이펙트가 재생된다.",
+      "comment": "참고 화면: 보상 드랍 연출"
+    },
+    {
+      "no": 69,
+      "priority": "Critical",
+      "main": "레이드 클리어 결과창",
+      "sub1": "결과창 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 종료 시, 클리어 결과창이 출력된다.",
+      "comment": "참고 화면: 레이드 클리어 결과창"
+    },
+    {
+      "no": 70,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "결과창 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창 상단 중앙에 \"CLEAR\" 골드 타이틀이 출력된다.",
+      "comment": "참고 화면: 레이드 클리어 결과창"
+    },
+    {
+      "no": 71,
+      "priority": "Normal",
+      "main": "레이드 클리어 결과창",
+      "sub1": "결과창 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창 좌측에 캐릭터 일러스트가 출력된다.",
+      "comment": "참고 화면: 레이드 클리어 결과창"
+    },
+    {
+      "no": 72,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "결과창 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창에 플레이타임이 출력된다.",
+      "comment": "참고 화면: 레이드 클리어 결과창"
+    },
+    {
+      "no": 73,
+      "priority": "Normal",
+      "main": "레이드 클리어 결과창",
+      "sub1": "결과창 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창 중앙 하단에 별 등급 표시 영역이 출력된다.",
+      "comment": "참고 화면: 레이드 클리어 결과창"
+    },
+    {
+      "no": 74,
+      "priority": "Critical",
+      "main": "레이드 클리어 결과창",
+      "sub1": "획득 아이템 패널",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창에 보스 처치 후 획득한 아이템 정보가 출력된다.",
+      "comment": "참고 화면: 레이드 클리어 결과창 / 획득 아이템 정보 표시"
+    },
+    {
+      "no": 75,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "획득 아이템 패널",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "획득 아이템 패널에 최대 12종까지 아이템이 출력된다.",
+      "comment": "참고 화면: 획득 아이템 정보 표시"
+    },
+    {
+      "no": 76,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "획득 아이템 패널",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "획득 아이템이 12종을 초과하는 경우, 리스트 스크롤로 추가 아이템 확인이 가능하다.",
+      "comment": "참고 화면: 획득 아이템 정보 표시"
+    },
+    {
+      "no": 77,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "획득 아이템 패널",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "획득 아이템 종류 중 장비는 등급별로 구분되어 표시된다.",
+      "comment": "참고 화면: 획득 아이템 정보 표시"
+    },
+    {
+      "no": 78,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "획득 아이템 패널",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "획득 아이템 종류 중 잠재력 항아리, 설계도, 조각, 연금 항아리는 id별로 구분되어 표시된다.",
+      "comment": "참고 화면: 획득 아이템 정보 표시"
+    },
+    {
+      "no": 79,
+      "priority": "Normal",
+      "main": "레이드 클리어 결과창",
+      "sub1": "획득 아이템 패널",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "획득 아이템 슬롯 터치 시, 해당 아이템의 툴팁이 출력된다.",
+      "comment": "참고 화면: 획득 아이템 정보 표시 / item_cell"
+    },
+    {
+      "no": 80,
+      "priority": "Critical",
+      "main": "레이드 클리어 결과창",
+      "sub1": "결과창 액션 버튼",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창의 \"나가기\" 버튼 터치 시, 레이드 로비로 이동된다.",
+      "comment": "참고 화면: 레이드 클리어 결과창"
+    },
+    {
+      "no": 81,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "결과창 액션 버튼",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창에서 \"다시하기\" 버튼이 출력되지 않는다.",
+      "comment": "참고 화면: 레이드 클리어 결과창 / 다시하기 제거"
+    },
+    {
+      "no": 82,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창에 트로피 포인트 영역이 출력되지 않는다.",
+      "comment": "참고 화면: 결과창 변경 사항"
+    },
+    {
+      "no": 83,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창에 트로피 4종(속성 표시 부여, 발끝의 추격, 완벽한 클리어, 압도 피해량) 영역이 출력되지 않는다.",
+      "comment": "참고 화면: 결과창 변경 사항"
+    },
+    {
+      "no": 84,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창에 트로피 +300 점수 게이지가 출력되지 않는다.",
+      "comment": "참고 화면: 결과창 변경 사항"
+    },
+    {
+      "no": 85,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비/결과창에서 코코방울 축복 기능 영역이 출력되지 않는다.",
+      "comment": "참고 화면: 보스 선택 / 결과창 변경 사양"
+    },
+    {
+      "no": 86,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창에 코코방울 연출이 재생되지 않는다.",
+      "comment": "참고 화면: 인게임 드랍 연출 변경"
+    },
+    {
+      "no": 87,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 클리어 결과창에 코코 상자 연출이 재생되지 않는다.",
+      "comment": "참고 화면: 인게임 드랍 연출 변경"
+    },
+    {
+      "no": 88,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비/결과창에 무지개 상자 지급 이벤트 영역이 출력되지 않는다.",
+      "comment": "참고 화면: 결과창 변경 사양"
+    },
+    {
+      "no": 89,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "레이드 로비/결과창에 트로피 상자 기능이 출력되지 않는다.",
+      "comment": "참고 화면: 결과창 변경 사양"
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "레이드 클리어 결과창",
+      "sub1": "제거 항목 검증",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일반 레이드 화면에서 랭킹 진입 버튼이 출력되지 않는다.",
+      "comment": "참고 화면: 일반 레이드 랭킹 진입 버튼 제거"
+    },
+    {
+      "no": 91,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "제작소 진입 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작소 진입 시, 상단 좌측에 뒤로가기 버튼과 \"제작소\" 헤더가 출력된다.",
+      "comment": "참고 화면: 제작소 메인"
+    },
+    {
+      "no": 92,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "제작소 진입 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작소 화면 상단 우측에 우편함, 도감, 메뉴, 홈 버튼이 출력된다.",
+      "comment": "참고 화면: 제작소 메인"
+    },
+    {
+      "no": 93,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "제작소 진입 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작소 화면 중앙에 제작소장 NPC 캐릭터 일러스트가 출력된다.",
+      "comment": "참고 화면: 제작소 메인"
+    },
+    {
+      "no": 94,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "제작소 진입 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작소 화면에 이벤트 제작 진입 버튼과 잔여 시간 카운터가 출력된다.",
+      "comment": "참고 화면: 제작소 메인"
+    },
+    {
+      "no": 95,
+      "priority": "Critical",
+      "main": "제작소",
+      "sub1": "메뉴 정렬 / 장비 연금 진입",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작소 화면의 메뉴 정렬은 장비 제작 → 장비 연금 → 아티팩트 제작 → 아이템 제작 순서로 출력된다.",
+      "comment": "참고 화면: 제작소 메뉴 정렬"
+    },
+    {
+      "no": 96,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "메뉴 정렬 / 장비 연금 진입",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 연금 진입 버튼에 신규 N 배지가 출력된다.",
+      "comment": "참고 화면: 제작소 메뉴 정렬"
+    },
+    {
+      "no": 97,
+      "priority": "Critical",
+      "main": "제작소",
+      "sub1": "메뉴 정렬 / 장비 연금 진입",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작소의 장비 연금 진입 버튼 터치 시, 장비 연금 화면으로 이동된다.",
+      "comment": "참고 화면: 제작소 메뉴 정렬"
+    },
+    {
+      "no": 98,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "장비 연금 메인 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 연금 화면 상단 좌측에 뒤로가기 버튼과 \"장비 연금\" 헤더가 출력된다.",
+      "comment": "참고 화면: 장비 연금 화면"
+    },
+    {
+      "no": 99,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "장비 연금 메인 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 연금 화면 상단 우측에 다이아, 골드 등 재화 정보가 출력된다.",
+      "comment": "참고 화면: 장비 연금 화면"
+    },
+    {
+      "no": 100,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "장비 연금 메인 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 연금 화면 중앙에 빈 슬롯과 추가(+) 버튼이 출력된다.",
+      "comment": "참고 화면: 장비 연금 화면"
+    },
+    {
+      "no": 101,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "장비 연금 메인 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 연금 화면에 \"연금술 아이템을 선택해주세요\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: 장비 연금 화면"
+    },
+    {
+      "no": 102,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "장비 연금 메인 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 연금 화면 우측에 항아리(약물) 아이콘이 출력된다.",
+      "comment": "참고 화면: 장비 연금 화면"
+    },
+    {
+      "no": 103,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "연금술 아이템 선택 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "장비 연금 화면의 추가(+) 버튼 터치 시, 연금술 아이템 선택 팝업이 출력된다.",
+      "comment": "참고 화면: 연금술 아이템 선택 팝업"
+    },
+    {
+      "no": 104,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "연금술 아이템 선택 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "연금술 아이템 선택 팝업 좌측에 5종의 장비 종류별 카테고리 탭이 출력된다.",
+      "comment": "참고 화면: 연금술 아이템 선택 팝업"
+    },
+    {
+      "no": 105,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "연금술 아이템 선택 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "연금술 아이템 선택 팝업 카테고리 탭 선택 시, 해당 종류의 아이템 그리드로 갱신된다.",
+      "comment": "참고 화면: 연금술 아이템 선택 팝업"
+    },
+    {
+      "no": 106,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "연금술 아이템 선택 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "연금술 아이템 선택 팝업 중앙에 5x4 형태의 아이템 그리드가 출력된다.",
+      "comment": "참고 화면: 연금술 아이템 선택 팝업"
+    },
+    {
+      "no": 107,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "연금술 아이템 선택 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "연금술 아이템 선택 팝업 우측 패널에 레전드 아이템 스킬 발동 정보가 출력된다.",
+      "comment": "참고 화면: 연금술 아이템 선택 팝업"
+    },
+    {
+      "no": 108,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "연금술 아이템 선택 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "연금술 아이템 선택 팝업 우측 패널에 기본 옵션(예: +135.4%) 및 고유 능력 정보가 출력된다.",
+      "comment": "참고 화면: 연금술 아이템 선택 팝업"
+    },
+    {
+      "no": 109,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "연금술 아이템 선택 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "연금술 아이템 선택 팝업 우측 패널에 자원 코스트 정보가 출력된다.",
+      "comment": "참고 화면: 연금술 아이템 선택 팝업"
+    },
+    {
+      "no": 110,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "연금술 아이템 선택 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "연금술 아이템 선택 팝업 하단의 \"선택\" 버튼 터치 시, 선택한 아이템이 제작 진행 화면에 적용된다.",
+      "comment": "참고 화면: 연금술 아이템 선택 팝업"
+    },
+    {
+      "no": 111,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "제작 진행",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 진행 화면 중앙에 선택 아이템 슬롯과 투입 재화 슬롯이 출력된다.",
+      "comment": "참고 화면: 제작 진행 화면"
+    },
+    {
+      "no": 112,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "제작 진행",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 진행 화면 배경 우측에 항아리 아이콘이 출력된다.",
+      "comment": "참고 화면: 제작 진행 화면"
+    },
+    {
+      "no": 113,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "제작 진행",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 진행 화면 하단의 \"제작\" 버튼 터치 시, 제작 안내 팝업이 출력된다.",
+      "comment": "참고 화면: 제작 진행 화면"
+    },
+    {
+      "no": 114,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "제작 안내 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 안내 팝업 상단에 \"제작 안내\" 타이틀이 출력된다.",
+      "comment": "참고 화면: 제작 안내 팝업"
+    },
+    {
+      "no": 115,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "제작 안내 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 안내 팝업에 \"제작에 사용된 항아리는 환불받을 수 없으며, 진행한 옵션, 레벨이 모두 사라집니다\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: 제작 안내 팝업"
+    },
+    {
+      "no": 116,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "제작 안내 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 안내 팝업의 \"취소\" 버튼 터치 시, 팝업이 닫히고 제작 진행 화면으로 복귀된다.",
+      "comment": "참고 화면: 제작 안내 팝업"
+    },
+    {
+      "no": 117,
+      "priority": "Critical",
+      "main": "제작소",
+      "sub1": "제작 안내 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 안내 팝업의 \"제작\" 버튼 터치 시, 입력된 자원이 차감되고 제작이 실행된다.",
+      "comment": "참고 화면: 제작 안내 팝업"
+    },
+    {
+      "no": 118,
+      "priority": "Critical",
+      "main": "제작소",
+      "sub1": "제작 완료 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 완료 시, 결과 아이템 슬롯이 포함된 제작 완료 화면이 출력된다.",
+      "comment": "참고 화면: 제작 완료 화면"
+    },
+    {
+      "no": 119,
+      "priority": "Major",
+      "main": "제작소",
+      "sub1": "제작 완료 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 완료 화면 중앙에 \"신비한 연금술 공방\" 두루마리와 \"제작 완료!\" 라벨이 출력된다.",
+      "comment": "참고 화면: 제작 완료 화면"
+    },
+    {
+      "no": 120,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "제작 완료 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 완료 화면 우측에 받을 수 있는 합계 안내 문구가 출력된다.",
+      "comment": "참고 화면: 제작 완료 화면"
+    },
+    {
+      "no": 121,
+      "priority": "Normal",
+      "main": "제작소",
+      "sub1": "제작 완료 화면",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "제작 완료 화면 상단 헤더에 잔여 시간 카운터가 출력된다.",
+      "comment": "참고 화면: 제작 완료 화면"
+    },
+    {
+      "no": 122,
+      "priority": "Major",
+      "main": "탑레벨 UI 변경",
+      "sub1": "탑 레벨 화면 구성",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면 좌상단에 뒤로가기 버튼과 \"탑 레벨\" 헤더가 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 123,
+      "priority": "Major",
+      "main": "탑레벨 UI 변경",
+      "sub1": "좌측 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면 좌측에 탑 레벨/성장/도전 3종 탭이 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 124,
+      "priority": "Major",
+      "main": "탑레벨 UI 변경",
+      "sub1": "모드 카드 리스트",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면 중앙에 성장 던전, 레이드 모드, 탑의 균열, 어비스 던전 모드 카드가 세로로 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 125,
+      "priority": "Major",
+      "main": "탑레벨 UI 변경",
+      "sub1": "모드 카드 리스트",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각 모드 카드에 콘텐츠 진행도(예: 5/5, 300/300)가 출력된다.",
+      "comment": "참고 화면: 탑레벨 메인 UI"
+    },
+    {
+      "no": 126,
+      "priority": "Major",
+      "main": "탑레벨 UI 변경",
+      "sub1": "보스 카드 행",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "탑 레벨 화면 우측에 6종 보스별 카드 행이 출력된다.",
+      "comment": "참고 화면: 보스 카드 행"
+    },
+    {
+      "no": 127,
+      "priority": "Major",
+      "main": "탑레벨 UI 변경",
+      "sub1": "보스 카드 행",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각 보스 카드 행 좌측에 보스 썸네일 미니 일러스트가 출력된다.",
+      "comment": "참고 화면: 보스 카드 행"
+    },
+    {
+      "no": 128,
+      "priority": "Major",
+      "main": "탑레벨 UI 변경",
+      "sub1": "보스 카드 행",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각 보스 카드 행 중앙에 해당 보스의 드랍 장비 슬롯 3~4개가 출력된다.",
+      "comment": "참고 화면: 보스 카드 행"
+    },
+    {
+      "no": 129,
+      "priority": "Normal",
+      "main": "탑레벨 UI 변경",
+      "sub1": "보스 카드 행",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 카드 행의 드랍 장비 슬롯에 등급별 컬러 테두리(빨강/녹색/보라 등)가 적용되어 출력된다.",
+      "comment": "참고 화면: 보스 카드 행"
+    },
+    {
+      "no": 130,
+      "priority": "Critical",
+      "main": "탑레벨 UI 변경",
+      "sub1": "보스 카드 행",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 카드 행 우측의 진입 화살표 버튼 터치 시, 해당 보스의 레이드 진입 팝업으로 이동된다.",
+      "comment": "참고 화면: 보스 카드 행"
+    }
+  ],
+  "generatedAt": "2026-05-08T03:15:39.433Z",
+  "tokenUsage": {
+    "inputTokens": 76,
+    "outputTokens": 49224,
+    "cacheReadTokens": 1034925,
+    "cacheCreationTokens": 175796,
+    "totalCostUsd": 2.9044575000000004
+  }
+}
