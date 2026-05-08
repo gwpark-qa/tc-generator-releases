@@ -1,0 +1,20 @@
+{
+  "contentName": "레이드모드 개선(1차)",
+  "testCaseCount": 116,
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "1) 해당 파일에 있는, 아래 카테고리의 내용은 제외하고 읽어주세요\n* Frame 3, Frame 2, Frame 5, Frame 6, 필요 리소스, 이펙트, 데이터 테이블\n2) 기획서의 흐름은 좌측 \"개요\" 부터 \"탑레벨 UI 변경\" 까지 우측으로 진행됩니다.\n순서 : 개요 -> 진입경로 -> 레이드 로비 -> 레이드 클리어 결과창 -> 제작소 기능 추가 -> 탑레벨 UI 변경",
+  "elapsedSeconds": 609,
+  "tokenUsage": {
+    "inputTokens": 87,
+    "outputTokens": 69233,
+    "cacheReadTokens": 1353232,
+    "cacheCreationTokens": 306294,
+    "totalCostUsd": 4.4172225
+  },
+  "cost": "$5.1938",
+  "appVersion": "1.2.1",
+  "generatedAt": "2026-05-08T02:49:36.438Z"
+}
