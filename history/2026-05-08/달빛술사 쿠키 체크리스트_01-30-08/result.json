@@ -1,0 +1,1213 @@
+{
+  "contentName": "달빛술사 쿠키 체크리스트",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Critical",
+      "main": "신비 속성 시스템",
+      "sub1": "속성 표식",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키가 신비(Mystic) 속성 공격으로 적을 적중시키면, 해당 적에게 신비 속성 전용 표식이 부여된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 신규 속성"
+    },
+    {
+      "no": 2,
+      "priority": "Major",
+      "main": "신비 속성 시스템",
+      "sub1": "속성 표식",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 전용 표식이 부여된 적의 머리 위 또는 상태 영역에 표식 아이콘이 정상 출력된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 신규 속성"
+    },
+    {
+      "no": 3,
+      "priority": "Critical",
+      "main": "신비 속성 시스템",
+      "sub1": "속성 강타",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 표식이 부여된 적에게 신비 속성 공격으로 강타 조건을 충족하면, 강타가 발동되어 추가 피해가 적용된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 신규 속성"
+    },
+    {
+      "no": 4,
+      "priority": "Normal",
+      "main": "신비 속성 시스템",
+      "sub1": "속성 강타",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 강타 발동 시, 전용 강타 VFX(시각 효과)가 정상 재생된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 신규 속성"
+    },
+    {
+      "no": 5,
+      "priority": "Major",
+      "main": "신비 속성 시스템",
+      "sub1": "속성 스탯",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키의 캐릭터 정보 화면에서 신비 속성 공격력 스탯이 정상 표시된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 신규 속성"
+    },
+    {
+      "no": 6,
+      "priority": "Major",
+      "main": "신비 속성 시스템",
+      "sub1": "속성 스탯",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키의 캐릭터 정보 화면에서 신비 속성 내성 스탯이 정상 표시된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 신규 속성"
+    },
+    {
+      "no": 7,
+      "priority": "Major",
+      "main": "신비 속성 시스템",
+      "sub1": "속성 스탯",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키의 캐릭터 정보 화면에서 신비 속성 피해 증가 스탯이 정상 표시된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 신규 속성"
+    },
+    {
+      "no": 8,
+      "priority": "Normal",
+      "main": "신비 속성 시스템",
+      "sub1": "속성 스탯",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "신비 속성 피해 증가 스탯이 전투 중 실제 피해 계산에 정상 반영된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 신규 속성"
+    },
+    {
+      "no": 9,
+      "priority": "Critical",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 부여 조건 및 대상",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 디버프가 일반 등급 적에게 정상 부여된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 10,
+      "priority": "Critical",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 부여 조건 및 대상",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 디버프가 엘리트 등급 적에게 정상 부여된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 11,
+      "priority": "Critical",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 부여 조건 및 대상",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 디버프가 중간 보스 등급 적에게 정상 부여된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 12,
+      "priority": "Major",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 부여 조건 및 대상",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 디버프가 부여된 적은 수면 상태 동안 행동이 정지된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 13,
+      "priority": "Major",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 부여 조건 및 대상",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 디버프가 부여된 적의 상태 아이콘 영역에 수면 디버프 아이콘이 정상 출력된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 14,
+      "priority": "Critical",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 해제 및 연계 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 상태의 적이 피격되면 수면 디버프가 즉시 해제된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 15,
+      "priority": "Critical",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 해제 및 연계 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 상태의 적이 피격으로 수면에서 깨어날 때, 해당 적에게 '받는 피해 증가' 디버프가 부여된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 16,
+      "priority": "Major",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 해제 및 연계 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 해제 후 부여된 '받는 피해 증가' 디버프가 적의 상태 아이콘 영역에 정상 출력된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 17,
+      "priority": "Major",
+      "main": "수면 디버프 시스템",
+      "sub1": "수면 해제 및 연계 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "수면 해제 후 부여된 '받는 피해 증가' 디버프가 실제 피해 계산에 정상 반영된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 18,
+      "priority": "Major",
+      "main": "수면 디버프 시스템",
+      "sub1": "달빛술사 전용 수면 상호작용",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키가 자기 자신에게 수면 디버프를 부여할 수 있다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 19,
+      "priority": "Major",
+      "main": "수면 디버프 시스템",
+      "sub1": "달빛술사 전용 수면 상호작용",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키는 자신에게 수면이 부여된 상태에서도 이동이 가능하다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 20,
+      "priority": "Major",
+      "main": "수면 디버프 시스템",
+      "sub1": "달빛술사 전용 수면 상호작용",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키가 자신의 수면 상태에서 깨어날 때, HP가 회복된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 21,
+      "priority": "Normal",
+      "main": "수면 디버프 시스템",
+      "sub1": "달빛술사 전용 수면 상호작용",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키의 자가 수면 중 이동 시, 수면 상태를 나타내는 이펙트가 유지된 채 이동 모션이 재생된다.",
+      "comment": "2. 신규 시스템 및 메커니즘 - 수면 디버프"
+    },
+    {
+      "no": 22,
+      "priority": "Critical",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "일반 공격 (2콤보)",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일반 공격 버튼을 입력하면 관통형 별빛 투사체가 발사되며, 2콤보로 구성된 공격이 순차 발동된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 23,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "일반 공격 (2콤보)",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일반 공격의 별빛 투사체가 적을 관통하여 뒤에 있는 추가 적에게도 피해를 준다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 24,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "일반 공격 (2콤보)",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일반 공격 1타와 2타 각각에 대해 고유한 공격 모션이 정상 재생된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 25,
+      "priority": "Normal",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "일반 공격 (2콤보)",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일반 공격의 별빛 투사체에 대해 전용 VFX가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 26,
+      "priority": "Critical",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (기본폼)",
+      "sub2": "장판 생성",
+      "sub3": "",
+      "expectationResult": "기본폼 상태에서 공격 버튼을 길게 눌러 차지 공격을 사용하면, 범위 장판이 생성된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 27,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (기본폼)",
+      "sub2": "장판 생성",
+      "sub3": "",
+      "expectationResult": "기본폼 차지 공격으로 생성된 장판이 범위 내 적에게 피해를 준다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 28,
+      "priority": "Normal",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (기본폼)",
+      "sub2": "장판 생성",
+      "sub3": "",
+      "expectationResult": "기본폼 차지 공격 장판 생성 시 전용 VFX가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 29,
+      "priority": "Critical",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (기본폼)",
+      "sub2": "수면 부여",
+      "sub3": "",
+      "expectationResult": "기본폼 차지 공격 사용 시, 장판 범위 내 적에게 수면 디버프가 부여된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 30,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (기본폼)",
+      "sub2": "수면 부여",
+      "sub3": "",
+      "expectationResult": "기본폼 차지 공격 사용 시, 달빛술사 쿠키 자신에게도 수면 디버프가 부여된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 31,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (기본폼)",
+      "sub2": "HP 회복 기믹",
+      "sub3": "",
+      "expectationResult": "기본폼 차지 공격으로 자신에게 수면이 부여된 후 수면에서 깨어나면, 달빛술사 쿠키의 HP가 회복된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 32,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (기본폼)",
+      "sub2": "HP 회복 기믹",
+      "sub3": "",
+      "expectationResult": "기본폼 차지 공격을 통한 HP 회복 시, 회복량에 해당하는 수치가 화면에 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 33,
+      "priority": "Normal",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (기본폼)",
+      "sub2": "HP 회복 기믹",
+      "sub3": "",
+      "expectationResult": "기본폼 차지 공격의 수면 → HP 회복 과정에서 회복 전용 VFX가 정상 재생된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 34,
+      "priority": "Critical",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (각성폼)",
+      "sub2": "별빛 폭발(스타폴) 발동",
+      "sub3": "",
+      "expectationResult": "각성폼 상태에서 공격 버튼을 길게 눌러 차지 공격을 사용하면, 별빛 폭발(스타폴)이 발동되어 범위 내 적에게 피해를 준다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 35,
+      "priority": "Normal",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (각성폼)",
+      "sub2": "별빛 폭발(스타폴) 발동",
+      "sub3": "",
+      "expectationResult": "각성폼 차지 공격(스타폴) 발동 시, 전용 VFX가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 36,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (각성폼)",
+      "sub2": "게이지 소모",
+      "sub3": "",
+      "expectationResult": "각성폼 차지 공격(스타폴) 사용 시, 만월 게이지가 소모된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 37,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (각성폼)",
+      "sub2": "게이지 소모",
+      "sub3": "",
+      "expectationResult": "각성폼 차지 공격(스타폴)으로 소모된 게이지 양이 만월 게이지바 UI에 즉시 반영된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 38,
+      "priority": "Major",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (각성폼)",
+      "sub2": "피해 면역",
+      "sub3": "",
+      "expectationResult": "각성폼 차지 공격(스타폴) 발동 중, 달빛술사 쿠키가 피해 면역 상태가 되어 적의 공격에 피해를 받지 않는다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 39,
+      "priority": "Normal",
+      "main": "기본 공격 및 차지 공격",
+      "sub1": "차지 공격 (각성폼)",
+      "sub2": "피해 면역",
+      "sub3": "",
+      "expectationResult": "각성폼 차지 공격(스타폴) 발동 중 피해 면역 상태를 나타내는 시각적 이펙트가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - A. 기본 공격 및 차지"
+    },
+    {
+      "no": 40,
+      "priority": "Critical",
+      "main": "특수 스킬",
+      "sub1": "초승달 관통 투사체",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 스킬 버튼을 사용하면, 초승달 모양의 관통 투사체가 발사되어 경로상의 적에게 피해를 준다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 41,
+      "priority": "Major",
+      "main": "특수 스킬",
+      "sub1": "초승달 관통 투사체",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "초승달 투사체가 첫 번째 적을 관통하여 경로상의 뒤쪽 적에게도 피해를 준다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 42,
+      "priority": "Major",
+      "main": "특수 스킬",
+      "sub1": "초승달 관통 투사체",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "초승달 투사체 발사 시, 초승달 형태의 전용 투사체 VFX가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 43,
+      "priority": "Normal",
+      "main": "특수 스킬",
+      "sub1": "초승달 관통 투사체",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "초승달 투사체가 적에게 적중할 때 피격 VFX가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 44,
+      "priority": "Major",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특수 스킬 사용 시, 아군 쿠키에게 달빛 보호막이 부여된다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 45,
+      "priority": "Major",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛 보호막이 부여된 아군이 피격 시, 보호막 수치가 먼저 소모되어 HP 피해를 감소시킨다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 46,
+      "priority": "Major",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛 보호막이 부여된 아군의 HP바 위에 보호막 수치가 시각적으로 정상 표시된다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 47,
+      "priority": "Normal",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛 보호막 부여 시 전용 보호막 VFX가 아군 캐릭터에 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 48,
+      "priority": "Normal",
+      "main": "특수 스킬",
+      "sub1": "달빛 보호막",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛 보호막이 소멸(시간 만료 또는 수치 소진)될 때 보호막 VFX가 사라지는 연출이 정상 재생된다.",
+      "comment": "3. 스킬 세부 명세 - B. 특수 스킬"
+    },
+    {
+      "no": 49,
+      "priority": "Critical",
+      "main": "이동 및 대시",
+      "sub1": "홀드 대시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "대시 버튼을 길게 누르면 홀드 대시가 발동되어 최대 5초간 빠른 이동 상태가 유지된다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 50,
+      "priority": "Major",
+      "main": "이동 및 대시",
+      "sub1": "홀드 대시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "홀드 대시 중 달빛술사 쿠키의 이동 속도가 일반 이동 속도보다 증가한다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 51,
+      "priority": "Major",
+      "main": "이동 및 대시",
+      "sub1": "홀드 대시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "홀드 대시 지속 시간인 5초가 경과하면 홀드 대시가 자동 종료되고 일반 이동 상태로 복귀한다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 52,
+      "priority": "Normal",
+      "main": "이동 및 대시",
+      "sub1": "홀드 대시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "홀드 대시 중 전용 달리기 모션이 정상 재생된다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 53,
+      "priority": "Normal",
+      "main": "이동 및 대시",
+      "sub1": "홀드 대시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "홀드 대시 도중 버튼을 떼면 대시가 즉시 종료되고 일반 이동 상태로 복귀한다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 54,
+      "priority": "Critical",
+      "main": "이동 및 대시",
+      "sub1": "특성 회피",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키가 피격 시, 무적 상태로 전환되며 잔상을 남기고 자동으로 회피한다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 55,
+      "priority": "Major",
+      "main": "이동 및 대시",
+      "sub1": "특성 회피",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특성 회피 발동 후, 쿨타임 30초가 적용되어 쿨타임 동안에는 재발동되지 않는다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 56,
+      "priority": "Major",
+      "main": "이동 및 대시",
+      "sub1": "특성 회피",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특성 회피 쿨타임 30초가 경과하면 쿨타임이 초기화되어 다시 자동 회피가 발동 가능해진다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 57,
+      "priority": "Normal",
+      "main": "이동 및 대시",
+      "sub1": "특성 회피",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특성 회피 발동 시, 잔상 이펙트가 원래 위치에 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 58,
+      "priority": "Normal",
+      "main": "이동 및 대시",
+      "sub1": "특성 회피",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "특성 회피 발동 시, 무적 상태를 나타내는 시각적 이펙트가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - C. 이동 및 대시"
+    },
+    {
+      "no": 59,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "방어력 감소 오라",
+      "sub3": "",
+      "expectationResult": "궁극기를 사용하면 1단계(일반 궁)가 발동되며, 범위 내 적에게 방어력 감소 오라가 적용된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 60,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "방어력 감소 오라",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계의 방어력 감소 오라 범위 내에 있는 적에게 방어력 감소 디버프가 부여된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 61,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "방어력 감소 오라",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계의 방어력 감소 디버프가 적용된 적의 상태 아이콘 영역에 방어력 감소 디버프 아이콘이 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 62,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "방어력 감소 오라",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계의 방어력 감소 오라에 전용 VFX가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 63,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "수면 부여",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계 발동 시, 오라 범위 내 적에게 수면 디버프가 부여된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 64,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "수면 부여",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계로 부여된 수면 디버프가 기존 수면 디버프 규칙(피격 시 해제 + 받는 피해 증가 연계)과 동일하게 동작한다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 65,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "만월 게이지 빌드업",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계가 발동되면 만월 게이지의 빌드업(충전)이 시작된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 66,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "만월 게이지 빌드업",
+      "sub3": "",
+      "expectationResult": "만월 게이지 빌드업 시작 시, 만월 게이지바 UI에 게이지가 차오르는 것이 시각적으로 반영된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 67,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "1단계 (일반 궁)",
+      "sub2": "만월 게이지 빌드업",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계 발동 시, 장판 생성에 대한 전용 VFX가 정상 출력된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 68,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "변신 활성화 조건",
+      "sub3": "",
+      "expectationResult": "만월 게이지가 충전 완료되면, 궁극기 2단계(변신)가 활성화된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 69,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "변신 활성화 조건",
+      "sub3": "",
+      "expectationResult": "만월 게이지가 충전 완료되지 않은 상태에서는 궁극기 2단계(변신)가 활성화되지 않는다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 70,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "외형 및 무기 변경",
+      "sub3": "",
+      "expectationResult": "궁극기 2단계(변신) 활성화 시, 달빛술사 쿠키의 외형이 각성폼으로 변경된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 71,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "외형 및 무기 변경",
+      "sub3": "",
+      "expectationResult": "궁극기 2단계(변신) 활성화 시, 달빛술사 쿠키의 무기가 각성폼 전용 무기로 변경된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 72,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "외형 및 무기 변경",
+      "sub3": "",
+      "expectationResult": "궁극기 2단계(변신) 시, 외형 변경 과정에서 전용 변신 시퀀스 연출이 정상 재생된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 73,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "공격 모션 강화",
+      "sub3": "",
+      "expectationResult": "궁극기 2단계(변신/각성폼) 상태에서 기본 공격의 공격 모션이 기본폼 대비 강화된 전용 모션으로 변경된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 74,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "공격 모션 강화",
+      "sub3": "",
+      "expectationResult": "각성폼에서의 강화된 기본 공격이 기본폼 대비 증가된 피해를 준다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 75,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "게이지 소모",
+      "sub3": "",
+      "expectationResult": "궁극기 2단계(변신/각성폼) 상태에서 기본 공격을 사용하면 만월 게이지가 소모된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 76,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "게이지 소모",
+      "sub3": "",
+      "expectationResult": "각성폼 기본 공격에 의한 만월 게이지 소모량이 만월 게이지바 UI에 실시간으로 반영된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 77,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "헤일로 UI 연동",
+      "sub3": "",
+      "expectationResult": "궁극기 2단계(변신) 활성화 시, 헤일로(Halo) UI가 변신 상태에 맞는 단계로 전환되어 표시된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 78,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "헤일로 UI 연동",
+      "sub3": "",
+      "expectationResult": "각성폼에서 만월 게이지 소모에 따라 헤일로 UI의 단계가 변화한다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 79,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "2단계 (변신)",
+      "sub2": "헤일로 UI 연동",
+      "sub3": "",
+      "expectationResult": "헤일로 UI 단계 전환 시, 단계 간 전환 애니메이션이 정상 재생된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 80,
+      "priority": "Critical",
+      "main": "궁극기",
+      "sub1": "3단계 (컷신 마무리)",
+      "sub2": "자동 발동 조건",
+      "sub3": "",
+      "expectationResult": "만월 게이지가 완전히 소모되면, 궁극기 3단계(컷신 마무리 공격)가 자동으로 발동된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 81,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "3단계 (컷신 마무리)",
+      "sub2": "자동 발동 조건",
+      "sub3": "",
+      "expectationResult": "궁극기 3단계가 자동 발동될 때, 별도의 버튼 입력 없이 게이지 소모 완료 즉시 전환된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 82,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "3단계 (컷신 마무리)",
+      "sub2": "마무리 공격 연출",
+      "sub3": "",
+      "expectationResult": "궁극기 3단계에서 '새벽' 컨셉의 마무리 공격이 발동되어 범위 내 적에게 피해를 준다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 83,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "3단계 (컷신 마무리)",
+      "sub2": "마무리 공격 연출",
+      "sub3": "",
+      "expectationResult": "궁극기 3단계의 컷신 연출이 약 3초 내외로 재생된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 84,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "3단계 (컷신 마무리)",
+      "sub2": "마무리 공격 연출",
+      "sub3": "",
+      "expectationResult": "궁극기 3단계 컷신 재생 중, 전용 카메라 연출이 정상 적용된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 85,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "3단계 (컷신 마무리)",
+      "sub2": "마무리 공격 연출",
+      "sub3": "",
+      "expectationResult": "궁극기 3단계 컷신 종료 후, 달빛술사 쿠키가 기본폼 상태로 복귀한다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 86,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "만월 게이지 시스템",
+      "sub2": "게이지 충전",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계 발동 이후 만월 게이지가 자동으로 충전되기 시작한다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 87,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "만월 게이지 시스템",
+      "sub2": "게이지 충전",
+      "sub3": "",
+      "expectationResult": "만월 게이지 충전 중, 게이지바 UI에 현재 충전량이 실시간으로 표시된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 88,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "만월 게이지 시스템",
+      "sub2": "게이지 충전",
+      "sub3": "",
+      "expectationResult": "만월 게이지가 최대치까지 충전 완료되면, 충전 완료 상태가 UI에 표시된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 89,
+      "priority": "Major",
+      "main": "궁극기",
+      "sub1": "만월 게이지 시스템",
+      "sub2": "게이지 소모 및 전환",
+      "sub3": "",
+      "expectationResult": "각성폼 상태에서 기본 공격 및 차지 공격에 의해 만월 게이지가 소모된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 90,
+      "priority": "Normal",
+      "main": "궁극기",
+      "sub1": "만월 게이지 시스템",
+      "sub2": "게이지 소모 및 전환",
+      "sub3": "",
+      "expectationResult": "만월 게이지 소모 중, 게이지바 UI에 잔여 게이지량이 실시간으로 반영된다.",
+      "comment": "3. 스킬 세부 명세 - D. 궁극기"
+    },
+    {
+      "no": 91,
+      "priority": "Critical",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "디버프 증폭 비례 최종 피해 증가",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키의 디버프 증폭량에 비례하여 최종 피해가 증가한다.",
+      "comment": "4. 파티 시너지 및 특성 - 패시브"
+    },
+    {
+      "no": 92,
+      "priority": "Major",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "디버프 증폭 비례 최종 피해 증가",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "적에게 부여된 디버프의 증폭량이 높을수록 달빛술사 쿠키의 최종 피해가 더 많이 증가한다.",
+      "comment": "4. 파티 시너지 및 특성 - 패시브"
+    },
+    {
+      "no": 93,
+      "priority": "Major",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "디버프 증폭 비례 최종 피해 증가",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "디버프 증폭 비례 최종 피해 증가 패시브가 기본폼과 각성폼 모두에서 정상 적용된다.",
+      "comment": "4. 파티 시너지 및 특성 - 패시브"
+    },
+    {
+      "no": 94,
+      "priority": "Critical",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "각성폼 치명타 확률 증가",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각성폼 상태에서 달빛술사 쿠키의 치명타 확률이 100% 증가한다.",
+      "comment": "4. 파티 시너지 및 특성 - 패시브"
+    },
+    {
+      "no": 95,
+      "priority": "Major",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "각성폼 치명타 확률 증가",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "각성폼 상태에서 치명타 확률 증가가 캐릭터 스탯 정보에 정상 반영된다.",
+      "comment": "4. 파티 시너지 및 특성 - 패시브"
+    },
+    {
+      "no": 96,
+      "priority": "Major",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "각성폼 치명타 확률 증가",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "기본폼으로 복귀하면 각성폼 전용 치명타 확률 100% 증가 효과가 해제된다.",
+      "comment": "4. 파티 시너지 및 특성 - 패시브"
+    },
+    {
+      "no": 97,
+      "priority": "Major",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "신비 속성 조합 보너스",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "파티에 달빛술사 쿠키 외 신비 속성 쿠키가 1명 이상 포함되면, 공격력 추가 보너스가 적용된다.",
+      "comment": "4. 파티 시너지 및 특성 - 조합 보너스"
+    },
+    {
+      "no": 98,
+      "priority": "Major",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "신비 속성 조합 보너스",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "파티에 달빛술사 쿠키 외 신비 속성 쿠키가 1명 이상 포함되면, 치명타 피해 추가 보너스가 적용된다.",
+      "comment": "4. 파티 시너지 및 특성 - 조합 보너스"
+    },
+    {
+      "no": 99,
+      "priority": "Normal",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "신비 속성 조합 보너스",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "파티 편성 화면에서 신비 속성 조합 보너스 활성화 조건이 충족되면, 시너지 활성 상태가 UI에 표시된다.",
+      "comment": "4. 파티 시너지 및 특성 - 조합 보너스"
+    },
+    {
+      "no": 100,
+      "priority": "Critical",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "3성 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키가 3성 이상인 경우, 궁극기 장판에 '최종 피해 증가' 효과가 추가된다.",
+      "comment": "4. 파티 시너지 및 특성 - 3성 효과"
+    },
+    {
+      "no": 101,
+      "priority": "Major",
+      "main": "패시브 및 파티 시너지",
+      "sub1": "3성 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "3성 효과로 추가된 궁극기 장판의 '최종 피해 증가' 효과가 장판 범위 내 아군에게 정상 적용된다.",
+      "comment": "4. 파티 시너지 및 특성 - 3성 효과"
+    },
+    {
+      "no": 102,
+      "priority": "Normal",
+      "main": "��시브 및 파티 시너지",
+      "sub1": "3성 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "3성 효과가 활성화된 궁극기 장판에 '최종 피해 증가' 효과를 나타내는 추가 VFX가 정상 출력된다.",
+      "comment": "4. 파티 시너지 및 특성 - 3성 효과"
+    },
+    {
+      "no": 103,
+      "priority": "Major",
+      "main": "전용 UI 및 연출",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "전투 HUD에 달빛술사 쿠키 전용 만월 게이지바가 정상 표시된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 104,
+      "priority": "Major",
+      "main": "전용 UI 및 연출",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "만월 게이지바가 게이지 충전 시 채워지고, 소모 시 줄어드는 것이 시각적으로 정상 표현된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 105,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "만월 게이지바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "만월 게이지바가 충전 완료 시 시각적으로 구분 가능한 상태(색상 변화, 발광 등)로 표시된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 106,
+      "priority": "Major",
+      "main": "전용 UI 및 연출",
+      "sub1": "궁극기 아이콘 (3종)",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 1단계, 2단계, 3단계 각 단계에 대응하는 전용 아이콘 3종이 해당 단계에서 정상 표시된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 107,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "궁극기 아이콘 (3종)",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "궁극기 단계 전환 시, 궁극기 아이콘이 해당 단계의 전용 아이콘으로 변경된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 108,
+      "priority": "Major",
+      "main": "전용 UI 및 연출",
+      "sub1": "헤일로 UI (4단계)",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "헤일로 UI가 4단계로 구성되어 각 단계별 시각적 변화가 정상 표시된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 109,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "헤일로 UI (4단계)",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "헤일로 UI의 단계 변화가 만월 게이지 소모 구간에 맞춰 전환된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 110,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "화면 외곽 이펙트",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "달빛술사 쿠키의 특정 스킬 발동 시(궁극기, 변신 등), 화면 외곽에 전용 이펙트가 정상 출력된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 111,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "화면 외곽 이펙트",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "화면 외곽 이펙트가 해당 스킬/상태 종료 시 정상적으로 사라진다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - UI"
+    },
+    {
+      "no": 112,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "애니메이션",
+      "sub2": "수면 애니메이션 (시작/루프/종료)",
+      "sub3": "",
+      "expectationResult": "수면 디버프 부여 시 수면 시작 애니메이션이 재생되고, 수면 유지 중 루프 애니메이션이 반복되며, 수면 해제 시 종료 애니메이션이 재생된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 애니메이션"
+    },
+    {
+      "no": 113,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "애니메이션",
+      "sub2": "변신 시퀀스",
+      "sub3": "",
+      "expectationResult": "궁극기 2단계(변신) 발동 시, 기본폼에서 각성폼으로 전환되는 변신 시퀀스 애니메이션이 정상 재생된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 애니메이션"
+    },
+    {
+      "no": 114,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "애니메이션",
+      "sub2": "컷신 애니메이션",
+      "sub3": "",
+      "expectationResult": "궁극기 3단계 발동 시, '새벽' 컨셉의 컷신 애니메이션이 약 3초 내외로 정상 재생된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 애니메이션"
+    },
+    {
+      "no": 115,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "애니메이션",
+      "sub2": "홀드 대시 전용 모션",
+      "sub3": "",
+      "expectationResult": "홀드 대시 사용 중, 전용 달리기 모션 애니메이션이 정상 재생된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 애니메이션"
+    },
+    {
+      "no": 116,
+      "priority": "Major",
+      "main": "전용 UI 및 연출",
+      "sub1": "사운드",
+      "sub2": "궁극기 전용 BGM",
+      "sub3": "",
+      "expectationResult": "궁극기 발동 시(1단계~3단계), 전용 BGM이 재생된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 사운드"
+    },
+    {
+      "no": 117,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "사운드",
+      "sub2": "궁극기 전용 BGM",
+      "sub3": "",
+      "expectationResult": "궁극기 전용 BGM이 궁극기 연출 종료 후 기존 BGM으로 정상 복귀한다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 사운드"
+    },
+    {
+      "no": 118,
+      "priority": "Major",
+      "main": "전용 UI 및 연출",
+      "sub1": "사운드",
+      "sub2": "어비스 QTE 전용 대사",
+      "sub3": "",
+      "expectationResult": "어비스 모드에서 QTE(퀵타임이벤트) 발동 시, 달빛술사 쿠키의 전용 대사 음성이 재생된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 사운드"
+    },
+    {
+      "no": 119,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "사운드",
+      "sub2": "어비스 QTE 전용 대사",
+      "sub3": "",
+      "expectationResult": "어비스 QTE 전용 대사가 다른 효과음 및 BGM과 겹칠 때 정상적으로 청취 가능하다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 사운드"
+    },
+    {
+      "no": 120,
+      "priority": "Normal",
+      "main": "전용 UI 및 연출",
+      "sub1": "사운드",
+      "sub2": "어비스 QTE 전용 대사",
+      "sub3": "",
+      "expectationResult": "어비스 QTE 전용 대사 음성의 볼륨이 게임 내 음성 볼륨 설정에 따라 정상 조절된다.",
+      "comment": "5. UI/UX 및 리소스 요구사항 - 사운드"
+    }
+  ],
+  "generatedAt": "2026-05-08T01:30:08.882Z",
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 26759,
+    "cacheReadTokens": 22226,
+    "cacheCreationTokens": 23106,
+    "totalCostUsd": 0.8245305
+  }
+}
