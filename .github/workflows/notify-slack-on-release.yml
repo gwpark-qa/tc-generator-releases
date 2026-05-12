@@ -2,8 +2,13 @@ name: Notify Slack on Release
 
 "on":
   release:
-    types: [published, edited]
-
+    types: [published, edited, released, prereleased, created]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "수동 테스트용 tag"
+        required: false
+        default: "v-manual"
 jobs:
   notify:
     runs-on: ubuntu-latest
