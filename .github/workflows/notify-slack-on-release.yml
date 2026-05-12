@@ -1,3 +1,80 @@
+name: Notify Slack on Release
+
 "on":
   release:
     types: [published]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Slack notification
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL_PROD }}
+          TAG: ${{ github.event.release.tag_name }}
+          NAME: ${{ github.event.release.name }}
+          URL: ${{ github.event.release.html_url }}
+          BODY: ${{ github.event.release.body }}
+          PRERELEASE: ${{ github.event.release.prerelease }}
+        run: |
+          PAYLOAD=$(jq -n \
+            --arg ch "$SLACK_CHANNEL" \
+            --arg tag "$TAG" \
+            --arg name "$NAME" \
+            --arg url "$URL" \
+            --arg body "$BODY" \
+            --arg pre "$PRERELEASE" \
+            '{
+              channel: $ch,
+              text: ("<!here> TC Generator " + $tag + " 출시 — " + (if $name != "" then $name else $tag end)),
+              blocks: [
+                {
+                  type: "header",
+                  text: {
+                    type: "plain_text",
+                    text: ("🚀 TC Generator " + $tag + (if $pre == "true" then " (pre-release)" else "" end))
+                  }
+                },
+                {
+                  type: "section",
+                  text: {
+                    type: "mrkdwn",
+                    text: ("<!here> 새 버전이 배포되었어요." + (if $name != "" and $name != $tag then "\n*" + $name + "*" else "" end))
+                  }
+                },
+                (if $body != "" then {
+                  type: "section",
+                  text: {
+                    type: "mrkdwn",
+                    text: (if ($body | length) > 2800 then ($body[0:2800] + "\n…(생략)") else $body end)
+                  }
+                } else empty end),
+                {
+                  type: "actions",
+                  elements: [
+                    {
+                      type: "button",
+                      text: { type: "plain_text", text: "릴리즈 페이지 열기" },
+                      url: $url,
+                      style: "primary"
+                    }
+                  ]
+                }
+              ]
+            }')
+
+          curl -sS -X POST \
+            -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data "$PAYLOAD" \
+            https://slack.com/api/chat.postMessage \
+            | tee /tmp/slack-resp.json
+
+          OK=$(jq -r '.ok' /tmp/slack-resp.json)
+          if [ "$OK" != "true" ]; then
+            echo "Slack 전송 실패:"
+            cat /tmp/slack-resp.json
+            exit 1
+          fi
+          echo "Slack 전송 완료"
