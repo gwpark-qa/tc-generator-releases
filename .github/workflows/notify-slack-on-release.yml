@@ -2,7 +2,7 @@ name: Notify Slack on Release
 
 "on":
   release:
-    types: [published, edited, released, prereleased, created]
+    types: [published, edited]
   workflow_dispatch:
     inputs:
       tag:
