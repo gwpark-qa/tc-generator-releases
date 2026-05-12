@@ -3,12 +3,7 @@ name: Notify Slack on Release
 "on":
   release:
     types: [published, edited]
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: "수동 테스트용 tag"
-        required: false
-        default: "v-manual"
+
 jobs:
   notify:
     runs-on: ubuntu-latest
@@ -22,17 +17,32 @@ jobs:
           URL: ${{ github.event.release.html_url }}
           BODY: ${{ github.event.release.body }}
           PRERELEASE: ${{ github.event.release.prerelease }}
+          ASSETS_JSON: ${{ toJSON(github.event.release.assets) }}
         run: |
+          # release assets 중 .dmg 파일의 직접 다운로드 URL 추출
+          DMG_URL=$(printf '%s' "$ASSETS_JSON" | jq -r 'map(select(.name | endswith(".dmg"))) | .[0].browser_download_url // ""')
+          DMG_NAME=$(printf '%s' "$ASSETS_JSON" | jq -r 'map(select(.name | endswith(".dmg"))) | .[0].name // ""')
+
+          # DMG가 첨부됐으면 다운로드 버튼, 없으면 릴리즈 페이지 버튼으로 fallback
+          if [ -n "$DMG_URL" ] && [ "$DMG_URL" != "null" ]; then
+            BTN_URL="$DMG_URL"
+            BTN_TEXT="📥 ${DMG_NAME:-DMG} 다운로드"
+          else
+            BTN_URL="$URL"
+            BTN_TEXT="릴리즈 페이지 열기"
+          fi
+
           PAYLOAD=$(jq -n \
             --arg ch "$SLACK_CHANNEL" \
             --arg tag "$TAG" \
             --arg name "$NAME" \
-            --arg url "$URL" \
+            --arg url "$BTN_URL" \
+            --arg btext "$BTN_TEXT" \
             --arg body "$BODY" \
             --arg pre "$PRERELEASE" \
             '{
               channel: $ch,
-              text: ("<!here> TC Generator " + $tag + " 출시 — " + (if $name != "" then $name else $tag end)),
+              text: ("<!here> TC Generator " + $tag + " 출시 — DMG 다운로드 링크 포함"),
               blocks: [
                 {
                   type: "header",
@@ -60,7 +70,7 @@ jobs:
                   elements: [
                     {
                       type: "button",
-                      text: { type: "plain_text", text: "릴리즈 페이지 열기" },
+                      text: { type: "plain_text", text: $btext },
                       url: $url,
                       style: "primary"
                     }
