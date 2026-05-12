@@ -1,0 +1,21 @@
+{
+  "contentName": "TC 수정 테스트 - 페이즈 1 - TC 생성 - 장비 추천",
+  "testCaseCount": 84,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778576623272_b0nc62",
+  "promptName": "콘텐츠_TC수정",
+  "focusPoints": "1) 1. 추천 장비 개선.png는 기획서입니다.\n- 해당 기획서 내 내용 중 \"개요\"에 해당하는 항목은 실제 TC 작성에는 상관 없으므로 무시합니다\n- UI 에서 좌측에 기존, 우측에 개선이 적혀있으므로 비교해서 개선된 항목을 분석합니다.\n\n2) 2. 시안.png는 UI 시안에 대한 자료이므로, 기획서 내용에 참고자료로 사용바랍니다. (실제 개선 내용보다는 UI가 어떻게 반영될 것인지에 대한 내용만 이미지로 들어있음)\n\n2) 각 UI에 녹색 사각형과 녹색 네모 + 숫자로 강조된 부분은 우측 설명과 매칭되어 있습니다.\n예) \"네온 데니쉬 이야기\"에 녹색 사각형과 녹색 동그라미 + 1로 강조되어 있다면, 좌측 설명에서 \"1. 타이틀 영역\" 과 같이 매칭되어 있습니다. 즉 그 이미지는 \"타이틀 영역\"이고 설명은 그 이미지에 대한 설명입니다.",
+  "elapsedSeconds": 128,
+  "tokenUsage": {
+    "inputTokens": 12,
+    "outputTokens": 16873,
+    "cacheReadTokens": 118232,
+    "cacheCreationTokens": 35264,
+    "totalCostUsd": 0.72549
+  },
+  "cost": "$1.2657",
+  "appVersion": "1.3.4",
+  "generatedAt": "2026-05-12T10:36:28.530Z"
+}
