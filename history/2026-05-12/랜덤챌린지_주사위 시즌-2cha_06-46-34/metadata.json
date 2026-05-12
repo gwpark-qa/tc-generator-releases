@@ -1,0 +1,20 @@
+{
+  "contentName": "랜덤챌린지:주사위 시즌-2cha",
+  "testCaseCount": 131,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "중복된 정보는 UI플로우 정보를 기반으로 작성한다.",
+  "elapsedSeconds": 229,
+  "tokenUsage": {
+    "inputTokens": 3,
+    "outputTokens": 21190,
+    "cacheReadTokens": 11107,
+    "cacheCreationTokens": 32565,
+    "totalCostUsd": 0.73884975
+  },
+  "cost": "$1.5893",
+  "appVersion": "1.3.4",
+  "generatedAt": "2026-05-12T06:46:34.000Z"
+}
