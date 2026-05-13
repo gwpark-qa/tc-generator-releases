@@ -1,0 +1,1874 @@
+{
+  "contentName": "레이드모드_채크리스트",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Critical",
+      "main": "모드리스트",
+      "sub1": "입장버튼",
+      "sub2": "출력",
+      "sub3": "",
+      "expectationResult": "모드리스트 진입 시 레이드모드 입장 버튼(보스 이미지·타이틀·info·티켓 보유량)이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 4,
+      "priority": "Normal",
+      "main": "모드리스트",
+      "sub1": "입장버튼",
+      "sub2": "info",
+      "sub3": "가이드 팝업",
+      "expectationResult": "info 버튼 터치 시, 레이드 모드 가이드 UI가 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 6,
+      "priority": "Normal",
+      "main": "모드리스트",
+      "sub1": "입장버튼",
+      "sub2": "티켓",
+      "sub3": "보유량 갱신",
+      "expectationResult": "티켓 획득/소모에 따라 보유량이 정상 갱신된다.",
+      "comment": ""
+    },
+    {
+      "no": 7,
+      "priority": "Major",
+      "main": "모드리스트",
+      "sub1": "입장버튼",
+      "sub2": "남은 시간",
+      "sub3": "",
+      "expectationResult": "입장 버튼 하단에 챌린지모드 오픈까지 남은 시간이 출력되고 실시간 갱신된다.",
+      "comment": ""
+    },
+    {
+      "no": 9,
+      "priority": "Major",
+      "main": "모드리스트",
+      "sub1": "입장버튼",
+      "sub2": "알림점",
+      "sub3": "",
+      "expectationResult": "받을 수 있는 보상/시즌 정산 발생 시 입장 버튼에 알림점이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 11,
+      "priority": "Normal",
+      "main": "모드리스트",
+      "sub1": "콘텐츠 해금",
+      "sub2": "조건 불만족",
+      "sub3": "",
+      "expectationResult": "기차레벨 5 미달 시 입장 버튼이 비활성화되고 해금조건이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 13,
+      "priority": "Critical",
+      "main": "모드리스트",
+      "sub1": "콘텐츠 해금",
+      "sub2": "진입 불가",
+      "sub3": "",
+      "expectationResult": "비활성화된 입장버튼 터치 시, 토스트 안내문구가 팝업되며 레이드모드로 전환되지 않는다.",
+      "comment": ""
+    },
+    {
+      "no": 14,
+      "priority": "Normal",
+      "main": "모드리스트",
+      "sub1": "콘텐츠 해금",
+      "sub2": "해금",
+      "sub3": "",
+      "expectationResult": "기차레벨 5 달성 시, 입장 버튼이 활성화된다.",
+      "comment": ""
+    },
+    {
+      "no": 15,
+      "priority": "Critical",
+      "main": "모드리스트",
+      "sub1": "입장",
+      "sub2": "일반모드",
+      "sub3": "입장 버튼 팝업",
+      "expectationResult": "활성화된 입장 버튼 터치 시, 일반모드 / 챌린지 모드 입장 버튼이 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 16,
+      "priority": "Normal",
+      "main": "모드리스트",
+      "sub1": "입장",
+      "sub2": "일반모드",
+      "sub3": "알림점",
+      "expectationResult": "일반모드 입장버튼에 보상/시즌 변경 알림점이 정상 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 18,
+      "priority": "Critical",
+      "main": "모드리스트",
+      "sub1": "입장",
+      "sub2": "일반모드",
+      "sub3": "입장",
+      "expectationResult": "일반모드 입장버튼 터치 시, 레이드 일반모드 대기실 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 19,
+      "priority": "Critical",
+      "main": "모드리스트",
+      "sub1": "입장",
+      "sub2": "챌린지 모드",
+      "sub3": "비활성화 기간",
+      "expectationResult": "월 00:00 ~ 목 23:59:59 까지 챌린지 입장 버튼이 비활성화되고 안내문구가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 21,
+      "priority": "Critical",
+      "main": "모드리스트",
+      "sub1": "입장",
+      "sub2": "챌린지 모드",
+      "sub3": "활성화 기간",
+      "expectationResult": "금 00:00 ~ 일 23:59:59 까지 챌린지 입장 버튼이 활성화되며, 보상/시즌 변경 알림점이 정상 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 24,
+      "priority": "Critical",
+      "main": "모드리스트",
+      "sub1": "입장",
+      "sub2": "챌린지 모드",
+      "sub3": "입장",
+      "expectationResult": "활성화된 입장버튼 터치 시, 레이드 챌린지 모드 대기실 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 25,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "상단 메뉴",
+      "sub2": "뒤로가기 및 타이틀",
+      "sub3": "",
+      "expectationResult": "좌상단 뒤로가기 버튼·타이틀이 출력되며, 뒤로가기 터치 시 이전 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 27,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "상단 메뉴",
+      "sub2": "재화",
+      "sub3": "",
+      "expectationResult": "우상단 코인·크리스탈이 출력되며, 터치 시 구매처로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 29,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "상단 메뉴",
+      "sub2": "기본 메뉴바",
+      "sub3": "",
+      "expectationResult": "우상단 기본 메뉴바가 출력되며 각 메뉴 기능이 정상 동작한다.",
+      "comment": ""
+    },
+    {
+      "no": 31,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "상단 메뉴",
+      "sub2": "챌린지 모드 변경",
+      "sub3": "버튼 출력",
+      "expectationResult": "메인화면 상단에 챌린지 모드 변경 버튼이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 32,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "상단 메뉴",
+      "sub2": "챌린지 모드 변경",
+      "sub3": "비활성화",
+      "expectationResult": "월 00:00 ~ 목 23:59:59 까지 모드 변경 버튼이 비활성화되며, 비활성화 버튼 터치 시 안내 문구가 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 35,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "상단 메뉴",
+      "sub2": "챌린지 모드 변경",
+      "sub3": "활성화",
+      "expectationResult": "금 00:00 ~ 일 23:59:59 까지 모드 변경 버튼이 활성화되며, 터치 시 챌린지 모드 대기실로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 37,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 UI",
+      "sub3": "",
+      "expectationResult": "우상단에 레이드 티켓 보유/최대 수량이 출력되며, 사용·획득에 따라 갱신된다.",
+      "comment": ""
+    },
+    {
+      "no": 39,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 구매 팝업",
+      "sub3": "출력",
+      "expectationResult": "티켓 영역 터치 시 구매 팝업이 출력되며, 타이틀·닫기·획득 수량·구매 가능 횟수·안내 문구가 정상 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 43,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 구매 팝업",
+      "sub3": "구매 가능 횟수",
+      "expectationResult": "구매 시마다 구매 가능 횟수가 1씩 차감된다.",
+      "comment": ""
+    },
+    {
+      "no": 44,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 구매 팝업",
+      "sub3": "구매 동작",
+      "expectationResult": "팝업 하단 구매 버튼·가격 출력, 터치 시 크리스탈이 차감되고 레이드 티켓 1개를 획득한다.",
+      "comment": ""
+    },
+    {
+      "no": 47,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 구매 팝업",
+      "sub3": "가격/최대 구매횟수",
+      "expectationResult": "구매 횟수마다 가격이 +100 크리스탈 증가하며, 하루 최대 5회까지 구매 가능하다.",
+      "comment": "[1회 : 100 크리스탈], [2회 : 200 크리스탈] ... [5회 : 500 크리스탈]"
+    },
+    {
+      "no": 49,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 구매 팝업",
+      "sub3": "구매 불가",
+      "expectationResult": "구매횟수 소진 또는 크리스탈 부족 시 구매 버튼이 비활성화되고, 터치 시 안내/크리스탈 부족 팝업이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 53,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 구매 팝업",
+      "sub3": "팝업 종료",
+      "expectationResult": "팝업 우측 상단의 닫기 버튼 터치 시, 팝업이 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 54,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 자동 충전",
+      "sub3": "남은 시간",
+      "expectationResult": "보유 티켓 1개 미만 시 충전까지 남은 시간이 출력되고 실시간 갱신된다.",
+      "comment": ""
+    },
+    {
+      "no": 56,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 티켓",
+      "sub2": "티켓 자동 충전",
+      "sub3": "티켓 충전",
+      "expectationResult": "남은 시간 00:00 도달 시 최대치(5)까지 충전되며, 보유분이 있어도 최대치를 초과하지 않는다.",
+      "comment": "최대 5개"
+    },
+    {
+      "no": 58,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "화면 전환",
+      "sub3": "",
+      "expectationResult": "좌상단 랭킹 버튼이 출력되며, 터치 시 레이드 랭킹 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 60,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "상단 메뉴",
+      "sub3": "",
+      "expectationResult": "뒤로가기·타이틀·기본 메뉴바가 출력되며 각 버튼이 정상 동작한다.",
+      "comment": ""
+    },
+    {
+      "no": 64,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "전환 탭",
+      "expectationResult": "좌측에 랭킹/랭킹 보상 탭이 출력되며, 진입 시 랭킹 탭이 기본 선택된다.",
+      "comment": ""
+    },
+    {
+      "no": 66,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "랭킹 탭 선택",
+      "expectationResult": "랭킹 탭 선택 시, 레이드 랭킹 화면 우측에 랭킹 목록이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 67,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "시즌 종료 남은시간",
+      "expectationResult": "랭킹 목록 상단에 현재 시즌 종료까지 남은시간이 출력되고 실시간 갱신된다.",
+      "comment": ""
+    },
+    {
+      "no": 69,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "순위 정보",
+      "expectationResult": "랭킹 목록 내 각 유저의 순위·정보·클리어 시간·플레이 난이도가 출력되며, 내림차순 정렬된다.",
+      "comment": ""
+    },
+    {
+      "no": 71,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "랭킹 등록조건",
+      "expectationResult": "5단계를 4인으로 클리어한 경우에만 랭킹에 등록된다.",
+      "comment": ""
+    },
+    {
+      "no": 72,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "내 기록",
+      "expectationResult": "목록 최하단에 내 기록이 출력되며, 5단계 4인 기록이 없으면 안내문구, 있으면 내 순위·정보·클리어 시간·난이도·다음 구간 목표가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 76,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "페이지 전환",
+      "expectationResult": "좌측 하단 페이지 전환 UI(현재 페이지·좌/우 버튼)가 출력되며, 터치 시 이전/다음 페이지로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 79,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "글로벌 / 로컬 랭킹 전환",
+      "expectationResult": "우상단 글로벌/로컬 전환 버튼(로컬은 국가 코드 표기)이 출력되며, 각 버튼 터치 시 전체 또는 동일 국가 유저 랭킹으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 83,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹",
+      "sub3": "안내/갱신",
+      "expectationResult": "목록 하단에 안내 문구가 출력되며, 모든 랭킹이 10분마다 자동 갱신된다.",
+      "comment": "\"랭킹은 10분마다 갱신되며, V단계 4인 플레이의 상위 1000위 기록만 표시됩니다.\""
+    },
+    {
+      "no": 85,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹 상세정보",
+      "sub3": "팝업",
+      "expectationResult": "유저 영역 터치 시 상세정보 팝업(타이틀·닫기·랭킹 순위·클리어 기록·파티 유저 정보)이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹 상세정보",
+      "sub3": "파티 유저정보",
+      "expectationResult": "각 유저의 탈출레벨·칭호·닉네임·길드·사용 쿠키·아티팩트·장비 목록이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 91,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 랭킹",
+      "sub2": "랭킹 상세정보",
+      "sub3": "유저 상세정보",
+      "expectationResult": "각 유저 옆 (+)돋보기 버튼 터치 시 유저 상세정보 화면으로 전환되며, 닫기 버튼 터치 시 팝업이 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 94,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "제작소",
+      "sub2": "화면 전환",
+      "sub3": "",
+      "expectationResult": "좌상단 제작소 버튼이 출력되며, 터치 시 제작소 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 96,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "쿠키 정보",
+      "sub2": "메인 화면",
+      "sub3": "",
+      "expectationResult": "메인화면 중앙에 파티 각 유저가 설정한 쿠키 정보(모델링·전투력·아티팩트·레벨·포지션·속성·성급·닉네임)가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 99,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "쿠키 정보",
+      "sub2": "쿠키 전투력",
+      "sub3": "",
+      "expectationResult": "입장 전투력 대비 낮으면 전투력 UI/경고 아이콘이 빨간색, 높으면 녹색으로 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 102,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "쿠키 정보",
+      "sub2": "탑 레벨",
+      "sub3": "탑레벨 부족",
+      "expectationResult": "해당 난이도의 탑레벨 미달 시 \"탑 레벨이 부족합니다\" 안내가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 103,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "쿠키 정보",
+      "sub2": "쿠키 변경하기",
+      "sub3": "",
+      "expectationResult": "내 쿠키 터치 시 변경 화면으로 전환되며, 변경 후 메인화면 복귀 시 정보가 갱신된다.",
+      "comment": ""
+    },
+    {
+      "no": 105,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 초대 슬롯",
+      "sub3": "",
+      "expectationResult": "쿠키 정보 우측에 파티 초대 슬롯이 출력되며, 초대 중인 유저가 있을 시 로딩 연출이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 107,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 초대 슬롯",
+      "sub3": "UI 팝업",
+      "expectationResult": "파티 초대 슬롯 터치 시, 파티 UI가 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 108,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "상단 탭",
+      "sub3": "내 친구",
+      "expectationResult": "상단 \"내 친구\" 탭 출력 및 선택 시 친구 목록(프로필·닉네임·마지막 접속·초대 버튼·접속 수·새로고침·정렬)이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 112,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "상단 탭",
+      "sub3": "초대 버튼 상태",
+      "expectationResult": "초대 버튼 터치 시 \"초대 중\"으로 전환, 참여 시 \"파티원\", 거절 시 다시 초대(+) 상태로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 119,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "상단 탭",
+      "sub3": "길드원",
+      "expectationResult": "상단 \"길드원\" 탭이 출력되며 선택 시 길드원 목록이 출력된다(미가입 시 안내 문구). 기능은 \"내 친구\"와 동일.",
+      "comment": ""
+    },
+    {
+      "no": 123,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "상단 탭",
+      "sub3": "최근 함께한 유저",
+      "expectationResult": "상단 \"최근 함께한 유저\" 탭이 출력되며, 선택 시 최근 10회 매칭 유저 목록이 최근순으로 출력된다(접속/새로고침/정렬 버튼 제거, 그 외 기능은 \"내 친구\"와 동일).",
+      "comment": ""
+    },
+    {
+      "no": 130,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "초대 요청",
+      "sub3": "",
+      "expectationResult": "초대 받은 경우 우상단에 초대 팝업(유저 프로필·닉네임·콘텐츠)이 출력되며, \"참가\" 터치 시 파티 대기실 전환, \"거절\" 시 팝업이 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 134,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 생성",
+      "sub3": "",
+      "expectationResult": "좌측 \"파티 생성\" 버튼 터치 시 임의 파티가 생성되며 자동 참여되고, 좌측 영역이 파티 정보로 변경된다.",
+      "comment": ""
+    },
+    {
+      "no": 137,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 생성",
+      "sub3": "파티 ID",
+      "expectationResult": "좌상단 파티 ID 및 복사 버튼이 출력되며, 복사 터치 시 클립보드에 저장된다.",
+      "comment": ""
+    },
+    {
+      "no": 140,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 생성",
+      "sub3": "파티원 목록",
+      "expectationResult": "좌측에 파티원 목록(참여/전체 인원, 빈칸 슬롯, 프로필·닉네임)이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 144,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 생성",
+      "sub3": "방장 유저",
+      "expectationResult": "방장 유저 우측에 왕관 아이콘 및 강퇴(X) 버튼이 출력되며, 강퇴 터치 시 해당 유저가 즉시 탈퇴 처리된다.",
+      "comment": ""
+    },
+    {
+      "no": 147,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 참가",
+      "sub3": "ID로 참가",
+      "expectationResult": "\"ID로 참가\" 버튼 터치 시 ID 입력 UI 및 키보드가 출력되며, 안내 문구·입력창이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 150,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 참가",
+      "sub3": "참가 버튼 활성화",
+      "expectationResult": "미입력/영문 외/6자 미만 시 참가 버튼 비활성화, 영문 6자 입력 시 활성화된다.",
+      "comment": ""
+    },
+    {
+      "no": 154,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "파티 참가",
+      "sub3": "",
+      "expectationResult": "유효 ID 입력 후 \"참가\" 터치 시 해당 파티로 참여 처리되며, 유효하지 않으면 경고 문구가 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 156,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "친구 목록",
+      "sub3": "",
+      "expectationResult": "좌하단 \"친구 목록\" 버튼 터치 시 친구 목록 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 158,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭\n팝업",
+      "sub2": "닫기",
+      "sub3": "",
+      "expectationResult": "좌상단 닫기(X) 버튼 터치 시 팝업이 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 160,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "뒤로가기",
+      "sub3": "버튼 출력",
+      "expectationResult": "레이드 모드 메인화면 화면 좌상단에 뒤로가기 버튼이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 161,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "뒤로가기",
+      "sub3": "동작",
+      "expectationResult": "파티 참여 상태에서 뒤로가기 터치 시 파티 탈퇴 확인 팝업이 출력되며, 확인 시 파티 탈퇴 후 이전 화면으로 전환, 취소 시 팝업이 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 164,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "파티 ID",
+      "sub3": "",
+      "expectationResult": "게임 대기실 화면 좌상단에 현재 참여한 파티의 ID가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 165,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "탈퇴",
+      "sub3": "",
+      "expectationResult": "좌상단 \"탈퇴\" 버튼 터치 시 현재 파티에서 즉시 탈퇴된다.",
+      "comment": ""
+    },
+    {
+      "no": 167,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "추가 전환불가 처리",
+      "sub3": "",
+      "expectationResult": "파티 참여 상태에서 재화/홈 등 화면 전환 시도 시 파티 탈퇴 확인 팝업이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 169,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "유저 정보",
+      "sub3": "방장 유저",
+      "expectationResult": "방장 닉네임 좌측에 왕관 아이콘이 출력되며, 방장 탈퇴 시 랜덤 유저에게 방장 지위가 이임된다.",
+      "comment": ""
+    },
+    {
+      "no": 171,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "유저 정보",
+      "sub3": "내 쿠키/닉네임",
+      "expectationResult": "내 쿠키는 항상 1번 슬롯에, 내 닉네임은 녹색 배경으로 강조된다.",
+      "comment": ""
+    },
+    {
+      "no": 173,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "유저 상태",
+      "sub3": "",
+      "expectationResult": "유저 상태별 안내(쿠키 변경 중/오프라인/게임 중/READY)가 각 슬롯에 정상 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 177,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티 매칭 후\n메인 로비",
+      "sub2": "예외 처리",
+      "sub3": "파티 상태에서 재접속",
+      "expectationResult": "파티 소속 상태로 재접속 시 \"파티로 이동하기\" 알림이 팝업되며, 확인 시 해당 콘텐츠로 전환되고 파티 소속이 유지된다.",
+      "comment": ""
+    },
+    {
+      "no": 180,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티원 상세정보",
+      "sub2": "파티원 정보",
+      "sub3": "",
+      "expectationResult": "파티원 터치 시 파티원 정보 UI(프로필·기차레벨·칭호·닉네임·길드명·상세정보 버튼)가 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 183,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티원 상세정보",
+      "sub2": "파티원 정보",
+      "sub3": "상세정보",
+      "expectationResult": "상세정보 버튼 터치 시 해당 유저의 상세정보 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 184,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티원 상세정보",
+      "sub2": "파티원 조합",
+      "sub3": "",
+      "expectationResult": "팝업 중앙에 파티원 쿠키 조합(이미지·이름·레벨·성급·전투력·아티팩트·장비·총 전투력)이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 187,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티원 상세정보",
+      "sub2": "친구",
+      "sub3": "친구가 아닌 경우",
+      "expectationResult": "친구가 아닌 경우 \"친구 신청\" 버튼이 출력되며, 터치 시 신청이 전송되고 \"수락 대기중...\"으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 190,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티원 상세정보",
+      "sub2": "친구",
+      "sub3": "친구인 경우",
+      "expectationResult": "친구인 경우 \"친구 삭제\" 버튼이 출력되며, 터치 시 친구 목록에서 제거되고 \"친구 신청\"으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 193,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "파티원 상세정보",
+      "sub2": "내보내기",
+      "sub3": "",
+      "expectationResult": "방장 화면에서만 \"내보내기\" 버튼이 출력되며, 터치 시 해당 유저가 즉시 강제 탈퇴 처리된다(파티원 화면에서는 미출력).",
+      "comment": ""
+    },
+    {
+      "no": 196,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "버튼 및 영역",
+      "sub3": "",
+      "expectationResult": "좌하단에 채팅 버튼·표시 영역이 출력되며, 새 메세지 알림점과 최근 2개 메세지 요약이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 199,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "팝업",
+      "sub3": "",
+      "expectationResult": "\"채팅\" 버튼 및 표시 영역 터치 시, 채팅 목록이 화면 좌측에서 슬라이드로 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 200,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "상단",
+      "sub3": "",
+      "expectationResult": "상단에 뒤로가기 버튼·타이틀이 출력되며, 뒤로가기 터치 시 좌측 슬라이드로 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 203,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "파티 탭",
+      "sub3": "",
+      "expectationResult": "좌측 \"파티\" 탭이 출력되며, 파티 소속 상태에서 진입 시 자동 선택되고 새 메세지 알림점이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 206,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "파티 채팅화면",
+      "sub3": "메세지",
+      "expectationResult": "채팅 중 유저의 프로필·닉네임·메세지·송신 시각·날짜가 출력되며, 본인 메세지는 우측·상대는 좌측에 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 212,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "파티 채팅화면",
+      "sub3": "메세지 스크롤",
+      "expectationResult": "메세지 표시 화면 상하 스크롤 시, 이전/이후 메세지가 스크롤되어 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 213,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "파티 채팅화면",
+      "sub3": "메세지 입력 UI",
+      "expectationResult": "하단에 메세지 프리셋·이모티콘·입력창·보내기 버튼이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 214,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "파티 채팅화면",
+      "sub3": "프리셋 메세지",
+      "expectationResult": "프리셋 버튼 터치 시 미리 입력된 메세지가 출력되며, 선택 시 상대에게 전송된다.",
+      "comment": ""
+    },
+    {
+      "no": 216,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "파티 채팅화면",
+      "sub3": "이모티콘",
+      "expectationResult": "이모티콘 버튼 터치 시 미리 설정된 이모티콘이 출력되며, 선택 시 상대에게 전송된다.",
+      "comment": ""
+    },
+    {
+      "no": 218,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "파티 채팅화면",
+      "sub3": "메세지 입력/전송",
+      "expectationResult": "입력창 터치 시 키보드 팝업, 보내기 버튼 터치 시 입력 텍스트가 상대에게 전송되며 채팅방 목록에 즉시 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 222,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "채팅",
+      "sub2": "파티 채팅화면",
+      "sub3": "메인화면 말풍선",
+      "expectationResult": "채팅 메세지/스탬프 전송 시 해당 유저 쿠키 슬롯 상단에 말풍선으로 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 223,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "표시 영역",
+      "sub3": "",
+      "expectationResult": "메인로비 우상단에 현재 시즌 정보 표시 영역(보스 포트레이트·이름·info 버튼)이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 225,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "보스 상세 정보",
+      "sub3": "",
+      "expectationResult": "info 버튼 터치 시 보스 상세 정보(타이틀·닫기·포트레이트·이름·설명·추천속성)가 팝업되며, 닫기 시 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 231,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "난이도 정보",
+      "sub3": "",
+      "expectationResult": "표시 영역 중앙에 난이도 탭·입장 전투력·추천속성·시즌규칙·획득 가능 보상이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 232,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "난이도 정보",
+      "sub3": "전투력 색상",
+      "expectationResult": "입장 전투력 대비 낮으면 빨간색·경고, 높으면 녹색으로 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 234,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "난이도 정보",
+      "sub3": "시즌 규칙 표시",
+      "expectationResult": "시즌 규칙 없으면 \"해당 없음\", 있으면 규칙 아이콘이 출력되고 터치 시 설명 말풍선이 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 237,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "난이도 정보",
+      "sub3": "시즌 규칙 단계별 적용",
+      "expectationResult": "1~3단계는 미적용, 4단계는 일반 규칙, 5단계는 강화 규칙이 적용된다.",
+      "comment": ""
+    },
+    {
+      "no": 240,
+      "priority": "Major",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "보상 정보",
+      "sub3": "",
+      "expectationResult": "하단에 현재 난이도에서 획득 가능한 보상 정보가 출력되며, 가로 스크롤 및 보상 터치 시 설명 말풍선이 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 243,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "보상 정보",
+      "sub3": "시즌 정보 팝업",
+      "expectationResult": "보상 정보 우측 info 버튼 터치 시 시즌 정보 UI(타이틀·닫기·난이도 탭·기본/랜덤 보상 목록)가 팝업되며, 현재 난이도가 기본 선택되고 닫기 시 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 252,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "난이도 변경",
+      "sub3": "변경 탭",
+      "expectationResult": "표시 영역 상단에 난이도 선택 탭이 출력되며, 현재 선택 난이도 상단에 화살표 애니메이션이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 254,
+      "priority": "Critical",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "난이도 변경",
+      "sub3": "콘셉트/정보 변경",
+      "expectationResult": "각 난이도 선택 시 배경/모닥불 콘셉트가 변경되고, 입장 전투력·시즌 규칙·보상 정보가 함께 변경된다.",
+      "comment": ""
+    },
+    {
+      "no": 256,
+      "priority": "Normal",
+      "main": "메인 화면\n(일반모드)",
+      "sub1": "레이드 시즌 정보",
+      "sub2": "난이도 변경",
+      "sub3": "시즌 규칙 연출",
+      "expectationResult": "시즌 진행 후 최초로 4단계 이상 난이도에 진입한 경우, 시즌 규칙 안내 연출이 재생된다.",
+      "comment": ""
+    },
+    {
+      "no": 257,
+      "priority": "Critical",
+      "main": "트로피 상자",
+      "sub1": "UI 출력조건",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "1~2단계 미출력, 3단계 이상 시 메인화면 하단에 트로피 상자 UI가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 259,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "코코방울의 축복",
+      "sub2": "게이지",
+      "sub3": "",
+      "expectationResult": "하단에 슈퍼에픽 확정 게이지(현재/최대 누적 포인트, 비례 증가)와 info 버튼이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 263,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "코코방울의 축복",
+      "sub2": "info",
+      "sub3": "팝업",
+      "expectationResult": "info 버튼 터치 시, 코코방울 축복관련 info 팝업이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 264,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "코코방울의 축복",
+      "sub2": "선택 장비 슬롯",
+      "sub3": "",
+      "expectationResult": "게이지 우측에 선택 장비 슬롯 2개가 출력되며, 미설정 시 빈 슬롯·설정 시 썸네일이 표시되고 비어있으면 느낌표 알림점이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 268,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "코코방울의 축복",
+      "sub2": "상세 UI",
+      "sub3": "팝업",
+      "expectationResult": "슬롯 터치 시 상세 UI 팝업(부위별 카테고리 탭·장비 목록·필터·정렬)이 출력되며 정상 동작한다.",
+      "comment": ""
+    },
+    {
+      "no": 277,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "코코방울의 축복",
+      "sub2": "상세 UI",
+      "sub3": "보유/미보유 표시",
+      "expectationResult": "보유 장비는 활성화, 미보유 장비는 비활성화 썸네일로 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 279,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "코코방울의 축복",
+      "sub2": "상세 UI",
+      "sub3": "장비 선택",
+      "expectationResult": "우측에 유니크/슈퍼에픽 슬롯 및 안내 문구가 출력되며, 목록에서 선택 시 슬롯에 반영되고 빼기(-) 버튼으로 해제 가능하다.",
+      "comment": ""
+    },
+    {
+      "no": 284,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "코코방울의 축복",
+      "sub2": "상세 UI",
+      "sub3": "초기화",
+      "expectationResult": "초기화 버튼 터치 시, 슬롯에 장착된 모든 장비가 제거된다.",
+      "comment": ""
+    },
+    {
+      "no": 286,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "코코방울의 축복",
+      "sub2": "상세 UI",
+      "sub3": "적용",
+      "expectationResult": "모든 슬롯 채운 후 적용 시 정상 저장, 미충족 상태 적용 시 경고 팝업(취소·저장·안내 문구)이 출력되며 저장 시 빈 슬롯 상태로 저장된다.",
+      "comment": ""
+    },
+    {
+      "no": 292,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n표시 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일반/고급 트로피 상자 아이콘 및 트로피 포인트 게이지가 출력되며, 누적 포인트에 비례하여 게이지가 채워진다.",
+      "comment": ""
+    },
+    {
+      "no": 294,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n표시 UI",
+      "sub2": "오픈 가능한 상자",
+      "sub3": "알림점",
+      "expectationResult": "오픈 가능한 상자가 있을 시 각 상자 우상단에 오픈 가능 갯수 알림점이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 295,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n상세 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "트로피 상자 UI 터치 시 상세 팝업(타이틀·info·핵심 보상 목록·상세확률 버튼)이 출력되며 정상 동작한다.",
+      "comment": ""
+    },
+    {
+      "no": 303,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n상세 팝업",
+      "sub2": "타워패스 혜택",
+      "sub3": "",
+      "expectationResult": "구매 전에는 혜택 UI 및 구매 버튼이 출력되어 구매 화면으로 전환, 구매 후에는 적용중 UI 및 \"구매완료\" 비활성 버튼으로 변경된다.",
+      "comment": ""
+    },
+    {
+      "no": 309,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n상세 팝업",
+      "sub2": "트로피 상자 목록",
+      "sub3": "일반/고급 트로피 상자",
+      "expectationResult": "일반(100p)/고급(1000p) 상자 이미지·게이지·열기 버튼이 출력되며, 포인트 미만 시 비활성·이상 시 활성화되고 열기 시 오픈 연출 후 데이터 확률대로 보상을 획득하며 게이지가 차감된다. 누적 포인트에 따라 여러 상자를 한 번에 오픈할 수 있고, 포인트 획득 시 양쪽 상자에 동시 누적된다.",
+      "comment": "일반/고급 트로피 상자에서 획득 가능한 아이템만 획득해야 함."
+    },
+    {
+      "no": 332,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n상세 팝업",
+      "sub2": "트로피 상자 목록",
+      "sub3": "타워패스 상자",
+      "expectationResult": "타워패스 상자 이미지·시즌 남은시간·info 버튼이 출력되며 시간이 실시간 갱신되고, info 터치 시 안내 UI가 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 337,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n상세 팝업",
+      "sub2": "트로피 상자 목록",
+      "sub3": "타워패스 구매 전/후",
+      "expectationResult": "구매 전에는 안내 말풍선·구매 버튼(터치 시 구매 화면 전환), 구매 후에는 적용중 말풍선·열기 버튼이 출력되며 열기 시 오픈 연출이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 343,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n상세 팝업",
+      "sub2": "트로피 상자 목록",
+      "sub3": "타워패스 누적/초기화",
+      "expectationResult": "타워패스 구매 여부와 무관하게 매일 1개씩 누적되며, 구매 시 누적분을 한 번에 획득하고 시즌 종료 시 구매 전 상태 및 누적분이 초기화된다.",
+      "comment": ""
+    },
+    {
+      "no": 348,
+      "priority": "Normal",
+      "main": "트로피 상자",
+      "sub1": "트로피 상자\n상세 팝업",
+      "sub2": "공통",
+      "sub3": "여러개 열기",
+      "expectationResult": "오픈 가능 상자가 여러 개 누적된 경우, 열기 버튼 우상단에 누적 수량 알림점이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 349,
+      "priority": "Critical",
+      "main": "무지개 상자\n확정지급",
+      "sub1": "게이지",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "Play 버튼 상단에 무지개 상자 확정지급 게이지(3칸)가 출력되며, 1·3번째 칸 상단에 100% 말풍선과 info 버튼이 표시되고 info 터치 시 안내 말풍선이 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 353,
+      "priority": "Critical",
+      "main": "무지개 상자\n확정지급",
+      "sub1": "게이지",
+      "sub2": "레이드 클리어",
+      "sub3": "",
+      "expectationResult": "1·2·3회 플레이 시 각 칸이 녹색으로 채워지며, 1·3회차에는 무지개 말풍선이 녹색 체크표시로 변경된다.",
+      "comment": ""
+    },
+    {
+      "no": 356,
+      "priority": "Major",
+      "main": "무지개 상자\n확정지급",
+      "sub1": "게이지",
+      "sub2": "Free Play/초기화",
+      "sub3": "",
+      "expectationResult": "Free Play는 게이지가 채워지지 않으며, 매일 00:00에 게이지가 초기화된다.",
+      "comment": ""
+    },
+    {
+      "no": 358,
+      "priority": "Normal",
+      "main": "주간 클리어 보상\n(챌린지 모드)",
+      "sub1": "주간 클리어 보상\n아이콘",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "챌린지 모드 대기실 하단에 주간 클리어 보상 상자(상태별 태그 포함)가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 362,
+      "priority": "Normal",
+      "main": "주간 클리어 보상\n(챌린지 모드)",
+      "sub1": "주간 클리어 보상\n상세 팝업",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보상 상자 터치 시 클리어 보상 UI 팝업이 출력되며, 좌측 확정 보상·우측 랜덤 보상 목록(아이콘·수량)이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 366,
+      "priority": "Normal",
+      "main": "주간 클리어 보상\n(챌린지 모드)",
+      "sub1": "주간 클리어 보상\n상세 팝업",
+      "sub2": "열기 버튼",
+      "sub3": "",
+      "expectationResult": "챌린지 보스 클리어 전에는 열기 버튼이 비활성화·후에는 활성화되며, 터치 시 명시된 보상을 획득한다.",
+      "comment": ""
+    },
+    {
+      "no": 369,
+      "priority": "Normal",
+      "main": "주간 클리어 보상\n(챌린지 모드)",
+      "sub1": "주간 클리어 보상\n상세 팝업",
+      "sub2": "누적 보상",
+      "sub3": "",
+      "expectationResult": "우측에 누적 카운트·누적 보상이 출력되며, 상자를 열 때마다 카운트 +1, 도달 시 보상이 활성화되어 터치 시 일괄 획득되고, 마지막 보상까지 모두 획득하면 카운트·획득여부가 초기화된다. 이미 획득한 보상에는 녹색 체크가 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 376,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "솔로 플레이",
+      "sub2": "PLAY 버튼",
+      "sub3": "",
+      "expectationResult": "레이드 모드 우하단에 PLAY 버튼이 출력되며, 필요 티켓 수량이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 378,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "솔로 플레이",
+      "sub2": "매칭 중",
+      "sub3": "",
+      "expectationResult": "Play 버튼 터치 시 매칭 중 UI로 전환되며, 소요시간·매칭 취소 버튼이 출력되고 취소 시 초기 상태로 돌아간다.",
+      "comment": ""
+    },
+    {
+      "no": 382,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "솔로 플레이",
+      "sub2": "매칭 완료",
+      "sub3": "",
+      "expectationResult": "매칭 완료 시 매치 완료 UI 전환, 티켓 1개 소모 연출 후 인게임 로딩 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 385,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "파티 플레이",
+      "sub2": "READY 버튼",
+      "sub3": "",
+      "expectationResult": "레이드 모드 우하단에 READY 버튼·필요 티켓 수량이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 387,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "파티 플레이",
+      "sub2": "READY 상태",
+      "sub3": "",
+      "expectationResult": "READY 터치 시 \"준비 취소\" 버튼으로 전환, 재터치 시 다시 READY로 전환되며 준비 이전 상태로 초기화된다.",
+      "comment": ""
+    },
+    {
+      "no": 390,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "파티 플레이",
+      "sub2": "파티원 4명 미만",
+      "sub3": "매칭 중",
+      "expectationResult": "모든 유저 READY 상태일 때 매칭 중 UI 전환, 소요시간·매칭 취소(X) 버튼이 출력되고 1명이라도 취소 시 모두 초기화된다.",
+      "comment": ""
+    },
+    {
+      "no": 394,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "파티 플레이",
+      "sub2": "파티원 4명 미만",
+      "sub3": "매칭 완료",
+      "expectationResult": "매칭 완료 시 매치 완료 UI 전환, 티켓 1개 소모 연출 후 인게임 로딩 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 397,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "파티 플레이",
+      "sub2": "파티원 4명 충족",
+      "sub3": "매칭 완료",
+      "expectationResult": "4명 모두 READY 시 즉시 매치 완료 UI 전환, 티켓 1개 소모 후 인게임 로딩으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 400,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "탑 레벨",
+      "sub2": "부족/바로가기",
+      "sub3": "",
+      "expectationResult": "탑 레벨 부족 시 Play 버튼 영역에 필요 레벨·바로가기 버튼이 출력되며, 바로가기 터치 시 탑 레벨 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 402,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "UI 비활성화",
+      "sub3": "",
+      "expectationResult": "매칭 중에는 로비의 모든 버튼이 비활성화되며, 터치 시 안내 문구(\"준비 중에는 사용할 수 없는 기능입니다\")가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 404,
+      "priority": "Major",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "입장 안내",
+      "sub3": "팝업",
+      "expectationResult": "클리어한 최대 난이도보다 낮은 난이도 매칭 시 입장 안내 팝업(타이틀·닫기·안내·Free Play/일반 Play 버튼·설명 문구)이 출력되며 닫기 시 종료된다.",
+      "comment": "예) 5단계를 이미 클리어 했으나 4단계 또는 3단계 등 낮은 단계를 매칭하려는 경우"
+    },
+    {
+      "no": 408,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "입장 안내",
+      "sub3": "Free Play",
+      "expectationResult": "Free Play 버튼 터치 시 매칭 중 또는 READY 상태로 전환되며, 인게임 진입 시 티켓을 소모하지 않는다.",
+      "comment": ""
+    },
+    {
+      "no": 410,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "입장 안내",
+      "sub3": "일반 Play",
+      "expectationResult": "Play 버튼 터치 시 매칭 중 또는 READY 상태로 전환되며, 인게임 진입 시 티켓을 1개 소모한다.",
+      "comment": ""
+    },
+    {
+      "no": 414,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "티켓 부족",
+      "sub3": "팝업",
+      "expectationResult": "티켓 0 상태에서 PLAY/READY 터치 시 티켓 구매 UI(타이틀·닫기·획득 수량·구매 가능 횟수·Free Play·구매 버튼)가 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 420,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "티켓 부족",
+      "sub3": "Free Play",
+      "expectationResult": "Free Play 버튼 터치 시 매칭 중 또는 READY 상태로 전환되며, 티켓을 소모하지 않고 인게임 진입한다.",
+      "comment": ""
+    },
+    {
+      "no": 422,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "티켓 부족",
+      "sub3": "티켓 구매",
+      "expectationResult": "구매 버튼 터치 시 크리스탈 차감 후 티켓 1개 획득, 구매 횟수마다 가격 +100 증가, 하루 최대 5회, 소진 시 버튼 비활성화 및 토스트 안내가 정상 동작한다.",
+      "comment": ""
+    },
+    {
+      "no": 428,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "티켓 부족",
+      "sub3": "티켓 충전권 팝업",
+      "expectationResult": "티켓 충전권 보유 + 티켓 부족 상태에서 Play 터치 시 충전 팝업(슬라이더·보유 충전권 만큼 사용횟수·+/- 버튼)이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 431,
+      "priority": "Critical",
+      "main": "인게임 매칭",
+      "sub1": "공통",
+      "sub2": "티켓 부족",
+      "sub3": "티켓 충전권 사용",
+      "expectationResult": "슬라이더 좌우 이동 또는 +/- 버튼으로 사용 충전권 수가 변경되며, 사용하기 버튼 터치 시 설정 수만큼 티켓이 충전되고 닫기 시 팝업이 종료된다.",
+      "comment": ""
+    },
+    {
+      "no": 435,
+      "priority": "Critical",
+      "main": "인게임 로딩",
+      "sub1": "공통 정보",
+      "sub2": "쿠키 정보",
+      "sub3": "",
+      "expectationResult": "중앙에 각 유저 쿠키 정보(포트레이트·아티팩트·레벨·성급·전투력·속성·수련 레벨 엠블럼)가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 440,
+      "priority": "Critical",
+      "main": "인게임 로딩",
+      "sub1": "공통 정보",
+      "sub2": "유저 정보",
+      "sub3": "",
+      "expectationResult": "각 쿠키 상단에 유저 칭호·닉네임·길드 정보 및 명예 테두리 이미지가 출력되며, 권장 전투력 미만인 경우 새싹 아이콘이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 443,
+      "priority": "Critical",
+      "main": "인게임 로딩",
+      "sub1": "시즌 규약",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "4단계 이상 시 상단에 규약 아이콘·설명 문구가 출력되며, 4단계 미만에서는 미출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 446,
+      "priority": "Critical",
+      "main": "인게임 로딩",
+      "sub1": "로딩바",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "하단에 로딩바가 출력되며, 100% 도달 시 인게임 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 448,
+      "priority": "Normal",
+      "main": "인게임",
+      "sub1": "브릿지 맵",
+      "sub2": "진입 연출",
+      "sub3": "",
+      "expectationResult": "인게임 진입 시 레이드 정보 연출이 1회 재생되며, 이후 인게임 UI가 페이드인된다.",
+      "comment": ""
+    },
+    {
+      "no": 450,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "브릿지 맵",
+      "sub2": "기본 조작",
+      "sub3": "",
+      "expectationResult": "이동·공격·대시·스킬·궁극기 사용이 정상 동작하며, 스탬프 사용 시 본인/다른 유저 화면 양쪽에 말풍선이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 453,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "브릿지 맵",
+      "sub2": "기본기능",
+      "sub3": "일시정지",
+      "expectationResult": "우상단 일시정지 버튼 터치 시 화면 딤드 및 일시정지 메뉴 UI가 팝업되며, 인게임은 정지되지 않고 실시간 진행된다.",
+      "comment": ""
+    },
+    {
+      "no": 456,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "브릿지 맵",
+      "sub2": "타이머",
+      "sub3": "",
+      "expectationResult": "좌상단에 레이드 타이머가 출력되며, 보스전 진입 전 브릿지 맵에서는 타이머가 흐르지 않는다.",
+      "comment": ""
+    },
+    {
+      "no": 458,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "브릿지 맵",
+      "sub2": "파티원",
+      "sub3": "",
+      "expectationResult": "좌상단에 파티원의 쿠키 포트레이트·닉네임·접속상태·체력바가 출력되며, 성급/레벨 MAX 시 금색 테두리·연결 끊김 시 빨간 와이파이 표시가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 461,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "브릿지 맵",
+      "sub2": "보스전 진입",
+      "sub3": "",
+      "expectationResult": "진입용 플랫폼에 1명 이상 시 5초 카운트다운 → 보스전 진입, 모든 파티원 위치 시 즉시 진입한다.",
+      "comment": ""
+    },
+    {
+      "no": 464,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "보스전 플레이",
+      "sub2": "UI",
+      "sub3": "보스 정보",
+      "expectationResult": "화면 중앙 상단에 보스 이름 및 체력바가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 465,
+      "priority": "Normal",
+      "main": "인게임",
+      "sub1": "보스전 플레이",
+      "sub2": "기본기능",
+      "sub3": "대미지/매칭 서버",
+      "expectationResult": "본인·다른 유저 모두 보스 공격 시 대미지가 정상 적용되며, 쿠키 조작이 다른 유저 화면에서도 동일하게 동기화된다.",
+      "comment": ""
+    },
+    {
+      "no": 468,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "보스전 플레이",
+      "sub2": "쿠키 사망",
+      "sub3": "",
+      "expectationResult": "체력 0 시 유령 쿠키 상태로 전환되며, 화면 딤드·\"부활 대기 중\" UI 표시 및 이동 외 전투 UI가 제거된다.",
+      "comment": ""
+    },
+    {
+      "no": 471,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "보스전 플레이",
+      "sub2": "쿠키 부활",
+      "sub3": "",
+      "expectationResult": "유령 쿠키 근처에서 공격 버튼 홀드 시 부활 게이지 증가, 떼거나 멀어지면 감소, 100% 시 부활하며 최대 체력의 n% 회복된다.",
+      "comment": ""
+    },
+    {
+      "no": 476,
+      "priority": "Critical",
+      "main": "인게임",
+      "sub1": "보스전 플레이",
+      "sub2": "시즌 규약",
+      "sub3": "적용",
+      "expectationResult": "시즌 규약이 인게임내에 적용된다.",
+      "comment": ""
+    },
+    {
+      "no": 477,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "클리어 조건",
+      "sub3": "",
+      "expectationResult": "제한시간 내 보스 체력 0 시 레이드 클리어 처리되며, COMPLETED! 연출 후 상자 연출 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 480,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "상자 연출",
+      "sub3": "",
+      "expectationResult": "각 파티원 쿠키 앞에 랜덤 배정된 상자(브론즈·골드·무지개 중 확률)가 열리는 연출이 재생되며, 매일 1·3회차 클리어는 무지개 상자가 확정 지급된다.",
+      "comment": ""
+    },
+    {
+      "no": 483,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "상자 연출",
+      "sub3": "획득 아이템",
+      "expectationResult": "상자에서 획득한 3종 아이템 등급·아이콘이 출력되며, 권장 전투력 미만 유저는 닉네임 좌측에 새싹 아이콘이 표시된다.",
+      "comment": ""
+    },
+    {
+      "no": 485,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "상자 연출",
+      "sub3": "스탬프",
+      "expectationResult": "우하단 스탬프 사용 버튼 터치 시 사용한 스탬프 애니메이션이 해당 유저 쿠키 상단에 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 487,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "상자 연출",
+      "sub3": "Free Play 예외",
+      "expectationResult": "Free Play로 진입한 유저의 쿠키 앞에는 상자가 출현하지 않는다.",
+      "comment": ""
+    },
+    {
+      "no": 488,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "기본 정보",
+      "sub3": "",
+      "expectationResult": "결과 화면 좌측에 CLEAR 문구·보스 정보·클리어타임·쿠키 승리 애니메이션이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 489,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "레이드 요약",
+      "sub3": "",
+      "expectationResult": "우측에 전투 요약 화면 및 상단에 획득 명예 트로피 정보가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 491,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "레이드 요약",
+      "sub3": "명예트로피 지급 규칙",
+      "expectationResult": "유저별 통계 비교하여 1위 금·2위 은·3·4위 동 트로피가 지급되며, 동일 등급 중복 시 id 순으로 최대 4종까지만 지급된다.",
+      "comment": "예) 6개 종목에서 모두 금 트로피 조건을 만족해도, 최대 4개만 받을 수 있음"
+    },
+    {
+      "no": 496,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "레이드 요약",
+      "sub3": "새싹 도우미 트로피",
+      "expectationResult": "새싹 유저와 같이 클리어한 유저에게 새싹 도우미 트로피가 지급되며, 다른 명예 트로피보다 우선순위가 높고 획득 시 메달 트로피는 지급되지 않는다.",
+      "comment": ""
+    },
+    {
+      "no": 499,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "레이드 요약",
+      "sub3": "예외사항",
+      "expectationResult": "네트워크 단절 클리어 시 명예 트로피가 미지급되며, 획득 기록 값이 없으면 \"획득한 명예 트로피가 없습니다.\" 문구가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 501,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "트로피 상자 포인트",
+      "sub3": "",
+      "expectationResult": "명예 트로피 획득 연출 후 하단에 트로피 상자 포인트 토스트 팝업이 출력되며, 명예 트로피 → 트로피 상자 UI로 포인트가 반영되는 연출 및 게이지 증가 연출이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 504,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "트로피 상자 포인트",
+      "sub3": "알림점/슬라이드 아웃",
+      "expectationResult": "열 수 있는 트로피 상자가 있으면 각 상자/UI 우상단에 숫자 알림점이 출력되며, 모든 연출 종료 후 트로피 상자 UI가 하단으로 슬라이드 아웃된다.",
+      "comment": ""
+    },
+    {
+      "no": 506,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "획득 아이템",
+      "sub3": "",
+      "expectationResult": "명예 트로피 결과 하단에 획득 아이템(상자 3종 + 기본 획득 아이템) 목록이 출력되며, 썸네일 터치 시 상세 설명 말풍선이 팝업된다.",
+      "comment": ""
+    },
+    {
+      "no": 509,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "획득 아이템",
+      "sub3": "Free Play 예외처리",
+      "expectationResult": "Free Play로 진입한 경우, 아이템을 획득하지 못한다.",
+      "comment": ""
+    },
+    {
+      "no": 510,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "코코방울의 축복",
+      "sub3": "포인트 획득/게이지",
+      "expectationResult": "클리어·명예 트로피에 따라 축복 포인트를 획득하며, 다시하기 버튼 상단에 누적 포인트·비례 게이지가 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 513,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "코코방울의 축복",
+      "sub3": "확정 장비 지급",
+      "expectationResult": "6,000 포인트 획득 시 축복이 발동되며(기차레벨 상승 시 최대 4,800까지 감소), 슬롯 적용 장비는 확정 지급·미적용 슬롯은 해당 등급 랜덤 1종이 확정 지급된다.",
+      "comment": "최대 4,800 포인트까지 감소"
+    },
+    {
+      "no": 517,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "코코방울의 축복",
+      "sub3": "게이지 초기화/예외",
+      "expectationResult": "축복 발동으로 슈퍼에픽 이상 획득 시 게이지 초기화, 발동 전 슈퍼에픽 획득 시에는 게이지가 초기화되지 않으며, 무지개 상자 확정과 겹칠 시 무지개 상자가 우선 발동되고 축복 게이지는 유지된다. 또한 기차레벨업으로 필요 포인트가 낮아진 경우 차액이 다음 게이지에 산입된다.",
+      "comment": "예) 6,000 포인트를 획득한 상태에서 기차레벨업을 하여 필요 포인트가 5,800이 된 경우\n-> 다음 레이드 플레이에서 슈퍼에픽을 확정 지급 후, 즉시 게이지에 차액 200포인트가 산입됨"
+    },
+    {
+      "no": 521,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "다시하기",
+      "sub3": "카운트다운",
+      "expectationResult": "우하단 다시하기 버튼이 출력되며, 결과 출력 후 15초 카운트다운, 시간 내 터치 시 쿠키 썸네일에 녹색 체크 표시, 15초 경과 시 비활성화된다.",
+      "comment": ""
+    },
+    {
+      "no": 526,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "다시하기",
+      "sub3": "파티 플레이",
+      "expectationResult": "파티원 1명이라도 나가기 선택 시 다시하기 버튼이 즉시 비활성화된다.",
+      "comment": ""
+    },
+    {
+      "no": 527,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "다시하기",
+      "sub3": "인게임 전환",
+      "expectationResult": "모든 유저가 다시하기 여부 선택 시 매칭 중 화면으로 전환, 매치 완료 후 티켓 소모 연출 → 인게임 로딩 화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 530,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "나가기",
+      "sub3": "",
+      "expectationResult": "우하단 나가기 버튼 터치 시 레이드 모드 메인화면으로 전환된다.",
+      "comment": ""
+    },
+    {
+      "no": 532,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "성공",
+      "sub2": "최고 기록 달성",
+      "sub3": "연출",
+      "expectationResult": "최초/최고 기록 등록 시, 클리어타임 상단에 New Record! 애니메이션이 재생된다.",
+      "comment": ""
+    },
+    {
+      "no": 533,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "실패",
+      "sub2": "조건",
+      "sub3": "",
+      "expectationResult": "제한시간 내 보스 체력이 0 이상이거나 모든 파티원이 유령 쿠키 상태인 경우 클리어 실패 처리된다.",
+      "comment": ""
+    },
+    {
+      "no": 535,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "실패",
+      "sub2": "기본 정보",
+      "sub3": "",
+      "expectationResult": "결과 화면 좌측에 Fail 문구·보스 정보·플레이타임·쿠키 패배 애니메이션이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 536,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "실패",
+      "sub2": "기본 정보",
+      "sub3": "페널티",
+      "expectationResult": "클리어 실패 시 명예 트로피·보상을 획득하지 못하며, 레이드 티켓도 차감되지 않는다(기타 기능은 성공과 동일).",
+      "comment": ""
+    },
+    {
+      "no": 540,
+      "priority": "Critical",
+      "main": "시즌 정산",
+      "sub1": "보상",
+      "sub2": "정산 보상팝업",
+      "sub3": "",
+      "expectationResult": "시즌 정산 완료 후 최초 입장 시 이전 시즌 달성 기록에 따라 정산 보상 팝업(시즌 정보·달성 기록·아이템)이 출력된다.",
+      "comment": ""
+    },
+    {
+      "no": 542,
+      "priority": "Critical",
+      "main": "시즌 정산",
+      "sub1": "랭킹",
+      "sub2": "초기화",
+      "sub3": "",
+      "expectationResult": "시즌 정산 후, 이전 시즌의 랭킹이 초기화 된다.",
+      "comment": ""
+    }
+  ],
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 27080,
+    "cacheReadTokens": 17070,
+    "cacheCreationTokens": 110455,
+    "totalCostUsd": 1.46634075
+  },
+  "generatedAt": "2026-05-13T07:37:54.285Z",
+  "planText": "### 변경 분석\n- 기존 TC 총 건수: **542건**\n- 작업 성격: 기획서 변경 없음. 기존 TC를 빠른 검증용 체크리스트로 통합·압축\n- 식별된 통합 가능 영역:\n  - **모드리스트 입장버튼/해금/입장 (no 1-24)**: 출력·표시·알림점 단위 케이스가 다수 → 버튼 단위로 묶음\n  - **상단 메뉴/재화/메뉴바 (no 25-36)**: 표준 UI 요소들 → 한 줄로 통합\n  - **레이드 티켓 구매 팝업 (no 37-57)**: 팝업 내부 21개 케이스 → 4~5건으로 축소\n  - **레이드 랭킹 (no 58-93)**: 36개 케이스 → 랭킹 목록·페이지·글로벌/로컬·상세정보 단위로 통합\n  - **쿠키 정보 (no 96-104)**: 표시·전투력 색상·탑레벨 경고 → 통합\n  - **파티 매칭 팝업 (no 105-159)**: 55개 케이스 → 탭·초대·생성·참가·강퇴 단위로 통합\n  - **파티 매칭 후 메인 로비 (no 160-179)**: 뒤로가기/탈퇴/유저 상태 단위 통합\n  - **파티원 상세정보 (no 180-195)**: 친구·내보내기 단위 통합\n  - **채팅 (no 196-222)**: 27개 → 채팅 진입·메세지 송수신·프리셋/이모티콘으로 통합\n  - **레이드 시즌 정보 (no 223-256)**: 보스 info·난이도 정보·시즌 규칙·보상·난이도 변경 단위 통합\n  - **트로피 상자 (no 257-348)**: 92개 → 코코방울 축복/일반·고급/타워패스 상자 단위로 대폭 통합\n  - **무지개 상자 (no 349-357)**: 게이지·플레이 횟수별 → 1~2건으로 축소\n  - **주간 클리어 보상 (no 358-375)**: 18개 → 3~4건으로 통합\n  - **인게임 매칭 (no 376-434)**: 솔로/파티/티켓 부족/충전권 단위로 통합\n  - **인게임 로딩 (no 435-447)**: 정보 출력 단위 통합\n  - **인게임 (no 448-476)**: 브릿지·보스전·부활 단위 통합\n  - **결과 화면 성공 (no 477-532)**: 상자 연출·명예 트로피·획득 아이템·코코방울 축복·다시하기 단위 통합\n  - **결과 화면 실패 (no 533-539)**: 5건 → 2~3건으로 통합\n  - **시즌 정산 (no 540-542)**: 3건 그대로 또는 통합\n- 전체 변경 규모: **수정 약 110건 / 제거 약 432건 / 추가 0건** (542건 → 약 110건 수준)\n\n### 수정 대상 TC\n\n#### 모드리스트\n- **no 1 · 모드리스트 > 입장버튼 > 출력**\n  - 변경 전: 입장 버튼 출력\n  - 변경 후: 모드리스트 진입 시 레이드모드 입장 버튼(보스 이미지·타이틀·info·티켓 보유량)이 출력된다.\n  - 흡수: no 2, 3, 5\n- **no 4 · 모드리스트 > 입장버튼 > info > 가이드 팝업**\n  - 변경 전: info 버튼 터치 시 가이드 팝업\n  - 변경 후: info 버튼 터치 시 레이드 모드 가이드 UI가 팝업된다.\n- **no 6 · 모드리스트 > 입장버튼 > 티켓 > 보유량 갱신**\n  - 변경 전: 티켓 보유량 갱신\n  - 변경 후: 티켓 획득/소모에 따라 보유량이 정상 갱신된다.\n- **no 7 · 모드리스트 > 입장버튼 > 남은 시간**\n  - 변경 전: 챌린지모드 오픈까지 남은 시간 출력\n  - 변경 후: 입장 버튼 하단에 챌린지모드 오픈까지 남은 시간이 출력되고 실시간 갱신된다.\n  - 흡수: no 8\n- **no 9 · 모드리스트 > 입장버튼 > 알림점**\n  - 변경 전: 보상 알림점\n  - 변경 후: 받을 수 있는 보상/시즌 정산 발생 시 입장 버튼에 알림점이 출력된다.\n  - 흡수: no 10\n- **no 11 · 모드리스트 > 콘텐츠 해금 > 조건 불만족**\n  - 변경 전: 기차레벨 5 전 비활성화\n  - 변경 후: 기차레벨 5 미달 시 입장 버튼이 비활성화되고 해금조건이 표시된다.\n  - 흡수: no 12\n- **no 13 · 모드리스트 > 콘텐츠 해금 > 진입 불가** (유지)\n  - 변경 후: 비활성화 입장버튼 터치 시 토스트 안내가 출력되며 진입되지 않는다.\n- **no 14 · 모드리스트 > 콘텐츠 해금 > 해금**\n  - 변경 후: 기차레벨 5 달성 시 입장 버튼이 활성화된다.\n- **no 15 · 모드리스트 > 입장 > 일반모드 > 입장 버튼 팝업**\n  - 변경 후: 활성화 입장 버튼 터치 시 일반모드/챌린지 모드 입장 버튼이 팝업된다.\n- **no 16 · 모드리스트 > 입장 > 일반모드 > 알림점**\n  - 변경 후: 일반모드 입장버튼에 보상/시즌 변경 알림점이 정상 출력된다.\n  - 흡수: no 17\n- **no 18 · 모드리스트 > 입장 > 일반모드 > 입장** (유지)\n- **no 19 · 모드리스트 > 입장 > 챌린지 모드 > 비활성화 기간**\n  - 변경 후: 월 00:00 ~ 목 23:59:59 까지 챌린지 입장 버튼이 비활성화되고 안내문구가 출력된다.\n  - 흡수: no 20\n- **no 21 · 모드리스트 > 입장 > 챌린지 모드 > 활성화 기간**\n  - 변경 후: 금 00:00 ~ 일 23:59:59 까지 챌린지 입장 버튼이 활성화되며, 보상/시즌 변경 알림점이 정상 출력된다.\n  - 흡수: no 22, 23\n- **no 24 · 모드리스트 > 입장 > 챌린지 모드 > 입장** (유지)\n\n#### 메인 화면 (일반모드)\n- **no 25 · 상단 메뉴 > 뒤로가기/타이틀**\n  - 변경 후: 좌상단 뒤로가기 버튼·타이틀이 출력되며, 뒤로가기 터치 시 이전 화면으로 전환된다.\n  - 흡수: no 26\n- **no 27 · 상단 메뉴 > 재화**\n  - 변경 후: 우상단 코인·크리스탈이 출력되며, 터치 시 구매처로 전환된다.\n  - 흡수: no 28\n- **no 29 · 상단 메뉴 > 기본 메뉴바**\n  - 변경 후: 우상단 기본 메뉴바가 출력되며 각 메뉴 기능이 정상 동작한다.\n  - 흡수: no 30\n- **no 31 · 상단 메뉴 > 챌린지 모드 변경 버튼**\n  - 변경 후: 상단에 챌린지 모드 변경 버튼이 출력된다.\n- **no 32 · 상단 메뉴 > 챌린지 모드 변경 > 비활성화**\n  - 변경 후: 월 00:00 ~ 목 23:59:59 까지 모드 변경 버튼이 비활성화되며, 비활성화 버튼 터치 시 안내 문구가 팝업된다. (no 33은 미출력으로 변경됨)\n  - 흡수: no 33, 34\n- **no 35 · 상단 메뉴 > 챌린지 모드 변경 > 활성화**\n  - 변경 후: 금 00:00 ~ 일 23:59:59 까지 모드 변경 버튼이 활성화되며, 터치 시 챌린지 모드 대기실로 전환된다.\n  - 흡수: no 36\n\n#### 레이드 티켓\n- **no 37 · 레이드 티켓 > 티켓 UI > 출력**\n  - 변경 후: 우상단에 레이드 티켓 보유/최대 수량이 출력되며, 사용·획득에 따라 갱신된다.\n  - 흡수: no 38\n- **no 39 · 레이드 티켓 > 티켓 구매 팝업 > 출력**\n  - 변경 후: 티켓 영역 터치 시 구매 팝업이 출력되며, 타이틀·닫기·획득 수량·구매 가능 횟수·안내 문구가 정상 표시된다.\n  - 흡수: no 40, 41, 42\n- **no 43 · 레이드 티켓 > 티켓 구매 팝업 > 구매 가능 횟수**\n  - 변경 후: 구매 시마다 구매 가능 횟수가 1씩 차감된다.\n- **no 44 · 레이드 티켓 > 티켓 구매 팝업 > 구매 동작**\n  - 변경 후: 팝업 하단 구매 버튼·가격 출력, 터치 시 크리스탈이 차감되고 레이드 티켓 1개를 획득한다.\n  - 흡수: no 45, 46\n- **no 47 · 레이드 티켓 > 티켓 구매 팝업 > 가격/최대 구매횟수**\n  - 변경 후: 구매 횟수마다 가격이 +100 크리스탈 증가하며, 하루 최대 5회까지 구매 가능하다.\n  - 흡수: no 48\n- **no 49 · 레이드 티켓 > 티켓 구매 팝업 > 구매 불가**\n  - 변경 후: 구매횟수 소진 또는 크리스탈 부족 시 구매 버튼이 비활성화되고, 터치 시 안내/크리스탈 부족 팝업이 출력된다.\n  - 흡수: no 50, 51, 52\n- **no 53 · 레이드 티켓 > 티켓 구매 팝업 > 팝업 종료**\n  - 변경 후: 닫기 버튼 터치 시 팝업이 종료된다.\n- **no 54 · 레이드 티켓 > 티켓 자동 충전**\n  - 변경 후: 보유 티켓 1개 미만 시 충전까지 남은 시간이 출력되고 실시간 갱신된다.\n  - 흡수: no 55\n- **no 56 · 레이드 티켓 > 티켓 자동 충전 > 티켓 충전**\n  - 변경 후: 남은 시간 00:00 도달 시 최대치(5)까지 충전되며, 보유분이 있어도 최대치를 초과하지 않는다.\n  - 흡수: no 57\n\n#### 레이드 랭킹\n- **no 58 · 레이드 랭킹 > 화면 전환**\n  - 변경 후: 좌상단 랭킹 버튼이 출력되며, 터치 시 레이드 랭킹 화면으로 전환된다.\n  - 흡수: no 59\n- **no 60 · 레이드 랭킹 > 상단 메뉴**\n  - 변경 후: 뒤로가기·타이틀·기본 메뉴바가 출력되며 각 버튼이 정상 동작한다.\n  - 흡수: no 61, 62, 63\n- **no 64 · 레이드 랭킹 > 랭킹 탭**\n  - 변경 후: 좌측에 랭킹/랭킹 보상 탭이 출력되며, 진입 시 랭킹 탭이 기본 선택된다.\n  - 흡수: no 65\n- **no 66 · 레이드 랭킹 > 랭킹 목록 출력**\n  - 변경 후: 랭킹 탭 선택 시 우측에 랭킹 목록이 출력된다.\n- **no 67 · 레이드 랭킹 > 시즌 종료 남은시간**\n  - 변경 후: 랭킹 목록 상단에 현재 시즌 종료까지 남은시간이 출력되고 실시간 갱신된다.\n  - 흡수: no 68\n- **no 69 · 레이드 랭킹 > 순위 정보**\n  - 변경 후: 랭킹 목록 내 각 유저의 순위·정보·클리어 시간·플레이 난이도가 출력되며, 내림차순 정렬된다.\n  - 흡수: no 70\n- **no 71 · 레이드 랭킹 > 랭킹 등록조건**\n  - 변경 후: 5단계 4인 클리어한 경우에만 랭킹에 등록된다.\n- **no 72 · 레이드 랭킹 > 내 기록**\n  - 변경 후: 목록 최하단에 내 기록이 출력되며, 5단계 4인 기록이 없으면 안내문구, 있으면 내 순위·정보·클리어 시간·난이도·다음 구간 목표가 출력된다.\n  - 흡수: no 73, 74, 75\n- **no 76 · 레이드 랭킹 > 페이지 전환**\n  - 변경 후: 좌측 하단 페이지 전환 UI(현재 페이지·좌/우 버튼)가 출력되며, 터치 시 이전/다음 페이지로 전환된다.\n  - 흡수: no 77, 78\n- **no 79 · 레이드 랭킹 > 글로벌/로컬 랭킹 전환**\n  - 변경 후: 우상단 글로벌/로컬 전환 버튼(로컬은 국가 코드 표기)이 출력되며, 각 버튼 터치 시 전체 또는 동일 국가 유저 랭킹으로 전환된다.\n  - 흡수: no 80, 81, 82\n- **no 83 · 레이드 랭킹 > 안내 문구/갱신**\n  - 변경 후: 목록 하단에 안내 문구가 출력되며, 모든 랭킹이 10분마다 자동 갱신된다.\n  - 흡수: no 84\n- **no 85 · 레이드 랭킹 > 랭킹 상세정보 팝업**\n  - 변경 후: 유저 영역 터치 시 상세정보 팝업(타이틀·닫기·랭킹 순위·클리어 기록·파티 유저 정보)이 출력된다.\n  - 흡수: no 86, 87, 88, 89\n- **no 90 · 레이드 랭킹 > 파티 유저정보**\n  - 변경 후: 각 유저의 탈출레벨·칭호·닉네임·길드·사용 쿠키·아티팩트·장비 목록이 출력된다.\n- **no 91 · 레이드 랭킹 > 유저 상세정보**\n  - 변경 후: 각 유저 옆 (+)돋보기 버튼 터치 시 유저 상세정보 화면으로 전환되며, 닫기 버튼 터치 시 팝업이 종료된다.\n  - 흡수: no 92, 93\n\n#### 제작소 / 쿠키 정보\n- **no 94 · 제작소 > 화면 전환**\n  - 변경 후: 좌상단 제작소 버튼이 출력되며, 터치 시 제작소 화면으로 전환된다.\n  - 흡수: no 95\n- **no 96 · 쿠키 정보 > 메인 화면**\n  - 변경 후: 메인화면 중앙에 파티 각 유저가 설정한 쿠키 정보(모델링·전투력·아티팩트·레벨·포지션·속성·성급·닉네임)가 출력된다.\n  - 흡수: no 97, 98\n- **no 99 · 쿠키 정보 > 쿠키 전투력**\n  - 변경 후: 입장 전투력 대비 낮으면 전투력 UI/경고 아이콘이 빨간색, 높으면 녹색으로 출력된다.\n  - 흡수: no 100, 101\n- **no 102 · 쿠키 정보 > 탑레벨 부족**\n  - 변경 후: 해당 난이도의 탑레벨 미달 시 \"탑 레벨이 부족합니다\" 안내가 출력된다.\n- **no 103 · 쿠키 정보 > 쿠키 변경하기**\n  - 변경 후: 내 쿠키 터치 시 변경 화면으로 전환되며, 변경 후 메인화면 복귀 시 정보가 갱신된다.\n  - 흡수: no 104\n\n#### 파티 매칭 팝업\n- **no 105 · 파티 초대 슬롯**\n  - 변경 후: 쿠키 정보 우측에 파티 초대 슬롯이 출력되며, 초대 중인 유저가 있을 시 로딩 연출이 출력된다.\n  - 흡수: no 106\n- **no 107 · 파티 UI 팝업**\n  - 변경 후: 초대 슬롯 터치 시 파티 UI가 팝업된다.\n- **no 108 · 파티 매칭 > 내 친구 탭**\n  - 변경 후: 상단 \"내 친구\" 탭 출력 및 선택 시 친구 목록(프로필·닉네임·마지막 접속·초대 버튼·접속 수·새로고침·정렬)이 출력된다.\n  - 흡수: no 109, 110, 111, 115, 116, 117, 118\n- **no 112 · 파티 매칭 > 초대 버튼 상태 전환**\n  - 변경 후: 초대 버튼 터치 시 \"초대 중\"으로 전환, 참여 시 \"파티원\", 거절 시 다시 초대(+) 상태로 전환된다.\n  - 흡수: no 113, 114\n- **no 119 · 파티 매칭 > 길드원 탭**\n  - 변경 후: 상단 \"길드원\" 탭이 출력되며 선택 시 길드원 목록이 출력된다 (미가입 시 안내 문구). 기능은 \"내 친구\"와 동일.\n  - 흡수: no 120, 121, 122\n- **no 123 · 파티 매칭 > 최근 함께한 유저 탭**\n  - 변경 후: 상단 \"최근 함께한 유저\" 탭이 출력되며, 선택 시 최근 10회 매칭 유저 목록이 최근순으로 출력된다 (목록 없을 시 안내 문구). 접속/새로고침/정렬 버튼이 제거된 점을 제외하면 \"내 친구\"와 동일.\n  - 흡수: no 124, 125, 126, 127, 128, 129\n- **no 130 · 파티 매칭 > 초대 요청 팝업**\n  - 변경 후: 초대 받은 경우 우상단에 초대 팝업(유저 프로필·닉네임·콘텐츠)이 출력되며, \"참가\" 터치 시 파티 대기실로 전환, \"거절\" 시 팝업이 종료된다.\n  - 흡수: no 131, 132, 133\n- **no 134 · 파티 매칭 > 파티 생성**\n  - 변경 후: 좌측 \"파티 생성\" 버튼 터치 시 임의 파티가 생성되며 자동 참여, 좌측 영역이 파티 정보로 변경된다.\n  - 흡수: no 135, 136\n- **no 137 · 파티 매칭 > 파티 ID**\n  - 변경 후: 좌상단 파티 ID 및 복사 버튼이 출력되며, 복사 터치 시 클립보드에 저장된다.\n  - 흡수: no 138, 139\n- **no 140 · 파티 매칭 > 파티원 목록**\n  - 변경 후: 좌측에 파티원 목록(참여/전체 인원, 빈칸 슬롯, 프로필·닉네임)이 출력된다.\n  - 흡수: no 141, 142, 143\n- **no 144 · 파티 매칭 > 방장 유저**\n  - 변경 후: 방장 유저 우측에 왕관 아이콘 및 강퇴(X) 버튼이 출력되며, 강퇴 터치 시 해당 유저가 즉시 탈퇴 처리된다.\n  - 흡수: no 145, 146\n- **no 147 · 파티 매칭 > ID로 참가**\n  - 변경 후: \"ID로 참가\" 버튼 터치 시 ID 입력 UI 및 키보드가 출력되며, 안내 문구·입력창이 표시된다.\n  - 흡수: no 148, 149\n- **no 150 · 파티 매칭 > 참가 버튼 활성화 조건**\n  - 변경 후: 미입력/영문 외/6자 미만 시 참가 버튼 비활성화, 영문 6자 입력 시 활성화된다.\n  - 흡수: no 151, 152, 153\n- **no 154 · 파티 매칭 > 파티 참가**\n  - 변경 후: 유효 ID 입력 후 \"참가\" 터치 시 해당 파티로 참여 처리되며, 유효하지 않으면 경고 문구가 팝업된다.\n  - 흡수: no 155\n- **no 156 · 파티 매칭 > 친구 목록 전환**\n  - 변경 후: 좌하단 \"친구 목록\" 버튼 터치 시 친구 목록 화면으로 전환된다.\n  - 흡수: no 157\n- **no 158 · 파티 매칭 > 닫기**\n  - 변경 후: 좌상단 닫기(X) 버튼 터치 시 팝업이 종료된다.\n  - 흡수: no 159\n\n#### 파티 매칭 후 메인 로비\n- **no 160 · 파티 매칭 후 > 뒤로가기 버튼 출력**\n  - 변경 후: 메인화면 좌상단에 뒤로가기 버튼이 출력된다.\n- **no 161 · 파티 매칭 후 > 뒤로가기 동작**\n  - 변경 후: 파티 참여 상태에서 뒤로가기 터치 시 파티 탈퇴 확인 팝업이 출력되며, 확인 시 파티 탈퇴 후 이전 화면으로 전환, 취소 시 팝업이 종료된다.\n  - 흡수: no 162, 163\n- **no 164 · 파티 매칭 후 > 파티 ID 출력**\n  - 변경 후: 좌상단에 현재 파티 ID가 출력된다.\n- **no 165 · 파티 매칭 후 > 탈퇴 버튼**\n  - 변경 후: 좌상단 \"탈퇴\" 버튼 터치 시 현재 파티에서 즉시 탈퇴된다.\n  - 흡수: no 166\n- **no 167 · 파티 매칭 후 > 추가 전환불가 처리**\n  - 변경 후: 파티 참여 상태에서 재화/홈 등 화면 전환 시도 시 파티 탈퇴 확인 팝업이 출력된다.\n  - 흡수: no 168\n- **no 169 · 파티 매칭 후 > 방장 유저**\n  - 변경 후: 방장 닉네임 좌측에 왕관 아이콘이 출력되며, 방장 탈퇴 시 랜덤 유저에게 방장 지위가 이임된다.\n  - 흡수: no 170\n- **no 171 · 파티 매칭 후 > 내 쿠키/닉네임**\n  - 변경 후: 내 쿠키는 항상 1번 슬롯에, 내 닉네임은 녹색 배경으로 강조된다.\n  - 흡수: no 172\n- **no 173 · 파티 매칭 후 > 유저 상태**\n  - 변경 후: 유저 상태별 안내(쿠키 변경 중/오프라인/게임 중/READY)가 각 슬롯에 정상 표시된다.\n  - 흡수: no 174, 175, 176\n- **no 177 · 파티 매칭 후 > 파티 상태에서 재접속**\n  - 변경 후: 파티 소속 상태로 재접속 시 \"파티로 이동하기\" 알림이 팝업되며, 확인 시 해당 콘텐츠로 전환되고 파티 소속이 유지된다.\n  - 흡수: no 178, 179\n\n#### 파티원 상세정보\n- **no 180 · 파티원 상세정보 팝업**\n  - 변경 후: 파티원 터치 시 파티원 정보 UI(프로필·기차레벨·칭호·닉네임·길드명·상세정보 버튼)가 팝업된다.\n  - 흡수: no 181, 182\n- **no 183 · 파티원 상세정보 > 유저 상세정보**\n  - 변경 후: 상세정보 버튼 터치 시 해당 유저의 상세정보 화면으로 전환된다.\n- **no 184 · 파티원 상세정보 > 조합 정보**\n  - 변경 후: 팝업 중앙에 파티원 쿠키 조합(이미지·이름·레벨·성급·전투력·아티팩트·장비·총 전투력)이 출력된다.\n  - 흡수: no 185, 186\n- **no 187 · 파티원 상세정보 > 친구 신청**\n  - 변경 후: 친구가 아닌 경우 \"친구 신청\" 버튼이 출력되며, 터치 시 신청이 전송되고 \"수락 대기중...\"으로 전환된다.\n  - 흡수: no 188, 189\n- **no 190 · 파티원 상세정보 > 친구 삭제**\n  - 변경 후: 친구인 경우 \"친구 삭제\" 버튼이 출력되며, 터치 시 친구 목록에서 제거되고 \"친구 신청\"으로 전환된다.\n  - 흡수: no 191, 192\n- **no 193 · 파티원 상세정보 > 내보내기**\n  - 변경 후: 방장 화면에서만 \"내보내기\" 버튼이 출력되며, 터치 시 해당 유저가 즉시 강제 탈퇴 처리된다 (파티원 화면에서는 미출력).\n  - 흡수: no 194, 195\n\n#### 채팅\n- **no 196 · 채팅 > 버튼/영역 출력**\n  - 변경 후: 좌하단에 채팅 버튼·표시 영역이 출력되며, 새 메세지 알림점과 최근 2개 메세지 요약이 표시된다.\n  - 흡수: no 197, 198\n- **no 199 · 채팅 > 팝업**\n  - 변경 후: 채팅 버튼 터치 시 채팅 목록이 좌측 슬라이드로 팝업된다.\n- **no 200 · 채팅 > 상단 메뉴**\n  - 변경 후: 상단에 뒤로가기 버튼·타이틀이 출력되며, 뒤로가기 터치 시 좌측 슬라이드로 종료된다.\n  - 흡수: no 201, 202\n- **no 203 · 채팅 > 파티 탭**\n  - 변경 후: 좌측 \"파티\" 탭이 출력되며, 파티 소속 상태에서 진입 시 자동 선택되고 새 메세지 알림점이 표시된다.\n  - 흡수: no 204, 205\n- **no 206 · 채팅 > 파티 채팅화면 출력**\n  - 변경 후: 채팅 중 유저의 프로필·닉네임·메세지·송신 시각·날짜가 출력되며, 본인 메세지는 우측·상대는 좌측에 표시된다.\n  - 흡수: no 207, 208, 209, 210, 211\n- **no 212 · 채팅 > 메세지 스크롤**\n  - 변경 후: 메세지 표시 화면 상하 스크롤 시 이전/이후 메세지가 정상 스크롤된다.\n- **no 213 · 채팅 > 메세지 입력 UI**\n  - 변경 후: 하단에 메세지 프리셋·이모티콘·입력창·보내기 버튼이 출력된다.\n- **no 214 · 채팅 > 프리셋 메세지**\n  - 변경 후: 프리셋 버튼 터치 시 미리 입력된 메세지가 출력되며, 선택 시 상대에게 전송된다.\n  - 흡수: no 215\n- **no 216 · 채팅 > 이모티콘**\n  - 변경 후: 이모티콘 버튼 터치 시 미리 설정된 이모티콘이 출력되며, 선택 시 상대에게 전송된다.\n  - 흡수: no 217\n- **no 218 · 채팅 > 메세지 입력/전송**\n  - 변경 후: 입력창 터치 시 키보드 팝업, 보내기 버튼 터치 시 입력 텍스트가 상대에게 전송되며 채팅방 목록에 즉시 출력된다.\n  - 흡수: no 219, 220, 221\n- **no 222 · 채팅 > 메인화면 말풍선**\n  - 변경 후: 채팅 메세지/스탬프 전송 시 해당 유저 쿠키 슬롯 상단에 말풍선으로 출력된다.\n\n#### 레이드 시즌 정보\n- **no 223 · 레이드 시즌 정보 > 표시 영역**\n  - 변경 후: 메인로비 우상단에 현재 시즌 정보 표시 영역(보스 포트레이트·이름·info 버튼)이 출력된다.\n  - 흡수: no 224\n- **no 225 · 보스 상세 정보 팝업**\n  - 변경 후: info 버튼 터치 시 보스 상세 정보(타이틀·닫기·포트레이트·이름·설명·추천속성)가 팝업되며, 닫기 시 종료된다.\n  - 흡수: no 226, 227, 228, 229, 230\n- **no 231 · 난이도 정보 출력**\n  - 변경 후: 표시 영역 중앙에 난이도 탭·입장 전투력·추천속성·시즌규칙·획득 가능 보상이 출력된다.\n- **no 232 · 난이도 정보 > 전투력 색상**\n  - 변경 후: 입장 전투력 대비 낮으면 빨간색·경고, 높으면 녹색으로 출력된다.\n  - 흡수: no 233\n- **no 234 · 난이도 정보 > 시즌 규칙 표시**\n  - 변경 후: 시즌 규칙 없으면 \"해당 없음\", 있으면 규칙 아이콘이 출력되고 터치 시 설명 말풍선이 팝업된다.\n  - 흡수: no 235, 236\n- **no 237 · 난이도 정보 > 시즌 규칙 단계별 적용**\n  - 변경 후: 1~3단계는 미적용, 4단계는 일반 규칙, 5단계는 강화 규칙이 적용된다.\n  - 흡수: no 238, 239\n- **no 240 · 보상 정보**\n  - 변경 후: 하단에 현재 난이도에서 획득 가능한 보상 정보가 출력되며, 가로 스크롤 및 보상 터치 시 설명 말풍선이 팝업된다.\n  - 흡수: no 241, 242\n- **no 243 · 보상 정보 > info 시즌 정보 팝업**\n  - 변경 후: 보상 정보 우측 info 버튼 터치 시 시즌 정보 UI(타이틀·닫기·난이도 탭·기본/랜덤 보상 목록)가 팝업되며, 현재 난이도가 기본 선택되고 닫기 시 종료된다.\n  - 흡수: no 244, 245, 246, 247, 248, 249, 250, 251\n- **no 252 · 난이도 변경 탭**\n  - 변경 후: 표시 영역 상단에 난이도 선택 탭이 출력되며, 현재 선택 난이도 상단에 화살표 애니메이션이 출력된다.\n  - 흡수: no 253\n- **no 254 · 난이도 변경 시 콘셉트/정보 변경**\n  - 변경 후: 각 난이도 선택 시 배경/모닥불 콘셉트가 변경되고, 입장 전투력·시즌 규칙·보상 정보가 함께 변경된다.\n  - 흡수: no 255\n- **no 256 · 시즌 규칙 연출**\n  - 변경 후: 시즌 진행 후 최초로 4단계 이상 진입 시 시즌 규칙 안내 연출이 재생된다.\n\n#### 트로피 상자\n- **no 257 · 트로피 상자 > 출력 조건**\n  - 변경 후: 1~2단계 미출력, 3단계 이상 시 메인화면 하단에 트로피 상자 UI가 출력된다.\n  - 흡수: no 258\n- **no 259 · 코코방울의 축복 > 게이지**\n  - 변경 후: 하단에 슈퍼에픽 확정 게이지(현재/최대 누적 포인트, 비례 증가)와 info 버튼이 출력된다.\n  - 흡수: no 260, 261, 262\n- **no 263 · 코코방울의 축복 > info 팝업**\n  - 변경 후: info 버튼 터치 시 코코방울 축복 안내 팝업이 출력된다.\n- **no 264 · 코코방울의 축복 > 선택 장비 슬롯**\n  - 변경 후: 게이지 우측에 선택 장비 슬롯 2개가 출력되며, 미설정 시 빈 슬롯·설정 시 썸네일이 표시되고 비어있으면 느낌표 알림점이 출력된다.\n  - 흡수: no 265, 266, 267\n- **no 268 · 코코방울의 축복 > 상세 UI 팝업**\n  - 변경 후: 슬롯 터치 시 상세 UI 팝업(부위별 카테고리 탭·장비 목록·필터·정렬)이 출력되며 정상 동작한다.\n  - 흡수: no 269, 270, 271, 272, 273, 274, 275, 276\n- **no 277 · 코코방울의 축복 > 보유/미보유 표시**\n  - 변경 후: 보유 장비는 활성화, 미보유 장비는 비활성화 썸네일로 출력된다.\n  - 흡수: no 278\n- **no 279 · 코코방울의 축복 > 장비 선택**\n  - 변경 후: 우측에 유니크/슈퍼에픽 슬롯 및 안내 문구가 출력되며, 목록에서 선택 시 슬롯에 반영되고 빼기(-) 버튼으로 해제 가능하다.\n  - 흡수: no 280, 281, 282, 283\n- **no 284 · 코코방울의 축복 > 초기화**\n  - 변경 후: 초기화 버튼 터치 시 슬롯의 모든 장비가 제거된다.\n  - 흡수: no 285\n- **no 286 · 코코방울의 축복 > 적용**\n  - 변경 후: 모든 슬롯 채운 후 적용 시 정상 저장, 미충족 상태 적용 시 경고 팝업(취소·저장·안내 문구)이 출력되며 저장 시 빈 슬롯 상태로 저장된다.\n  - 흡수: no 287, 288, 289, 290, 291\n- **no 292 · 트로피 상자 표시 UI**\n  - 변경 후: 일반/고급 트로피 상자 아이콘 및 트로피 포인트 게이지가 출력되며, 누적 포인트에 비례하여 게이지가 채워진다.\n  - 흡수: no 293\n- **no 294 · 트로피 상자 > 알림점**\n  - 변경 후: 오픈 가능한 상자가 있을 시 각 상자 우상단에 오픈 가능 갯수 알림점이 표시된다.\n- **no 295 · 트로피 상자 > 상세 팝업**\n  - 변경 후: 트로피 상자 UI 터치 시 상세 팝업(타이틀·info·핵심 보상 목록·상세확률 버튼)이 출력되며 정상 동작한다.\n  - 흡수: no 296, 297, 298, 299, 300, 301, 302\n- **no 303 · 트로피 상자 > 타워패스 혜택**\n  - 변경 후: 구매 전에는 혜택 UI 및 구매 버튼이 출력되어 구매 화면으로 전환, 구매 후에는 적용중 UI 및 \"구매완료\" 비활성 버튼으로 변경된다.\n  - 흡수: no 304, 305, 306, 307, 308\n- **no 309 · 트로피 상자 목록 > 일반/고급 트로피 상자**\n  - 변경 후: 일반(100p)/고급(1000p) 상자 이미지·게이지·열기 버튼이 출력되며, 포인트 미만 시 비활성·이상 시 활성화되고 열기 시 오픈 연출 후 데이터 확률대로 보상을 획득하며 게이지가 차감된다. 누적 포인트에 따라 여러 상자를 한 번에 오픈할 수 있고, 포인트 획득 시 양쪽 상자에 동시 누적된다.\n  - 흡수: no 310~331, 347\n- **no 332 · 트로피 상자 > 타워패스 상자**\n  - 변경 후: 타워패스 상자 이미지·시즌 남은시간·info 버튼이 출력되며 시간이 실시간 갱신되고, info 터치 시 안내 UI가 팝업된다.\n  - 흡수: no 333, 334, 335, 336\n- **no 337 · 트로피 상자 > 타워패스 상자 구매 전/후**\n  - 변경 후: 구매 전에는 안내 말풍선·구매 버튼(터치 시 구매 화면 전환), 구매 후에는 적용중 말풍선·열기 버튼이 출력되며 열기 시 오픈 연출이 출력된다.\n  - 흡수: no 338, 339, 340, 341, 342\n- **no 343 · 트로피 상자 > 타워패스 상자 누적/초기화**\n  - 변경 후: 타워패스 구매 여부와 무관하게 매일 1개씩 누적되며, 구매 시 누적분을 한 번에 획득하고 시즌 종료 시 구매 전 상태 및 누적분이 초기화된다.\n  - 흡수: no 344, 345, 346\n- **no 348 · 트로피 상자 > 여러개 열기 알림점**\n  - 변경 후: 오픈 가능 상자가 여러 개 누적된 경우 열기 버튼 우상단에 누적 수량 알림점이 출력된다.\n\n#### 무지개 상자 확정지급\n- **no 349 · 무지개 상자 확정지급 > 게이지**\n  - 변경 후: Play 버튼 상단에 무지개 상자 확정지급 게이지(3칸)가 출력되며, 1·3번째 칸 상단에 100% 말풍선과 info 버튼이 표시되고 info 터치 시 안내 말풍선이 팝업된다.\n  - 흡수: no 350, 351, 352\n- **no 353 · 무지개 상자 확정지급 > 클리어 누적**\n  - 변경 후: 1·2·3회 플레이 시 각 칸이 녹색으로 채워지며, 1·3회차에는 무지개 말풍선이 녹색 체크표시로 변경된다.\n  - 흡수: no 354, 355\n- **no 356 · 무지개 상자 확정지급 > Free Play/초기화**\n  - 변경 후: Free Play는 게이지가 채워지지 않으며, 매일 00:00에 게이지가 초기화된다.\n  - 흡수: no 357\n\n#### 주간 클리어 보상 (챌린지 모드)\n- **no 358 · 주간 클리어 보상 > 아이콘**\n  - 변경 후: 챌린지 모드 대기실 하단에 주간 클리어 보상 상자(상태별 태그 포함)가 출력된다.\n  - 흡수: no 359, 360, 361\n- **no 362 · 주간 클리어 보상 > 상세 팝업**\n  - 변경 후: 보상 상자 터치 시 클리어 보상 UI 팝업이 출력되며, 좌측 확정 보상·우측 랜덤 보상 목록(아이콘·수량)이 표시된다.\n  - 흡수: no 363, 364, 365\n- **no 366 · 주간 클리어 보상 > 열기 버튼**\n  - 변경 후: 챌린지 보스 클리어 전에는 열기 버튼이 비활성화·후에는 활성화되며, 터치 시 명시된 보상을 획득한다.\n  - 흡수: no 367, 368\n- **no 369 · 주간 클리어 보상 > 누적 보상**\n  - 변경 후: 우측에 누적 카운트·누적 보상이 출력되며, 상자를 열 때마다 카운트 +1, 도달 시 보상이 활성화되어 터치 시 일괄 획득되고, 마지막 보상까지 모두 획득하면 카운트·획득여부가 초기화된다. 이미 획득한 보상에는 녹색 체크가 표시된다.\n  - 흡수: no 370, 371, 372, 373, 374, 375\n\n#### 인게임 매칭\n- **no 376 · 인게임 매칭 > 솔로 Play 버튼**\n  - 변경 후: 레이드 모드 우하단에 PLAY 버튼이 출력되며, 필요 티켓 수량이 표시된다.\n  - 흡수: no 377\n- **no 378 · 인게임 매칭 > 솔로 매칭 중**\n  - 변경 후: Play 버튼 터치 시 매칭 중 UI로 전환되며, 소요시간·매칭 취소 버튼이 출력되고 취소 시 초기 상태로 돌아간다.\n  - 흡수: no 379, 380, 381\n- **no 382 · 인게임 매칭 > 솔로 매칭 완료**\n  - 변경 후: 매칭 완료 시 매치 완료 UI 전환, 티켓 1개 소모 연출 후 인게임 로딩 화면으로 전환된다.\n  - 흡수: no 383, 384\n- **no 385 · 인게임 매칭 > 파티 READY 버튼**\n  - 변경 후: 레이드 모드 우하단에 READY 버튼·필요 티켓 수량이 출력된다.\n  - 흡수: no 386\n- **no 387 · 인게임 매칭 > 파티 READY 상태**\n  - 변경 후: READY 터치 시 \"준비 취소\" 버튼으로 전환, 재터치 시 다시 READY로 전환되며 준비 이전 상태로 초기화된다.\n  - 흡수: no 388, 389\n- **no 390 · 인게임 매칭 > 파티 4명 미만 매칭 중**\n  - 변경 후: 모든 유저 READY 상태일 때 매칭 중 UI 전환, 소요시간·매칭 취소(X) 버튼이 출력되고 1명이라도 취소 시 모두 초기화된다.\n  - 흡수: no 391, 392, 393\n- **no 394 · 인게임 매칭 > 파티 4명 미만 매칭 완료**\n  - 변경 후: 매칭 완료 시 매치 완료 UI 전환, 티켓 1개 소모 연출 후 인게임 로딩 화면으로 전환된다.\n  - 흡수: no 395, 396\n- **no 397 · 인게임 매칭 > 파티 4명 충족 매칭 완료**\n  - 변경 후: 4명 모두 READY 시 즉시 매치 완료 UI 전환, 티켓 1개 소모 후 인게임 로딩으로 전환된다.\n  - 흡수: no 398, 399\n- **no 400 · 인게임 매칭 > 탑 레벨 부족**\n  - 변경 후: 탑 레벨 부족 시 Play 버튼 영역에 필요 레벨·바로가기 버튼이 출력되며, 바로가기 터치 시 탑 레벨 화면으로 전환된다.\n  - 흡수: no 401\n- **no 402 · 인게임 매칭 > 매칭 중 UI 비활성화**\n  - 변경 후: 매칭 중에는 로비의 모든 버튼이 비활성화되며, 터치 시 안내 문구(\"준비 중에는 사용할 수 없는 기능입니다\")가 출력된다.\n  - 흡수: no 403\n- **no 404 · 인게임 매칭 > 입장 안내 팝업**\n  - 변경 후: 클리어한 최대 난이도보다 낮은 난이도 매칭 시 입장 안내 팝업(타이틀·닫기·안내·Free Play/일반 Play 버튼·설명 문구)이 출력되며 닫기 시 종료된다.\n  - 흡수: no 405, 406, 407, 412, 413\n- **no 408 · 인게임 매칭 > Free Play**\n  - 변경 후: Free Play 버튼 터치 시 매칭 중 또는 READY 상태로 전환되며, 인게임 진입 시 티켓을 소모하지 않는다.\n  - 흡수: no 409\n- **no 410 · 인게임 매칭 > 일반 Play**\n  - 변경 후: Play 버튼 터치 시 매칭 중 또는 READY 상태로 전환되며, 인게임 진입 시 티켓을 1개 소모한다.\n  - 흡수: no 411\n- **no 414 · 인게임 매칭 > 티켓 부족 팝업**\n  - 변경 후: 티켓 0 상태에서 PLAY/READY 터치 시 티켓 구매 UI(타이틀·닫기·획득 수량·구매 가능 횟수·Free Play·구매 버튼)가 팝업된다.\n  - 흡수: no 415, 416, 417, 418, 419\n- **no 420 · 인게임 매칭 > 티켓 부족 Free Play**\n  - 변경 후: Free Play 버튼 터치 시 매칭 중 또는 READY 상태로 전환되며, 티켓을 소모하지 않고 인게임 진입한다.\n  - 흡수: no 421\n- **no 422 · 인게임 매칭 > 티켓 부족 티켓 구매**\n  - 변경 후: 구매 버튼 터치 시 크리스탈 차감 후 티켓 1개 획득, 구매 횟수마다 가격 +100 증가, 하루 최대 5회, 소진 시 버튼 비활성화 및 토스트 안내가 정상 동작한다.\n  - 흡수: no 423, 424, 425, 426, 427\n- **no 428 · 인게임 매칭 > 티켓 충전권 팝업**\n  - 변경 후: 티켓 충전권 보유 + 티켓 부족 상태에서 Play 터치 시 충전 팝업(슬라이더·보유 충전권 만큼 사용횟수·+/- 버튼)이 출력된다.\n  - 흡수: no 429, 430\n- **no 431 · 인게임 매칭 > 티켓 충전권 사용**\n  - 변경 후: 슬라이더 좌우 이동 또는 +/- 버튼으로 사용 충전권 수가 변경되며, 사용하기 버튼 터치 시 설정 수만큼 티켓이 충전되고 닫기 시 팝업이 종료된다.\n  - 흡수: no 432, 433, 434\n\n#### 인게임 로딩\n- **no 435 · 인게임 로딩 > 쿠키 정보**\n  - 변경 후: 중앙에 각 유저 쿠키 정보(포트레이트·아티팩트·레벨·성급·전투력·속성·수련 레벨 엠블럼)가 출력된다.\n  - 흡수: no 436, 437, 438, 439\n- **no 440 · 인게임 로딩 > 유저 정보**\n  - 변경 후: 각 쿠키 상단에 유저 칭호·닉네임·길드 정보 및 명예 테두리 이미지가 출력되며, 권장 전투력 미만인 경우 새싹 아이콘이 표시된다.\n  - 흡수: no 441, 442\n- **no 443 · 인게임 로딩 > 시즌 규약**\n  - 변경 후: 4단계 이상 시 상단에 규약 아이콘·설명 문구가 출력되며, 4단계 미만에서는 미출력된다.\n  - 흡수: no 444, 445\n- **no 446 · 인게임 로딩 > 로딩바**\n  - 변경 후: 하단에 로딩바가 출력되며, 100% 도달 시 인게임 화면으로 전환된다.\n  - 흡수: no 447\n\n#### 인게임\n- **no 448 · 인게임 > 브릿지 맵 진입 연출**\n  - 변경 후: 인게임 진입 시 레이드 정보 연출이 1회 재생되며, 이후 인게임 UI가 페이드인된다.\n  - 흡수: no 449\n- **no 450 · 인게임 > 기본 조작**\n  - 변경 후: 이동·공격·대시·스킬·궁극기 사용이 정상 동작하며, 스탬프 사용 시 본인/다른 유저 화면 양쪽에 말풍선이 출력된다.\n  - 흡수: no 451, 452\n- **no 453 · 인게임 > 일시정지**\n  - 변경 후: 우상단 일시정지 버튼 터치 시 화면 딤드 및 일시정지 메뉴 UI가 팝업되며, 인게임은 정지되지 않고 실시간 진행된다.\n  - 흡수: no 454, 455\n- **no 456 · 인게임 > 타이머**\n  - 변경 후: 좌상단에 레이드 타이머가 출력되며, 보스전 진입 전 브릿지 맵에서는 타이머가 흐르지 않는다.\n  - 흡수: no 457\n- **no 458 · 인게임 > 파티원 정보**\n  - 변경 후: 좌상단에 파티원의 쿠키 포트레이트·닉네임·접속상태·체력바가 출력되며, 성급/레벨 MAX 시 금색 테두리·연결 끊김 시 빨간 와이파이 표시가 출력된다.\n  - 흡수: no 459, 460\n- **no 461 · 인게임 > 보스전 진입**\n  - 변경 후: 진입용 플랫폼에 1명 이상 시 5초 카운트다운 → 보스전 진입, 모든 파티원 위치 시 즉시 진입한다.\n  - 흡수: no 462, 463\n- **no 464 · 인게임 > 보스 정보**\n  - 변경 후: 화면 중앙 상단에 보스 이름·체력바가 출력된다.\n- **no 465 · 인게임 > 보스 공격/매칭 서버**\n  - 변경 후: 본인·다른 유저 모두 보스 공격 시 대미지가 정상 적용되며, 쿠키 조작이 다른 유저 화면에서도 동일하게 동기화된다.\n  - 흡수: no 466, 467\n- **no 468 · 인게임 > 쿠키 사망**\n  - 변경 후: 체력 0 시 유령 쿠키 상태로 전환되며, 화면 딤드·\"부활 대기 중\" UI 표시 및 이동 외 전투 UI가 제거된다.\n  - 흡수: no 469, 470\n- **no 471 · 인게임 > 쿠키 부활**\n  - 변경 후: 유령 쿠키 근처에서 공격 버튼 홀드 시 부활 게이지 증가, 떼거나 멀어지면 감소, 100% 시 부활하며 최대 체력의 n% 회복된다.\n  - 흡수: no 472, 473, 474, 475\n- **no 476 · 인게임 > 시즌 규약 적용**\n  - 변경 후: 시즌 규약이 인게임 내 정상 적용된다.\n\n#### 결과 화면 - 성공\n- **no 477 · 결과 화면 > 성공 조건**\n  - 변경 후: 제한시간 내 보스 체력 0 시 레이드 클리어 처리되며, COMPLETED! 연출 후 상자 연출 화면으로 전환된다.\n  - 흡수: no 478, 479\n- **no 480 · 결과 화면 > 상자 연출**\n  - 변경 후: 각 파티원 쿠키 앞에 랜덤 배정된 상자(브론즈·골드·무지개 중 확률)가 열리는 연출이 재생되며, 매일 1·3회차 클리어는 무지개 상자가 확정 지급된다.\n  - 흡수: no 481, 482\n- **no 483 · 결과 화면 > 상자 획득 아이템**\n  - 변경 후: 상자에서 획득한 3종 아이템 등급·아이콘이 출력되며, 권장 전투력 미만 유저는 닉네임 좌측에 새싹 아이콘이 표시된다.\n  - 흡수: no 484\n- **no 485 · 결과 화면 > 스탬프**\n  - 변경 후: 우하단 스탬프 사용 버튼 터치 시 사용한 스탬프 애니메이션이 해당 유저 쿠키 상단에 출력된다.\n  - 흡수: no 486\n- **no 487 · 결과 화면 > Free Play 예외**\n  - 변경 후: Free Play로 진입한 유저의 쿠키 앞에는 상자가 출현하지 않는다.\n- **no 488 · 결과 화면 > 기본 정보**\n  - 변경 후: 좌측에 CLEAR 문구·보스 정보·클리어타임·쿠키 승리 애니메이션이 출력된다.\n- **no 489 · 결과 화면 > 레이드 요약**\n  - 변경 후: 우측에 전투 요약 화면 및 상단에 획득 명예 트로피 정보가 출력된다.\n  - 흡수: no 490\n- **no 491 · 결과 화면 > 명예 트로피 지급 규칙**\n  - 변경 후: 유저별 통계 비교하여 1위 금·2위 은·3·4위 동 트로피가 지급되며, 동일 등급 중복 시 id 순으로 최대 4종까지만 지급된다.\n  - 흡수: no 492, 493, 494, 495\n- **no 496 · 결과 화면 > 새싹 도우미 트로피**\n  - 변경 후: 새싹 유저와 같이 클리어한 유저에게 새싹 도우미 트로피가 지급되며, 다른 명예 트로피보다 우선순위가 높고 획득 시 메달 트로피는 지급되지 않는다.\n  - 흡수: no 497, 498\n- **no 499 · 결과 화면 > 명예 트로피 예외**\n  - 변경 후: 네트워크 단절 클리어 시 명예 트로피가 미지급되며, 획득 기록 값이 없으면 \"획득한 명예 트로피가 없습니다.\" 문구가 출력된다.\n  - 흡수: no 500\n- **no 501 · 결과 화면 > 트로피 상자 포인트**\n  - 변경 후: 명예 트로피 획득 연출 후 하단에 트로피 상자 포인트 토스트 팝업이 출력되며, 명예 트로피 → 트로피 상자 UI로 포인트가 반영되는 연출 및 게이지 증가 연출이 출력된다.\n  - 흡수: no 502, 503\n- **no 504 · 결과 화면 > 트로피 상자 포인트 알림점/슬라이드 아웃**\n  - 변경 후: 열 수 있는 트로피 상자가 있으면 각 상자/UI 우상단에 숫자 알림점이 출력되며, 모든 연출 종료 후 트로피 상자 UI가 하단으로 슬라이드 아웃된다.\n  - 흡수: no 505\n- **no 506 · 결과 화면 > 획득 아이템**\n  - 변경 후: 명예 트로피 결과 하단에 획득 아이템(상자 3종 + 기본 획득 아이템) 목록이 출력되며, 썸네일 터치 시 상세 설명 말풍선이 팝업된다.\n  - 흡수: no 507, 508\n- **no 509 · 결과 화면 > Free Play 아이템 예외**\n  - 변경 후: Free Play로 진입한 경우 아이템을 획득하지 못한다.\n- **no 510 · 결과 화면 > 코코방울의 축복 포인트 획득/게이지**\n  - 변경 후: 클리어·명예 트로피에 따라 축복 포인트를 획득하며, 다시하기 버튼 상단에 누적 포인트·비례 게이지가 출력된다.\n  - 흡수: no 511, 512\n- **no 513 · 결과 화면 > 코코방울의 축복 발동/지급**\n  - 변경 후: 6,000 포인트 획득 시 축복이 발동되며 (기차레벨 상승 시 최대 4,800까지 감소), 슬롯 적용 장비는 확정 지급·미적용 슬롯은 해당 등급 랜덤 1종이 확정 지급된다.\n  - 흡수: no 514, 515, 516\n- **no 517 · 결과 화면 > 코코방울의 축복 게이지 초기화/예외**\n  - 변경 후: 축복 발동으로 슈퍼에픽 이상 획득 시 게이지 초기화, 발동 전 슈퍼에픽 획득 시에는 게이지가 초기화되지 않으며, 무지개 상자 확정과 겹칠 시 무지개 상자가 우선 발동되고 축복 게이지는 유지된다. 또한 기차레벨업으로 필요 포인트가 낮아진 경우 차액이 다음 게이지에 산입된다.\n  - 흡수: no 518, 519, 520\n- **no 521 · 결과 화면 > 다시하기 버튼/카운트다운**\n  - 변경 후: 우하단 다시하기 버튼이 출력되며, 결과 출력 후 15초 카운트다운, 시간 내 터치 시 쿠키 썸네일에 녹색 체크 표시, 15초 경과 시 비활성화된다.\n  - 흡수: no 522, 523, 524, 525\n- **no 526 · 결과 화면 > 다시하기 파티 플레이**\n  - 변경 후: 파티원 1명이라도 나가기 선택 시 다시하기 버튼이 즉시 비활성화된다.\n- **no 527 · 결과 화면 > 다시하기 인게임 전환**\n  - 변경 후: 모든 유저가 다시하기 여부 선택 시 매칭 중 화면으로 전환, 매치 완료 후 티켓 소모 연출 → 인게임 로딩 화면으로 전환된다.\n  - 흡수: no 528, 529\n- **no 530 · 결과 화면 > 나가기**\n  - 변경 후: 우하단 나가기 버튼 터치 시 레이드 모드 메인화면으로 전환된다.\n  - 흡수: no 531\n- **no 532 · 결과 화면 > 최고 기록 달성 연출**\n  - 변경 후: 최초/최고 기록 등록 시 클리어타임 상단에 New Record! 애니메이션이 재생된다.\n\n#### 결과 화면 - 실패\n- **no 533 · 결과 화면 > 실패 조건**\n  - 변경 후: 제한시간 내 보스 체력이 0 이상이거나 모든 파티원이 유령 쿠키 상태인 경우 클리어 실패 처리된다.\n  - 흡수: no 534\n- **no 535 · 결과 화면 > 실패 기본 정보**\n  - 변경 후: 좌측에 Fail 문구·보스 정보·플레이타임·쿠키 패배 애니메이션이 출력된다.\n- **no 536 · 결과 화면 > 실패 시 페널티**\n  - 변경 후: 클리어 실패 시 명예 트로피·보상을 획득하지 못하며, 레이드 티켓도 차감되지 않는다 (기타 기능은 성공과 동일).\n  - 흡수: no 537, 538, 539\n\n#### 시즌 정산\n- **no 540 · 시즌 정산 > 정산 보상 팝업**\n  - 변경 후: 시즌 정산 완료 후 최초 입장 시 이전 시즌 달성 기록에 따라 정산 보상 팝업(시즌 정보·달성 기록·아이템)이 출력된다.\n  - 흡수: no 541\n- **no 542 · 시즌 정산 > 랭킹 초기화**\n  - 변경 후: 시즌 정산 후 이전 시즌 랭킹이 초기화된다.\n\n### 추가 대상 TC\n없음 (기획서가 별도로 없으며, 기존 TC에 누락된 명백한 검증 포인트가 발견되지 않음)\n\n### 제거 대상 TC\n통합되어 흡수된 케이스들은 모두 제거 대상으로 처리됩니다.\n\n- **no 2, 3, 5** — no 1로 통합 (입장버튼 표시 요소들)\n- **no 8** — no 7로 통합 (남은 시간 갱신)\n- **no 10** — no 9로 통합 (알림점 시즌 정산)\n- **no 12** — no 11로 통합 (해금 조건 표시)\n- **no 17** — no 16로 통합 (시즌 변경 알림점)\n- **no 20** — no 19로 통합 (비활성화 안내문구)\n- **no 22, 23** — no 21로 통합 (활성화 기간 알림점)\n- **no 26** — no 25로 통합 (뒤로가기 전환)\n- **no 28** — no 27로 통합 (재화 전환)\n- **no 30** — no 29로 통합 (메뉴바 동작)\n- **no 33, 34** — no 32로 통합 (비활성화 안내)\n- **no 36** — no 35로 통합 (활성화 동작)\n- **no 38** — no 37로 통합 (티켓 UI 갱신)\n- **no 40, 41, 42** — no 39로 통합 (구매 팝업 요소)\n- **no 45, 46** — no 44로 통합 (구매 동작)\n- **no 48** — no 47로 통합 (최대 구매횟수)\n- **no 50, 51, 52** — no 49로 통합 (구매 불가 조건)\n- **no 55** — no 54로 통합 (충전 남은 시간 갱신)\n- **no 57** — no 56으로 통합 (충전 예외)\n- **no 59** — no 58로 통합 (랭킹 전환)\n- **no 61, 62, 63** — no 60으로 통합 (랭킹 상단 메뉴)\n- **no 65** — no 64로 통합 (랭킹 탭 기본 선택)\n- **no 68** — no 67로 통합 (시즌 종료 갱신)\n- **no 70** — no 69로 통합 (정렬 방식)\n- **no 73, 74, 75** — no 72로 통합 (내 기록 분기)\n- **no 77, 78** — no 76으로 통합 (페이지 전환)\n- **no 80, 81, 82** — no 79로 통합 (글로벌/로컬 전환)\n- **no 84** — no 83으로 통합 (랭킹 갱신)\n- **no 86, 87, 88, 89** — no 85로 통합 (상세정보 팝업)\n- **no 92, 93** — no 91로 통합 (유저 상세정보)\n- **no 95** — no 94로 통합 (제작소 전환)\n- **no 97, 98** — no 96으로 통합 (파티 쿠키 정보)\n- **no 100, 101** — no 99로 통합 (전투력 색상)\n- **no 104** — no 103으로 통합 (쿠키 변경 갱신)\n- **no 106** — no 105로 통합 (초대 슬롯 로딩)\n- **no 109, 110, 111, 115, 116, 117, 118** — no 108로 통합 (내 친구 탭 요소)\n- **no 113, 114** — no 112로 통합 (초대 버튼 상태)\n- **no 120, 121, 122** — no 119로 통합 (길드원 탭)\n- **no 124, 125, 126, 127, 128, 129** — no 123으로 통합 (최근 함께한 유저 탭)\n- **no 131, 132, 133** — no 130으로 통합 (초대 요청 팝업)\n- **no 135, 136** — no 134로 통합 (파티 생성)\n- **no 138, 139** — no 137로 통합 (파티 ID 복사)\n- **no 141, 142, 143** — no 140으로 통합 (파티원 목록)\n- **no 145, 146** — no 144로 통합 (방장 강퇴)\n- **no 148, 149** — no 147로 통합 (ID 입력 UI)\n- **no 151, 152, 153** — no 150으로 통합 (참가 버튼 활성화)\n- **no 155** — no 154로 통합 (파티 참가)\n- **no 157** — no 156으로 통합 (친구 목록 전환)\n- **no 159** — no 158로 통합 (닫기)\n- **no 162, 163** — no 161로 통합 (탈퇴 확인 팝업)\n- **no 166** — no 165로 통합 (탈퇴 처리)\n- **no 168** — no 167로 통합 (추가 전환불가)\n- **no 170** — no 169로 통합 (방장 이임)\n- **no 172** — no 171로 통합 (내 닉네임 강조)\n- **no 174, 175, 176** — no 173으로 통합 (유저 상태)\n- **no 178, 179** — no 177로 통합 (재접속 처리)\n- **no 181, 182** — no 180으로 통합 (파티원 정보 팝업)\n- **no 185, 186** — no 184로 통합 (조합 정보)\n- **no 188, 189** — no 187로 통합 (친구 신청)\n- **no 191, 192** — no 190으로 통합 (친구 삭제)\n- **no 194, 195** — no 193으로 통합 (내보내기)\n- **no 197, 198** — no 196으로 통합 (채팅 메세지 표시)\n- **no 201, 202** — no 200으로 통합 (채팅 상단 메뉴)\n- **no 204, 205** — no 203으로 통합 (파티 탭)\n- **no 207, 208, 209, 210, 211** — no 206으로 통합 (채팅 메세지)\n- **no 215** — no 214로 통합 (프리셋 전송)\n- **no 217** — no 216으로 통합 (이모티콘 전송)\n- **no 219, 220, 221** — no 218로 통합 (메세지 입력/전송)\n- **no 224** — no 223으로 통합 (보스 간단정보)\n- **no 226, 227, 228, 229, 230** — no 225로 통합 (보스 상세정보 팝업)\n- **no 233** — no 232로 통합 (전투력 색상)\n- **no 235, 236** — no 234로 통합 (시즌 규칙 표시)\n- **no 238, 239** — no 237로 통합 (시즌 규칙 단계별)\n- **no 241, 242** — no 240으로 통합 (보상 정보 스크롤)\n- **no 244, 245, 246, 247, 248, 249, 250, 251** — no 243으로 통합 (시즌 정보 팝업)\n- **no 253** — no 252로 통합 (선택한 난이도 표시)\n- **no 255** — no 254로 통합 (난이도 정보 변경)\n- **no 258** — no 257로 통합 (출력 조건)\n- **no 260, 261, 262** — no 259로 통합 (축복 게이지)\n- **no 265, 266, 267** — no 264로 통합 (선택 장비 슬롯)\n- **no 269, 270, 271, 272, 273, 274, 275, 276** — no 268로 통합 (상세 UI)\n- **no 278** — no 277로 통합 (보유/미보유 표시)\n- **no 280, 281, 282, 283** — no 279로 통합 (장비 선택)\n- **no 285** — no 284로 통합 (초기화 동작)\n- **no 287, 288, 289, 290, 291** — no 286으로 통합 (적용 동작)\n- **no 293** — no 292로 통합 (포인트 게이지)\n- **no 296, 297, 298, 299, 300, 301, 302** — no 295로 통합 (트로피 상자 상세 팝업)\n- **no 304, 305, 306, 307, 308** — no 303으로 통합 (타워패스 혜택)\n- **no 310~331, 347** — no 309로 통합 (일반/고급 트로피 상자 동작)\n- **no 333, 334, 335, 336** — no 332로 통합 (타워패스 상자 표시)\n- **no 338~342** — no 337로 통합 (타워패스 상자 구매 전/후)\n- **no 344, 345, 346** — no 343으로 통합 (타워패스 누적/초기화)\n- **no 350, 351, 352** — no 349로 통합 (확정지급 게이지)\n- **no 354, 355** — no 353으로 통합 (클리어 누적)\n- **no 357** — no 356으로 통합 (Free Play/초기화)\n- **no 359, 360, 361** — no 358로 통합 (주간 보상 아이콘)\n- **no 363, 364, 365** — no 362로 통합 (주간 보상 팝업)\n- **no 367, 368** — no 366으로 통합 (열기 버튼)\n- **no 370~375** — no 369로 통합 (누적 보상)\n- **no 377** — no 376으로 통합 (Play 버튼 티켓)\n- **no 379, 380, 381** — no 378로 통합 (솔로 매칭 중)\n- **no 383, 384** — no 382로 통합 (솔로 매칭 완료)\n- **no 386** — no 385로 통합 (READY 티켓 수량)\n- **no 388, 389** — no 387로 통합 (준비 취소)\n- **no 391, 392, 393** — no 390으로 통합 (파티 매칭 중)\n- **no 395, 396** — no 394로 통합 (파티 매칭 완료)\n- **no 398, 399** — no 397로 통합 (4인 매칭 완료)\n- **no 401** — no 400으로 통합 (탑 레벨 바로가기)\n- **no 403** — no 402로 통합 (안내 문구)\n- **no 405, 406, 407, 412, 413** — no 404로 통합 (입장 안내 팝업)\n- **no 409** — no 408로 통합 (Free Play 티켓)\n- **no 411** — no 410으로 통합 (일반 Play 티켓)\n- **no 415~419** — no 414로 통합 (티켓 부족 팝업)\n- **no 421** — no 420으로 통합 (티켓 부족 Free Play)\n- **no 423~427** — no 422로 통합 (티켓 구매 동작)\n- **no 429, 430** — no 428로 통합 (충전권 팝업)\n- **no 432, 433, 434** — no 431로 통합 (충전권 사용)\n- **no 436~439** — no 435로 통합 (쿠키 정보)\n- **no 441, 442** — no 440으로 통합 (유저 정보)\n- **no 444, 445** — no 443으로 통합 (시즌 규약)\n- **no 447** — no 446으로 통합 (로딩바)\n- **no 449** — no 448로 통합 (진입 연출)\n- **no 451, 452** — no 450으로 통합 (조작/스탬프)\n- **no 454, 455** — no 453으로 통합 (일시정지)\n- **no 457** — no 456으로 통합 (타이머)\n- **no 459, 460** — no 458로 통합 (파티원 정보)\n- **no 462, 463** — no 461로 통합 (보스전 진입)\n- **no 466, 467** — no 465로 통합 (대미지/매칭 서버)\n- **no 469, 470** — no 468로 통합 (쿠키 사망)\n- **no 472, 473, 474, 475** — no 471로 통합 (쿠키 부활)\n- **no 478, 479** — no 477로 통합 (클리어 연출)\n- **no 481, 482** — no 480으로 통합 (상자 지급 기준)\n- **no 484** — no 483으로 통합 (새싹 유저 정보)\n- **no 486** — no 485로 통합 (스탬프 사용)\n- **no 490** — no 489로 통합 (명예트로피 영역)\n- **no 492, 493, 494, 495** — no 491로 통합 (트로피 등급 지급)\n- **no 497, 498** — no 496으로 통합 (새싹 도우미 트로피)\n- **no 500** — no 499로 통합 (트로피 미지급/없음)\n- **no 502, 503** — no 501로 통합 (포인트 반영 연출)\n- **no 505** — no 504로 통합 (알림점/슬라이드 아웃)\n- **no 507, 508** — no 506으로 통합 (획득 아이템)\n- **no 511, 512** — no 510으로 통합 (축복 게이지)\n- **no 514, 515, 516** — no 513으로 통합 (축복 발동/지급)\n- **no 518, 519, 520** — no 517로 통합 (축복 게이지 초기화/예외)\n- **no 522, 523, 524, 525** — no 521로 통합 (다시하기 카운트다운)\n- **no 528, 529** — no 527로 통합 (다시하기 전환)\n- **no 531** — no 530으로 통합 (나가기)\n- **no 534** — no 533으로 통합 (실패 조건)\n- **no 537, 538, 539** — no 536으로 통합 (실패 페널티)\n- **no 541** — no 540으로 통합 (정산 보상 팝업)\n\n### 변경 우선순위\n- **Critical**: 없음 (기능 동작 변경 없음, 통합만 진행)\n- **Major**: 모든 통합 작업 (체크리스트 형태로 압축하여 빠른 검증 가능하게 만드는 작업)\n- **Minor**: 표현·문구 정리 (각 통합된 expectationResult의 자연스러운 한 줄 정리)"
+}
