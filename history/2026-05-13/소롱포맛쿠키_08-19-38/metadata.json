@@ -1,0 +1,21 @@
+{
+  "contentName": "소롱포맛쿠키",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778654417094_92zhwk",
+  "promptName": "CPT",
+  "focusPoints": null,
+  "elapsedSeconds": 87,
+  "tokenUsage": {
+    "inputTokens": 3,
+    "outputTokens": 5979,
+    "cacheReadTokens": 11107,
+    "cacheCreationTokens": 16800,
+    "totalCostUsd": 0.2600435
+  },
+  "cost": "$0.4485",
+  "appVersion": "1.4.2",
+  "generatedAt": "2026-05-13T08:19:38.279Z"
+}
