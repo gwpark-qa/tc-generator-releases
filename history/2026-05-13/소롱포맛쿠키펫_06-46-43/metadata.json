@@ -1,0 +1,21 @@
+{
+  "contentName": "소롱포맛쿠키펫",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-sonnet-4-20250514",
+  "promptId": "prompt_1778654417094_92zhwk",
+  "promptName": "CPT",
+  "focusPoints": null,
+  "elapsedSeconds": 91,
+  "tokenUsage": {
+    "inputTokens": 10,
+    "outputTokens": 5710,
+    "cacheReadTokens": 11104,
+    "cacheCreationTokens": 15738,
+    "totalCostUsd": 0.1480287
+  },
+  "cost": "$0.0857",
+  "appVersion": "1.3.4",
+  "generatedAt": "2026-05-13T06:46:43.884Z"
+}
