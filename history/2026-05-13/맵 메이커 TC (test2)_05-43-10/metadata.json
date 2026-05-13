@@ -1,0 +1,21 @@
+{
+  "contentName": "맵 메이커 TC (test2)",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "1) 기획서의 흐름은 첨부한 기획서의 번호(오름차순)대로 진행됩니다. \n2) 맨 앞의 번호를 대분류로 취급합니다.\n",
+  "elapsedSeconds": 228,
+  "tokenUsage": {
+    "inputTokens": 35,
+    "outputTokens": 27834,
+    "cacheReadTokens": 290901,
+    "cacheCreationTokens": 102734,
+    "totalCostUsd": 1.5080909999999998
+  },
+  "cost": "$2.0881",
+  "appVersion": "1.4.1",
+  "generatedAt": "2026-05-13T05:43:10.304Z"
+}
