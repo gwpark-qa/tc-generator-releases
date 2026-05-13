@@ -1,0 +1,21 @@
+{
+  "contentName": "CTA_23.0.N_TestCase",
+  "testCaseCount": 67,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778655034189_51k84k",
+  "promptName": "🚧 TC -> 체크리스트",
+  "focusPoints": null,
+  "elapsedSeconds": 155,
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 17170,
+    "cacheReadTokens": 17070,
+    "cacheCreationTokens": 99484,
+    "totalCostUsd": 1.140226
+  },
+  "cost": "$1.2878",
+  "appVersion": "1.4.2",
+  "generatedAt": "2026-05-13T07:08:16.670Z"
+}
