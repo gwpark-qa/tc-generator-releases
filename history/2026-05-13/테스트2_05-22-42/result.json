@@ -1,0 +1,26 @@
+{
+  "contentName": "테스트2",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Critical",
+      "main": "이벤트",
+      "sub1": "반죽 게임즈 테스트 센터",
+      "sub2": "메인 화면",
+      "sub3": "화면 전환",
+      "expectationResult": "반죽 게임즈 테스트 센터 메인 화면에서 우측 하단의 START 버튼 터치 시, 게임 진입을 위한 로딩 화면으로 전환된다.",
+      "comment": "참고 화면: upload_1778646943783_w1tv_0.png (반죽 게임즈 테스트 센터 이벤트 메인 화면)"
+    }
+  ],
+  "generatedAt": "2026-05-13T05:22:42.711Z",
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 1549,
+    "cacheReadTokens": 51399,
+    "cacheCreationTokens": 17757,
+    "totalCostUsd": 0.18428374999999997
+  },
+  "planText": "### 기능 목록\n\n(내용 없음)\n\n### 카테고리 구조\n\n```\n(내용 없음)\n```\n\n### TC 건수 배분\n\n(내용 없음)\n\n### 중점 확인 사항\n\n(내용 없음)",
+  "materialId": "mat_1778647006892_i7ww",
+  "planId": "plan_1778647006902_0xg8"
+}
