@@ -1,0 +1,21 @@
+{
+  "contentName": "미니게임_마블슈터 - 1차",
+  "testCaseCount": 122,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "1) 기획서의 흐름은 첨부한 기획서의 번호대로 진행됩니다.\n1. 튜토리얼 \n2. 튜토리얼\n3. 이벤트 모드\n4. 이벤트 모드_상세\n5. 게임종료\n6. 설정\n7. 랭킹\n\n2) UI 플로우의 시안.png는 좌측 카테고리를 기준으로 시안 흐름이 각 열 좌측으로 진행됩니다. \n\n2) 각 UI에 녹색 사각형과 녹색 동그라미 + 숫자로 강조된 부분은 우측 설명과 매칭되어 있습니다. \n예시) \"네온 데니쉬 이야기\"에 녹색 사각형과 녹색 동그라미 + 1로 강조되어 있다면, 좌측 설명에서 \"1. 타이틀 영역\" 과 같이 매칭되어 있습니다. 즉 그 이미지는 \"타이틀 영역\"이고 설명은 그 이미지에 대한 설명입니다.",
+  "elapsedSeconds": 314,
+  "tokenUsage": {
+    "inputTokens": 55,
+    "outputTokens": 53466,
+    "cacheReadTokens": 940176,
+    "cacheCreationTokens": 138089,
+    "totalCostUsd": 2.71945525
+  },
+  "cost": "$4.0108",
+  "appVersion": "1.4.1",
+  "generatedAt": "2026-05-13T02:24:08.238Z"
+}
