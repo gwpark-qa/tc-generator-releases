@@ -1,0 +1,1286 @@
+{
+  "contentName": "맵 메이커 TC (test2)",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Major",
+      "main": "심사하기 진입",
+      "sub1": "추천 맵 리스트",
+      "sub2": "상단 영역",
+      "sub3": "타이틀 출력",
+      "expectationResult": "심사하기 진입 화면 진입 시, 상단에 \"다른 유저들의 맵을 심사하자!\" 타이틀이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_0.png"
+    },
+    {
+      "no": 2,
+      "priority": "Major",
+      "main": "심사하기 진입",
+      "sub1": "추천 맵 리스트",
+      "sub2": "상단 영역",
+      "sub3": "닫기 버튼 동작",
+      "expectationResult": "우측 상단 X(닫기) 버튼 터치 시, 심사하기 진입 화면이 닫히고 맵 메이커 허브로 복귀된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_0.png"
+    },
+    {
+      "no": 3,
+      "priority": "Major",
+      "main": "심사하기 진입",
+      "sub1": "추천 맵 리스트",
+      "sub2": "추천 맵 카드",
+      "sub3": "카드 정보 출력",
+      "expectationResult": "심사하기 진입 화면 진입 시, 추천 맵 카드 3개에 각각 맵 이름/제작자/등록일 정보가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_0.png"
+    },
+    {
+      "no": 4,
+      "priority": "Normal",
+      "main": "심사하기 진입",
+      "sub1": "추천 맵 리스트",
+      "sub2": "추천 맵 카드",
+      "sub3": "썸네일 출력",
+      "expectationResult": "추천 맵 카드 각각에 해당 맵의 썸네일 이미지가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_0.png"
+    },
+    {
+      "no": 5,
+      "priority": "Major",
+      "main": "심사하기 진입",
+      "sub1": "추천 맵 리스트",
+      "sub2": "추천 맵 카드",
+      "sub3": "심사하기 버튼 동작",
+      "expectationResult": "추천 맵 카드 내 [심사하기] 버튼 터치 시, 해당 맵의 심사 상세(PLAY) 팝업으로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_0.png"
+    },
+    {
+      "no": 6,
+      "priority": "Normal",
+      "main": "심사하기 진입",
+      "sub1": "추천 맵 리스트",
+      "sub2": "카운트다운 영역",
+      "sub3": "남은 시간 출력",
+      "expectationResult": "하단 중앙에 \"맵 변경까지: HH:MM:SS\" 형식의 카운트다운이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_0.png"
+    },
+    {
+      "no": 7,
+      "priority": "Major",
+      "main": "심사하기 진입",
+      "sub1": "추천 맵 리스트",
+      "sub2": "카운트다운 영역",
+      "sub3": "시간 만료 자동 갱신",
+      "expectationResult": "카운트다운 시간 만료 시, 추천 맵 3장이 자동으로 새로운 맵으로 갱신된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_0.png"
+    },
+    {
+      "no": 8,
+      "priority": "Normal",
+      "main": "심사하기 진입",
+      "sub1": "예외 처리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "네트워크 단절 상황에서 심사하기 진입 시, 추천 맵 로딩 실패 안내가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_0.png"
+    },
+    {
+      "no": 9,
+      "priority": "Major",
+      "main": "맵 메이커 허브",
+      "sub1": "상단 인디케이터",
+      "sub2": "재화 영역",
+      "sub3": "보석 잔액 출력",
+      "expectationResult": "맵 메이커 허브 진입 시, 상단 우측에 현재 보유 다이아 잔액이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 10,
+      "priority": "Major",
+      "main": "맵 메이커 허브",
+      "sub1": "상단 인디케이터",
+      "sub2": "재화 영역",
+      "sub3": "골드 잔액 출력",
+      "expectationResult": "맵 메이커 허브 진입 시, 상단 우측에 현재 보유 골드(쿠키) 잔액이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 11,
+      "priority": "Normal",
+      "main": "맵 메이커 허브",
+      "sub1": "상단 인디케이터",
+      "sub2": "우상단 아이콘",
+      "sub3": "채팅 진입",
+      "expectationResult": "상단 채팅 아이콘 터치 시, 채팅 화면이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 12,
+      "priority": "Normal",
+      "main": "맵 메이커 허브",
+      "sub1": "상단 인디케이터",
+      "sub2": "우상단 아이콘",
+      "sub3": "설정 진입",
+      "expectationResult": "상단 설정 아이콘 터치 시, 설정 화면이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 13,
+      "priority": "Major",
+      "main": "맵 메이커 허브",
+      "sub1": "상단 인디케이터",
+      "sub2": "우상단 아이콘",
+      "sub3": "홈 이동",
+      "expectationResult": "상단 홈 아이콘 터치 시, 메인 로비로 이동된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 14,
+      "priority": "Normal",
+      "main": "맵 메이커 허브",
+      "sub1": "상단 인디케이터",
+      "sub2": "우상단 아이콘",
+      "sub3": "메뉴 진입",
+      "expectationResult": "상단 메뉴 아이콘 터치 시, 메뉴 패널이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 15,
+      "priority": "Critical",
+      "main": "맵 메이커 허브",
+      "sub1": "메인 메뉴 카드",
+      "sub2": "맵 만들기 카드",
+      "sub3": "화면 전환",
+      "expectationResult": "[맵 만들기] 카드 터치 시, 나의 맵 화면으로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 16,
+      "priority": "Major",
+      "main": "맵 메이커 허브",
+      "sub1": "메인 메뉴 카드",
+      "sub2": "심사하기 카드",
+      "sub3": "화면 전환",
+      "expectationResult": "[심사하기] 카드 터치 시, 심사하기 진입 화면으로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 17,
+      "priority": "Major",
+      "main": "맵 메이커 허브",
+      "sub1": "메인 메뉴 카드",
+      "sub2": "찾아보기 카드",
+      "sub3": "화면 전환",
+      "expectationResult": "[찾아보기] 카드 터치 시, 찾아보기 - 오늘의 추천 맵 화면으로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 18,
+      "priority": "Major",
+      "main": "맵 메이커 허브",
+      "sub1": "보조 탭",
+      "sub2": "맵 랭킹 진입",
+      "sub3": "",
+      "expectationResult": "우측 상단 [맵 랭킹] 탭 터치 시, 맵 랭킹 화면으로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 19,
+      "priority": "Major",
+      "main": "맵 메이커 허브",
+      "sub1": "보조 탭",
+      "sub2": "제작자 랭킹 진입",
+      "sub3": "",
+      "expectationResult": "우측 상단 [제작자 랭킹] 탭 터치 시, 제작자 랭킹 화면으로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 20,
+      "priority": "Major",
+      "main": "맵 메이커 허브",
+      "sub1": "뒤로가기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "좌측 상단 [<] 뒤로가기 버튼 터치 시, 이전 화면(메인 로비)으로 이동된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_1.png"
+    },
+    {
+      "no": 21,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "상단 헤더",
+      "sub3": "슬롯 카운트 n/2 출력",
+      "expectationResult": "나의 맵 진입 시, 보유 맵 수 기준 슬롯 카운트(n/2)가 타이틀 옆에 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 22,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "상단 헤더",
+      "sub3": "정렬 드롭다운 동작",
+      "expectationResult": "우측 정렬 드롭다운 터치 시, 정렬 옵션 리스트(최신순 등)가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 23,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "보유 맵 카드",
+      "sub3": "맵 코드 출력",
+      "expectationResult": "공개 등록된 보유 맵 카드 내, 고유 맵 코드가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 24,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "보유 맵 카드",
+      "sub3": "제작자/제작일 출력",
+      "expectationResult": "보유 맵 카드 내, 제작자 닉네임과 제작일이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 25,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "보유 맵 카드",
+      "sub3": "맵 이름 출력",
+      "expectationResult": "보유 맵 카드 내, 등록된 맵 이름이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "보유 맵 카드",
+      "sub3": "좋아요/플레이 수 출력",
+      "expectationResult": "공개 등록된 보유 맵 카드 내, 좋아요(♥) 수와 플레이(👤) 수가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 27,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "보유 맵 카드",
+      "sub3": "코드 복사 동작",
+      "expectationResult": "보유 맵 카드 내 복사(📋) 아이콘 터치 시, 해당 맵 코드가 클립보드에 복사되고 복사 완료 토스트가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 28,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "보유 맵 카드",
+      "sub3": "편집하기 버튼 동작",
+      "expectationResult": "보유 맵 카드 내 [편집하기] 버튼 터치 시, 해당 맵의 편집 화면으로 진입된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 29,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "보유 상태",
+      "sub2": "슬롯 추가 버튼",
+      "sub3": "슬롯 구매 팝업 호출",
+      "expectationResult": "보유 맵 카드 우측 [슬롯 추가!] 버튼 터치 시, 슬롯 구매 팝업이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 30,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "빈 상태",
+      "sub2": "슬롯 카운트 영역",
+      "sub3": "0/2 표기 출력",
+      "expectationResult": "보유 맵이 없는 상태에서 나의 맵 진입 시, 슬롯 카운트가 (0/2)로 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_8.png"
+    },
+    {
+      "no": 31,
+      "priority": "Critical",
+      "main": "나의 맵",
+      "sub1": "빈 상태",
+      "sub2": "새로 만들기 버튼",
+      "sub3": "맵 생성하기 진입",
+      "expectationResult": "빈 상태에서 [새로 만들기] 버튼 터치 시, 맵 생성하기 화면이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_8.png"
+    },
+    {
+      "no": 32,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 이름 입력",
+      "sub3": "텍스트 입력",
+      "expectationResult": "맵 이름 입력 필드 터치 시, 키보드가 출력되고 텍스트 입력이 가능하다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 33,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 이름 입력",
+      "sub3": "글자수 카운터 0/15 출력",
+      "expectationResult": "맵 이름 입력 시, 입력 글자 수가 우측 카운터(현재/15)에 실시간 반영되어 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 34,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 이름 입력",
+      "sub3": "최대 15자 초과 입력 차단",
+      "expectationResult": "맵 이름 입력란에 15자 초과 입력 시도 시, 16번째 글자부터 입력이 차단된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 35,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 설명 입력",
+      "sub3": "텍스트 입력",
+      "expectationResult": "맵 설명 입력 필드 터치 시, 키보드가 출력되고 텍스트 입력이 가능하다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 36,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 설명 입력",
+      "sub3": "글자수 카운터 0/80 출력",
+      "expectationResult": "맵 설명 입력 시, 입력 글자 수가 우측 카운터(현재/80)에 실시간 반영되어 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 37,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 설명 입력",
+      "sub3": "최대 80자 초과 입력 차단",
+      "expectationResult": "맵 설명 입력란에 80자 초과 입력 시도 시, 81번째 글자부터 입력이 차단된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 38,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "화면 진입 동작",
+      "expectationResult": "맵 테마 항목의 [선택하기] 버튼 터치 시, 맵 테마 선택하기 화면이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 39,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "상단 타이틀 출력",
+      "expectationResult": "맵 테마 선택하기 화면 진입 시, 상단에 \"맵 테마 선택하기\" 타이틀이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_2.png"
+    },
+    {
+      "no": 40,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "뒤로가기 동작",
+      "expectationResult": "맵 테마 선택하기 화면 우측 상단 X 버튼 터치 시, 맵 생성하기 화면으로 복귀된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_2.png"
+    },
+    {
+      "no": 41,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "하단 안내문 출력",
+      "expectationResult": "맵 테마 선택하기 화면 하단에 \"맵 테마 전용 오브젝트는 해당 테마에서만 사용할 수 있으며, 테마 변경 시 삭제될 수 있습니다.\" 안내문이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_2.png"
+    },
+    {
+      "no": 42,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "보유 테마 카드 정보 출력",
+      "expectationResult": "맵 테마 선택하기 화면 진입 시, 보유 테마 카드에 썸네일/테마 명칭/난이도 라벨이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_2.png"
+    },
+    {
+      "no": 43,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "SAMPLE 배너 출력",
+      "expectationResult": "샘플 테마 카드 진입 시, 카드 상단에 SAMPLE 배너가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_2.png"
+    },
+    {
+      "no": 44,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "정보 아이콘 팝업",
+      "expectationResult": "테마 카드 내 ⓘ 정보 아이콘 터치 시, 해당 테마의 상세 설명 팝업이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_2.png"
+    },
+    {
+      "no": 45,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "사용하기 버튼 동작",
+      "expectationResult": "보유 테마의 [사용하기] 버튼 터치 시, 선택된 테마가 맵 생성하기 화면에 반영되어 복귀된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_2.png"
+    },
+    {
+      "no": 46,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "테마 변경 경고 팝업",
+      "expectationResult": "이미 테마가 선택된 상태에서 다른 테마 [사용하기] 터치 시, 전용 오브젝트 삭제 경고 팝업이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_2.png"
+    },
+    {
+      "no": 47,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "잠금 테마 자물쇠 출력",
+      "expectationResult": "미보유 테마 카드 진입 시, 자물쇠 아이콘이 카드 위에 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_3.png"
+    },
+    {
+      "no": 48,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "맵 테마 선택",
+      "sub3": "젬 교환소 구매 버튼 동작",
+      "expectationResult": "잠금 테마 카드의 [젬 교환소 구매] 버튼 터치 시, 젬 교환소 화면으로 이동된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_3.png"
+    },
+    {
+      "no": 49,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "생성 동작",
+      "sub3": "생성하기 버튼 비활성",
+      "expectationResult": "맵 이름 또는 맵 테마 미입력/미선택 상태에서, [생성하기] 버튼이 비활성 상태로 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 50,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "생성 동작",
+      "sub3": "생성하기 버튼 활성",
+      "expectationResult": "맵 이름과 맵 테마가 모두 입력/선택 시, [생성하기] 버튼이 활성 상태로 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 51,
+      "priority": "Critical",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "생성 동작",
+      "sub3": "맵 생성 완료",
+      "expectationResult": "[생성하기] 버튼 활성 상태에서 터치 시, 입력값 기반 신규 맵이 생성되고 나의 맵 화면으로 복귀된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 52,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "예외 처리",
+      "sub3": "금칙어/특수문자 입력",
+      "expectationResult": "맵 이름/설명 입력란에 금칙어 또는 허용되지 않은 특수문자 입력 시, 입력 제한 또는 안내가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 53,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "맵 생성하기",
+      "sub2": "예외 처리",
+      "sub3": "미저장 이탈 경고",
+      "expectationResult": "맵 생성하기 입력 도중 뒤로가기/X 버튼 터치 시, 미저장 변경사항 경고 팝업이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_14.png"
+    },
+    {
+      "no": 54,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "슬롯 구매 팝업",
+      "sub2": "팝업 구성",
+      "sub3": "보석 잔액 출력",
+      "expectationResult": "슬롯 구매 팝업 출력 시, 좌측 상단에 현재 보유 다이아 잔액이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_16.png"
+    },
+    {
+      "no": 55,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "슬롯 구매 팝업",
+      "sub2": "팝업 구성",
+      "sub3": "타이틀/안내 출력",
+      "expectationResult": "슬롯 구매 팝업 출력 시, \"슬롯을 구매할까요?\" 타이틀과 \"슬롯을 구매하여 더 많은 맵을 만들 수 있게 됩니다.\" 안내문이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_16.png"
+    },
+    {
+      "no": 56,
+      "priority": "Normal",
+      "main": "나의 맵",
+      "sub1": "슬롯 구매 팝업",
+      "sub2": "팝업 구성",
+      "sub3": "슬롯 미리보기 출력",
+      "expectationResult": "슬롯 구매 팝업 중앙에 추가될 빈 슬롯 미리보기 이미지가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_16.png"
+    },
+    {
+      "no": 57,
+      "priority": "Critical",
+      "main": "나의 맵",
+      "sub1": "슬롯 구매 팝업",
+      "sub2": "구매 버튼",
+      "sub3": "보석 3,000 차감",
+      "expectationResult": "보유 다이아 3,000개 이상 상태에서 [💎 3,000 구매하기] 버튼 터치 시, 다이아 3,000개가 차감된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_16.png"
+    },
+    {
+      "no": 58,
+      "priority": "Critical",
+      "main": "나의 맵",
+      "sub1": "슬롯 구매 팝업",
+      "sub2": "구매 버튼",
+      "sub3": "슬롯 1개 추가",
+      "expectationResult": "슬롯 구매 완료 시, 나의 맵 슬롯 카운트가 1 증가하여 표기된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_16.png"
+    },
+    {
+      "no": 59,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "슬롯 구매 팝업",
+      "sub2": "예외 처리",
+      "sub3": "보석 부족",
+      "expectationResult": "보유 다이아가 3,000 미만 상태에서 [구매하기] 버튼 터치 시, 다이아 부족 안내 팝업이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_16.png"
+    },
+    {
+      "no": 60,
+      "priority": "Major",
+      "main": "나의 맵",
+      "sub1": "슬롯 구매 팝업",
+      "sub2": "예외 처리",
+      "sub3": "슬롯 최대 도달",
+      "expectationResult": "슬롯 최대 보유 한도 도달 시, [슬롯 추가!] 버튼이 비활성 상태로 표기된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_7.png"
+    },
+    {
+      "no": 61,
+      "priority": "Critical",
+      "main": "나의 맵",
+      "sub1": "슬롯 구매 팝업",
+      "sub2": "예외 처리",
+      "sub3": "네트워크 오류 차감-슬롯 불일치 재처리",
+      "expectationResult": "구매 통신 중 네트워크 단절 시, 다이아 차감과 슬롯 추가가 일치하도록 재처리되거나 롤백된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_16.png"
+    },
+    {
+      "no": 62,
+      "priority": "Major",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "상단 헤더",
+      "sub2": "탭 영역",
+      "sub3": "오늘의 추천 맵 탭 활성화",
+      "expectationResult": "찾아보기 진입 시, 기본으로 [오늘의 추천 맵!] 탭이 활성 상태로 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 63,
+      "priority": "Major",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "상단 헤더",
+      "sub2": "탭 영역",
+      "sub3": "코드로 찾기 탭 전환",
+      "expectationResult": "[코드로 찾기] 탭 터치 시, 코드로 찾기 화면으로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 64,
+      "priority": "Normal",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "상단 헤더",
+      "sub2": "정렬 영역",
+      "sub3": "최신순 출력",
+      "expectationResult": "찾아보기 진입 시, 우측 정렬 드롭다운에 기본값 \"최신순\"이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 65,
+      "priority": "Major",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "상단 헤더",
+      "sub2": "정렬 영역",
+      "sub3": "정렬 드롭다운 동작",
+      "expectationResult": "정렬 드롭다운 터치 시, 정렬 옵션 리스트가 출력되며 선택된 정렬 기준에 따라 맵 카드 순서가 변경된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 66,
+      "priority": "Normal",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "안내문",
+      "sub2": "자정 갱신 문구 출력",
+      "sub3": "",
+      "expectationResult": "찾아보기 화면 우측 상단에 \"추천 맵은 매일 자정에 갱신됩니다.\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 67,
+      "priority": "Major",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "맵 카드",
+      "sub2": "카드 정보 출력",
+      "sub3": "맵 코드 출력",
+      "expectationResult": "추천 맵 카드 각각에 해당 맵의 고유 코드가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 68,
+      "priority": "Normal",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "맵 카드",
+      "sub2": "카드 정보 출력",
+      "sub3": "썸네일 출력",
+      "expectationResult": "추천 맵 카드 각각에 맵 썸네일 이미지가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 69,
+      "priority": "Major",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "맵 카���",
+      "sub2": "카드 정보 출력",
+      "sub3": "좋아요/플레이 수 출력",
+      "expectationResult": "추천 맵 카드 각각에 좋아요(♥)와 플레이(👤) 수가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 70,
+      "priority": "Major",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "맵 카드",
+      "sub2": "카드 정보 출력",
+      "sub3": "제작자/제작일 출력",
+      "expectationResult": "추천 맵 카드 각각에 제작자 닉네임과 등록일이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 71,
+      "priority": "Normal",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "맵 카드",
+      "sub2": "코드 복사",
+      "sub3": "클립보드 복사 동작",
+      "expectationResult": "맵 카드 내 📋 복사 아이콘 터치 시, 해당 맵 코드가 클립보드에 복사되고 복사 완료 토스트가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 72,
+      "priority": "Critical",
+      "main": "찾아보기 - 오늘의 추천 맵",
+      "sub1": "맵 카드",
+      "sub2": "달려보기 버튼",
+      "sub3": "맵 플레이 진입",
+      "expectationResult": "맵 카드 내 [달려보기] 버튼 터치 시, 해당 맵의 플레이 로딩 화면으로 진입된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_4.png"
+    },
+    {
+      "no": 73,
+      "priority": "Major",
+      "main": "찾아보기 - 코드로 찾기",
+      "sub1": "입력 영역",
+      "sub2": "코드 입력 필드",
+      "sub3": "텍스트 입력",
+      "expectationResult": "맵 코드 입력 필드 터치 시, 키보드가 출력되고 코드 입력이 가능하다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_5.png"
+    },
+    {
+      "no": 74,
+      "priority": "Normal",
+      "main": "찾아보기 - 코드로 찾기",
+      "sub1": "입력 영역",
+      "sub2": "코드 입력 필드",
+      "sub3": "초기화 버튼 동작",
+      "expectationResult": "입력 필드 우측 X 버튼 터치 시, 입력된 코드 값이 초기화된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_5.png"
+    },
+    {
+      "no": 75,
+      "priority": "Critical",
+      "main": "찾아보기 - 코드로 찾기",
+      "sub1": "입력 영역",
+      "sub2": "찾기 버튼",
+      "sub3": "맵 조회 동작",
+      "expectationResult": "등록된 맵 코드 입력 후 [찾기] 버튼 터치 시, 해당 맵의 상세 화면 또는 플레이 진입 화면이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_5.png"
+    },
+    {
+      "no": 76,
+      "priority": "Major",
+      "main": "찾아보기 - 코드로 찾기",
+      "sub1": "예외 처리",
+      "sub2": "빈 값 입력",
+      "sub3": "",
+      "expectationResult": "맵 코드 입력 필드가 빈 상태에서 [찾기] 버튼 터치 시, 코드 입력 안내 토스트가 출력되거나 버튼이 비활성 상태로 표기된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_5.png"
+    },
+    {
+      "no": 77,
+      "priority": "Major",
+      "main": "찾아보기 - 코드로 찾기",
+      "sub1": "예외 처리",
+      "sub2": "형식 오류 코드",
+      "sub3": "",
+      "expectationResult": "맵 코드 형식이 일치하지 않는 값 입력 후 [찾기] 터치 시, 잘못된 코드 안내 메시지가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_5.png"
+    },
+    {
+      "no": 78,
+      "priority": "Major",
+      "main": "찾아보기 - 코드로 찾기",
+      "sub1": "예외 처리",
+      "sub2": "미존재 코드",
+      "sub3": "",
+      "expectationResult": "존재하지 않는 맵 코드 입력 후 [찾기] 터치 시, \"존재하지 않는 맵\" 안내 메시지가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_5.png"
+    },
+    {
+      "no": 79,
+      "priority": "Major",
+      "main": "찾아보기 - 코드로 찾기",
+      "sub1": "예외 처리",
+      "sub2": "비공개/삭제 코드",
+      "sub3": "",
+      "expectationResult": "비공개 또는 삭제된 맵 코드 입력 후 [찾기] 터치 시, 접근 불가 안내 메시지가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_5.png"
+    },
+    {
+      "no": 80,
+      "priority": "Normal",
+      "main": "찾아보기 - 코드로 찾기",
+      "sub1": "예외 처리",
+      "sub2": "형식 오류 코드",
+      "sub3": "",
+      "expectationResult": "맵 코드 입력 중 대소문자/구분 문자(.) 미준수 입력 시, 입력 차단 또는 변환 처리가 적용된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_5.png"
+    },
+    {
+      "no": 81,
+      "priority": "Major",
+      "main": "찾아보기 상태",
+      "sub1": "빈 상태",
+      "sub2": "빈 화면 표시",
+      "sub3": "",
+      "expectationResult": "추천 맵 데이터가 0건일 때, 카드 영역이 빈 상태로 표시되며 안내 문구가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_6.png"
+    },
+    {
+      "no": 82,
+      "priority": "Major",
+      "main": "찾아보기 상태",
+      "sub1": "로딩 상태",
+      "sub2": "로딩 표시",
+      "sub3": "",
+      "expectationResult": "추천 맵 데이터 로딩 중 진입 시, 반투명 오버레이/로딩 인디케이터가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_6.png"
+    },
+    {
+      "no": 83,
+      "priority": "Normal",
+      "main": "찾아보기 상태",
+      "sub1": "에러 상태",
+      "sub2": "재시도 안내",
+      "sub3": "",
+      "expectationResult": "네트워크 단절 등 통신 오류 발생 시, 추천 맵 영역에 재시도 안내 메시지가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_6.png"
+    },
+    {
+      "no": 84,
+      "priority": "Normal",
+      "main": "심사 맵 변경 팝업",
+      "sub1": "팝업 구성",
+      "sub2": "타이틀/안내 출력",
+      "sub3": "",
+      "expectationResult": "심사 진입 화면에서 [맵 변경] 버튼 터치 시, \"맵 변경\" 타이틀과 \"심사할 맵을 변경하시겠어요?\" 안내가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_9.png"
+    },
+    {
+      "no": 85,
+      "priority": "Normal",
+      "main": "심사 맵 변경 팝업",
+      "sub1": "팝업 구성",
+      "sub2": "보석 100 비용 출력",
+      "sub3": "",
+      "expectationResult": "맵 변경 팝업의 [변경하기] 버튼에 다이아 아이콘과 비용 \"100\"이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_9.png"
+    },
+    {
+      "no": 86,
+      "priority": "Critical",
+      "main": "심사 맵 변경 팝업",
+      "sub1": "변경하기 버튼",
+      "sub2": "다이아 차감",
+      "sub3": "",
+      "expectationResult": "보유 다이아 100 이상 상태에서 [변경하기] 버튼 터치 시, 다이아 100개가 차감된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_9.png"
+    },
+    {
+      "no": 87,
+      "priority": "Critical",
+      "main": "심사 맵 변경 팝업",
+      "sub1": "변경하기 버튼",
+      "sub2": "즉시 맵 변경",
+      "sub3": "",
+      "expectationResult": "[변경하기] 터치 시, 즉시 추천 맵 3장이 새로운 맵으로 교체된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_9.png"
+    },
+    {
+      "no": 88,
+      "priority": "Major",
+      "main": "심사 맵 변경 팝업",
+      "sub1": "변경하기 버튼",
+      "sub2": "카운트다운 유지",
+      "sub3": "",
+      "expectationResult": "유료 [변경하기] 동작 후, 다음 자동 맵 변경 카운트다운 남은 시간은 리셋되지 않고 유지된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_9.png"
+    },
+    {
+      "no": 89,
+      "priority": "Major",
+      "main": "심사 맵 변경 팝업",
+      "sub1": "예외 처리",
+      "sub2": "보석 부족",
+      "sub3": "부족 안내 팝업",
+      "expectationResult": "보유 다이아 100 미만 상태에서 [변경하기] 버튼 터치 시, 다이아 부족 안내 팝업이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_9.png"
+    },
+    {
+      "no": 90,
+      "priority": "Normal",
+      "main": "심사 맵 변경 팝업",
+      "sub1": "팝업 구성",
+      "sub2": "타이틀/안내 출력",
+      "sub3": "",
+      "expectationResult": "팝업 우측 상단 X 버튼 터치 시, 맵 변경 팝업이 닫히고 다이아가 차감되지 않는다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_9.png"
+    },
+    {
+      "no": 91,
+      "priority": "Major",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "상단 영역",
+      "sub2": "시즌 정산 카운트다운",
+      "sub3": "",
+      "expectationResult": "맵 랭킹 화면 우�� 상단에 \"시즌 정산까지: N일 HH:MM:SS\" 카운트다운이 실시간 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 92,
+      "priority": "Major",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "상단 영역",
+      "sub2": "Top 100 특별 보상 탭",
+      "sub3": "보상 안내 팝업",
+      "expectationResult": "좌측 [Top 100 특별 보상] 라벨 터치 시, 특별 보상 상세 안내 팝업이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 93,
+      "priority": "Normal",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "컬럼 헤더 출력",
+      "sub3": "",
+      "expectationResult": "맵 랭킹 리스트 상단에 \"순위 / 맵 / 제작자\" 컬럼 헤더가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 94,
+      "priority": "Major",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "순위 행 정보 출력",
+      "sub3": "순위/맵명 출력",
+      "expectationResult": "각 랭킹 행에 순위 번호와 맵 이름이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 95,
+      "priority": "Major",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "순위 행 정보 출력",
+      "sub3": "좋아요/클리어 수 출력",
+      "expectationResult": "각 랭킹 행에 좋아요(♥) 수와 클리어/플레이(🍪) 수가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 96,
+      "priority": "Major",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "순위 행 정보 출력",
+      "sub3": "제작자 정보 출력",
+      "expectationResult": "각 랭킹 행에 제작자 닉네임/레벨/칭호/길드 정보가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 97,
+      "priority": "Major",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "썸네일 재생",
+      "sub3": "맵 재생 진입",
+      "expectationResult": "랭킹 행 좌측 썸네일의 ▶ 버튼 터치 시, 해당 맵의 플레이 진입 화면이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 98,
+      "priority": "Normal",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "GO TO TOP",
+      "sub2": "최상단 이동",
+      "sub3": "",
+      "expectationResult": "우측 [GO TO TOP] 버튼 터치 시, 랭킹 리스트가 최상단(1위)으로 스크롤 이동된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 99,
+      "priority": "Normal",
+      "main": "맵 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "순위 행 정보 출력",
+      "sub3": "동점 정렬",
+      "expectationResult": "좋아요(♥) 수 동점인 맵 다수 존재 시, 2차 정렬 기준에 따라 순위가 결정되어 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_10.png"
+    },
+    {
+      "no": 100,
+      "priority": "Major",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "팝업 구성",
+      "sub2": "상단 영역",
+      "sub3": "타이틀 출력",
+      "expectationResult": "심사 상세 팝업 진입 시, 상단에 \"심사하기\" 타이틀이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 101,
+      "priority": "Normal",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "팝업 구성",
+      "sub2": "상단 영역",
+      "sub3": "닫기 동작",
+      "expectationResult": "심사 상세 팝업 우측 상단 X 버튼 터치 시, 팝업이 닫히고 심사 진입 화면으로 복귀된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 102,
+      "priority": "Major",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "팝업 구성",
+      "sub2": "맵 정보 영역",
+      "sub3": "썸네일 출력",
+      "expectationResult": "심사 상세 팝업 좌측 영역에 해당 맵의 썸네일 이미지가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 103,
+      "priority": "Major",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "팝업 구성",
+      "sub2": "맵 정보 영역",
+      "sub3": "맵 이름 출력",
+      "expectationResult": "심사 상세 팝업에 해당 맵의 이름이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 104,
+      "priority": "Major",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "팝업 구성",
+      "sub2": "맵 정보 영역",
+      "sub3": "제작자 정보 출력",
+      "expectationResult": "심사 상세 팝업에 제작자 닉네임과 레벨이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 105,
+      "priority": "Major",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "팝업 구성",
+      "sub2": "맵 정보 영역",
+      "sub3": "맵 코드 출력",
+      "expectationResult": "심사 상세 팝업에 해당 맵의 고유 코드가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 106,
+      "priority": "Normal",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "팝업 구성",
+      "sub2": "맵 정보 영역",
+      "sub3": "등록일 출력",
+      "expectationResult": "심사 상세 팝업에 해당 맵의 등록일이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 107,
+      "priority": "Normal",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "맵 설명",
+      "sub2": "설명 텍스트 출력",
+      "sub3": "",
+      "expectationResult": "심사 상세 팝업의 코멘트 영역에 제작자가 등록한 맵 설명 텍스트가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 108,
+      "priority": "Normal",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "맵 코드 복사",
+      "sub2": "클립보드 복사",
+      "sub3": "",
+      "expectationResult": "심사 상세 팝업 내 맵 코드 옆 📋 아이콘 터치 시, 해당 맵 코드가 클립보드에 복사된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 109,
+      "priority": "Normal",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "맵 코드 복사",
+      "sub2": "복사 완료 토스트",
+      "sub3": "",
+      "expectationResult": "맵 코드 복사 완료 시, 화면 상에 복사 완료 토스트가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 110,
+      "priority": "Major",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "적용 옵션 라벨",
+      "sub2": "조합 고정/능력 OFF 표시",
+      "sub3": "",
+      "expectationResult": "심사 상세 팝업 내 PLAY 버튼 상단에 \"조합 고정 / 능력 OFF\" 옵션 라벨이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 111,
+      "priority": "Critical",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "PLAY 버튼",
+      "sub2": "심사 모드 진입",
+      "sub3": "",
+      "expectationResult": "심사 상세 팝업 내 [PLAY!] 버튼 터치 시, 조합 고정/능력 OFF 옵션이 적용된 심사 모드 플레이 로딩 화면으로 진입된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 112,
+      "priority": "Critical",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "예외 처리",
+      "sub2": "삭제된 맵 진입",
+      "sub3": "",
+      "expectationResult": "심사 진입 직후 해당 맵이 삭제된 경우, [PLAY!] 터치 시 진입 불가 안내가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 113,
+      "priority": "Major",
+      "main": "심사 상세 (PLAY)",
+      "sub1": "예외 처리",
+      "sub2": "보유하지 않은 쿠키",
+      "sub3": "",
+      "expectationResult": "심사 모드 진입 시 고정된 조합 내 보유하지 않은 쿠키가 포함된 경우, 정책에 따라 대체 쿠키가 적용되거나 안내가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_11.png"
+    },
+    {
+      "no": 114,
+      "priority": "Major",
+      "main": "제작자 랭킹 (Top 100)",
+      "sub1": "상단 영역",
+      "sub2": "시즌 정산 카운트다운",
+      "sub3": "",
+      "expectationResult": "제작자 랭킹 화면 우측 상단에 \"시즌 정산까지: N일 HH:MM:SS\" 카운트다운이 실시간 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_12.png"
+    },
+    {
+      "no": 115,
+      "priority": "Normal",
+      "main": "제작자 랭킹 (Top 100)",
+      "sub1": "1위 트로피 카드",
+      "sub2": "캐릭터/말풍선 출력",
+      "sub3": "",
+      "expectationResult": "제작자 랭킹 좌측 영역에 1위 제작자의 캐릭터 일러스트와 말풍선이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_12.png"
+    },
+    {
+      "no": 116,
+      "priority": "Major",
+      "main": "제작자 랭킹 (Top 100)",
+      "sub1": "1위 트로피 카드",
+      "sub2": "칭호/닉네임/길드 출력",
+      "sub3": "",
+      "expectationResult": "제작자 랭킹 좌측 1위 카드에 닉네임/칭호/길드명이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_12.png"
+    },
+    {
+      "no": 117,
+      "priority": "Major",
+      "main": "제작자 랭킹 (Top 100)",
+      "sub1": "내 순위 행",
+      "sub2": "기록 없음/인기 점수 출력",
+      "sub3": "",
+      "expectationResult": "본인 행이 리스트 상단에 녹색 배경으로 고정 출력되며, 인기 점수 0 시 \"기록 없음\"으로 표기된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_12.png"
+    },
+    {
+      "no": 118,
+      "priority": "Normal",
+      "main": "제작자 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "컬럼 헤더 출력",
+      "sub3": "",
+      "expectationResult": "제작자 랭킹 리스트 상단에 \"순위 / 유저 정보 / 인기 점수 총합\" 컬럼 헤더가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_12.png"
+    },
+    {
+      "no": 119,
+      "priority": "Major",
+      "main": "제작자 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "순위 행 정보 출력",
+      "sub3": "닉네임/레벨/칭호 출력",
+      "expectationResult": "각 제작자 랭킹 행에 닉네임/레벨/칭호/길드 정보가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_12.png"
+    },
+    {
+      "no": 120,
+      "priority": "Major",
+      "main": "제작자 랭킹 (Top 100)",
+      "sub1": "랭킹 리스트",
+      "sub2": "순위 행 정보 출력",
+      "sub3": "인기 점수 총합 출력",
+      "expectationResult": "각 제작자 랭킹 행 우측에 인기 점수 총합(♥)이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_12.png"
+    },
+    {
+      "no": 121,
+      "priority": "Normal",
+      "main": "제작자 랭킹 (Top 100)",
+      "sub1": "GO TO TOP",
+      "sub2": "최상단 이동",
+      "sub3": "",
+      "expectationResult": "우측 [GO TO TOP] 버튼 터치 시, 랭킹 리스트가 최상단(본인/1위)으로 스크롤 이동된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_12.png"
+    },
+    {
+      "no": 122,
+      "priority": "Major",
+      "main": "제작자 랭킹 빈 상태",
+      "sub1": "1위 공석 카드",
+      "sub2": "빈 트로피 출력",
+      "sub3": "",
+      "expectationResult": "제작자 랭킹 데이터 0건 시, 좌측 1위 카드 영역에 빈(공석) 트로피 비주얼이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_13.png"
+    },
+    {
+      "no": 123,
+      "priority": "Normal",
+      "main": "제작자 랭킹 빈 상태",
+      "sub1": "안내문",
+      "sub2": "1등 유도 카피 출력",
+      "sub3": "",
+      "expectationResult": "제작자 랭킹 데이터 0건 시, 리스트 영역 중앙에 \"가장 먼저 1등이 되어보세요!\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_13.png"
+    },
+    {
+      "no": 124,
+      "priority": "Major",
+      "main": "제작자 랭킹 빈 상태",
+      "sub1": "상태 전환",
+      "sub2": "첫 등록 시 데이터 상태 전환",
+      "sub3": "",
+      "expectationResult": "빈 상태에서 최초 제작자 인기 점수 1점 획득 시, 제작자 랭킹 화면이 데이터 존재 상태로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_13.png"
+    },
+    {
+      "no": 125,
+      "priority": "Major",
+      "main": "맵 랭킹 빈 상태",
+      "sub1": "상단 영역",
+      "sub2": "시즌 정산 카운트다운",
+      "sub3": "",
+      "expectationResult": "맵 랭킹 데이터 0건 시에도 우측 상단에 \"시즌 정산까지: N일 HH:MM:SS\" 카운트다운이 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_15.png"
+    },
+    {
+      "no": 126,
+      "priority": "Normal",
+      "main": "맵 랭킹 빈 상태",
+      "sub1": "안내문",
+      "sub2": "1등 유도 카피 출력",
+      "sub3": "",
+      "expectationResult": "맵 랭킹 데이터 0건 시, 리스트 영역 중앙에 \"가장 먼저 1등이 되어보세요!\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_15.png"
+    },
+    {
+      "no": 127,
+      "priority": "Major",
+      "main": "맵 랭킹 빈 상태",
+      "sub1": "상태 전환",
+      "sub2": "첫 등록 시 데이터 상태 전환",
+      "sub3": "",
+      "expectationResult": "빈 상태에서 최초 맵 등록 및 점수 획득 시, 맵 랭킹 화면이 데이터 존재 상태로 전환된다.",
+      "comment": "참고 화면: upload_1778650755384_e3un_15.png"
+    }
+  ],
+  "generatedAt": "2026-05-13T06:27:34.977Z",
+  "tokenUsage": {
+    "inputTokens": 111,
+    "outputTokens": 69607,
+    "cacheReadTokens": 1507504,
+    "cacheCreationTokens": 224690,
+    "totalCostUsd": 3.9544105000000003
+  },
+  "planText": "### 기능 목록\n\n기획서에서 파악한 모든 기능을 번호(오름차순) 기준으로 정리합니다.\n\n**[0] 심사하기 진입 화면**\n- 추천 맵 3장 카드 출력 (맵 이름, 제작자, 등록일, 심사하기 버튼)\n- 카운트다운(맵 변경까지 남은 시간) 출력 및 자동 갱신\n- [맵 변경] 버튼 → 변경 팝업 호출\n- 닫기(X) 버튼\n\n**[1] 맵 메이커 허브**\n- 상단 인디케이터 (보석, 골드, 채팅, 설정, 홈, 메뉴)\n- 메인 메뉴 3종: 맵 만들기 / 심사하기 / 찾아보기\n- 보조 탭: 맵 랭킹 / 제작자 랭킹\n- 뒤로가기 동작\n\n**[2] 나의 맵 - 보유 상태**\n- 슬롯 카운트 (n/2) 표기\n- 정렬 드롭다운\n- 보유 맵 카드 (코드, 제작자, 맵 이름, ♥/👤, 제작일, 복사, 편집하기)\n- [슬롯 추가!] 버튼 동작\n\n**[3] 나의 맵 - 빈 상태**\n- (0/2) 슬롯 카운트\n- [새로 만들기] 버튼 동작\n\n**[4] 맵 생성하기 입력 (나의 맵 → 진입)**\n- 맵 이름 입력 (0/15)\n- 맵 설명 입력 (0/80)\n- 맵 테마 [선택하기] 진입\n- [생성하기] 버튼 활성/비활성\n- 금칙어/특수문자/이모지 입력 예외\n- 백버튼/X 시 변경사항 경고\n\n**[5] 맵 테마 선택 - 보유 (맵 생성하기 → 진입)**\n- 테마 카드 그리드 출력 (썸네일, 명칭, 난이도 라벨, SAMPLE 배너)\n- ⓘ 정보 아이콘 (테마 설명 팝업)\n- [사용하기] 버튼 동작 + 테마 변경 시 전용 오브젝트 삭제 경고\n- 하단 안내문 출력\n\n**[6] 맵 테마 선택 - 잠금 (맵 생성하기 → 진입)**\n- 잠금 상태(자물쇠) 표시\n- [젬 교환소 구매] 버튼 동작 → 젬 교환소 이동\n\n**[7] 찾아보기 - 오늘의 추천 맵**\n- 탭 전환 (오늘의 추천 맵 / 코드로 찾기)\n- 정렬 드롭다운 (최신순 등)\n- 자정 갱신 안내문\n- 맵 카드 (코드, 썸네일, ♥/👤, 제작자, 제작일, 맵 이름, 달려보기 버튼)\n- 코드 복사 아이콘\n- [달려보기] 버튼 동작\n\n**[8] 찾아보기 - 코드로 찾기**\n- 코드 입력 필드, ❌ 초기화 버튼\n- [찾기] 버튼 동작\n- 빈 입력/형식 오류/미존재/비공개 코드 예외\n\n**[9] 찾아보기 빈/로딩/에러 상태**\n- 로딩/빈/에러 안내\n\n**[10] 맵 변경 팝업 (심사)**\n- 다이아 100 차감\n- 변경하기 버튼\n- 카운트다운 유지 규칙\n- 보석 부족 케이스\n\n**[11] 맵 랭킹 (Top 100)**\n- 시즌 정산 카운트다운\n- Top 100 특별 보상 탭\n- 이달의 맵 TOP 100 리스트 (순위, 맵명, ♥, 🍪, 제작자, 칭호, 썸네일 ▶)\n- 재생(▶) 진입\n- GO TO TOP 동작\n\n**[12] 심사하기 상세 (PLAY) 팝업**\n- 맵 정보 출력 (썸네일, 이름, 제작자, 맵 코드, 등록일)\n- 맵 설명 출력\n- 맵 코드 📋 복사\n- 조합 고정 / 능력 OFF 옵션 라벨\n- [PLAY!] 버튼 → 심사 모드 진입\n- 잘못된 맵 / 삭제된 맵 예외\n\n**[13] 제작자 랭킹 (Top 100)**\n- 시즌 정산 카운트다운\n- 1위 트로피 카드 (캐릭터, 말풍선, 칭호, 닉네임, 길드)\n- 내 순위 행 (기록 없음 ❤0)\n- Top 100 리스트\n- GO TO TOP 동작\n\n**[14] 제작자 랭킹 빈 상태**\n- 1위 공석 카드\n- \"가장 먼저 1등이 되어보세요!\" 안내\n- 첫 등록 시 13번 화면 전환\n\n**[15] 맵 랭킹 빈 상태**\n- 시즌 정산 카운트다운 유지\n- \"가장 먼저 1등이 되어보세요!\" 안내\n\n**[16] 슬롯 구매 팝업**\n- 보석 잔액 출력\n- 슬롯 미리보기\n- [💎 3,000 구매하기] 버튼\n- 보석 부족 / 최대 슬롯 도달 예외\n- 네트워크 오류 시 차감-슬롯 불일치 처리\n\n> ※ 사용자 피드백 반영:\n> - 기존 [2]/[3]/[14] 맵 테마 선택(보유/잠금) 및 맵 생성하기 입력 카테고리를 \"나의 맵\" 산하의 하위 카테고리로 통합.\n> - \"슬롯 구매 팝업\"을 별도 main 카테고리에서 제거하고, \"나의 맵\" main 카테고리 하위의 sub1 카테고리로 통합 배치합니다.\n\n---\n\n### 카테고리 구조\n\n```\n├─ 심사하기 진입 (main)\n│  ├─ 추천 맵 리스트 (sub1)\n│  │  ├─ 상단 영역 (sub2)\n│  │  │  ├─ 타이틀 출력 (sub3)\n│  │  │  └─ 닫기 버튼 동작 (sub3)\n│  │  ├─ 추천 맵 카드 (sub2)\n│  │  │  ├─ 카드 정보 출력 (sub3)\n│  │  │  ├─ 썸네일 출력 (sub3)\n│  │  │  └─ 심사하기 버튼 동작 (sub3)\n│  │  └─ 카운트다운 영역 (sub2)\n│  │     ├─ 남은 시간 출력 (sub3)\n│  │     └─ 시간 만료 자동 갱신 (sub3)\n│  └─ 예외 처리 (sub1)\n│\n├─ 맵 메이커 허브 (main)\n│  ├─ 상단 인디케이터 (sub1)\n│  │  ├─ 재화 영역 (sub2)\n│  │  │  ├─ 보석 잔액 출력 (sub3)\n│  │  │  └─ 골드 잔액 출력 (sub3)\n│  │  └─ 우상단 아이콘 (sub2)\n│  │     ├─ 채팅 진입 (sub3)\n│  │     ├─ 설정 진입 (sub3)\n│  │     ├─ 홈 이동 (sub3)\n│  │     └─ 메뉴 진입 (sub3)\n│  ├─ 메인 메뉴 카드 (sub1)\n│  │  ├─ 맵 만들기 카드 (sub2)\n│  │  │  └─ 화면 전환 (sub3)\n│  │  ├─ 심사하기 카드 (sub2)\n│  │  │  └─ 화면 전환 (sub3)\n│  │  └─ 찾아보기 카드 (sub2)\n│  │     └─ 화면 전환 (sub3)\n│  ├─ 보조 탭 (sub1)\n│  │  ├─ 맵 랭킹 진입 (sub2)\n│  │  └─ 제작자 랭킹 진입 (sub2)\n│  └─ 뒤로가기 (sub1)\n│\n├─ 나의 맵 (main)\n│  ├─ 보유 상태 (sub1)\n│  │  ├─ 상단 헤더 (sub2)\n│  │  │  ├─ 슬롯 카운트 n/2 출력 (sub3)\n│  │  │  └─ 정렬 드롭다운 동작 (sub3)\n│  │  ├─ 보유 맵 카드 (sub2)\n│  │  │  ├─ 맵 코드 출력 (sub3)\n│  │  │  ├─ 제작자/제작일 출력 (sub3)\n│  │  │  ├─ 맵 이름 출력 (sub3)\n│  │  │  ├─ 좋아요/플레이 수 출력 (sub3)\n│  │  │  ├─ 코드 복사 동작 (sub3)\n│  │  │  └─ 편집하기 버튼 동작 (sub3)\n│  │  └─ 슬롯 추가 버튼 (sub2)\n│  │     └─ 슬롯 구매 팝업 호출 (sub3)\n│  ├─ 빈 상태 (sub1)\n│  │  ├─ 슬롯 카운트 영역 (sub2)\n│  │  │  └─ 0/2 표기 출력 (sub3)\n│  │  └─ 새로 만들기 버튼 (sub2)\n│  │     └─ 맵 생성하기 진입 (sub3)\n│  ├─ 맵 생성하기 (sub1)\n│  │  ├─ 맵 이름 입력 (sub2)\n│  │  │  ├─ 텍스트 입력 (sub3)\n│  │  │  ├─ 글자수 카운터 0/15 출력 (sub3)\n│  │  │  └─ 최대 15자 초과 입력 차단 (sub3)\n│  │  ├─ 맵 설명 입력 (sub2)\n│  │  │  ├─ 텍스트 입력 (sub3)\n│  │  │  ├─ 글자수 카운터 0/80 출력 (sub3)\n│  │  │  └─ 최대 80자 초과 입력 차단 (sub3)\n│  │  ├─ 맵 테마 선택 (sub2)\n│  │  │  ├─ 화면 진입 동작 (sub3)\n│  │  │  ├─ 상단 타이틀 출력 (sub3)\n│  │  │  ├─ 뒤로가기 동작 (sub3)\n│  │  │  ├─ 하단 안내문 출력 (sub3)\n│  │  │  ├─ 보유 테마 카드 정보 출력 (sub3)\n│  │  │  ├─ SAMPLE 배너 출력 (sub3)\n│  │  │  ├─ 정보 아이콘 팝업 (sub3)\n│  │  │  ├─ 사용하기 버튼 동작 (sub3)\n│  │  │  ├─ 테마 변경 경고 팝업 (sub3)\n│  │  │  ├─ 잠금 테마 자물쇠 출력 (sub3)\n│  │  │  └─ 젬 교환소 구매 버튼 동작 (sub3)\n│  │  ├─ 생성 동작 (sub2)\n│  │  │  ├─ 생성하기 버튼 비활성 (sub3)\n│  │  │  ├─ 생성하기 버튼 활성 (sub3)\n│  │  │  └─ 맵 생성 완료 (sub3)\n│  │  └─ 예외 처리 (sub2)\n│  │     ├─ 금칙어/특수문자 입력 (sub3)\n│  │     └─ 미저장 이탈 경고 (sub3)\n│  └─ 슬롯 구매 팝업 (sub1)\n│     ├─ 팝업 구성 (sub2)\n│     │  ├─ 보석 잔액 출력 (sub3)\n│     │  ├─ 타이틀/안내 출력 (sub3)\n│     │  └─ 슬롯 미리보기 출력 (sub3)\n│     ├─ 구매 버튼 (sub2)\n│     │  ├─ 보석 3,000 차감 (sub3)\n│     │  └─ 슬롯 1개 추가 (sub3)\n│     └─ 예외 처리 (sub2)\n│        ├─ 보석 부족 (sub3)\n│        ├─ 슬롯 최대 도달 (sub3)\n│        └─ 네트워크 오류 차감-슬롯 불일치 재처리 (sub3)\n│\n├─ 찾아보기 - 오늘의 추천 맵 (main)\n│  ├─ 상단 헤더 (sub1)\n│  │  ├─ 탭 영역 (sub2)\n│  │  │  ├─ 오늘의 추천 맵 탭 활성화 (sub3)\n│  │  │  └─ 코드로 찾기 탭 전환 (sub3)\n│  │  └─ 정렬 영역 (sub2)\n│  │     ├─ 최신순 출력 (sub3)\n│  │     └─ 정렬 드롭다운 동작 (sub3)\n│  ├─ 안내문 (sub1)\n│  │  └─ 자정 갱신 문구 출력 (sub2)\n│  └─ 맵 카드 (sub1)\n│     ├─ 카드 정보 출력 (sub2)\n│     │  ├─ 맵 코드 출력 (sub3)\n│     │  ├─ 썸네일 출력 (sub3)\n│     │  ├─ 좋아요/플레이 수 출력 (sub3)\n│     │  ├─ 제작자/제작일 출력 (sub3)\n│     │  └─ 맵 이름 출력 (sub3)\n│     ├─ 코드 복사 (sub2)\n│     │  └─ 클립보드 복사 동작 (sub3)\n│     └─ 달려보기 버튼 (sub2)\n│        └─ 맵 플레이 진입 (sub3)\n│\n├─ 찾아보기 - 코드로 찾기 (main)\n│  ├─ 입력 영역 (sub1)\n│  │  ├─ 코드 입력 필드 (sub2)\n│  │  │  ├─ 텍스트 입력 (sub3)\n│  │  │  └─ 초기화 버튼 동작 (sub3)\n│  │  └─ 찾기 버튼 (sub2)\n│  │     └─ 맵 조회 동작 (sub3)\n│  └─ 예외 처리 (sub1)\n│     ├─ 빈 값 입력 (sub2)\n│     ├─ 형식 오류 코드 (sub2)\n│     ├─ 미존재 코드 (sub2)\n│     └─ 비공개/삭제 코드 (sub2)\n│\n├─ 찾아보기 상태 (main)\n│  ├─ 빈 상태 (sub1)\n│  │  └─ 빈 화면 표시 (sub2)\n│  ├─ 로딩 상태 (sub1)\n│  │  └─ 로딩 표시 (sub2)\n│  └─ 에러 상태 (sub1)\n│     └─ 재시도 안내 (sub2)\n│\n├─ 심사 맵 변경 팝업 (main)\n│  ├─ 팝업 구성 (sub1)\n│  │  ├─ 타이틀/안내 출력 (sub2)\n│  │  └─ 보석 100 비용 출력 (sub2)\n│  ├─ 변경하기 버튼 (sub1)\n│  │  ├─ 다이아 차감 (sub2)\n│  │  ├─ 즉시 맵 변경 (sub2)\n│  │  └─ 카운트다운 유지 (sub2)\n│  └─ 예외 처리 (sub1)\n│     └─ 보석 부족 (sub2)\n│        └─ 부족 안내 팝업 (sub3)\n│\n├─ 맵 랭킹 (Top 100) (main)\n│  ├─ 상단 영역 (sub1)\n│  │  ├─ 시즌 정산 카운트다운 (sub2)\n│  │  └─ Top 100 특별 보상 탭 (sub2)\n│  │     └─ 보상 안내 팝업 (sub3)\n│  ├─ 랭킹 리스트 (sub1)\n│  │  ├─ 컬럼 헤더 출력 (sub2)\n│  │  ├─ 순위 행 정보 출력 (sub2)\n│  │  │  ├─ 순위/맵명 출력 (sub3)\n│  │  │  ├─ 좋아요/클리어 수 출력 (sub3)\n│  │  │  └─ 제작자 정보 출력 (sub3)\n│  │  └─ 썸네일 재생 (sub2)\n│  │     └─ 맵 재생 진입 (sub3)\n│  └─ GO TO TOP (sub1)\n│     └─ 최상단 이동 (sub2)\n│\n├─ 심사 상세 (PLAY) (main)\n│  ├─ 팝업 구성 (sub1)\n│  │  ├─ 상단 영역 (sub2)\n│  │  │  ├─ 타이틀 출력 (sub3)\n│  │  │  └─ 닫기 동작 (sub3)\n│  │  └─ 맵 정보 영역 (sub2)\n│  │     ├─ 썸네일 출력 (sub3)\n│  │     ├─ 맵 이름 출력 (sub3)\n│  │     ├─ 제작자 정보 출력 (sub3)\n│  │     ├─ 맵 코드 출력 (sub3)\n│  │     └─ 등록일 출력 (sub3)\n│  ├─ 맵 설명 (sub1)\n│  │  └─ 설명 텍스트 출력 (sub2)\n│  ├─ 맵 코드 복사 (sub1)\n│  │  ├─ 클립보드 복사 (sub2)\n│  │  └─ 복사 완료 토스트 (sub2)\n│  ├─ 적용 옵션 라벨 (sub1)\n│  │  └─ 조합 고정/능력 OFF 표시 (sub2)\n│  ├─ PLAY 버튼 (sub1)\n│  │  └─ 심사 모드 진입 (sub2)\n│  └─ 예외 처리 (sub1)\n│     ├─ 삭제된 맵 진입 (sub2)\n│     └─ 보유하지 않은 쿠키 (sub2)\n│\n├─ 제작자 랭킹 (Top 100) (main)\n│  ├─ 상단 영역 (sub1)\n│  │  └─ 시즌 정산 카운트다운 (sub2)\n│  ├─ 1위 트로피 카드 (sub1)\n│  │  ├─ 캐릭터/말풍선 출력 (sub2)\n│  │  └─ 칭호/닉네임/길드 출력 (sub2)\n│  ├─ 내 순위 행 (sub1)\n│  │  └─ 기록 없음/인기 점수 출력 (sub2)\n│  ├─ 랭킹 리스트 (sub1)\n│  │  ├─ 컬럼 헤더 출력 (sub2)\n│  │  └─ 순위 행 정보 출력 (sub2)\n│  │     ├─ 닉네임/레벨/칭호 출력 (sub3)\n│  │     └─ 인기 점수 총합 출력 (sub3)\n│  └─ GO TO TOP (sub1)\n│     └─ 최상단 이동 (sub2)\n│\n├─ 제작자 랭킹 빈 상태 (main)\n│  ├─ 1위 공석 카드 (sub1)\n│  │  └─ 빈 트로피 출력 (sub2)\n│  ├─ 안내문 (sub1)\n│  │  └─ 1등 유도 카피 출력 (sub2)\n│  └─ 상태 전환 (sub1)\n│     └─ 첫 등록 시 데이터 상태 전환 (sub2)\n│\n└─ 맵 랭킹 빈 상태 (main)\n   ├─ 상단 영역 (sub1)\n   │  └─ 시즌 정산 카운트다운 (sub2)\n   ├─ 안내문 (sub1)\n   │  └─ 1등 유도 카피 출력 (sub2)\n   └─ 상태 전환 (sub1)\n      └─ 첫 등록 시 데이터 상태 전환 (sub2)\n```\n\n---\n\n### TC 건수 배분\n\n전체 목표: **약 115~125건** (기획서 규모 기준)\n\n| main 카테고리 | 예상 건수 | Critical | Major | Normal |\n|---|---|---|---|---|\n| 심사하기 진입 | 8 | 0 | 4 | 4 |\n| 맵 메이커 허브 | 11 | 1 | 6 | 4 |\n| 나의 맵 (보유/빈/맵 생성하기/테마 선택/슬롯 구매 팝업 통합) | 42 | 5 | 19 | 18 |\n| 찾아보기 - 추천 맵 | 10 | 1 | 5 | 4 |\n| 찾아보기 - 코드로 찾기 | 8 | 1 | 5 | 2 |\n| 찾아보기 상태 | 3 | 0 | 2 | 1 |\n| 심사 맵 변경 팝업 | 7 | 2 | 3 | 2 |\n| 맵 랭킹 Top 100 | 9 | 0 | 5 | 4 |\n| 심사 상세 PLAY | 11 | 2 | 5 | 4 |\n| 제작자 랭킹 Top 100 | 8 | 0 | 4 | 4 |\n| 제작자 랭킹 빈 상태 | 3 | 0 | 2 | 1 |\n| 맵 랭킹 빈 상태 | 3 | 0 | 2 | 1 |\n| **합계** | **~123** | **~12 (≈10%)** | **~62 (≈50%)** | **~49 (≈40%)** |\n\n---\n\n### 중점 확인 사항\n\n1. **재화 차감/롤백 무결성 (Critical 핵심)**\n   - 슬롯 구매(💎 3,000): 차감 후 슬롯 미증가 시 재처리, 보석 부족 시 비활성 처리 (나의 맵 > 슬롯 구매 팝업)\n   - 맵 변경(💎 100): 차감 후 추천 맵 미갱신 케이스, 보석 정확히 100 보유 시 동작\n\n2. **카운트다운 타이머 동작**\n   - 추천 맵 변경([0]): 시간 만료 직전 [심사하기] 누른 경우 우선순위\n   - 시즌 정산(맵/제작자 랭킹 및 각 빈 상태): 0 도달 시 랭킹 마감 및 보상 지급\n   - 맵 변경 후 카운트다운 유지 규칙([10])\n\n3. **빈 상태 ↔ 데이터 상태 전환**\n   - 제작자 랭킹 빈 상태 → Top 100 (첫 등록 시 즉시 전환)\n   - 맵 랭킹 빈 상태 → Top 100 (맵 첫 등록 시 즉시 전환)\n   - 나의 맵 빈 상태 → 보유 상태 (슬롯 첫 사용 시 카운트 표기 갱신)\n\n4. **나의 맵 → 맵 생성하기 → 맵 테마 선택 / 슬롯 구매 팝업 연계 (통합 카테고리)**\n   - 빈 상태 [새로 만들기] / 보유 상태에서 맵 생성하기 진입 경로 일관성\n   - 맵 이름 15자 / 맵 설명 80자 초과 차단, 금칙어·특수문자·이모지 입력 처리\n   - 백버튼/X 시 미저장 변경사항 경고\n   - 맵 테마 선택 시 보유 테마 적용 + 기존 테마 전용 오브젝트 삭제 경고 팝업\n   - 잠금 테마 [젬 교환소 구매] → 젬 교환소 이동 분기\n   - SAMPLE 배너 카드 사용 시 복제 vs 신규 생성 분기\n   - 보유 상태 [슬롯 추가!] → 슬롯 구매 팝업 호출 → 보석 차감 / 슬롯 1개 증가 / 최대 슬롯 도달 시 비활성\n\n5. **조합 고정 / 능력 OFF (심사 상세 PLAY)**\n   - 심사 모드 진입 시 강제 적용 검증\n   - 보유하지 않은 쿠키 사용 시 처리 정책\n\n6. **맵 코드 복사 및 검색 (코드로 찾기/심사 상세/나의 맵/추천 맵)**\n   - 클립보드 복사 + 토스트 출력\n   - 빈 입력 / 형식 오류 / 미존재 / 비공개·삭제된 맵 코드 예외\n\n7. **랭킹 정렬 및 동점 처리 (맵/제작자 랭킹)**\n   - ❤ 동점 시 2차 정렬 키\n   - GO TO TOP 동작\n   - 본인이 만든 맵에 ❤ 부여 가능 여부\n\n8. **다국어 표시 (제작자 랭킹)**\n   - 일본어/중국어 닉네임·칭호·길드명 깨짐 여부\n\n9. **네트워크 예외**\n   - 추천 맵 로딩 실패, 슬롯 구매 중 단절(나의 맵 > 슬롯 구매 팝업), 찾아보기 통신 오류\n   - 재시도 UI 노출 여부",
+  "materialId": "mat_1778650990268_ft9y",
+  "planId": "plan_1778650990300_1owp"
+}
