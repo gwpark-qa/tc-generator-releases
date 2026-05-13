@@ -1,0 +1,20 @@
+{
+  "contentName": "TC 수정 테스트 - 페이즈 1 - TC 생성 - 장비 추천",
+  "testCaseCount": 1,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "TC 1개 케이스로 작성",
+  "elapsedSeconds": 149,
+  "tokenUsage": {
+    "inputTokens": 41,
+    "outputTokens": 17267,
+    "cacheReadTokens": 496078,
+    "cacheCreationTokens": 86205,
+    "totalCostUsd": 1.25714325
+  },
+  "cost": "$1.2956",
+  "appVersion": "1.4.1",
+  "generatedAt": "2026-05-13T05:43:02.611Z"
+}
