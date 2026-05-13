@@ -1,0 +1,21 @@
+{
+  "contentName": "꿈세계를 지켜라 인게임 MK.2",
+  "testCaseCount": 167,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "ingame",
+  "promptName": "🎮 콘텐츠_인게임",
+  "focusPoints": "- 각종 예외 케이스를 예측하여 작성하되, 너무 과하지는 않게 주의\n- case에서 중복되는 카테고리들을 sub 항목에 꼼꼼하게 정리",
+  "elapsedSeconds": 633,
+  "tokenUsage": {
+    "inputTokens": 132,
+    "outputTokens": 116512,
+    "cacheReadTokens": 2055571,
+    "cacheCreationTokens": 452351,
+    "totalCostUsd": 6.87814625
+  },
+  "cost": "$8.7404",
+  "appVersion": "1.4.0",
+  "generatedAt": "2026-05-13T04:20:55.615Z"
+}
