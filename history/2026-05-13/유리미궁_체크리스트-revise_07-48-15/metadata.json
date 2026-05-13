@@ -1,0 +1,21 @@
+{
+  "contentName": "유리미궁_체크리스트",
+  "testCaseCount": 77,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778655034189_51k84k",
+  "promptName": "🚧 TC -> 체크리스트",
+  "focusPoints": null,
+  "elapsedSeconds": 121,
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 12568,
+    "cacheReadTokens": 17070,
+    "cacheCreationTokens": 96292,
+    "totalCostUsd": 1.002402
+  },
+  "cost": "$0.9427",
+  "appVersion": "1.4.2",
+  "generatedAt": "2026-05-13T07:48:15.522Z"
+}
