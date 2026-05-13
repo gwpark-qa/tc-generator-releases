@@ -1,0 +1,1686 @@
+{
+  "contentName": "꿈세계를 지켜라 인게임 MK.2",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Major",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "쿠키 선택 화면",
+      "sub2": "쿠키 카드 영역",
+      "sub3": "스타트 쿠키 표시",
+      "expectationResult": "쿠키 선택 화면 진입 시, 스타트 쿠키(예체능, 칠리맛, 크러쉬드페퍼, 마법사맛) 카드가 출력된다.",
+      "comment": "기획서 2-2 스타트 쿠키와 해금 쿠키"
+    },
+    {
+      "no": 2,
+      "priority": "Major",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "쿠키 선택 화면",
+      "sub2": "쿠키 카드 영역",
+      "sub3": "해금 쿠키 표시",
+      "expectationResult": "쿠키 선택 화면 진입 시, 해금 쿠키(아이리스맛, 바질페스토맛, 근육맛) 카드가 출력된다.",
+      "comment": "기획서 2-2 스타트 쿠키와 해금 쿠키"
+    },
+    {
+      "no": 3,
+      "priority": "Major",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "쿠키 선택 화면",
+      "sub2": "쿠키 카드 영역",
+      "sub3": "랜덤 카드 표시",
+      "expectationResult": "쿠키 선택 화면 진입 시, 랜덤 슬롯(?) 카드가 출력된다.",
+      "comment": "기획서 2-1 랜덤 선택"
+    },
+    {
+      "no": 4,
+      "priority": "Normal",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "쿠키 선택 화면",
+      "sub2": "쿠키 스펙",
+      "sub3": "",
+      "expectationResult": "선택 가능한 모든 쿠키는 5성 스킬로 표시되며, 아티팩트/장비/스킬레벨 미적용 상태로 표시된다.",
+      "comment": "기획서 2-1 쿠키 스펙"
+    },
+    {
+      "no": 5,
+      "priority": "Critical",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "픽 매칭",
+      "sub2": "중복 픽 방지",
+      "sub3": "",
+      "expectationResult": "기본 매칭 시, 동일 쿠키 중복 픽이 차단된다.",
+      "comment": "기획서 2-3 픽 매칭"
+    },
+    {
+      "no": 6,
+      "priority": "Major",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "픽 매칭",
+      "sub2": "매칭 실패 시 중복 허용",
+      "sub3": "",
+      "expectationResult": "매칭이 일정 시간 안에 잡히지 않을 시, 중복 픽이 허용되어 매칭이 진행된다.",
+      "comment": "기획서 2-3 픽 매칭"
+    },
+    {
+      "no": 7,
+      "priority": "Major",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "픽 매칭",
+      "sub2": "랜덤 선택 처리",
+      "sub3": "시크릿 쿠키 등장",
+      "expectationResult": "랜덤 슬롯 선택 시, 확률적으로 시크릿 쿠키(달빛출사 쿠키)가 픽된다.",
+      "comment": "기획서 2-1 랜덤 선택"
+    },
+    {
+      "no": 8,
+      "priority": "Major",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "픽 매칭",
+      "sub2": "랜덤 선택 처리",
+      "sub3": "서브 드래프트 추가 지급",
+      "expectationResult": "랜덤 슬롯 선택으로 매칭 진입 시, 1라운드 시작 시점에 서브 드래프트 1개가 추가 제공된다.",
+      "comment": "기획서 2-1 랜덤 선택"
+    },
+    {
+      "no": 9,
+      "priority": "Normal",
+      "main": "쿠키 선택 및 매칭",
+      "sub1": "픽 매칭",
+      "sub2": "랜덤 선택 처리",
+      "sub3": "시크릿 외 쿠키 픽",
+      "expectationResult": "랜덤 슬롯 선택 시, 시크릿이 아닌 경우 해당 모드 제공 쿠키 풀에서 1마리가 랜덤 픽된다.",
+      "comment": "기획서 2-1 랜덤 선택"
+    },
+    {
+      "no": 10,
+      "priority": "Critical",
+      "main": "인게임 진입 및 라운드 구조",
+      "sub1": "라운드 시작",
+      "sub2": "라운드 진도 UI 출력",
+      "sub3": "",
+      "expectationResult": "라운드 시작 시, 현재 진도를 표시하는 라운드 진도 현황 UI가 출력된다.",
+      "comment": "기획서 13-6 라운드 진도 현황 UI"
+    },
+    {
+      "no": 11,
+      "priority": "Major",
+      "main": "인게임 진입 및 라운드 구조",
+      "sub1": "라운드 시작",
+      "sub2": "1라운드 기본 효과 적용",
+      "sub3": "",
+      "expectationResult": "1라운드 시작 시, 메인 드래프트 선택 없이 선택한 쿠키의 기본 드래프트 효과가 적용된 상태로 시작된다.",
+      "comment": "기획서 14-2 드래프트 구성"
+    },
+    {
+      "no": 12,
+      "priority": "Critical",
+      "main": "인게임 진입 및 라운드 구조",
+      "sub1": "라운드 클리어 조건",
+      "sub2": "꿈열차 맵 끝 도달",
+      "sub3": "",
+      "expectationResult": "꿈열차가 라운드 맵의 끝까지 이동 시, 해당 라운드가 클리어 처리된다.",
+      "comment": "기획서 3-1 클리어 조건"
+    },
+    {
+      "no": 13,
+      "priority": "Major",
+      "main": "인게임 진입 및 라운드 구조",
+      "sub1": "라운드 클리어 조건",
+      "sub2": "3라운드 전체 클리어",
+      "sub3": "",
+      "expectationResult": "3라운드까지 모두 클리어 시, 전체 클리어 처리되어 결과 화면으로 전환된다.",
+      "comment": "기획서 3-1 클리어 조건"
+    },
+    {
+      "no": 14,
+      "priority": "Major",
+      "main": "인게임 진입 및 라운드 구조",
+      "sub1": "라운드 실패 조건",
+      "sub2": "열차 체력 0",
+      "sub3": "",
+      "expectationResult": "꿈열차의 체력이 0이 되어 파괴 시, 라운드 실패 처리되며 결과창으로 전환된다.",
+      "comment": "기획서 3-1 실패 조건"
+    },
+    {
+      "no": 15,
+      "priority": "Major",
+      "main": "인게임 진입 및 라운드 구조",
+      "sub1": "라운드 실패 조건",
+      "sub2": "플레이어 전원 사망",
+      "sub3": "",
+      "expectationResult": "팀원 3명이 모두 사망(유령) 상태가 될 시, 라운드 실패 처리되며 결과창으로 전환된다.",
+      "comment": "기획서 3-1 실패 조건"
+    },
+    {
+      "no": 16,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "타이머",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "화면 좌측 상단에 라운드 잔여 시간을 표시하는 타이머가 출력된다.",
+      "comment": "기획서 13-1 인게임 UI"
+    },
+    {
+      "no": 17,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "HP 게이지",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "화면 상단 중앙에 조작 쿠키의 HP 게이지가 출력된다.",
+      "comment": "기획서 13-1 인게임 UI"
+    },
+    {
+      "no": 18,
+      "priority": "Critical",
+      "main": "인게임 HUD UI",
+      "sub1": "연료 게이지",
+      "sub2": "",
+      "sub3": "연료 게이지 출력",
+      "expectationResult": "화면 상단 중앙에 꿈열차의 연료량을 실시간으로 표시하는 연료 게이지가 출력된다.",
+      "comment": "기획서 13-2 연료량 프로그래스 바"
+    },
+    {
+      "no": 19,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "연료 게이지",
+      "sub2": "연료 충전 표시",
+      "sub3": "",
+      "expectationResult": "별석탄을 열차에 투입 시, 연료 게이지가 1초 동안 증가한 후 다시 자연 감소한다.",
+      "comment": "기획서 13-3 연료량 변화"
+    },
+    {
+      "no": 20,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "연료 게이지",
+      "sub2": "연료 최대치 초과 처리",
+      "sub3": "",
+      "expectationResult": "연료가 최대치를 초과하여 투입될 시, 1초간 최대치에서 유지된 후 다시 감소한다.",
+      "comment": "기획서 13-3 연료량 변화"
+    },
+    {
+      "no": 21,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "연료 게이지",
+      "sub2": "50% 색상 변경",
+      "sub3": "",
+      "expectationResult": "연료량이 50% 이하 도달 시, 게이지 색상이 노란색으로 변경된다.",
+      "comment": "기획서 13-3 연료량 변화"
+    },
+    {
+      "no": 22,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "연료 게이지",
+      "sub2": "20% 색상 변경 및 부스트",
+      "sub3": "색상 변경",
+      "expectationResult": "연료량이 20% 이하 도달 시, 게이지 색상이 빨간색으로 변경된다.",
+      "comment": "기획서 13-2 연료량 프로그래스 바"
+    },
+    {
+      "no": 23,
+      "priority": "Normal",
+      "main": "인게임 HUD UI",
+      "sub1": "연료 게이지",
+      "sub2": "20% 색상 변경 및 부스트",
+      "sub3": "부스트 이펙트",
+      "expectationResult": "연료량이 20% 이하 도달 시, 부스트 이펙트가 적용된다.",
+      "comment": "기획서 13-2 연료량 프로그래스 바"
+    },
+    {
+      "no": 24,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "경험치 게이지",
+      "sub2": "젤리빈 획득 시 상승",
+      "sub3": "",
+      "expectationResult": "젤리빈 획득 시, 연료 게이지 하단의 경험치 게이지가 상승한다.",
+      "comment": "기획서 13-4 경험치 게이지"
+    },
+    {
+      "no": 25,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "경험치 게이지",
+      "sub2": "레벨업 연출",
+      "sub3": "레벨업 텍스트 출력",
+      "expectationResult": "경험치 게이지가 100% 도달 시, 'Level Up!' 텍스트가 화면에 출력된다.",
+      "comment": "기획서 13-4 경험치 게이지"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "경험치 게이지",
+      "sub2": "레벨업 연출",
+      "sub3": "경험치 초기화",
+      "expectationResult": "레벨업 시, 경험치 게이지가 0으로 초기화된다.",
+      "comment": "기획서 13-4 경험치 게이지"
+    },
+    {
+      "no": 27,
+      "priority": "Normal",
+      "main": "인게임 HUD UI",
+      "sub1": "경험치 게이지",
+      "sub2": "최대 레벨 도달",
+      "sub3": "",
+      "expectationResult": "공용 경험치 레벨은 최대 15레벨까지 상승된다.",
+      "comment": "기획서 13-2 경험치 게이지 최대 레벨"
+    },
+    {
+      "no": 28,
+      "priority": "Normal",
+      "main": "인게임 HUD UI",
+      "sub1": "위치 인디케이터",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "보스 상자, 별석탄 광석 등 중요 오브젝트가 화면 바깥에 위치 시, 화면 가장자리에 위치 인디케이터가 표시된다.",
+      "comment": "기획서 13-5 위치 인디케이터"
+    },
+    {
+      "no": 29,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "라운드 진도 현황 UI",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "라운드 진도 UI 출력 직후, 드래프트 선택지 3개가 등장한다.",
+      "comment": "기획서 13-6 라운드 진도 현황 UI"
+    },
+    {
+      "no": 30,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "스코어 UI",
+      "sub2": "남은 시간 표시",
+      "sub3": "",
+      "expectationResult": "화면 우측 상단의 스코어 UI에 라운드 클리어까지 남은 시간이 표시된다.",
+      "comment": "기획서 13-7 스코어 UI"
+    },
+    {
+      "no": 31,
+      "priority": "Major",
+      "main": "인게임 HUD UI",
+      "sub1": "스코어 UI",
+      "sub2": "점수 환산 표시",
+      "sub3": "",
+      "expectationResult": "라운드 클리어 시, 남은 시간이 점수로 환산되어 스코어 UI에 누적 표시된다.",
+      "comment": "기획서 13-7 스코어 UI"
+    },
+    {
+      "no": 32,
+      "priority": "Normal",
+      "main": "인게임 HUD UI",
+      "sub1": "스코어 UI",
+      "sub2": "등급 표시",
+      "sub3": "",
+      "expectationResult": "스코어 UI 우측 상단에 누적 점수에 따른 등급(C+ 등)이 표시된다.",
+      "comment": "기획서 13-7 스코어 UI 스크린샷"
+    },
+    {
+      "no": 33,
+      "priority": "Normal",
+      "main": "인게임 HUD UI",
+      "sub1": "일시정지 버튼",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "화면 우측 상단의 일시정지 버튼 터치 시, 일시정지 UI가 출력된다.",
+      "comment": "기획서 13-1 인게임 UI"
+    },
+    {
+      "no": 34,
+      "priority": "Critical",
+      "main": "인게임 조작",
+      "sub1": "기본 조작 버튼",
+      "sub2": "이동 조이스틱",
+      "sub3": "",
+      "expectationResult": "화면 좌측 하단의 이동 조이스틱 홀드 후 방향 입력 시, 쿠키가 입력 방향으로 이동된다.",
+      "comment": "공통 인게임 조작"
+    },
+    {
+      "no": 35,
+      "priority": "Critical",
+      "main": "인게임 조작",
+      "sub1": "기본 조작 버튼",
+      "sub2": "공격 버튼",
+      "sub3": "",
+      "expectationResult": "화면 우측 하단의 공격 버튼 터치 시, 쿠키가 기본 공격을 사용한다.",
+      "comment": "공통 인게임 조작"
+    },
+    {
+      "no": 36,
+      "priority": "Major",
+      "main": "인게임 조작",
+      "sub1": "기본 조작 버튼",
+      "sub2": "특수 스킬 버튼",
+      "sub3": "",
+      "expectationResult": "특수 스킬 버튼 터치 시, 쿠키가 특수 스킬을 사용하고 쿨타임이 표시된다.",
+      "comment": "공통 인게임 조작"
+    },
+    {
+      "no": 37,
+      "priority": "Major",
+      "main": "인게임 조작",
+      "sub1": "기본 조작 버튼",
+      "sub2": "궁극기 버튼",
+      "sub3": "",
+      "expectationResult": "궁극기 버튼 터치 시, 쿠키가 궁극기를 사용하고 쿨타임이 표시된다.",
+      "comment": "공통 인게임 조작"
+    },
+    {
+      "no": 38,
+      "priority": "Major",
+      "main": "인게임 조작",
+      "sub1": "기본 조작 버튼",
+      "sub2": "대시 버튼",
+      "sub3": "",
+      "expectationResult": "대시 버튼 터치 시, 쿠키가 대시 동작으로 짧은 거리를 빠르게 이동된다.",
+      "comment": "공통 인게임 조작"
+    },
+    {
+      "no": 39,
+      "priority": "Normal",
+      "main": "인게임 조작",
+      "sub1": "이모티콘 버튼",
+      "sub2": "이모티콘 메뉴 출력",
+      "sub3": "",
+      "expectationResult": "화면 중앙 하단의 이모티콘 버튼 터치 시, 지정된 이모티콘 목록이 출력된다.",
+      "comment": "공통 인게임 조작"
+    },
+    {
+      "no": 40,
+      "priority": "Normal",
+      "main": "인게임 조작",
+      "sub1": "이모티콘 버튼",
+      "sub2": "말풍선 표시 및 소멸",
+      "sub3": "",
+      "expectationResult": "이모티콘 메뉴에서 이모티콘 선택 시, 조작 쿠키 머리 위에 말풍선이 표시된 후 일정 시간 경과 후 사라진다.",
+      "comment": "공통 인게임 조작"
+    },
+    {
+      "no": 41,
+      "priority": "Major",
+      "main": "인게임 조작",
+      "sub1": "쿠키별 조작 UI 변경",
+      "sub2": "",
+      "sub3": "별석탄 광석 접근 시",
+      "expectationResult": "별석탄 광석에 접근 시, 스킬 버튼이 캐기 버튼(곡괭이 아이콘)으로 변경된다.",
+      "comment": "기획서 13-9 조작 UI / 9. 별석탄 광석"
+    },
+    {
+      "no": 42,
+      "priority": "Normal",
+      "main": "인게임 조작",
+      "sub1": "쿠키별 ��작 UI 변경",
+      "sub2": "",
+      "sub3": "별석탄 휴대 시",
+      "expectationResult": "별석탄을 들어올린 상태 시, 일부 조작 버튼이 비활성화 상태로 표시된다.",
+      "comment": "기획서 별석탄 휴대 조작 제한"
+    },
+    {
+      "no": 43,
+      "priority": "Critical",
+      "main": "꿈열차",
+      "sub1": "열차 이동",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "연료 게이지가 채워져 있는 동안, 꿈열차가 맵 중앙 경로를 따라 일정 속도로 전진된다.",
+      "comment": "기획서 5. 꿈열차"
+    },
+    {
+      "no": 44,
+      "priority": "Critical",
+      "main": "꿈열차",
+      "sub1": "별석탄 투입",
+      "sub2": "연료 게이지 충전",
+      "sub3": "",
+      "expectationResult": "별석탄을 열차에 상호작용으로 투입 시, 연료 게이지가 충전된다.",
+      "comment": "기획서 8. 별석탄 / 13-3 연료 변화"
+    },
+    {
+      "no": 45,
+      "priority": "Major",
+      "main": "꿈열차",
+      "sub1": "약초 투입",
+      "sub2": "회복 영역 생성",
+      "sub3": "",
+      "expectationResult": "약초를 열차에 상호작용으로 투입 시, 열차를 중심으로 n초간 지속되는 원형 범위의 회복 장판이 생성된다.",
+      "comment": "기획서 10-5 회복 약초 효과"
+    },
+    {
+      "no": 46,
+      "priority": "Major",
+      "main": "꿈열차",
+      "sub1": "약초 투입",
+      "sub2": "회복 영역 생성",
+      "sub3": "회복 적용",
+      "expectationResult": "회복 장판 영역 안에 위치한 쿠키의 체력이 회복된다.",
+      "comment": "기획서 10-5 회복 약초 효과"
+    },
+    {
+      "no": 47,
+      "priority": "Major",
+      "main": "꿈열차",
+      "sub1": "연료 게이지 소진",
+      "sub2": "열차 정지",
+      "sub3": "",
+      "expectationResult": "연료 게이지가 0이 될 시, 꿈열차가 제자리에 정지된다.",
+      "comment": "기획서 5. 꿈열차 / 연료 0 처리"
+    },
+    {
+      "no": 48,
+      "priority": "Critical",
+      "main": "꿈열차",
+      "sub1": "연료 게이지 소진",
+      "sub2": "체력 감소",
+      "sub3": "",
+      "expectationResult": "연료 게이지가 0 상태로 유지되는 동안, 꿈열차가 도트 데미지를 받아 체력이 감소된다.",
+      "comment": "기획서 6-3 열차 체력 상태"
+    },
+    {
+      "no": 49,
+      "priority": "Normal",
+      "main": "꿈열차",
+      "sub1": "열차 파괴",
+      "sub2": "",
+      "sub3": "체력 50% 연출",
+      "expectationResult": "꿈열차의 체력이 50% 이하로 감소 시, 연기 등 손상 연출이 출력된다.",
+      "comment": "기획서 6-4 열차 체력 50%"
+    },
+    {
+      "no": 50,
+      "priority": "Major",
+      "main": "꿈열차",
+      "sub1": "열차 파괴",
+      "sub2": "",
+      "sub3": "새 라운드 초기화",
+      "expectationResult": "새 라운드 시작 시, 꿈열차의 체력이 초기화된다.",
+      "comment": "기획서 6-3 새 라운드 시작"
+    },
+    {
+      "no": 51,
+      "priority": "Normal",
+      "main": "꿈열차",
+      "sub1": "열차 파괴",
+      "sub2": "",
+      "sub3": "파괴 연출",
+      "expectationResult": "꿈열차 체력이 0 도달 시, 파괴 연출(폭발 이펙트, 연기 등)이 출력된다.",
+      "comment": "기획서 6-4 파괴된 경우"
+    },
+    {
+      "no": 52,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "광석 기본 상태",
+      "sub2": "작은 사이즈",
+      "sub3": "",
+      "expectationResult": "맵에 배치된 작은 사이즈(3m×3m) 별석탄 광석이 표시된다.",
+      "comment": "기획서 9-3 사이즈별 분류"
+    },
+    {
+      "no": 53,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "광석 기본 상태",
+      "sub2": "큰 사이즈",
+      "sub3": "",
+      "expectationResult": "맵에 배치된 큰 사이즈(6m×6m) 별석탄 광석이 표시된다.",
+      "comment": "기획서 9-3 사이즈별 분류"
+    },
+    {
+      "no": 54,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "광석 기본 상태",
+      "sub2": "",
+      "sub3": "상호작용 안내 이펙트",
+      "expectationResult": "평상시 별석탄 광석 위에 작은 게이지가 표시되며, 약하게 반짝이는 이펙트가 출력된다.",
+      "comment": "기획서 9-4 평상시 상태"
+    },
+    {
+      "no": 55,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "채굴 상호작용",
+      "sub2": "캐기 버튼 변환",
+      "sub3": "",
+      "expectationResult": "쿠키가 별석탄 광석에 접근 시, 스킬 버튼이 캐기 버튼으로 변환된다.",
+      "comment": "기획서 9-2 작동 방식"
+    },
+    {
+      "no": 56,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "채굴 상호작용",
+      "sub2": "단발 캐기",
+      "sub3": "",
+      "expectationResult": "캐기 버튼을 한 번 터치 시, 캐는 애니메이션이 재생되며 광석의 보호막 게이지가 1 감소한다.",
+      "comment": "기획서 9-2 작동 방식"
+    },
+    {
+      "no": 57,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "채굴 상호작용",
+      "sub2": "홀드 캐기",
+      "sub3": "",
+      "expectationResult": "캐기 버튼 홀드 시, 루프 애니메이션이 재생되며 끊김 없이 연속으로 채굴된다.",
+      "comment": "기획서 9-2 작동 방식"
+    },
+    {
+      "no": 58,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "채굴 상호작용",
+      "sub2": "캐는 중 조작 차단",
+      "sub3": "",
+      "expectationResult": "광석 캐는 애니메이션이 재생되는 동안, 쿠키의 이동/공격/스킬 등 모든 조작이 차단된다.",
+      "comment": "기획서 9-2 작동 방식"
+    },
+    {
+      "no": 59,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "채굴 상호작용",
+      "sub2": "캐는 중 조작 차단",
+      "sub3": "피격 시 중단",
+      "expectationResult": "광석을 캐는 도중 적에게 피격 시, 채굴 동작이 중단된다.",
+      "comment": "기획서 9-2 작동 방식"
+    },
+    {
+      "no": 60,
+      "priority": "Critical",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "광석 파괴",
+      "sub2": "별석탄 드랍",
+      "sub3": "",
+      "expectationResult": "광석 보호막 게이지가 0이 될 시, 광석이 부서지며 별석탄 n개가 주변에 드랍된다.",
+      "comment": "기획서 9-2 작동 방식 / 9-3 사이즈별 분류"
+    },
+    {
+      "no": 61,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "광석 파괴",
+      "sub2": "드랍 위치 보정",
+      "sub3": "",
+      "expectationResult": "광석 근처에 벽 등 장애물이 있을 시, 별석탄이 장애물이 아닌 위치에 드랍된다.",
+      "comment": "기획서 9-2 작동 방식"
+    },
+    {
+      "no": 62,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "광석 시각 연출",
+      "sub2": "",
+      "sub3": "캐질 때 연출",
+      "expectationResult": "광석 캐기 시, 광석 위에 곡괭이가 표시되며 부딪힐 때마다 불꽃 이펙트가 출력된다.",
+      "comment": "기획서 9-4 캐질 때"
+    },
+    {
+      "no": 63,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "광석 시각 연출",
+      "sub2": "",
+      "sub3": "중파 상태",
+      "expectationResult": "광석이 중간 정도 파괴 시, 광석의 크기가 줄어든 모습으로 변경된다.",
+      "comment": "기획서 9-4 중간정도 파괴된 상태"
+    },
+    {
+      "no": 64,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 별석탄 광석",
+      "sub1": "광석 시각 연출",
+      "sub2": "",
+      "sub3": "파괴 시 연출",
+      "expectationResult": "광석 파괴 시, 광석 몸체가 사라지고 돌 부스러기 이펙트가 출력된다.",
+      "comment": "기획서 9-4 파괴 될 때"
+    },
+    {
+      "no": 65,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 상태",
+      "sub2": "평상시 부유",
+      "sub3": "",
+      "expectationResult": "바닥에 드랍된 별석탄이 낮게 부유하는 평상시 상태로 표시된다.",
+      "comment": "기획서 8. 별석탄 상태"
+    },
+    {
+      "no": 66,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 상태",
+      "sub2": "바닥 안착",
+      "sub3": "",
+      "expectationResult": "별석탄이 별사탕 모양 오브젝트로 표시된다.",
+      "comment": "기획서 8. 별석탄 형태"
+    },
+    {
+      "no": 67,
+      "priority": "Critical",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 들기",
+      "sub2": "상호작용 픽업",
+      "sub3": "",
+      "expectationResult": "바닥의 별석탄에 가까이 다가가 공격 버튼 터치 시, 쿠키가 별석탄을 들어올린다.",
+      "comment": "기획서 8-1 작동 방식"
+    },
+    {
+      "no": 68,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 들기",
+      "sub2": "휴대 중 조작 제한",
+      "sub3": "",
+      "expectationResult": "별석탄을 들고있는 상태 시, 던지기/놓기 외의 조작 버튼이 차단된다.",
+      "comment": "기획서 별석탄 작동 방식"
+    },
+    {
+      "no": 69,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 던지기",
+      "sub2": "포물선 궤적",
+      "sub3": "",
+      "expectationResult": "별석탄을 든 상태에서 스킬 버튼 터치 시, 정면으로 포물선 궤적을 그리며 별석탄이 던져진다.",
+      "comment": "기획서 별석탄 던지기"
+    },
+    {
+      "no": 70,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 놓기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "별석탄을 든 상태에서 공격 버튼 터치 시, 쿠키 발 아래 바닥에 별석탄이 놓인다.",
+      "comment": "기획서 별석탄 놓기"
+    },
+    {
+      "no": 71,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "피격 시 낙하",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "별석탄을 든 쿠키가 피해를 받을 시, 별석탄이 자동으로 바닥에 떨어진다.",
+      "comment": "기획서 별석탄 피격 시 낙하"
+    },
+    {
+      "no": 72,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 소멸",
+      "sub2": "N초 후 깜빡임",
+      "sub3": "",
+      "expectationResult": "바닥에 떨어진 별석탄이 N초 경과 시, 3초간 깜빡이는 효과 후 소멸된다.",
+      "comment": "기획서 별석탄 소멸"
+    },
+    {
+      "no": 73,
+      "priority": "Major",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 소멸",
+      "sub2": "재픽업 시 카운트 리셋",
+      "sub3": "",
+      "expectationResult": "소멸 직전 별석탄을 다시 들었다가 바닥에 놓을 시, 소멸 카운트가 처음 N초부터 재시작된다.",
+      "comment": "기획서 별석탄 작동 방식"
+    },
+    {
+      "no": 74,
+      "priority": "Critical",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 들기",
+      "sub2": "",
+      "sub3": "열차 투입",
+      "expectationResult": "별석탄을 든 상태로 열차에 접근하여 공격 버튼 터치 시, 열차에 별석탄이 투입되어 연료 게이지가 충전된다.",
+      "comment": "기획서 별석탄 작동 방식"
+    },
+    {
+      "no": 75,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 소멸",
+      "sub2": "",
+      "sub3": "깜빡임 연출",
+      "expectationResult": "별석탄 소멸 직전 3초간, 깜빡이는 시각 연출이 출력된다.",
+      "comment": "기획서 별석탄 소멸"
+    },
+    {
+      "no": 76,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 별석탄",
+      "sub1": "별석탄 던지기",
+      "sub2": "",
+      "sub3": "벽 충돌",
+      "expectationResult": "던진 별석탄이 벽 등 장애물에 충돌 시, 충돌 지점 바닥에 별석탄이 놓인다.",
+      "comment": "예외 케이스 - 던지기 벽 충돌"
+    },
+    {
+      "no": 77,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초 더미",
+      "sub1": "더미 기본 상태",
+      "sub2": "",
+      "sub3": "기본 표시",
+      "expectationResult": "맵에 배치된 약초 더미가 사각형 풀 더미 형태로 표시된다.",
+      "comment": "기획서 10. 약초 더미 표현"
+    },
+    {
+      "no": 78,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 약초 더미",
+      "sub1": "더미 기본 상태",
+      "sub2": "",
+      "sub3": "상호작용 안내 이펙트",
+      "expectationResult": "약초 더미가 평상시 녹색 빛으로 은은하게 반짝이는 이펙트가 출력된다.",
+      "comment": "기획서 10-1 약초 더미 기본"
+    },
+    {
+      "no": 79,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초 더미",
+      "sub1": "타격 상호작용",
+      "sub2": "진동 피드백",
+      "sub3": "",
+      "expectationResult": "약초 더미 타격 시, 약초 더미가 살랑살랑 흔들리는 진동 애니메이션이 재생된다.",
+      "comment": "기획서 10-2 약초 더미 채집"
+    },
+    {
+      "no": 80,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초 더미",
+      "sub1": "더미 파괴",
+      "sub2": "약초 드랍",
+      "sub3": "",
+      "expectationResult": "약초 더미를 3회 타격 시, 더미가 파괴되며 약초 1개가 드랍된다.",
+      "comment": "기획서 10. 약초 더미 작동 방식"
+    },
+    {
+      "no": 81,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초 더미",
+      "sub1": "더미 파괴",
+      "sub2": "드랍 위치 보정",
+      "sub3": "",
+      "expectationResult": "약초 더미 근처에 벽 등 장애물이 있을 시, 약초가 장애물이 아닌 위치에 드랍된다.",
+      "comment": "기획서 약초 더미 드랍 위치"
+    },
+    {
+      "no": 82,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 약초 더미",
+      "sub1": "더미 파괴",
+      "sub2": "",
+      "sub3": "파괴 연출",
+      "expectationResult": "약초 더미 파괴 시, 몸체가 사라지고 풀잎이 강하게 튀는 이펙트가 출력된다.",
+      "comment": "기획서 10-3 약초 더미 파괴"
+    },
+    {
+      "no": 83,
+      "priority": "Critical",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "약초 들기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "바닥의 약초에 가까이 다가가 공격 버튼 터치 시, 쿠키가 약초를 들어올린다.",
+      "comment": "기획서 약초 작동 방식"
+    },
+    {
+      "no": 84,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "약초 들기",
+      "sub2": "",
+      "sub3": "휴대 중 조작 제한",
+      "expectationResult": "약초를 들고있는 상태 시, 던지기/놓기 외의 조작 버튼이 차단된다.",
+      "comment": "기획서 약초 작동 방식"
+    },
+    {
+      "no": 85,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "약초 던지기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "약초를 든 상태에서 스킬 버튼 터치 시, 정면으로 포물선 궤적을 그리며 약초가 던져진다.",
+      "comment": "기획서 약초 던지기"
+    },
+    {
+      "no": 86,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "약초 놓기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "약초를 든 상태에서 공격 버튼 터치 시, 쿠키 발 아래 바닥에 약초가 놓인다.",
+      "comment": "기획서 약초 놓기"
+    },
+    {
+      "no": 87,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "피격 시 낙하",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "약초를 든 쿠키가 피해를 받을 시, 약초가 자동으로 바닥에 떨어진다.",
+      "comment": "기획서 약초 피격 시 낙하"
+    },
+    {
+      "no": 88,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "약초 소멸",
+      "sub2": "",
+      "sub3": "N초 후 소멸",
+      "expectationResult": "바닥에 떨어진 약초가 N초 경과 시, 3초간 깜빡인 후 소멸된다.",
+      "comment": "기획서 약초 소멸"
+    },
+    {
+      "no": 89,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "약초 소멸",
+      "sub2": "",
+      "sub3": "재픽업 시 카운트 리셋",
+      "expectationResult": "소멸 직전 약초를 다시 들었다가 바닥에 놓을 시, 소멸 카운트가 처음 N초부터 재시작된다.",
+      "comment": "기획서 약초 작동 방식"
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "약초 투입 효과",
+      "sub2": "회복 영역 지속",
+      "sub3": "",
+      "expectationResult": "약초를 열차에 투입 시 생성된 회복 영역이 n초 동안 지속된 후 사라진다.",
+      "comment": "기획서 10-5 회복 약초 효과"
+    },
+    {
+      "no": 91,
+      "priority": "Normal",
+      "main": "인게임 기믹 - 약초",
+      "sub1": "약초 들기",
+      "sub2": "",
+      "sub3": "약초 형태",
+      "expectationResult": "드랍된 약초가 바닥에서 낮게 부유하며 살짝 반짝이는 이펙트가 출력된다.",
+      "comment": "기획서 10-4 약초 드롭 & 아이들"
+    },
+    {
+      "no": 92,
+      "priority": "Major",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "몬스터 종류",
+      "sub2": "일반 몬스터",
+      "sub3": "",
+      "expectationResult": "꿈세계 테마의 일반 몬스터가 라운드 진행 중 웨이브로 등장된다.",
+      "comment": "기획서 16-2 몬스터"
+    },
+    {
+      "no": 93,
+      "priority": "Major",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "몬스터 종류",
+      "sub2": "엘리트 몬스터",
+      "sub3": "",
+      "expectationResult": "엘리트 버프를 가진 엘리트 몬스터가 라운드 진행 중 등장된다.",
+      "comment": "기획서 16-2 몬스터"
+    },
+    {
+      "no": 94,
+      "priority": "Major",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "몬스터 종류",
+      "sub2": "보스 몬스터",
+      "sub3": "",
+      "expectationResult": "3라운드 진행 중, 보스 몬스터가 등장된다.",
+      "comment": "기획서 16-2 보스 몬스터"
+    },
+    {
+      "no": 95,
+      "priority": "Critical",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "젤리빈 드랍",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일반 몬스터 처치 시, 처치 지점에 젤리빈이 드랍된다.",
+      "comment": "기획서 3-2 젤리빈"
+    },
+    {
+      "no": 96,
+      "priority": "Major",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "젤리빈 드랍",
+      "sub2": "",
+      "sub3": "획득 시 경험치 증가",
+      "expectationResult": "드랍된 젤리빈에 접촉 시, 공용 경험치 게이지가 증가한다.",
+      "comment": "기획서 3-2 젤리빈"
+    },
+    {
+      "no": 97,
+      "priority": "Major",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "보상 상자 드랍",
+      "sub2": "빛 구체 포물선 드랍",
+      "sub3": "",
+      "expectationResult": "엘리트/보스 처치 시, 빛 구체가 포물선 궤적을 그리며 드랍된다.",
+      "comment": "기획서 8-3 보상 상자 드랍"
+    },
+    {
+      "no": 98,
+      "priority": "Normal",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "보상 상자 드랍",
+      "sub2": "빛 기둥 스폰",
+      "sub3": "",
+      "expectationResult": "빛 구체가 바닥에 떨어진 지점에 아이템이 스폰되며, 빛 기둥 이펙트가 출력된다.",
+      "comment": "기획서 8-3 아이템 스폰"
+    },
+    {
+      "no": 99,
+      "priority": "Normal",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "달빛 포션 드랍",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "라운드 난이도가 높을수록, 드랍되는 달빛 포션의 등급이 상위로 변경된다.",
+      "comment": "기획서 16-3 드롭 아이템"
+    },
+    {
+      "no": 100,
+      "priority": "Normal",
+      "main": "몬스터 및 드랍 아이템",
+      "sub1": "보상 상자 드랍",
+      "sub2": "",
+      "sub3": "등급 차등",
+      "expectationResult": "라운드 난이도가 높을수록, 드랍되는 보상 상자의 등급이 상위로 변경된다.",
+      "comment": "기획서 16-3 드롭 아이템"
+    },
+    {
+      "no": 101,
+      "priority": "Critical",
+      "main": "플레이어 사망 및 소생",
+      "sub1": "사망 시 유령 변환",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "쿠키의 체력이 0이 되어 사망 시, 유령 상태로 변환된다.",
+      "comment": "기획서 3-3 플레이어 사망"
+    },
+    {
+      "no": 102,
+      "priority": "Major",
+      "main": "플레이어 사망 및 소생",
+      "sub1": "유령 상태 제한",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "유령 상태의 플레이어는 공격/스킬/오브젝트 상호작용 등 팀에 도움이 되는 액션이 차단된다.",
+      "comment": "기획서 3-3 플레이어 사망"
+    },
+    {
+      "no": 103,
+      "priority": "Major",
+      "main": "플레이어 사망 및 소생",
+      "sub1": "소생 상호작용",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "팀원이 유령 상태의 플레이어에게 다가가 n초간 상호작용 시, 해당 플레이어가 소생된다.",
+      "comment": "기획서 3-3 플레이어 사망"
+    },
+    {
+      "no": 104,
+      "priority": "Normal",
+      "main": "플레이어 사망 및 소생",
+      "sub1": "소생 상호작용",
+      "sub2": "",
+      "sub3": "중단 처리",
+      "expectationResult": "소생 상호작용 도중 중단 시, 소생 진행도가 초기화된다.",
+      "comment": "예외 케이스 - 소생 중단"
+    },
+    {
+      "no": 105,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 등장",
+      "sub2": "2~3라운드 시작 시 출력",
+      "sub3": "",
+      "expectationResult": "2라운드 및 3라운드 시작 시, 메인 ���래프트 선택 화면이 등장한다.",
+      "comment": "기획서 14-2 메인 선택지"
+    },
+    {
+      "no": 106,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 등장",
+      "sub2": "카드 슬롯 3개",
+      "sub3": "",
+      "expectationResult": "메인 드래프트 등장 시, 총 3개의 카드 슬롯이 출력된다.",
+      "comment": "기획서 14-2 메인 선택지"
+    },
+    {
+      "no": 107,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 UI",
+      "sub2": "타입 아이콘 표시",
+      "sub3": "",
+      "expectationResult": "메인 카드 상단에, 카드의 타입(무기, 태스크) 아이콘이 표시된다.",
+      "comment": "기획서 5-1 메인 선택지 카드 디자인"
+    },
+    {
+      "no": 108,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 UI",
+      "sub2": "무기 이미지 표시",
+      "sub3": "",
+      "expectationResult": "메인 카드 중앙에, 쿠키 무기 이미지가 표시된다.",
+      "comment": "기획서 5-1 메인 선택지 카드 디자인"
+    },
+    {
+      "no": 109,
+      "priority": "Normal",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 UI",
+      "sub2": "효과 설명 텍스트",
+      "sub3": "",
+      "expectationResult": "메인 카드 이미지 아래에, 카드 효과 설명 텍스트가 표시된다.",
+      "comment": "기획서 5-1 메인 선택지 카드 디자인"
+    },
+    {
+      "no": 110,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 UI",
+      "sub2": "태그 표시",
+      "sub3": "",
+      "expectationResult": "메인 카드 하단에, 강화 조건이 되는 서브 드래프트 태그(#~~)가 표시된다.",
+      "comment": "기획서 5-1 메인 선택지 카드 디자인"
+    },
+    {
+      "no": 111,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 UI",
+      "sub2": "NEW 배지",
+      "sub3": "",
+      "expectationResult": "한 번도 선택해보지 못한 카드의 좌측 상단에, NEW 배지가 표시된다.",
+      "comment": "기획서 5-1 NEW 표시"
+    },
+    {
+      "no": 112,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 UI",
+      "sub2": "NEW 배지",
+      "sub3": "선택 후 제거",
+      "expectationResult": "NEW 배지가 표시된 카드를 선택한 이후, 해당 카드에 NEW 배지가 표시되지 않는다.",
+      "comment": "기획서 5-1 NEW 표시"
+    },
+    {
+      "no": 113,
+      "priority": "Critical",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 선택",
+      "sub2": "카드 선택 처리",
+      "sub3": "",
+      "expectationResult": "메인 카드 터치 시, 해당 카드의 효과가 플레이어에게 적용된다.",
+      "comment": "기획서 14-2 메인 선택지"
+    },
+    {
+      "no": 114,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "메인 카드 선택",
+      "sub2": "중복 픽 제외",
+      "sub3": "",
+      "expectationResult": "이미 획득한 메인 선택지는, 이후 메인 드래프트 풀에서 제외되어 재등장되지 않는다.",
+      "comment": "기획서 14-2 중복 픽 불가능"
+    },
+    {
+      "no": 115,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "새로고침 기능",
+      "sub2": "기본 3회 제공",
+      "sub3": "",
+      "expectationResult": "메인 드래프트 화면에서 기본 3회의 새로고침 횟수가 제공된다.",
+      "comment": "기획서 14-2 새로고침"
+    },
+    {
+      "no": 116,
+      "priority": "Major",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "새로고침 기능",
+      "sub2": "직전/획득 효과 제외",
+      "sub3": "",
+      "expectationResult": "새로고침 터치 시, 직전 등장 카드와 이미 획득한 카드를 제외한 풀에서 3개의 카드가 새로 등장한다.",
+      "comment": "기획서 14-2 새로고침"
+    },
+    {
+      "no": 117,
+      "priority": "Normal",
+      "main": "드래프트 - 메인 선택지",
+      "sub1": "조건부 카드 풀",
+      "sub2": "달빛출사 무기 풀 제외",
+      "sub3": "",
+      "expectationResult": "달빛출사 무기 카드는 일반 메인 드래프트 풀에서 제외되며, 시크릿 쿠키 픽 시에만 스타트 효과로 획득된다.",
+      "comment": "기획서 14-2 조건부 등장 드래프트"
+    },
+    {
+      "no": 118,
+      "priority": "Major",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 등장 조건",
+      "sub2": "레벨업 시 등장",
+      "sub3": "",
+      "expectationResult": "공용 경험치 레벨업 시, 서브 드래프트 선택지 3개가 등장한다.",
+      "comment": "기획서 14-2 서브 선택지"
+    },
+    {
+      "no": 119,
+      "priority": "Major",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 등장 조건",
+      "sub2": "라운드 난이도 상승 시",
+      "sub3": "",
+      "expectationResult": "라운드 난이도가 상승하여 진입 시, 서브 드래프트 선택지가 추가로 등장한다.",
+      "comment": "기획서 14-2 서브 선택지"
+    },
+    {
+      "no": 120,
+      "priority": "Major",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 등장 조건",
+      "sub2": "랜덤픽 1라운드",
+      "sub3": "",
+      "expectationResult": "랜덤픽으로 매칭 진입 시, 1라운드 시작 시점에 서브 드래프트 선택지가 등장한다.",
+      "comment": "기획서 14-2 서브 선택지"
+    },
+    {
+      "no": 121,
+      "priority": "Normal",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 UI",
+      "sub2": "메인과 크기 동일",
+      "sub3": "",
+      "expectationResult": "서브 카드 사이즈는 메인 카드와 동일한 크기로 표시된다.",
+      "comment": "기획서 5-2 서브 선택지 카드 디자인"
+    },
+    {
+      "no": 122,
+      "priority": "Major",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 UI",
+      "sub2": "타입 아이콘/태그 제거",
+      "sub3": "",
+      "expectationResult": "서브 카드에는 메인 카드와 달리 상단 타입 아이콘과 하단 태그가 표시되지 않는다.",
+      "comment": "기획서 5-2 서브 선택지 카드 디자인"
+    },
+    {
+      "no": 123,
+      "priority": "Normal",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 UI",
+      "sub2": "배경색 차이",
+      "sub3": "",
+      "expectationResult": "서브 카드의 배경 색상이 메인 카드와 다른 색상으로 표시된다.",
+      "comment": "기획서 5-2 서브 선택지 카드 디자인"
+    },
+    {
+      "no": 124,
+      "priority": "Major",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 UI",
+      "sub2": "스탯 아이콘 표시",
+      "sub3": "",
+      "expectationResult": "서브 카드 중앙에, 대응되는 스탯 아이콘이 표시된다.",
+      "comment": "기획서 5-2 서브 선택지 카드 디자인"
+    },
+    {
+      "no": 125,
+      "priority": "Major",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 UI",
+      "sub2": "NEW 배지",
+      "sub3": "",
+      "expectationResult": "한 번도 선택해보지 못한 서브 카드의 좌측 상단에, NEW 배지가 표시된다.",
+      "comment": "기획서 5-2 서브 선택지 NEW 표시"
+    },
+    {
+      "no": 126,
+      "priority": "Major",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "서브 카드 선택",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "서브 카드 터치 시, 해당 서브 효과가 플레이어에게 적용된다.",
+      "comment": "기획서 14-2 서브 선택지"
+    },
+    {
+      "no": 127,
+      "priority": "Major",
+      "main": "드래프트 - 서브 선택지",
+      "sub1": "메인 강화 처리",
+      "sub2": "태그 3회 중복 시 강화",
+      "sub3": "",
+      "expectationResult": "동일 태그의 서브 선택지를 3회 중복 획득 시, 해당 태그의 메인 선택지가 1회 강화된다.",
+      "comment": "기획서 14-2 메인 선택지 강화"
+    },
+    {
+      "no": 128,
+      "priority": "Normal",
+      "main": "드래프트 효과",
+      "sub1": "쿠키 기본 효과",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "1라운드 시작 시, 선택한 쿠키의 역할군에 따른 기본 드래프트 효과가 적용된다.",
+      "comment": "기획서 2-5 쿠키 별 역할군"
+    },
+    {
+      "no": 129,
+      "priority": "Major",
+      "main": "드래프트 효과",
+      "sub1": "테스크 계열 효과",
+      "sub2": "",
+      "sub3": "발화 석탄",
+      "expectationResult": "'발화 석탄' 카드 획득 후 석탄/약초를 든 상태 시, 플레이어 주변에 화염 오라가 생성되어 주변 몬스터에 지속 피해가 적용된다.",
+      "comment": "기획서 16. 드래프트 리스트"
+    },
+    {
+      "no": 130,
+      "priority": "Major",
+      "main": "드래프트 효과",
+      "sub1": "테스크 계열 효과",
+      "sub2": "",
+      "sub3": "고속채굴",
+      "expectationResult": "'고속채굴' 카드 획득 시, 별석탄 광석 채굴 속도가 25% 상승된다.",
+      "comment": "기획서 16. 드래프트 리스트"
+    },
+    {
+      "no": 131,
+      "priority": "Major",
+      "main": "드래프트 중 일시정지 처리",
+      "sub1": "일시정지 대상",
+      "sub2": "타이머 정지",
+      "sub3": "",
+      "expectationResult": "드래프트 선택 화면 등장 시, 라운드 타이머가 일시정지된다.",
+      "comment": "기획서 7. 드래프트 선택 창 일시정지"
+    },
+    {
+      "no": 132,
+      "priority": "Major",
+      "main": "드래프트 중 일시정지 처리",
+      "sub1": "일시정지 대상",
+      "sub2": "연료 게이지 정지",
+      "sub3": "",
+      "expectationResult": "드래프트 선택 화면 등장 시, 연료 게이지의 자연 감소가 일시정지된다.",
+      "comment": "기획서 7. 드래프트 선택 창 일시정지"
+    },
+    {
+      "no": 133,
+      "priority": "Major",
+      "main": "드래프트 중 일시정지 처리",
+      "sub1": "일시정지 대상",
+      "sub2": "열차 이동 정지",
+      "sub3": "",
+      "expectationResult": "드래프트 선택 화면 등장 시, 꿈열차의 이동이 일시정지된다.",
+      "comment": "기획서 7. 드래프트 선택 창 일시정지"
+    },
+    {
+      "no": 134,
+      "priority": "Major",
+      "main": "드래프트 중 일시정지 처리",
+      "sub1": "일시정지 대상",
+      "sub2": "회복 영역 정지",
+      "sub3": "",
+      "expectationResult": "드래프트 선택 화면 등장 시, 회복 영역의 지속시간과 회복 적용이 일시정지된다.",
+      "comment": "기획서 7. 드래프트 선택 창 일시정지"
+    },
+    {
+      "no": 135,
+      "priority": "Major",
+      "main": "드래프트 중 일시정지 처리",
+      "sub1": "일시정지 대상",
+      "sub2": "쿠키 정지",
+      "sub3": "",
+      "expectationResult": "드래프트 선택 화면 등장 시, 쿠키의 동작 및 조작이 일시정지된다.",
+      "comment": "기획서 7. 드래프트 선택 창 일시정지"
+    },
+    {
+      "no": 136,
+      "priority": "Major",
+      "main": "드래프트 중 일시정지 처리",
+      "sub1": "일시정지 대상",
+      "sub2": "몬스터 정지",
+      "sub3": "",
+      "expectationResult": "드래프트 선택 화면 등장 시, 몬스터의 동작 및 이동이 일시정지된다.",
+      "comment": "기획서 7. 드래프트 선택 창 일시정지"
+    },
+    {
+      "no": 137,
+      "priority": "Normal",
+      "main": "드래프트 중 일시정지 처리",
+      "sub1": "팀원 선택 대기",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "드래프트 선택 화면 진입 시, 본인의 선택이 완료된 후 팀원의 선택이 모두 완료될 때까지 대기 상태가 유지된다.",
+      "comment": "기획서 7. 드래프트 선택 창 팀원 대기"
+    },
+    {
+      "no": 138,
+      "priority": "Major",
+      "main": "일시정지 UI",
+      "sub1": "팀원 선택 효과 표시",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일시정지 UI 진입 시, 본인 및 팀원들이 선택한 드래프트 효과 목록이 표시된다.",
+      "comment": "기획서 5. 일시정지 UI"
+    },
+    {
+      "no": 139,
+      "priority": "Normal",
+      "main": "일시정지 UI",
+      "sub1": "팀원 선택 효과 표시",
+      "sub2": "강화 효과 시각 차별화",
+      "sub3": "",
+      "expectationResult": "강화된 메인 효과가 강화되지 않은 효과와 대비되는 시각적 색상으로 차별화되어 표시된다.",
+      "comment": "기획서 5. 일시정지 UI"
+    },
+    {
+      "no": 140,
+      "priority": "Major",
+      "main": "일시정지 UI",
+      "sub1": "중단하기 버튼",
+      "sub2": "포기 투표 팝업",
+      "sub3": "",
+      "expectationResult": "일시정지 UI 내 중단하기 버튼 터치 시, 인게임에 포기 투표 팝업이 출력된다.",
+      "comment": "기획서 5. 일시정지 UI"
+    },
+    {
+      "no": 141,
+      "priority": "Normal",
+      "main": "일시정지 UI",
+      "sub1": "팀모이기 버튼",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "일시정지 UI 내 계속하기/돌아가기 버튼 터치 시, 일시정지 UI가 닫히고 인게임이 재개된다.",
+      "comment": "기획서 5. 일시정지 UI"
+    },
+    {
+      "no": 142,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "라운드 클리어 화면",
+      "sub2": "점수 정산 표시",
+      "sub3": "",
+      "expectationResult": "라운드 클리어 시, 'COMPLETED!' 화면과 함께 클리어 시간에 따른 점수 정산이 표시된다.",
+      "comment": "기획서 11. 라운드 종료"
+    },
+    {
+      "no": 143,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "난이도 투표 UI",
+      "sub2": "3개 선택지 출력",
+      "sub3": "",
+      "expectationResult": "다음 라운드 난이도 투표 시, 총 3개의 난이도 영역이 인게임 화면 내에 출력된다.",
+      "comment": "기획서 6. 라운드 난이도 투표 UI"
+    },
+    {
+      "no": 144,
+      "priority": "Normal",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "난이도 투표 UI",
+      "sub2": "카메라 당김",
+      "sub3": "",
+      "expectationResult": "난이도 투표 진입 시, 카메라가 살짝 줌아웃되어 투표 영역 확인이 쉽게 표시된다.",
+      "comment": "기획서 6. 라운드 난이도 투표 UI"
+    },
+    {
+      "no": 145,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "난이도 투표 UI",
+      "sub2": "인게임 시간 정지",
+      "sub3": "",
+      "expectationResult": "난이도 투표 진행 동안, 인게임 시간이 일시정지된다.",
+      "comment": "기획서 6. 라운드 난이도 투표 UI"
+    },
+    {
+      "no": 146,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "투표 진행 처리",
+      "sub2": "1명 진입 카운트다운",
+      "sub3": "",
+      "expectationResult": "한 명이라도 난이도 영역에 진입 시, 10초 카운트다운이 시작된다.",
+      "comment": "기획서 6. 라운드 난이도 투표 UI"
+    },
+    {
+      "no": 147,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "투표 진행 처리",
+      "sub2": "3명 진입 즉시 투표",
+      "sub3": "",
+      "expectationResult": "3명의 플레이어가 모두 난이도 영역에 진입 시, 카운트다운이 중단되고 즉시 투표가 시작된다.",
+      "comment": "기획서 6. 라운드 난이도 투표 UI"
+    },
+    {
+      "no": 148,
+      "priority": "Critical",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "투표 진행 처리",
+      "sub2": "무작위 1인 선정",
+      "sub3": "",
+      "expectationResult": "투표 완료 시, 영역에 진입한 플레이어 중 1인이 무작위 선정되어 해당 경로로 진행된다.",
+      "comment": "기획서 6. 라운드 난이도 투표 UI"
+    },
+    {
+      "no": 149,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "투표 진행 처리",
+      "sub2": "미선택 시 쉬움 자동 진행",
+      "sub3": "",
+      "expectationResult": "제한시간이 지나는 동안 영역에 진입한 플레이어가 없을 시, 가장 쉬운 난이도로 자동 진행된다.",
+      "comment": "기획서 6. 라운드 난이도 투표 UI"
+    },
+    {
+      "no": 150,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "난이도별 변경점",
+      "sub2": "쉬움",
+      "sub3": "",
+      "expectationResult": "난이도 쉬움 선택 시, 한 웨이브당 10~12마리의 적은 몬스터가 등장한다.",
+      "comment": "기획서 5-3 난이도 쉬움"
+    },
+    {
+      "no": 151,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "난이도별 변경점",
+      "sub2": "중간",
+      "sub3": "",
+      "expectationResult": "난이도 중간 선택 시, 한 웨이브당 14~16마리의 몬스터가 등장하며 미니 보스가 추가 등장된다.",
+      "comment": "기획서 5-3 난이도 중간"
+    },
+    {
+      "no": 152,
+      "priority": "Major",
+      "main": "라운드 클리어 및 난이도 투표",
+      "sub1": "난이도별 변경점",
+      "sub2": "어려움",
+      "sub3": "",
+      "expectationResult": "난이도 어려움 선택 시, 한 웨이브당 22~24마리의 많은 몬스터가 등장하며 보스가 추가 등장된다.",
+      "comment": "기획서 5-3 난이도 어려움"
+    },
+    {
+      "no": 153,
+      "priority": "Major",
+      "main": "라운드 추가 규약 및 기믹",
+      "sub1": "규약 추가",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "중간 난이도 및 어려움 난이도 라운드 진입 시, 회오리/시야/폭탄 등의 규약이 추가 적용된다.",
+      "comment": "기획서 6-2 규약 추가"
+    },
+    {
+      "no": 154,
+      "priority": "Major",
+      "main": "라운드 추가 규약 및 기믹",
+      "sub1": "문 기믹",
+      "sub2": "레버 상호작용",
+      "sub3": "",
+      "expectationResult": "중간/어려움 난이도에서 등장한 문 오브젝트에 대해, 레버 상호작용 시 문이 개방된다.",
+      "comment": "기획서 6-2 기믹 추가"
+    },
+    {
+      "no": 155,
+      "priority": "Normal",
+      "main": "라운드 추가 규약 및 기믹",
+      "sub1": "문 기믹",
+      "sub2": "",
+      "sub3": "별석탄 투입 차단",
+      "expectationResult": "엔진으로 향하는 길목의 문이 닫힌 상태일 시, 별석탄을 든 쿠키가 문을 통과할 수 없다.",
+      "comment": "기획서 6-2 기믹 추가"
+    },
+    {
+      "no": 156,
+      "priority": "Major",
+      "main": "카메라",
+      "sub1": "열차 중심 추적",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "인게임 진행 중, 카메라가 꿈열차를 중심으로 이동을 따라 추적된다.",
+      "comment": "기획서 11. 인게임 카메라"
+    },
+    {
+      "no": 157,
+      "priority": "Normal",
+      "main": "카메라",
+      "sub1": "영역 경계 처리",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "카메라 영역의 모서리에 도달 시, 카메라가 해당 경계에서 멈춘다.",
+      "comment": "기획서 11. 인게임 카메라"
+    },
+    {
+      "no": 158,
+      "priority": "Normal",
+      "main": "카메라",
+      "sub1": "영역 경계 처리",
+      "sub2": "",
+      "sub3": "모서리 이탈 후 복귀",
+      "expectationResult": "쿠키가 카메라 영역 모서리에서 멀어질 시, 카메라가 다시 쿠키를 따라 이동된다.",
+      "comment": "기획서 11. 인게임 카메라"
+    },
+    {
+      "no": 159,
+      "priority": "Major",
+      "main": "카메라",
+      "sub1": "멀티플레이 고유 영역",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "멀티플레이 환경 시, 각 플레이어별로 고유의 카메라 영역이 적용된다.",
+      "comment": "기획서 11. 인게임 카메라"
+    },
+    {
+      "no": 160,
+      "priority": "Critical",
+      "main": "결과 화면 및 랭킹",
+      "sub1": "결과창 진입",
+      "sub2": "클리어 시",
+      "sub3": "",
+      "expectationResult": "3라운드까지 모두 클리어 시, 클리어 결과 화면으로 전환된다.",
+      "comment": "기획서 3-1 전체 클리어 조건"
+    },
+    {
+      "no": 161,
+      "priority": "Critical",
+      "main": "결과 화면 및 랭킹",
+      "sub1": "결과창 진입",
+      "sub2": "실패 시",
+      "sub3": "",
+      "expectationResult": "라운드 실패 조건 충족 시, 실패 결과 화면으로 전환된다.",
+      "comment": "기획서 3-1 실패 조건"
+    },
+    {
+      "no": 162,
+      "priority": "Major",
+      "main": "결과 화면 및 랭킹",
+      "sub1": "점수 계산",
+      "sub2": "남은 시간 환산",
+      "sub3": "",
+      "expectationResult": "라운드 클리어 시, 남은 시간 1ms당 약 1.67점으로 환산되어 점수가 계산된다.",
+      "comment": "기획서 15-2 계산방법"
+    },
+    {
+      "no": 163,
+      "priority": "Major",
+      "main": "결과 화면 및 랭킹",
+      "sub1": "점수 계산",
+      "sub2": "소수점 버림 처리",
+      "sub3": "",
+      "expectationResult": "라운드 점수 환산 결과의 소수점은 버림 처리된다.",
+      "comment": "기획서 15-2 계산방법"
+    },
+    {
+      "no": 164,
+      "priority": "Major",
+      "main": "결과 화면 및 랭킹",
+      "sub1": "점수 계산",
+      "sub2": "난이도 가중치 적용",
+      "sub3": "쉬움",
+      "expectationResult": "난이도 쉬움으로 클리어한 라운드 점수에는, 가중치가 적용되지 않는다.",
+      "comment": "기획서 15. 난이도 가중치"
+    },
+    {
+      "no": 165,
+      "priority": "Major",
+      "main": "결과 화면 및 랭킹",
+      "sub1": "점수 계산",
+      "sub2": "난이도 가중치 적용",
+      "sub3": "보통",
+      "expectationResult": "난이도 보통으로 클리어한 라운드 점수에는, 30% 가중치가 적용되어 환산된다.",
+      "comment": "기획서 15. 난이도 가중치"
+    },
+    {
+      "no": 166,
+      "priority": "Major",
+      "main": "결과 화면 및 랭킹",
+      "sub1": "점수 계산",
+      "sub2": "난이도 가중치 적용",
+      "sub3": "어려움",
+      "expectationResult": "난이도 어려움으로 클리어한 라운드 점수에는, 50% 가중치가 적용되어 환산된다.",
+      "comment": "기획서 15. 난이도 가중치"
+    },
+    {
+      "no": 167,
+      "priority": "Normal",
+      "main": "결과 화면 및 랭킹",
+      "sub1": "랭킹 집계",
+      "sub2": "총 합산 최대 점수",
+      "sub3": "",
+      "expectationResult": "각 라운드별 점수의 총 합계가 최종 점수로 집계되며, 최대 1,200,000점까지 누적된다.",
+      "comment": "기획서 15. 최종 계산"
+    }
+  ],
+  "generatedAt": "2026-05-13T04:20:55.615Z",
+  "tokenUsage": {
+    "inputTokens": 132,
+    "outputTokens": 116512,
+    "cacheReadTokens": 2055571,
+    "cacheCreationTokens": 452351,
+    "totalCostUsd": 6.87814625
+  },
+  "planText": "### 기능 목록\n\n**1. 쿠키 선택 및 매칭**\n- 전용 쿠키 10마리 + 시크릿(달빛술사) 랜덤 풀\n- 스타트 쿠키 / 해금 쿠키 / 2주년 차 업데이트 추가 쿠키(스타더스트, 밀키웨이)\n- 중복 픽 매칭 처리 (기본 불가, 매칭 안 잡힐 시 허용)\n- 랜덤 선택 시 1라운드 시작 시 서브 드래프트 1개 제공\n- 시크릿 쿠키 확률적 등장\n\n**2. 인게임 진입 / 라운드 구조**\n- 3라운드 구성 (라운드당 100초 내외, 총 5분)\n- 트리 구조 난이도 분기 (쉬움/중간/어려움)\n- 라운드 진도 UI (지도 노드)\n- 클리어/실패 조건 (열차가 맵 끝 도달 / 열차 체력 0 / 전원 사망)\n\n**3. 인게임 HUD UI**\n- 타이머 (좌측 상단)\n- 캐릭터 아이콘 + HP 게이지 (상단 중앙)\n- 연료/경험치 프로그레스 바 (상단 중앙)\n- 스코어 UI (우측 상단)\n- 일시정지 버튼\n- 위치 인디케이터 (시야 밖 요소)\n- 라운드 진도 현황 UI\n\n**4. 인게임 조작 UI**\n- 이동 조이스틱\n- 공격 버튼\n- 특수 스킬 버튼\n- 궁극기 버튼\n- 대시 버튼\n- 이모티콘 버튼\n- 쿠키별 조작 UI 변동\n\n**5. 꿈열차 (운영 오브젝트)**\n- 맵 중앙 가로지르며 전진\n- 별석탄 투입 → 연료 게이지 충전\n- 약초 투입 → 회복 영역 생성\n- 연료 게이지 자연 감소\n- 연료 최대치 초과 시 1초 유지 → 감소\n- 연료 50% 노란색 / 20% 빨간색 + 부스트 이펙트\n- 연료 0 도달 시 열차 정지 → 체력 감소 → 파괴\n\n**6. 별석탄 광석 기믹**\n- 작은 사이즈 (3×3m) / 큰 사이즈 (6×3m)\n- 캐기 버튼 (곡괭이 모양 변경)\n- 보호막 개수만큼 타격\n- 캐기 애니메이션 중 무방비\n- 홀드 시 끊김없이 채굴\n- 부서지면 별석탄 n개 드랍\n- 드랍 위치 보정 (벽이 아닌 위치)\n\n**7. 별석탄 (휴대 아이템)**\n- 별사탕 모양, 폭탄형\n- 들어올리기 (공격으로 상호작용)\n- 들었을 때 다른 조작 비활성화 (X 표시)\n- 던지기 (스킬, 포물선 궤적)\n- 놓기 (공격, 바닥에 떨굼)\n- 피격 시 자동 낙하\n- N초 후 3초 깜빡임 → 소멸\n- 다시 들었다 놓으면 카운트 리셋\n- 열차에 투입 시 연료 충전\n\n**8. 약초 더미 기믹**\n- 3×3m 사각형 풀 더미\n- 3회 타격 시 파괴\n- 타격 시 진동 피드백\n- 파괴 시 약초 1개 드랍\n- 드랍 위치 보정\n\n**9. 약초 (휴대 아이템)**\n- 별석탄과 유사 휴대 구조\n- 들기/던지기/놓기/피격 낙하\n- 열차에 넣으면 열차 중심 원형 회복 영역 (n초 지속)\n- 자연 소멸 (N초 + 3초 깜빡임)\n\n**10. 몬스터**\n- 일반/엘리트/보스\n- 일반 몬스터 처치 → 젤리빈 드랍\n- 보스 (3라운드 등장)\n- 엘리트 버프\n\n**11. 보상 상자 / 달빛 포션 (드랍)**\n- 몬스터 처치 시 빛 구체 포물선 드랍\n- 빛 기둥 이펙트\n- 난이도에 따라 등급 차이\n\n**12. 경험치 / 레벨업 (공용)**\n- 젤리빈 획득 → 공용 경험치\n- 총 용량 100, 젤리빈 1개당 N%\n- 최대 Lv 15\n- 레벨업 시 \"Level Up!\" 텍스트 + 이펙트\n- 서브 드래프트 3개 등장\n\n**13. 플레이어 사망 / 유령 / 소생**\n- 사망 시 유령 변환\n- 유령 상태 힐 불가\n- 팀원이 n초 상호작용 시 소생\n\n**14. 드래프트 - 메인 선택지**\n- 2~3라운드 시작 시 3개 등장\n- 카드 UI (타입 아이콘, 무기 이미지, 효과 설명, 태그)\n- NEW 배지 (미선택 시)\n- 중복 픽 불가\n- 새로고침 (기본 3회, 직전/획득 효과 제외)\n- 조건부 카드 (달빛술사 무기, 스타더스트, 밀키웨이)\n\n**15. 드래프트 - 서브 선택지**\n- 3개 등장\n- 메인과 크기 동일, 타입 아이콘/태그 제거, 배경색 차이, 스탯 아이콘\n- 젤리빈 레벨업 / 난이도 상승 / 1라운드 랜덤픽 시 등장\n- 태그 3번 중복 획득 시 메인 강화 (최대 1회)\n\n**16. 드래프트 카드 효과 (테스크 계열)**\n- 발화 석탄 / 척척폭폭! / 불굴의 의지 / 저리 비켜! / 찌릿찌릿 / 함정 투척 / 전설의 약초 / 레이저빔 / 고속채굴\n\n**17. 일시정지 UI**\n- 팀원의 선택 효과 표시\n- 강화된 효과 시각적 차별화\n- 중단(나가기) → 포기 투표 팝업\n- 팀모이기 버튼\n\n**18. 라운드 클리어 / 난이도 투표**\n- 라운드 클리어 화면 → 점수 정산\n- 3개 난이도 선택지\n- 무작위 1인 선정 진행\n- 1명 진입 시 10초 카운트다운\n- 3명 진입 시 즉시 투표\n- 시간 만료 + 미선택 시 가장 쉬운 난이도\n- 인게임 시간 정지\n- 카메라 당김\n\n**19. 카메라**\n- 열차 중심 따라오기\n- 영역 경계 도달 시 카메라 멈춤\n- 유저별 고유 영역\n\n**20. 점수 계산 / 랭킹**\n- 남은 시간 ms 기반 (1ms ≒ 1.67점)\n- 3분 완벽 시 300,000점\n- 소수점 버림\n- 난이도 가중치 (쉬움 0%, 보통 30%, 어려움 50%)\n- 최대 1,200,000점\n- 라운드별 누적\n\n**21. 규약 추가 (중간/어려움)**\n- 회오리 / 시야 / 폭탄 등 랜덤 규약\n\n**22. 문 기믹 (중간/어려움)**\n- 레버 상호작용으로 문 개방\n\n**23. 예외 처리**\n- 다수결 동률\n- 즉사 피격 시 별석탄 처리\n- 깜빡임 중 픽업 가능 여부\n- 무적 상태 피격 시 드롭 여부\n- 네트워크 단절\n\n### 카테고리 구조\n\n```\n├─ 쿠키 선택 및 매칭 (main)\n│  ├─ 쿠키 선택 화면 (sub1)\n│  │  ├─ 쿠키 카드 영역 (sub2)\n│  │  │  ├─ 스타트 쿠키 표시 (sub3)\n│  │  │  ├─ 해금 쿠키 표시 (sub3)\n│  │  │  └─ 랜덤 카드 표시 (sub3)\n│  │  └─ 쿠키 스펙 (sub2)\n│  └─ 픽 매칭 (sub1)\n│     ├─ 중복 픽 방지 (sub2)\n│     ├─ 매칭 실패 시 중복 허용 (sub2)\n│     └─ 랜덤 선택 처리 (sub2)\n│        ├─ 시크릿 쿠키 등장 (sub3)\n│        └─ 서브 드래프트 추가 지급 (sub3)\n├─ 인게임 진입 및 라운드 구조 (main)\n│  ├─ 라운드 시작 (sub1)\n│  │  ├─ 라운드 진도 UI 출력 (sub2)\n│  │  └─ 1라운드 기본 효과 적용 (sub2)\n│  ├─ 라운드 클리어 조건 (sub1)\n│  │  ├─ 꿈열차 맵 끝 도달 (sub2)\n│  │  └─ 3라운드 전체 클리어 (sub2)\n│  └─ 라운드 실패 조건 (sub1)\n│     ├─ 열차 체력 0 (sub2)\n│     └─ 플레이어 전원 사망 (sub2)\n├─ 인게임 HUD UI (main)\n│  ├─ 타이머 (sub1)\n│  ├─ HP 게이지 (sub1)\n│  ├─ 연료 게이지 (sub1)\n│  │  ├─ 연료 충전 표시 (sub2)\n│  │  ├─ 연료 최대치 초과 처리 (sub2)\n│  │  ├─ 50% 색상 변경 (sub2)\n│  │  └─ 20% 색상 변경 및 부스트 (sub2)\n│  ├─ 경험치 게이지 (sub1)\n│  │  ├─ 젤리빈 획득 시 상승 (sub2)\n│  │  ├─ 레벨업 연출 (sub2)\n│  │  └─ 최대 레벨 도달 (sub2)\n│  ├─ 위치 인디케이터 (sub1)\n│  ├─ 라운드 진도 현황 UI (sub1)\n│  └─ 스코어 UI (sub1)\n│     ├─ 남은 시간 표시 (sub2)\n│     └─ 점수 환산 표시 (sub2)\n├─ 인게임 조작 (main)\n│  ├─ 기본 조작 버튼 (sub1)\n│  │  ├─ 이동 조이스틱 (sub2)\n│  │  ├─ 공격 버튼 (sub2)\n│  │  ├─ 특수 스킬 버튼 (sub2)\n│  │  ├─ 궁극기 버튼 (sub2)\n│  │  └─ 대시 버튼 (sub2)\n│  ├─ 이모티콘 버튼 (sub1)\n│  │  ├─ 이모티콘 메뉴 출력 (sub2)\n│  │  └─ 말풍선 표시 및 소멸 (sub2)\n│  └─ 쿠키별 조작 UI 변경 (sub1)\n├─ 꿈열차 (main)\n│  ├─ 열차 이동 (sub1)\n│  ├─ 별석탄 투입 (sub1)\n│  │  └─ 연료 게이지 충전 (sub2)\n│  ├─ 약초 투입 (sub1)\n│  │  └─ 회복 영역 생성 (sub2)\n│  ├─ 연료 게이지 소진 (sub1)\n│  │  ├─ 열차 정지 (sub2)\n│  │  └─ 체력 감소 (sub2)\n│  └─ 열차 파괴 (sub1)\n├─ 인게임 기믹 - 별석탄 광석 (main)\n│  ├─ 광석 기본 상태 (sub1)\n│  │  ├─ 작은 사이즈 (sub2)\n│  │  └─ 큰 사이즈 (sub2)\n│  ├─ 채굴 상호작용 (sub1)\n│  │  ├─ 캐기 버튼 변환 (sub2)\n│  │  ├─ 단발 캐기 (sub2)\n│  │  ├─ 홀드 캐기 (sub2)\n│  │  └─ 캐는 중 조작 차단 (sub2)\n│  ├─ 광석 파괴 (sub1)\n│  │  ├─ 별석탄 드랍 (sub2)\n│  │  └─ 드랍 위치 보정 (sub2)\n│  └─ 광석 시각 연출 (sub1)\n├─ 인게임 기믹 - 별석탄 (main)\n│  ├─ 별석탄 상태 (sub1)\n│  │  ├─ 평상시 부유 (sub2)\n│  │  └─ 바닥 안착 (sub2)\n│  ├─ 별석탄 들기 (sub1)\n│  │  ├─ 상호작용 픽업 (sub2)\n│  │  └─ 휴대 중 조작 제한 (sub2)\n│  ├─ 별석탄 던지기 (sub1)\n│  │  └─ 포물선 궤적 (sub2)\n│  ├─ 별석탄 놓기 (sub1)\n│  ├─ 피격 시 낙하 (sub1)\n│  └─ 별석탄 소멸 (sub1)\n│     ├─ N초 후 깜빡임 (sub2)\n│     └─ 재픽업 시 카운트 리셋 (sub2)\n├─ 인게임 기믹 - 약초 더미 (main)\n│  ├─ 더미 기본 상태 (sub1)\n│  ├─ 타격 상호작용 (sub1)\n│  │  └─ 진동 피드백 (sub2)\n│  └─ 더미 파괴 (sub1)\n│     ├─ 약초 드랍 (sub2)\n│     └─ 드랍 위치 보정 (sub2)\n├─ 인게임 기믹 - 약초 (main)\n│  ├─ 약초 들기 (sub1)\n│  ├─ 약초 던지기 (sub1)\n│  ├─ 약초 놓기 (sub1)\n│  ├─ 피격 시 낙하 (sub1)\n│  ├─ 약초 소멸 (sub1)\n│  └─ 약초 투입 효과 (sub1)\n│     └─ 회복 영역 지속 (sub2)\n├─ 몬스터 및 드랍 아이템 (main)\n│  ├─ 몬스터 종류 (sub1)\n│  │  ├─ 일반 몬스터 (sub2)\n│  │  ├─ 엘리트 몬스터 (sub2)\n│  │  └─ 보스 몬스터 (sub2)\n│  ├─ 젤리빈 드랍 (sub1)\n│  ├─ 보상 상자 드랍 (sub1)\n│  │  ├─ 빛 구체 포물선 드랍 (sub2)\n│  │  └─ 빛 기둥 스폰 (sub2)\n│  └─ 달빛 포션 드랍 (sub1)\n├─ 플레이어 사망 및 소생 (main)\n│  ├─ 사망 시 유령 변환 (sub1)\n│  ├─ 유령 상태 제한 (sub1)\n│  └─ 소생 상호작용 (sub1)\n├─ 드래프트 - 메인 선택지 (main)\n│  ├─ 메인 카드 등장 (sub1)\n│  │  ├─ 2~3라운드 시작 시 출력 (sub2)\n│  │  └─ 카드 슬롯 3개 (sub2)\n│  ├─ 메인 카드 UI (sub1)\n│  │  ├─ 타입 아이콘 표시 (sub2)\n│  │  ├─ 무기 이미지 표시 (sub2)\n│  │  ├─ 효과 설명 텍스트 (sub2)\n│  │  ├─ 태그 표시 (sub2)\n│  │  └─ NEW 배지 (sub2)\n│  ├─ 메인 카드 선택 (sub1)\n│  │  ├─ 카드 선택 처리 (sub2)\n│  │  ├─ 중복 픽 제외 (sub2)\n│  │  └─ 팀원 선택 대기 (sub2)\n│  ├─ 새로고침 기능 (sub1)\n│  │  ├─ 기본 3회 제공 (sub2)\n│  │  └─ 직전/획득 효과 제외 (sub2)\n│  └─ 조건부 카드 풀 (sub1)\n│     ├─ 달빛출사 무기 풀 제외 (sub2)\n│     └─ 스타더스트/일키퍼 추가 (sub2)\n├─ 드래프트 - 서브 선택지 (main)\n│  ├─ 서브 카드 등장 조건 (sub1)\n│  │  ├─ 레벨업 시 등장 (sub2)\n│  │  ├─ 라운드 난이도 상승 시 (sub2)\n│  │  └─ 랜덤픽 1라운드 (sub2)\n│  ├─ 서브 카드 UI (sub1)\n│  │  ├─ 메인과 크기 동일 (sub2)\n│  │  ├─ 타입 아이콘/태그 제거 (sub2)\n│  │  ├─ 배경색 차이 (sub2)\n│  │  ├─ 스탯 아이콘 표시 (sub2)\n│  │  └─ NEW 배지 (sub2)\n│  ├─ 서브 카드 선택 (sub1)\n│  └─ 메인 강화 처리 (sub1)\n│     └─ 태그 3회 중복 시 강화 (sub2)\n├─ 드래프트 효과 (main)\n│  ├─ 쿠키 기본 효과 (sub1)\n│  └─ 테스크 계열 효과 (sub1)\n├─ 드래프트 중 일시정지 처리 (main)\n│  ├─ 일시정지 대상 (sub1)\n│  │  ├─ 타이머 정지 (sub2)\n│  │  ├─ 연료 게이지 정지 (sub2)\n│  │  ├─ 열차 이동 정지 (sub2)\n│  │  ├─ 회복 영역 정지 (sub2)\n│  │  ├─ 쿠키 정지 (sub2)\n│  │  └─ 몬스터 정지 (sub2)\n│  └─ 팀원 선택 대기 (sub1)\n├─ 일시정지 UI (main)\n│  ├─ 팀원 선택 효과 표시 (sub1)\n│  │  └─ 강화 효과 시각 차별화 (sub2)\n│  ├─ 중단하기 버튼 (sub1)\n│  │  └─ 포기 투표 팝업 (sub2)\n│  └─ 팀모이기 버튼 (sub1)\n├─ 라운드 클리어 및 난이도 투표 (main)\n│  ├─ 라운드 클리어 화면 (sub1)\n│  │  └─ 점수 정산 표시 (sub2)\n│  ├─ 난이도 투표 UI (sub1)\n│  │  ├─ 3개 선택지 출력 (sub2)\n│  │  ├─ 카메라 당김 (sub2)\n│  │  └─ 인게임 시간 정지 (sub2)\n│  ├─ 투표 진행 처리 (sub1)\n│  │  ├─ 1명 진입 카운트다운 (sub2)\n│  │  ├─ 3명 진입 즉시 투표 (sub2)\n│  │  ├─ 무작위 1인 선정 (sub2)\n│  │  └─ 미선택 시 쉬움 자동 진행 (sub2)\n│  └─ 난이도별 변경점 (sub1)\n│     ├─ 쉬움 (sub2)\n│     ├─ 중간 (sub2)\n│     └─ 어려움 (sub2)\n├─ 라운드 추가 규약 및 기믹 (main)\n│  ├─ 규약 추가 (sub1)\n│  └─ 문 기믹 (sub1)\n│     └─ 레버 상호작용 (sub2)\n├─ 카메라 (main)\n│  ├─ 열차 중심 추적 (sub1)\n│  ├─ 영역 경계 처리 (sub1)\n│  └─ 멀티플레이 고유 영역 (sub1)\n└─ 결과 화면 및 랭킹 (main)\n   ├─ 결과창 진입 (sub1)\n   │  ├─ 클리어 시 (sub2)\n   │  └─ 실패 시 (sub2)\n   ├─ 점수 계산 (sub1)\n   │  ├─ 남은 시간 환산 (sub2)\n   │  ├─ 소수점 버림 처리 (sub2)\n   │  └─ 난이도 가중치 적용 (sub2)\n   └─ 랭킹 집계 (sub1)\n      └─ 총 합산 최대 점수 (sub2)\n```\n\n### TC 건수 배분\n\n**전체 목표: 약 135건**\n\n| 카테고리 | TC 수 | Critical | Major | Normal |\n|---|---|---|---|---|\n| 쿠키 선택 및 매칭 | 9 | 1 | 5 | 3 |\n| 인게임 진입 및 라운드 구조 | 6 | 2 | 3 | 1 |\n| 인게임 HUD UI | 18 | 1 | 9 | 8 |\n| 인게임 조작 | 9 | 2 | 4 | 3 |\n| 꿈열차 | 9 | 3 | 4 | 2 |\n| 인게임 기믹 - 별석탄 광석 | 11 | 1 | 7 | 3 |\n| 인게임 기믹 - 별석탄 | 13 | 2 | 6 | 5 |\n| 인게임 기믹 - 약초 더미 | 6 | 0 | 4 | 2 |\n| 인게임 기믹 - 약초 | 9 | 1 | 5 | 3 |\n| 몬스터 및 드랍 아이템 | 9 | 1 | 5 | 3 |\n| 플레이어 사망 및 소생 | 4 | 1 | 2 | 1 |\n| 드래프트 - 메인 선택지 | 12 | 1 | 8 | 3 |\n| 드래프트 - 서브 선택지 | 9 | 0 | 6 | 3 |\n| 드래프트 효과 | 3 | 0 | 2 | 1 |\n| 드래프트 중 일시정지 처리 | 7 | 0 | 5 | 2 |\n| 일시정지 UI | 4 | 0 | 2 | 2 |\n| 라운드 클리어 및 난이도 투표 | 11 | 1 | 7 | 3 |\n| 라운드 추가 규약 및 기믹 | 3 | 0 | 2 | 1 |\n| 카메라 | 4 | 0 | 2 | 2 |\n| 결과 화면 및 랭킹 | 7 | 2 | 4 | 1 |\n| **합계** | **163** | **19 (12%)** | **92 (56%)** | **52 (32%)** |\n\n※ 일부 카테고리 통합 정리 시 최종 약 130~150건 수준으로 조정 예정. Major 비중을 일부 조정하여 40~50% 범위에 맞출 예정.\n\n### 중점 확인 사항\n\n**1. 핵심 진행 흐름 (Critical 후보 영역)**\n- 꿈열차 진행/연료 게이지/체력 시스템: 연료 0 → 정지 → 체력 감소 → 파괴 → 실패 결과창의 전체 체인\n- 점수 산정 정확성: 남은 시간 ms 환산, 소수점 버림, 난이도 가중치(0%/30%/50%) 적용, 최대 1,200,000점 상한\n- 라운드 클리어/실패 조건: 열차 맵 끝 도달, 열차 체력 0, 전원 사망\n\n**2. 별석탄/약초 휴대 시스템 (반복 패턴)**\n- 픽업/던지기/놓기/피격 낙하의 4가지 상태 전환\n- 휴대 중 다른 조작 비활성화 (X 표시 UI)\n- N초 + 3초 깜빡임 → 소멸 타��머\n- 재픽업 시 카운트 리셋\n- 드랍 위치 보정 (벽/장애물 처리)\n\n**3. 멀티 협동 처리**\n- 픽 매칭 (중복 방지/매칭 실패 시 허용)\n- 사망/유령/소생 상호작용\n- 드래프트 선택 시 팀원 선택 대기\n- 난이도 투표 (1명/3명 진입, 카운트다운, 무작위 1인 선정, 미선택 시 쉬움)\n- 일시정지 시 팀원 효과 표시\n\n**4. 드래프트 시스템 정합성**\n- 메인 vs 서브 카드 UI 구분 (타입 아이콘/태그/배경색/스탯 아이콘)\n- NEW 배지 표시 로직 (신규/선택 후 제거)\n- 새로고침 시 직전 등장/획득 효과 제외\n- 조건부 카드 풀 (달빛술사/스타더스트/밀키웨이)\n- 태그 3회 중복 시 메인 강화 (최대 1회)\n\n**5. 일시정지 처리 범위**\n- 드래프트 선택 / 난이도 투표 / 일시정지 UI 진입 시 정지 대상 (타이머/연료/열차/회복 영역/쿠키/몬스터)\n- 각 단계별 정지 적용 여부 분리 검증\n\n**6. 시각/연출 (Normal 영역)**\n- 별석탄 광석/약초 더미의 상태별 외형 (평상시/캐질 때/중간 파괴/완전 파괴)\n- 보상 드랍 빛 구체 포물선 + 빛 기둥\n- 연료 게이지 색상 단계 변화 (정상→노란색→빨간색)\n- 레벨업 텍스트 + 이펙트\n- 강화된 메인 효과 시각적 차별화\n\n**7. 예외 케이스 (각 카테고리 말미 배치)**\n- 휴대 중 즉사 피격 / 무적 상태 피격 시 드롭 여부\n- 깜빡임 중 픽업 가능 여부\n- 던지기 도중 벽 충돌 처리\n- 난이도 투표 동률 발생 시 처리\n- 광석 드랍 위치가 모두 장애물일 경우 보정\n- 멀티 환경에서 부스트 이펙트 동기화",
+  "materialId": "mat_1778642420569_yup3",
+  "planId": "plan_1778642420594_e7ud"
+}
