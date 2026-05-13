@@ -1,0 +1,21 @@
+{
+  "contentName": "꿈세계를 지켜라 아웃게임",
+  "testCaseCount": 164,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "- 각종 예외 케이스를 예측하여 작성하되, 너무 과하지는 않게 주의\n- case에서 중복되는 카테고리들을 sub 항목에 꼼꼼하게 정리",
+  "elapsedSeconds": 729,
+  "tokenUsage": {
+    "inputTokens": 160,
+    "outputTokens": 124636,
+    "cacheReadTokens": 2324304,
+    "cacheCreationTokens": 465121,
+    "totalCostUsd": 7.300277250000001
+  },
+  "cost": "$9.3501",
+  "appVersion": "1.4.0",
+  "generatedAt": "2026-05-13T06:34:14.588Z"
+}
