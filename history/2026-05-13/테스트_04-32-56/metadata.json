@@ -1,0 +1,20 @@
+{
+  "contentName": "테스트",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": null,
+  "elapsedSeconds": null,
+  "tokenUsage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheReadTokens": 0,
+    "cacheCreationTokens": 0,
+    "totalCostUsd": 0
+  },
+  "cost": "$0.0000",
+  "appVersion": "1.4.1",
+  "generatedAt": "2026-05-13T04:32:56.304Z"
+}
