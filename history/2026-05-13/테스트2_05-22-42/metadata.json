@@ -1,0 +1,20 @@
+{
+  "contentName": "테스트2",
+  "testCaseCount": 1,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "TC 작성 시 1개의 케이스로만 만들어 주세요",
+  "elapsedSeconds": 23,
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 1549,
+    "cacheReadTokens": 51399,
+    "cacheCreationTokens": 17757,
+    "totalCostUsd": 0.18428374999999997
+  },
+  "cost": "$0.1163",
+  "appVersion": "1.4.1",
+  "generatedAt": "2026-05-13T05:22:42.711Z"
+}
