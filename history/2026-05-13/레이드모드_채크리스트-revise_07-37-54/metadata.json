@@ -1,0 +1,21 @@
+{
+  "contentName": "레이드모드_채크리스트",
+  "testCaseCount": 186,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778655034189_51k84k",
+  "promptName": "🚧 TC -> 체크리스트",
+  "focusPoints": null,
+  "elapsedSeconds": 225,
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 27080,
+    "cacheReadTokens": 17070,
+    "cacheCreationTokens": 110455,
+    "totalCostUsd": 1.46634075
+  },
+  "cost": "$2.0311",
+  "appVersion": "1.4.2",
+  "generatedAt": "2026-05-13T07:37:54.285Z"
+}
