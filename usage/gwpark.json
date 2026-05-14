@@ -2,12 +2,12 @@
   "2026-05": {
     "user": "gwpark",
     "month": "2026-05",
-    "totalCostUsd": 74.34819825,
-    "callCount": 12,
+    "totalCostUsd": 74.63088599999999,
+    "callCount": 13,
     "byMode": {
-      "cli": 74.34819825,
+      "cli": 74.63088599999999,
       "api": 0
     },
-    "updatedAt": "2026-05-14T07:45:21.192Z"
+    "updatedAt": "2026-05-14T07:56:53.415Z"
   }
 }
