@@ -1,0 +1,21 @@
+{
+  "contentName": "방꾸미기 이벤트",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "default",
+  "promptName": "CTA TC 생성 프롬프트 🤖",
+  "focusPoints": "1. 기획서에 있는 스크린샷은 케이스 생성에 참고하지 않는다.\n2. 기획서랑 UI 플로우에 쓰여있는 \"케이크 이벤트\" 는 기존 1주년때 사용한 이벤트로 방꾸미기 이벤트의 뼈대인 것을 파악한 상태에서 작성한다.",
+  "elapsedSeconds": 126,
+  "tokenUsage": {
+    "inputTokens": 3,
+    "outputTokens": 8136,
+    "cacheReadTokens": 29555,
+    "cacheCreationTokens": 10395,
+    "totalCostUsd": 0.28316125000000003
+  },
+  "cost": "$0.6102",
+  "appVersion": "1.4.3",
+  "generatedAt": "2026-05-14T01:23:19.171Z"
+}
