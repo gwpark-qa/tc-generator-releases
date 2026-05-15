@@ -1,0 +1,21 @@
+{
+  "contentName": "꿈 세계를 지켜라 아웃게임 MK.2",
+  "testCaseCount": 172,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "- 각종 예외 케이스를 예측하여 작성하되, 너무 과하지는 않게 주의\n- case에서 중복되는 카테고리들을 sub 항목에 꼼꼼하게 정리",
+  "elapsedSeconds": 247,
+  "tokenUsage": {
+    "inputTokens": 160,
+    "outputTokens": 119949,
+    "cacheReadTokens": 2324570,
+    "cacheCreationTokens": 463269,
+    "totalCostUsd": 7.16983525
+  },
+  "cost": "$8.9986",
+  "appVersion": "1.4.3",
+  "generatedAt": "2026-05-15T07:24:46.441Z"
+}
