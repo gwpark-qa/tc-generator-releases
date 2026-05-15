@@ -1,0 +1,21 @@
+{
+  "contentName": "어비스 레이드 프리미엄 상품",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "기획서와 플로우에 존재하지 않는 단어, 기능에 대해 창조해내지 않는다.",
+  "elapsedSeconds": 94,
+  "tokenUsage": {
+    "inputTokens": 3,
+    "outputTokens": 6088,
+    "cacheReadTokens": 35409,
+    "cacheCreationTokens": 14354,
+    "totalCostUsd": 0.259632
+  },
+  "cost": "$0.4566",
+  "appVersion": "1.4.3",
+  "generatedAt": "2026-05-15T00:46:57.671Z"
+}
