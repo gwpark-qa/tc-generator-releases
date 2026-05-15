@@ -1,0 +1,21 @@
+{
+  "contentName": "어비스레이드 도움주기",
+  "testCaseCount": 102,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "ingame",
+  "promptName": "🎮 콘텐츠_인게임",
+  "focusPoints": "- UI 플로우 파일 내의 이미지를 기준으로 케이스 설계",
+  "elapsedSeconds": 357,
+  "tokenUsage": {
+    "inputTokens": 14,
+    "outputTokens": 35971,
+    "cacheReadTokens": 89104,
+    "cacheCreationTokens": 73118,
+    "totalCostUsd": 1.4008845
+  },
+  "cost": "$2.6980",
+  "appVersion": "1.4.3",
+  "generatedAt": "2026-05-15T08:05:50.355Z"
+}
