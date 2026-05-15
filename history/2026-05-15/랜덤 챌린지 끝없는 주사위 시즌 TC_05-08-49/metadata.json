@@ -1,0 +1,21 @@
+{
+  "contentName": "랜덤 챌린지 끝없는 주사위 시즌 TC",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "기획서와 플로우에 존재하지 않는 단어, 기능에 대해 창조해내지 않는다.\n1) 기획서의 흐름은 첨부한 기획서의 번호대로 진행됩니다.\n2) UI 플로우의 시안.png는 좌측 카테고리를 기준으로 시안 흐름이 각 열 좌측으로 진행됩니다.",
+  "elapsedSeconds": 233,
+  "tokenUsage": {
+    "inputTokens": 49,
+    "outputTokens": 24850,
+    "cacheReadTokens": 697357,
+    "cacheCreationTokens": 141977,
+    "totalCostUsd": 1.88298875
+  },
+  "cost": "$1.8645",
+  "appVersion": "1.4.3",
+  "generatedAt": "2026-05-15T05:08:49.401Z"
+}
