@@ -1,0 +1,21 @@
+{
+  "contentName": "어비스레이드 도움 주기",
+  "testCaseCount": 100,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "- UI 플로우 파일 내의 이미지를 기준으로 케이스 설계",
+  "elapsedSeconds": 196,
+  "tokenUsage": {
+    "inputTokens": 14,
+    "outputTokens": 36657,
+    "cacheReadTokens": 89104,
+    "cacheCreationTokens": 74003,
+    "totalCostUsd": 1.42356575
+  },
+  "cost": "$2.7495",
+  "appVersion": "1.4.3",
+  "generatedAt": "2026-05-15T08:19:39.082Z"
+}
