@@ -1,0 +1,1736 @@
+{
+  "contentName": "꿈 세계를 지켜라 아웃게임 MK.2",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Major",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "노출 조건",
+      "sub3": "이벤트 시작 시 노출",
+      "expectationResult": "이벤트 starttime 도래 시, 모드리스트 내 '이벤트' 탭 하위에 이벤트 모드가 노출된다.",
+      "comment": "기획서 2. 이벤트 시작/종료 처리"
+    },
+    {
+      "no": 2,
+      "priority": "Major",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "노출 조건",
+      "sub3": "이벤트 종료 시 제거",
+      "expectationResult": "이벤트 endtime 도래 시, 모드리스트에서 이벤트 모드 이미지가 제거된다.",
+      "comment": "기획서 2. 이벤트 시작/종료 처리"
+    },
+    {
+      "no": 3,
+      "priority": "Normal",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "알림 표기",
+      "sub3": "NEW 배지",
+      "expectationResult": "이벤트 모드리스트 첫 노출 시, 이벤트 모드 타이틀에 NEW 배지가 출력된다.",
+      "comment": "기획서 모드리스트 NEW"
+    },
+    {
+      "no": 4,
+      "priority": "Major",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "알림 표기",
+      "sub3": "느낌표닷",
+      "expectationResult": "이벤트 시작 시, 모드리스트의 이벤트 모드 타이틀에 느낌표닷이 출력된다.",
+      "comment": "기획서 레드닷 알림 노출 조건"
+    },
+    {
+      "no": 5,
+      "priority": "Major",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "알림 표기",
+      "sub3": "레드닷",
+      "expectationResult": "수령 가능한 이벤트 보상 보유 시, 모드리스트의 이벤트 모드 타이틀에 레드닷이 출력된다.",
+      "comment": "기획서 레드닷 알림 노출 조건"
+    },
+    {
+      "no": 6,
+      "priority": "Normal",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "상자 슬롯 진행도",
+      "sub3": "보유 상자 없음",
+      "expectationResult": "보유한 상자가 없을 시, 모드리스트의 상자 슬롯이 '상자 없음' 상태로 표기된다.",
+      "comment": "기획서 상자 슬롯 진행도"
+    },
+    {
+      "no": 7,
+      "priority": "Normal",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "상자 슬롯 진행도",
+      "sub3": "여는 중",
+      "expectationResult": "슬롯에 상자가 장착되어 정화 진행 중인 경우, 모드리스트의 상자 슬롯에 상자 남은 시간이 표기된다.",
+      "comment": "기획서 상자 슬롯 진행도"
+    },
+    {
+      "no": 8,
+      "priority": "Major",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "상자 슬롯 진행도",
+      "sub3": "열림 가능",
+      "expectationResult": "모든 보상을 받을 수 있는 슬롯이 있을 시, 모드리스트의 상자 슬롯에 강조색 및 레드닷이 표기된다.",
+      "comment": "기획서 상자 슬롯 진행도"
+    },
+    {
+      "no": 9,
+      "priority": "Major",
+      "main": "이벤트 진입",
+      "sub1": "모드리스트",
+      "sub2": "화면 전환",
+      "sub3": "플레이 로비 진입",
+      "expectationResult": "모드리스트에서 이벤트 모드 타이틀 터치 시, 이벤트 모드의 플레이 로비로 진입된다.",
+      "comment": "기획서 진입 경로"
+    },
+    {
+      "no": 10,
+      "priority": "Critical",
+      "main": "이벤트 진입",
+      "sub1": "예외 처리",
+      "sub2": "이벤트 종료 처리",
+      "sub3": "대기 중 강제 이동",
+      "expectationResult": "이벤트 종료 시점에 이벤트 모드 내에서 대기 중일 시, 기차 로비로 강제 이동된다.",
+      "comment": "기획서 이벤트 종료 처리"
+    },
+    {
+      "no": 11,
+      "priority": "Critical",
+      "main": "이벤트 진입",
+      "sub1": "예외 처리",
+      "sub2": "이벤트 종료 처리",
+      "sub3": "매칭 중 강제 종료",
+      "expectationResult": "이벤트 종료 시점에 매칭 중일 시, 매칭이 취소되고 기차 로비로 강제 이동된다.",
+      "comment": "기획서 매칭 중 이벤트 종료"
+    },
+    {
+      "no": 12,
+      "priority": "Major",
+      "main": "이벤트 진입",
+      "sub1": "예외 처리",
+      "sub2": "이벤트 종료 처리",
+      "sub3": "인게임 중 정상 완료",
+      "expectationResult": "매칭 완료 후 인게임 플레이 중 이벤트 기간이 종료될 시, 해당 판은 종료까지 진행 후 결과 처리된다.",
+      "comment": "기획서 인게임 중 이벤트 종료"
+    },
+    {
+      "no": 13,
+      "priority": "Normal",
+      "main": "이벤트 진입",
+      "sub1": "예외 처리",
+      "sub2": "이벤트 종료 처리",
+      "sub3": "토스트 메시지 출력",
+      "expectationResult": "이벤트 종료로 기차 로비로 강제 이동될 시, '이벤트가 종료되어 기차 로비로 이동합니다' 토스트 메시지가 출력된다.",
+      "comment": "기획서 이벤트 종료 처리"
+    },
+    {
+      "no": 14,
+      "priority": "Major",
+      "main": "이벤트 진입",
+      "sub1": "예외 처리",
+      "sub2": "미수령 보상 처리",
+      "sub3": "우편 지급",
+      "expectationResult": "이벤트 종료 시점에 미수령 보상이 있을 시, 해당 보상이 유저 메일로 지급된다.",
+      "comment": "기획서 미수령 보상 처리"
+    },
+    {
+      "no": 15,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "타이틀 영역",
+      "sub2": "이벤트 타이틀",
+      "sub3": "",
+      "expectationResult": "플레이 로비 진입 시, 상단에 이벤트 모드 타이틀이 출력된다.",
+      "comment": "기획서 6. 플레이 로비 화면"
+    },
+    {
+      "no": 16,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "타이틀 영역",
+      "sub2": "시즌 정보",
+      "sub3": "",
+      "expectationResult": "플레이 로비에서 현재 시즌 정보(시즌 N) 및 시즌별 서브 타이틀이 출력된다.",
+      "comment": "기획서 모드리스트 UI"
+    },
+    {
+      "no": 17,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "타이틀 영역",
+      "sub2": "타임바",
+      "sub3": "남은 시간 표기",
+      "expectationResult": "플레이 로비 상단 타임바에 이벤트 종료까지 남은 시간이 2단위로 표기된다.",
+      "comment": "기획서 타임바"
+    },
+    {
+      "no": 18,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "타이틀 영역",
+      "sub2": "타임바",
+      "sub3": "1일 이하 빨간색 표기",
+      "expectationResult": "이벤트 종료까지 남은 시간이 1일 이하일 시, 타임바가 빨간색으로 표기된다.",
+      "comment": "기획서 타임바"
+    },
+    {
+      "no": 19,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유저 정보 영역",
+      "sub2": "쿠키 모델링",
+      "sub3": "",
+      "expectationResult": "플레이 로비에서 각 유저가 선택한 쿠키의 모델링이 출력된다.",
+      "comment": "기획서 유저 정보"
+    },
+    {
+      "no": 20,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "유저 정보 영역",
+      "sub2": "쿠키 모델링",
+      "sub3": "idle 애니메이션 재생",
+      "expectationResult": "플레이 로비에 표시된 쿠키 모델링은 idle 애니메이션이 재생된다.",
+      "comment": "기획서 쿠키 표시 규칙"
+    },
+    {
+      "no": 21,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "유저 정보 영역",
+      "sub2": "칭호/닉네임/길드명",
+      "sub3": "",
+      "expectationResult": "플레이 로비에서 각 유저의 칭호, 닉네임, 길드명이 출력된다.",
+      "comment": "기획서 유저 정보"
+    },
+    {
+      "no": 22,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유저 정보 영역",
+      "sub2": "유저 상태",
+      "sub3": "준비 중 표시",
+      "expectationResult": "PLAY 버튼을 누르기 전의 유저는 '준비 중' 상태로 표시된다.",
+      "comment": "기획서 상태 정보"
+    },
+    {
+      "no": 23,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유저 정보 영역",
+      "sub2": "유저 상태",
+      "sub3": "READY 표시",
+      "expectationResult": "PLAY 버튼을 누른 유저는 'READY' 상태로 강조색과 함께 표시된다.",
+      "comment": "기획서 상태 정보"
+    },
+    {
+      "no": 24,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유저 정보 영역",
+      "sub2": "유저 상태",
+      "sub3": "쿠키 설정 중 표시",
+      "expectationResult": "쿠키 선택 화면에 있는 유저는 '쿠키 설정 중' 상태로 표시된다.",
+      "comment": "기획서 상태 정보"
+    },
+    {
+      "no": 25,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "기능 버튼",
+      "sub2": "가이드북 버튼",
+      "sub3": "",
+      "expectationResult": "플레이 로비에서 가이드북 버튼 터치 시, 가이드북 화면으로 전환된다.",
+      "comment": "기획서 13. 가이드북"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "기능 버튼",
+      "sub2": "랭킹 버튼",
+      "sub3": "",
+      "expectationResult": "플레이 로비에서 랭킹 버튼 터치 시, 랭킹장 화면으로 전환된다.",
+      "comment": "기획서 9. 랭킹장"
+    },
+    {
+      "no": 27,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "기능 버튼",
+      "sub2": "도감 버튼",
+      "sub3": "",
+      "expectationResult": "플레이 로비에서 도감 버튼 터치 시, 도감 화면으로 전환된다.",
+      "comment": "기획서 10. 도감"
+    },
+    {
+      "no": 28,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "기능 버튼",
+      "sub2": "채팅 버튼",
+      "sub3": "",
+      "expectationResult": "플레이 로비에서 채팅 버튼 터치 시, 채팅 화면이 출력된다.",
+      "comment": "기획서 플레이 로비"
+    },
+    {
+      "no": 29,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼/매칭",
+      "sub2": "매칭 전 상태",
+      "sub3": "PLAY 버튼 표기",
+      "expectationResult": "매칭 전 상태일 시, 하단에 'PLAY' 버튼이 출력된다.",
+      "comment": "기획서 플레이 버튼"
+    },
+    {
+      "no": 30,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼/매칭",
+      "sub2": "매칭 전 상태",
+      "sub3": "전원 PLAY 미선택 시 매칭 차단",
+      "expectationResult": "파티 내 모든 유저가 PLAY 버튼을 누르지 않을 시, 매칭이 시작되지 않는다.",
+      "comment": "기획서 매칭 규칙"
+    },
+    {
+      "no": 31,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼/매칭",
+      "sub2": "매칭 중 상태",
+      "sub3": "매칭 진행 시간 표기",
+      "expectationResult": "매칭 중일 시, PLAY 버튼 영역에 '매칭 중...' 텍스트와 매칭 진행 시간(mm:ss)이 출력된다.",
+      "comment": "기획서 플레이 버튼 매칭 중"
+    },
+    {
+      "no": 32,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼/매칭",
+      "sub2": "매칭 중 상태",
+      "sub3": "매칭 유저 시각 표시",
+      "expectationResult": "매칭 중일 시, 매칭된 유저의 슬롯이 강조색으로 표시된다.",
+      "comment": "기획서 플레이 버튼 매칭 중"
+    },
+    {
+      "no": 33,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼/매칭",
+      "sub2": "매칭 중 상태",
+      "sub3": "매칭 취소 버튼",
+      "expectationResult": "매칭 중 우측 X 버튼 터치 시, 매칭이 취소되고 매칭 전 상태로 전환된다.",
+      "comment": "기획서 매칭 취소 버튼"
+    },
+    {
+      "no": 34,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼/매칭",
+      "sub2": "매칭 완료 상태",
+      "sub3": "인게임 이동",
+      "expectationResult": "3명의 유저가 모두 매칭될 시, 매칭 완료 상태로 표시되고 인게임 로딩 화면으로 전환된다.",
+      "comment": "기획서 매칭 완료"
+    },
+    {
+      "no": 35,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼/매칭",
+      "sub2": "3인 파티 매칭",
+      "sub3": "매칭 단계 스킵",
+      "expectationResult": "3명이 파티를 이루어 PLAY 시, 매칭 단계를 건너뛰고 바로 인게임 로딩 화면으로 전환된다.",
+      "comment": "기획서 매칭 규칙"
+    },
+    {
+      "no": 36,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼/매칭",
+      "sub2": "매칭 lock 처리",
+      "sub3": "종료 30분 전 매칭 차단",
+      "expectationResult": "이벤트 종료 30분 전 시점부터, 신규 매칭이 차단된다.",
+      "comment": "기획서 매칭 lock"
+    },
+    {
+      "no": 37,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 초대",
+      "sub2": "파티 초대 진입",
+      "sub3": "",
+      "expectationResult": "플레이 로비에서 파티 초대 버튼 터치 시, 파티 초대 팝업이 출력된다.",
+      "comment": "기획서 파티 초대"
+    },
+    {
+      "no": 38,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 초대",
+      "sub2": "친구 탭",
+      "sub3": "친구 초대",
+      "expectationResult": "파티 초대 팝업의 친구 탭에서 친구 선택 후 초대 시, 해당 친구에게 파티 초대가 발송된다.",
+      "comment": "기획서 파티 초대 방식"
+    },
+    {
+      "no": 39,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 초대",
+      "sub2": "내 길드 탭",
+      "sub3": "길드원 초대",
+      "expectationResult": "파티 초대 팝업의 내 길드 탭에서 길드원 선택 후 초대 시, 해당 길드원에게 파티 초대가 발송된다.",
+      "comment": "기획서 파티 초대 방식"
+    },
+    {
+      "no": 40,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 초대",
+      "sub2": "최근 함께한 유저 탭",
+      "sub3": "유저 초대",
+      "expectationResult": "파티 초대 팝업의 최근 함께한 유저 탭에서 유저 선택 후 초대 시, 해당 유저에게 파티 초대가 발송된다.",
+      "comment": "기획서 파티 초대 방식"
+    },
+    {
+      "no": 41,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 초대",
+      "sub2": "ID로 참가",
+      "sub3": "파티 ID 생성",
+      "expectationResult": "파티 생성 시, 임의의 플레이어에게 공유 가능한 파티 ID가 생성된다.",
+      "comment": "기획서 파티 초대 방식"
+    },
+    {
+      "no": 42,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 초대",
+      "sub2": "ID로 참가",
+      "sub3": "ID 입력 참가",
+      "expectationResult": "파티 ID 입력 후 참가 시, 해당 파티에 입장된다.",
+      "comment": "기획서 파티 초대 방식"
+    },
+    {
+      "no": 43,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 초대",
+      "sub2": "파티 변동",
+      "sub3": "인원 변경 시 레디 취소",
+      "expectationResult": "파티 조합 및 구성원 변경 시, 모든 파티원의 레디 상태가 자동으로 취소된다.",
+      "comment": "기획서 준비 규칙"
+    },
+    {
+      "no": 44,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "파티 초대",
+      "sub2": "파티 변동",
+      "sub3": "초대 거절 처리",
+      "expectationResult": "초대받은 플레이어가 거절 시, 파티 초대가 취소된다.",
+      "comment": "기획서 예외 규칙"
+    },
+    {
+      "no": 45,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 리스트 화면",
+      "sub2": "좌측 쿠키 정보",
+      "sub3": "쿠키 모델링",
+      "expectationResult": "쿠키 선택 화면 좌측 영역에 현재 선택된 쿠키의 모델링이 출력된다.",
+      "comment": "기획서 7. 쿠키 선택 화면"
+    },
+    {
+      "no": 46,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 리스트 화면",
+      "sub2": "좌측 쿠키 정보",
+      "sub3": "타입/성급/레벨 출력",
+      "expectationResult": "쿠키 선택 화면 좌측 영역에 선택된 쿠키의 타입, 성급, 레벨 정보가 출력된다.",
+      "comment": "기획서 7. 쿠키 선택 화면"
+    },
+    {
+      "no": 47,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 리스트 화면",
+      "sub2": "좌측 쿠키 정보",
+      "sub3": "자세히 보기 버튼",
+      "expectationResult": "쿠키 선택 화면에서 자세히 보기 버튼 터치 시, 쿠키 정보창 팝업이 출력된다.",
+      "comment": "기획서 자세히 보기 화면"
+    },
+    {
+      "no": 48,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 리스트 화면",
+      "sub2": "우측 쿠키 리스트",
+      "sub3": "스틸 버튼",
+      "expectationResult": "쿠키 선택 화면 우측 리스트의 쿠키 스틸 버튼 터치 시, 사용할 쿠키가 변경된다.",
+      "comment": "기획서 쿠키 리스트"
+    },
+    {
+      "no": 49,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 리스트 화면",
+      "sub2": "우측 쿠키 리스트",
+      "sub3": "성급/레벨/타입 출력",
+      "expectationResult": "쿠키 선택 화면 우측 리스트에 각 쿠키의 성급, 레벨, 타입이 출력된다.",
+      "comment": "기획서 쿠키 리스트"
+    },
+    {
+      "no": 50,
+      "priority": "Critical",
+      "main": "쿠키 선택",
+      "sub1": "자세히 보기 팝업",
+      "sub2": "쿠키 정보 출력",
+      "sub3": "",
+      "expectationResult": "자세히 보기 팝업에서 쿠키 체험하기와 동일한 쿠키 상세 정보가 출력된다.",
+      "comment": "기획서 자세히 보기 화면"
+    },
+    {
+      "no": 51,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "무작위 픽",
+      "sub2": "최상단 정렬",
+      "sub3": "",
+      "expectationResult": "쿠키 선택 리스트에서 무작위 픽 항목이 최상단에 정렬되어 출력된다.",
+      "comment": "기획서 무작위 픽"
+    },
+    {
+      "no": 52,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "무작위 픽",
+      "sub2": "히든 쿠키 안내 툴팁",
+      "sub3": "",
+      "expectationResult": "무작위 픽 항목의 태그 또는 인포 버튼 터치 시, 낮은 확률로 히든 쿠키가 등장한다는 툴팁이 출력된다.",
+      "comment": "기획서 무작위 픽"
+    },
+    {
+      "no": 53,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "무작위 픽",
+      "sub2": "다른 유저 선택 쿠키 제외",
+      "sub3": "",
+      "expectationResult": "무작위 픽 결과는 보유 쿠키 중 다른 유저가 선택하지 않은 쿠키에서 랜덤하게 선택된다.",
+      "comment": "기획서 무작위 픽"
+    },
+    {
+      "no": 54,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "무작위 픽",
+      "sub2": "선택 완료 후 공개",
+      "sub3": "",
+      "expectationResult": "무작위 픽 사용 시, 모든 유저의 선택 단계 종료 후 선택된 쿠키가 공개된다.",
+      "comment": "기획서 무작위 픽"
+    },
+    {
+      "no": 55,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "무작위 픽",
+      "sub2": "플레이 로비 복귀",
+      "sub3": "",
+      "expectationResult": "쿠키 선택 화면에서 뒤로가기 시, 플레이 로비 화면으로 전환된다.",
+      "comment": "기획서 7. 쿠키 선택 화면"
+    },
+    {
+      "no": 56,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "화면 전환",
+      "sub2": "플레이 로비 복귀",
+      "sub3": "",
+      "expectationResult": "쿠키 선택 완료 시, 플레이 로비 화면으로 전환된다.",
+      "comment": "기획서 7. 쿠키 선택 화면"
+    },
+    {
+      "no": 57,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "슬롯 영역",
+      "sub2": "수령 가능 슬롯",
+      "sub3": "레드닷 표기",
+      "expectationResult": "슬롯의 타이머가 완료되어 수령 가능 상태일 시, 해당 슬롯에 레드닷이 표기된다.",
+      "comment": "기획서 슬롯 (1) 수령 가능"
+    },
+    {
+      "no": 58,
+      "priority": "Critical",
+      "main": "유실물 센터",
+      "sub1": "슬롯 영역",
+      "sub2": "수령 가능 슬롯",
+      "sub3": "보상 랜덤 1개 획득",
+      "expectationResult": "수령 가능 슬롯 터치 시, 보상 리스트 중 1개의 보상이 랜덤으로 지급된다.",
+      "comment": "기획서 슬롯 (1) 수령 가능"
+    },
+    {
+      "no": 59,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "슬롯 영역",
+      "sub2": "진행 중 슬롯",
+      "sub3": "상자 아이콘 출력",
+      "expectationResult": "슬롯에 상자가 장착되어 진행 중일 시, 해당 슬롯에 상자 아이콘이 레어리티별 배경과 함께 출력된다.",
+      "comment": "기획서 슬롯 (2) 진행중"
+    },
+    {
+      "no": 60,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "슬롯 영역",
+      "sub2": "진행 중 슬롯",
+      "sub3": "남은 시간 표기",
+      "expectationResult": "진행 중인 슬롯에 상자 오픈까지 남은 시간이 표기된다.",
+      "comment": "기획서 슬롯 (2) 진행중"
+    },
+    {
+      "no": 61,
+      "priority": "Critical",
+      "main": "유실물 센터",
+      "sub1": "슬롯 영역",
+      "sub2": "진행 중 슬롯",
+      "sub3": "슬롯 장착 해제 차단",
+      "expectationResult": "슬롯에 한번 장착된 상자는, 정화 완료 전까지 장착 해제가 차단된다.",
+      "comment": "기획서 슬롯 장착 규칙"
+    },
+    {
+      "no": 62,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "슬롯 영역",
+      "sub2": "빈 슬롯",
+      "sub3": "노란닷 표기",
+      "expectationResult": "상자가 장착되지 않은 빈 슬롯에 느낌표닷이 표기된다.",
+      "comment": "기획서 슬롯 (3) 빈 슬롯"
+    },
+    {
+      "no": 63,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "슬롯 영역",
+      "sub2": "빈 슬롯",
+      "sub3": "상자 선택 팝업 진입",
+      "expectationResult": "빈 슬롯 터치 시, 상자 선택 팝업이 출력된다.",
+      "comment": "기획서 슬롯 (3) 빈 슬롯"
+    },
+    {
+      "no": 64,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "상자 선택 팝업",
+      "sub2": "상자 리스트",
+      "sub3": "상자별 보유 개수 표기",
+      "expectationResult": "상자 선택 팝업의 상자 리스트에 각 상자별 보유 개수가 표기된다.",
+      "comment": "기획서 상자 리스트"
+    },
+    {
+      "no": 65,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "상자 선택 팝업",
+      "sub2": "상자 리스트",
+      "sub3": "미보유 표기",
+      "expectationResult": "상자 보유 개수가 0인 경우, 해당 상자가 미보유로 표기된다.",
+      "comment": "기획서 상자 리스트"
+    },
+    {
+      "no": 66,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "상자 선택 팝업",
+      "sub2": "상자 리스트",
+      "sub3": "선택 시 강조색 테두리",
+      "expectationResult": "상자 리스트에서 상자 선택 시, 해당 상자에 강조색 테두리가 표시된다.",
+      "comment": "기획서 상자 리스트"
+    },
+    {
+      "no": 67,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "상자 선택 팝업",
+      "sub2": "선택하기 버튼",
+      "sub3": "버튼 활성화/비활성화",
+      "expectationResult": "상자 리스트에서 상자 선택 시, 하단의 선택하기 버튼이 활성화된다.",
+      "comment": "기획서 상자 리스트"
+    },
+    {
+      "no": 68,
+      "priority": "Critical",
+      "main": "유실물 센터",
+      "sub1": "상자 선택 팝업",
+      "sub2": "선택하기 버튼",
+      "sub3": "슬롯 장착 처리",
+      "expectationResult": "상자 선택 팝업에서 선택하기 버튼 터치 시, 선택된 상자가 슬롯에 장착되고 정화 타이머가 시작된다.",
+      "comment": "기획서 상자 리스트"
+    },
+    {
+      "no": 69,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "상자 선택 팝업",
+      "sub2": "상세 확률 팝업",
+      "sub3": "보상 리스트 확률 탭",
+      "expectationResult": "상자 선택 팝업의 상세 확률 버튼 터치 후 보상 리스트 확률 탭 진입 시, 현재 남은 보상들의 확률이 노출된다.",
+      "comment": "기획서 상세 확률 팝업"
+    },
+    {
+      "no": 70,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "상자 선택 팝업",
+      "sub2": "상세 확률 팝업",
+      "sub3": "대체 보상 확률 탭",
+      "expectationResult": "상세 확률 팝업의 대체 보상 확률 탭 진입 시, 대체 보상의 개별 확률이 노출된다.",
+      "comment": "기획서 상세 확률 팝업"
+    },
+    {
+      "no": 71,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "시간 단축권 사용 팝업",
+      "sub2": "좌측 상자 정보",
+      "sub3": "상자 이미지 출력",
+      "expectationResult": "시간 단축권 사용 팝업의 좌측에 선택한 상자의 이미지가 출력된다.",
+      "comment": "기획서 시간 단축권 사용 팝업"
+    },
+    {
+      "no": 72,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "시간 단축권 사용 팝업",
+      "sub2": "좌측 상자 정보",
+      "sub3": "남은 시간 프로그레스",
+      "expectationResult": "시간 단축권 사용 팝업의 좌측에 상자 남은 시간 프로그레스바가 진행한 시간/총 필요 시간 형태로 표기된다.",
+      "comment": "기획서 시간 단축권 사용 팝업"
+    },
+    {
+      "no": 73,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "시간 단축권 사용 팝업",
+      "sub2": "우측 사용권 정보",
+      "sub3": "",
+      "expectationResult": "시간 단축권 사용 팝업��� 우측에 사용권 아이템 이름과 디스크립션이 출력된다.",
+      "comment": "기획서 시간 단축권 사용 팝업"
+    },
+    {
+      "no": 74,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "시간 단축권 사용 팝업",
+      "sub2": "토글바",
+      "sub3": "사용 수량 조정",
+      "expectationResult": "시간 단축권 사용 팝업의 토글바 조작 시, 사용 횟수가 조정된다.",
+      "comment": "기획서 토글바"
+    },
+    {
+      "no": 75,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "시간 단축권 사용 팝업",
+      "sub2": "토글바",
+      "sub3": "필요 수량 초과 제한",
+      "expectationResult": "시간 단축권 사용 팝업의 토글바에서 상자 남은 시간 이상의 사용 수량이 선택되지 않는다.",
+      "comment": "기획서 토글바"
+    },
+    {
+      "no": 76,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "시간 단축권 사용 팝업",
+      "sub2": "토글바",
+      "sub3": "MAX 버튼",
+      "expectationResult": "시간 단축권 사용 팝업의 MAX 버튼 터치 시, 사용 가능한 최대치가 자동으로 선택된다.",
+      "comment": "기획서 토글바"
+    },
+    {
+      "no": 77,
+      "priority": "Critical",
+      "main": "유실물 센터",
+      "sub1": "시간 단축권 사용 팝업",
+      "sub2": "사용하기 버튼",
+      "sub3": "남은 시간 차감",
+      "expectationResult": "시간 단축권 사용 팝업의 사용하기 버튼 터치 시, 시간 단축권이 차감되고 상자 오픈 남은 시간이 감소된다.",
+      "comment": "기획서 사용하기 버튼"
+    },
+    {
+      "no": 78,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "보상 획득 연출",
+      "sub2": "상자 오픈 연출",
+      "sub3": "",
+      "expectationResult": "수령 가능 슬롯 터치 시, 상자가 페이드 아웃되는 오픈 연출이 재생된다.",
+      "comment": "기획서 보상 획득 연출"
+    },
+    {
+      "no": 79,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "보상 획득 연출",
+      "sub2": "보상 팝업 노출",
+      "sub3": "",
+      "expectationResult": "상자 오픈 연출 종료 후, 획득한 보상 팝업이 출력된다.",
+      "comment": "기획서 보상 획득 연출"
+    },
+    {
+      "no": 80,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "보상 획득 연출",
+      "sub2": "푸시 알람 발송",
+      "sub3": "",
+      "expectationResult": "슬롯의 상자 정화 완료 시, 푸시 알람이 발송된다.",
+      "comment": "기획서 보상 시스템"
+    },
+    {
+      "no": 81,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "타이틀/마일스톤 진행도",
+      "sub3": "",
+      "expectationResult": "유실물 게시판 진입 시, 타이틀과 유실물 획득 마일스톤 진행도(획득량/다음 마일스톤 보상량)가 표기된다.",
+      "comment": "기획서 9. 유실물 리스트 팝업"
+    },
+    {
+      "no": 82,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "보상 리스트",
+      "sub3": "정렬 규칙",
+      "expectationResult": "유실물 게시판의 보상 리스트가 레어리티 내림차순으로 정렬되며, 같은 아이템일 경우 개수 내림차순으로 정렬된다.",
+      "comment": "기획서 유실물 리스트"
+    },
+    {
+      "no": 83,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "보상 리스트",
+      "sub3": "획득량 프로그레스",
+      "expectationResult": "유실물 게시판의 각 보상 아이템 하단에 획득량 프로그레스(획득한 보상량/총 제공량)가 표시된다.",
+      "comment": "기획서 유실물 리스트"
+    },
+    {
+      "no": 84,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "보상 리스트",
+      "sub3": "수령 완료 표시",
+      "expectationResult": "유실물 게시판의 보상 리스트에서 수령 완료된 아이템은 완료 마크와 함께 딤드 처리된다.",
+      "comment": "기획서 유실물 리스트"
+    },
+    {
+      "no": 85,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "보상 리스트",
+      "sub3": "아이템 툴팁",
+      "expectationResult": "유실물 게시판의 보상 아이템 터치 시, 해당 아이템의 툴팁이 출력된다.",
+      "comment": "기획서 유실물 리스트"
+    },
+    {
+      "no": 86,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "마일스톤 영역",
+      "sub3": "마일스톤 포인트 표기",
+      "expectationResult": "유실물 게시판의 마일스톤 프로그레스 바 위에 각 마일스톤 포인트와 보상이 말풍선으로 표기된다.",
+      "comment": "기획서 마일스톤"
+    },
+    {
+      "no": 87,
+      "priority": "Normal",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "마일스톤 영역",
+      "sub3": "좌우 스크롤",
+      "expectationResult": "유실물 게시판의 마일스톤 영역이 좌우 스크롤로 탐색된다.",
+      "comment": "기획서 마일스톤"
+    },
+    {
+      "no": 88,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "마일스톤 영역",
+      "sub3": "수령 가능 레드닷",
+      "expectationResult": "마일스톤 영역에서 수령 가능한 보상이 있을 시, 해당 영역에 레드닷이 표기된다.",
+      "comment": "기획서 마일스톤"
+    },
+    {
+      "no": 89,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "마일스톤 영역",
+      "sub3": "한번에 받기",
+      "expectationResult": "마일스톤 영역의 한번에 받기 터치 시, 수령 가능한 모든 보상이 한번에 지급된다.",
+      "comment": "기획서 마일스톤"
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "유실물 센터",
+      "sub1": "유실물 게시판",
+      "sub2": "대체 보상 리스트",
+      "sub3": "모든 보상 수령 완료 시 전환",
+      "expectationResult": "유실물 리스트의 모든 보상을 수령 완료한 유저에게 대체 보상 리스트가 노출된다.",
+      "comment": "기획서 대체 보상 리스트"
+    },
+    {
+      "no": 91,
+      "priority": "Normal",
+      "main": "주간 스탬프",
+      "sub1": "진행도 UI",
+      "sub2": "미완료 보상 표시",
+      "sub3": "",
+      "expectationResult": "주간 스탬프에서 아직 달성되지 않은 보상은 딤드 처리되어 표시된다.",
+      "comment": "기획서 11. 주간 미션"
+    },
+    {
+      "no": 92,
+      "priority": "Normal",
+      "main": "주간 스탬프",
+      "sub1": "진행도 UI",
+      "sub2": "완료 보상 표시",
+      "sub3": "",
+      "expectationResult": "주간 스탬프에서 달성 완료된 보상은 완료 상태로 표시된다.",
+      "comment": "기획서 11. 주간 미션"
+    },
+    {
+      "no": 93,
+      "priority": "Major",
+      "main": "주간 스탬프",
+      "sub1": "진행도 UI",
+      "sub2": "레드닷 표기",
+      "sub3": "",
+      "expectationResult": "주간 스탬프에 수령 가능한 보상이 있을 시, 햄버거 메뉴 또는 진입점에 레드닷이 표기된다.",
+      "comment": "기획서 11. 주간 미션"
+    },
+    {
+      "no": 94,
+      "priority": "Major",
+      "main": "주간 스탬프",
+      "sub1": "주간 스탬프 팝업",
+      "sub2": "팝업 진입",
+      "sub3": "",
+      "expectationResult": "주간 스탬프 버튼 터치 시, 주간 스탬프 팝업이 출력된다.",
+      "comment": "기획서 11. 주간 미션"
+    },
+    {
+      "no": 95,
+      "priority": "Major",
+      "main": "주간 스탬프",
+      "sub1": "주간 스탬프 팝업",
+      "sub2": "진행도 확인",
+      "sub3": "",
+      "expectationResult": "주간 스탬프 팝업에서 현재 주간 미션 진행도와 남은 시간이 출력된다.",
+      "comment": "기획서 11. 주간 미션"
+    },
+    {
+      "no": 96,
+      "priority": "Critical",
+      "main": "주간 스탬프",
+      "sub1": "주간 스탬프 팝업",
+      "sub2": "보상 수령",
+      "sub3": "",
+      "expectationResult": "주간 스탬프 팝업에서 달성된 보상 영역 터치 시, 해당 보상이 지급된다.",
+      "comment": "기획서 11. 주간 미션"
+    },
+    {
+      "no": 97,
+      "priority": "Major",
+      "main": "주간 스탬프",
+      "sub1": "초기화 처리",
+      "sub2": "매주 수요일 9:00 초기화",
+      "sub3": "",
+      "expectationResult": "매주 수요일 09:00 KST 시점에 주간 스탬프 수집 현황이 초기화된다.",
+      "comment": "기획서 11. 주간 미션"
+    },
+    {
+      "no": 98,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 패널",
+      "sub3": "잠금 해제 쿠키",
+      "expectationResult": "잠금 해제된 쿠키는 도감의 쿠키 패널에 컬러 이미지로 표시된다.",
+      "comment": "기획서 쿠키 도감"
+    },
+    {
+      "no": 99,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 패널",
+      "sub3": "잠금 쿠키",
+      "expectationResult": "해금되지 않은 쿠키는 도감의 쿠키 패널에 채도 빠진 회색 이미지와 잠금 아이콘이 표기된다.",
+      "comment": "기획서 쿠키 도감"
+    },
+    {
+      "no": 100,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 패널",
+      "sub3": "선택된 쿠키 강조",
+      "expectationResult": "도감에서 현재 선택된 쿠키의 패널에 강조색 테두리가 표시된다.",
+      "comment": "기획서 쿠키 도감"
+    },
+    {
+      "no": 101,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 패널",
+      "sub3": "미션 달성 아이콘",
+      "expectationResult": "쿠키 미션을 달성한 쿠키의 프로필에 별도의 미션 달성 아이콘이 표시된다.",
+      "comment": "기획서 쿠키 도감"
+    },
+    {
+      "no": 102,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 패널",
+      "sub3": "정보 미확인 느낌표닷",
+      "expectationResult": "해금 후 정보를 확인하지 않은 쿠키 패널에 느낌표닷이 표기되며, 탭하여 정보 확인 시 느낌표닷이 제거된다.",
+      "comment": "기획서 쿠키 도감"
+    },
+    {
+      "no": 103,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "정보 패널",
+      "sub3": "해금 쿠키 정보 출력",
+      "expectationResult": "잠금 해제된 쿠키 선택 시, 정보 패널에 쿠키 이름과 도전 미션 달성 여부가 출력된다.",
+      "comment": "기획서 쿠키 도감 정보 패널"
+    },
+    {
+      "no": 104,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "정보 패널",
+      "sub3": "잠금 쿠키 해금 조건 출력",
+      "expectationResult": "잠금 쿠키 선택 시, 정보 패널에 해금 조건과 해금까지 남은 진행도(진행량/요구량)가 출력된다.",
+      "comment": "기획서 쿠키 도감 정보 패널"
+    },
+    {
+      "no": 105,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "정보 패널",
+      "sub3": "자세히 보기 버튼",
+      "expectationResult": "쿠키 도감 정보 패널의 자세히 보기 버튼 터치 시, 쿠키 상세 정보가 출력된다.",
+      "comment": "기획서 쿠키 도감 정보 패널"
+    },
+    {
+      "no": 106,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 미션 달성도",
+      "sub3": "진행 중 표시",
+      "expectationResult": "쿠키 미션 달성도에서 아직 달성도를 만족하지 못한 구간은 진행 중 상태로 표시된다.",
+      "comment": "기획서 도감 달성도"
+    },
+    {
+      "no": 107,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 미션 달성도",
+      "sub3": "수령 가능 표시",
+      "expectationResult": "쿠키 미션 달성도에서 보상 수령 가능 구간은 강조색과 레드닷으로 표시되며, 터치 시 보상이 지급된다.",
+      "comment": "기획서 도감 달성도"
+    },
+    {
+      "no": 108,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 미션 달성도",
+      "sub3": "수령 완료 표시",
+      "expectationResult": "쿠키 미션 달성도에서 보상 수령이 완료된 구간은 딤 처리되고 완료 마크가 표시된다.",
+      "comment": "기획서 도감 달성도"
+    },
+    {
+      "no": 109,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "드래프트 도감",
+      "sub2": "드래프트 패널",
+      "sub3": "사용한 적 있는 드래프트",
+      "expectationResult": "인게임에서 사용한 적 있는 드래프트는 도감에 컬러 이미지로 출력된다.",
+      "comment": "기획서 드래프트 도감"
+    },
+    {
+      "no": 110,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "드래프트 도감",
+      "sub2": "드래프트 패널",
+      "sub3": "사용한 적 없는 드래프트",
+      "expectationResult": "인게임에서 사용한 적 없는 드래프트는 도감에 ???로 표시된다.",
+      "comment": "기획서 드래프트 도감"
+    },
+    {
+      "no": 111,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "드래프트 도감",
+      "sub2": "드래프트 패널",
+      "sub3": "히든 드래프트",
+      "expectationResult": "사용한 적 없는 히든 드래프트는 이미지가 숨김 처리되고 ???로 표시된다.",
+      "comment": "기획서 드래프트 도감"
+    },
+    {
+      "no": 112,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "드래프트 도감",
+      "sub2": "드래프트 패널",
+      "sub3": "선택된 드래프트 강조",
+      "expectationResult": "도감에서 현재 선택된 드래프트 패널에 강조색 테두리가 표시된다.",
+      "comment": "기획서 드래프트 도감"
+    },
+    {
+      "no": 113,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "드래프트 도감",
+      "sub2": "정보 패널",
+      "sub3": "드래프트 상세 출력",
+      "expectationResult": "드래프트 패널 선택 시, 정보 패널에 해당 드래프트의 상세 정보가 출력된다.",
+      "comment": "기획서 드래프트 도감"
+    },
+    {
+      "no": 114,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "드래프트 도감",
+      "sub2": "드래프트 미션 달성도",
+      "sub3": "",
+      "expectationResult": "드래프트 미션 달성도에서 사용해본 드래프트 수에 따라 달성 보상이 지급된다.",
+      "comment": "기획서 드래프트 미션 달성도"
+    },
+    {
+      "no": 115,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "신규 항목 알림",
+      "sub2": "토스트 노출",
+      "sub3": "",
+      "expectationResult": "신규 달성한 수집 요소가 있을 시, 각 도감 요소에 느낌표닷이 표기된다.",
+      "comment": "기획서 도감 주요 기능"
+    },
+    {
+      "no": 116,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "신규 항목 알림",
+      "sub2": "시즌 초기화",
+      "sub3": "",
+      "expectationResult": "이벤트 시즌 변경 시, 도감의 모든 수집 정보가 초기화된다.",
+      "comment": "기획서 도감 주요 기능"
+    },
+    {
+      "no": 117,
+      "priority": "Major",
+      "main": "가이드북",
+      "sub1": "이벤트 타이틀 모드 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "가이드북의 이벤트 타이틀 모드 탭 진입 시, 이벤트 모드 관련 상세 내용이 출력된다.",
+      "comment": "기획서 13. 가이드북"
+    },
+    {
+      "no": 118,
+      "priority": "Major",
+      "main": "가이드북",
+      "sub1": "라운드 규칙 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "가이드북의 라운드 규칙 탭 진입 시, 난이도별 규칙 상세 내용이 출력된다.",
+      "comment": "기획서 13. 가이드북"
+    },
+    {
+      "no": 119,
+      "priority": "Normal",
+      "main": "가이드북",
+      "sub1": "보상 상자 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "가이드북의 보상 상자 탭 진입 시, 보상 상자 획득 방법과 종류/확률 및 단축권 사용 방법이 출력된다.",
+      "comment": "기획서 13. 가이드북"
+    },
+    {
+      "no": 120,
+      "priority": "Normal",
+      "main": "가이드북",
+      "sub1": "보상 상자 탭",
+      "sub2": "",
+      "sub3": "",
+      "expectationResult": "가이드북의 보상 상자 탭에서 단축권 획득 방법과 사용 방법이 안내된다.",
+      "comment": "기획서 13. 가이드북"
+    },
+    {
+      "no": 121,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 탭",
+      "sub2": "리더보드 리스트",
+      "sub3": "상위 1000위 노출",
+      "expectationResult": "랭킹 탭 진입 시, 상위 1000위까지의 유저 리스트가 내림차순으로 노출된다.",
+      "comment": "기획서 9. 랭킹장"
+    },
+    {
+      "no": 122,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "랭킹 탭",
+      "sub2": "리더보드 리스트",
+      "sub3": "상위 10위 노란색 강조",
+      "expectationResult": "랭킹 리스트의 상위 10위 유저는 노란색 강조색으��� 표시된다.",
+      "comment": "기획서 랭킹 리스트"
+    },
+    {
+      "no": 123,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "랭킹 탭",
+      "sub2": "리더보드 리스트",
+      "sub3": "본인 초록색 강조",
+      "expectationResult": "랭킹 리스트에서 본인의 행은 초록색 강조색으로 표시된다.",
+      "comment": "기획서 랭킹 리스트"
+    },
+    {
+      "no": 124,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 탭",
+      "sub2": "리더보드 리스트",
+      "sub3": "본인 100위 이상 표기",
+      "expectationResult": "본인이 1000위 이상인 경우, 순위 정보 대신 위치 비율(nn.n%)이 표기된다.",
+      "comment": "기획서 랭킹 리스트"
+    },
+    {
+      "no": 125,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 탭",
+      "sub2": "리더보드 리스트",
+      "sub3": "무기록자 텍스트 노출",
+      "expectationResult": "본인의 기록이 없는 경우, 순위 정보 대신 '(이벤트 모드명)에 참여하여 점수를 획득하세요!' 텍스트가 출력된다.",
+      "comment": "기획서 랭킹 리스트"
+    },
+    {
+      "no": 126,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "랭킹 탭",
+      "sub2": "본인 정보 영역",
+      "sub3": "기록 없음 표기",
+      "expectationResult": "점수 기록이 없는 본인 정보 영역에는 '기록 없음'으로 표기된다.",
+      "comment": "기획서 등급 보상"
+    },
+    {
+      "no": 127,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 보상 탭",
+      "sub2": "등급 보상 표기",
+      "sub3": "",
+      "expectationResult": "랭킹 보상 탭에서 등급별(C/B/A/S/S+/L/N) 아이콘과 달성 기준, 보상이 표기된다.",
+      "comment": "기획서 등급 보상"
+    },
+    {
+      "no": 128,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "랭킹 보상 탭",
+      "sub2": "현재 등급 강조",
+      "sub3": "",
+      "expectationResult": "랭킹 보상 탭에서 본인이 현재 위치한 랭크에 강조색 테두리가 표시된다.",
+      "comment": "기획서 등급 보상"
+    },
+    {
+      "no": 129,
+      "priority": "Critical",
+      "main": "랭킹",
+      "sub1": "랭킹 보상 탭",
+      "sub2": "보상 수령",
+      "sub3": "수령 완료 딤 처리",
+      "expectationResult": "랭킹 보상 탭에서 보상 수령 시, 해당 보상이 지급되며 딤 처리와 체크 마크로 표시된다.",
+      "comment": "기획서 등급 보상"
+    },
+    {
+      "no": 130,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 보상 탭",
+      "sub2": "보상 수령",
+      "sub3": "한번에 수령",
+      "expectationResult": "랭킹 보상 탭의 보상 위치 터치 시, 활성화된 보상이 모두 한번에 수령된다.",
+      "comment": "기획서 등급 보상"
+    },
+    {
+      "no": 131,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 보상 탭",
+      "sub2": "랭크 최초 달성 보상",
+      "sub3": "",
+      "expectationResult": "랭크 최초 달성 시, 해당 랭크의 보상이 강제로 지급된다.",
+      "comment": "기획서 추가 시스템 요소 랭크"
+    },
+    {
+      "no": 132,
+      "priority": "Major",
+      "main": "인게임 로딩",
+      "sub1": "로딩창",
+      "sub2": "유저 카드",
+      "sub3": "칭호/닉네임/길드 출력",
+      "expectationResult": "인게임 로딩창의 유저 카드에 참여 유저의 칭호, 닉네임, 길드명이 출력된다.",
+      "comment": "기획서 11. 로딩창"
+    },
+    {
+      "no": 133,
+      "priority": "Major",
+      "main": "인게임 로딩",
+      "sub1": "로딩창",
+      "sub2": "유저 카드",
+      "sub3": "쿠키 정보 출력",
+      "expectationResult": "인게임 로딩창의 유저 카드에 선택한 쿠키 이미지와 쿠키 이름이 출력된다.",
+      "comment": "기획서 11. 로딩창"
+    },
+    {
+      "no": 134,
+      "priority": "Major",
+      "main": "인게임 로딩",
+      "sub1": "로딩창",
+      "sub2": "무작위 픽 공개",
+      "sub3": "",
+      "expectationResult": "무작위 픽으로 게임을 시작했을 시, 로딩 화면에서 선택된 쿠키가 공개되어 출력된다.",
+      "comment": "기획서 무작위 픽"
+    },
+    {
+      "no": 135,
+      "priority": "Normal",
+      "main": "인게임 로딩",
+      "sub1": "로딩창",
+      "sub2": "로딩 문구",
+      "sub3": "",
+      "expectationResult": "인게임 로딩창에 콘텐츠 관련 팁 문구가 출력된다.",
+      "comment": "기획서 11. 로딩창"
+    },
+    {
+      "no": 136,
+      "priority": "Normal",
+      "main": "인게임 로딩",
+      "sub1": "로딩창",
+      "sub2": "로딩 바",
+      "sub3": "",
+      "expectationResult": "인게임 로딩창 하단에 로딩 프로그레스 바가 표시된다.",
+      "comment": "기획서 11. 로딩창"
+    },
+    {
+      "no": 137,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "타이틀/점수 영역",
+      "sub2": "RESULT 타이틀",
+      "sub3": "",
+      "expectationResult": "인게임 완료 후 결과창 진입 시, 상단에 'RESULT' 타이틀이 출력된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 138,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "타이틀/점수 영역",
+      "sub2": "클리어 라운드 표기",
+      "sub3": "",
+      "expectationResult": "결과창에 클리어 한 마지막 라운드 기준으로 '라운드 N'이 표기된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 139,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "타이틀/점수 영역",
+      "sub2": "플레이 타임",
+      "sub3": "",
+      "expectationResult": "결과창에 라운드 합산 플레이 타임이 출력된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 140,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "타이틀/점수 영역",
+      "sub2": "점수/Grade",
+      "sub3": "",
+      "expectationResult": "결과창에 플레이 타임을 환산한 점수와 해당 점수로 달성한 Grade가 출력된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 141,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "타이틀/점수 영역",
+      "sub2": "New Record 표기",
+      "sub3": "",
+      "expectationResult": "본인의 최고 달성 점수 갱신 시, 결과창에 'New Record'가 표기된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 142,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "쿠키 영역",
+      "sub2": "본인 중앙 배치",
+      "sub3": "",
+      "expectationResult": "결과창의 쿠키 영역에서 본인이 사용한 쿠키가 중앙에 배치되고 다른 유저의 쿠키가 양옆에 배치된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 143,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "쿠키 영역",
+      "sub2": "닉네임 색상 구분",
+      "sub3": "",
+      "expectationResult": "결과창의 쿠키 영역에서 본인 닉네임은 초록색, 다른 유저 닉네임은 흰색으로 표기된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 144,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "쿠키 영역",
+      "sub2": "성공 모션 재생",
+      "sub3": "",
+      "expectationResult": "결과창의 쿠키 영역에서 각 쿠키의 성공 모션이 재생된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 145,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "쿠키 영역",
+      "sub2": "Disconnected 표기",
+      "sub3": "",
+      "expectationResult": "인게임 도중 연결이 끊어진 유저의 쿠키에는 'Disconnected'로 표기된다.",
+      "comment": "기획서 12. RESULT 화면"
+    },
+    {
+      "no": 146,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "플레이 정보 영역",
+      "sub2": "별사탕/처치/소생 표기",
+      "sub3": "",
+      "expectationResult": "결과창의 플레이 정보 영역에 별사탕 넣은 수, 몬스터 처치 수, 파티원 살린 수가 표기된다.",
+      "comment": "기획서 결과창 플레이 정보"
+    },
+    {
+      "no": 147,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "플레이 정보 영역",
+      "sub2": "드래프트 사용 목록",
+      "sub3": "",
+      "expectationResult": "결과창에 유저가 이번 플레이에 사용한 드래프트 목록(메인 최대 3개)이 표시된다.",
+      "comment": "기획서 결과창 드래프트"
+    },
+    {
+      "no": 148,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "보상 영역",
+      "sub2": "획득 보상 출력",
+      "sub3": "",
+      "expectationResult": "결과창의 보상 영역에 이번 플레이에서 획득한 보상이 BG/아이���/카운트와 함께 표시된다.",
+      "comment": "기획서 결과창 보상"
+    },
+    {
+      "no": 149,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "보상 영역",
+      "sub2": "보상 툴팁",
+      "sub3": "",
+      "expectationResult": "결과창의 보상 아이템 터치 시, 해당 보상의 툴팁이 출력된다.",
+      "comment": "기획서 결과창 보상"
+    },
+    {
+      "no": 150,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "하단 공통 영역",
+      "sub2": "이모지 버튼",
+      "sub3": "",
+      "expectationResult": "결과창 하단의 이모지 버튼 터치 시, 이모지가 출력된다.",
+      "comment": "기획서 하단 멀티 공통 영역"
+    },
+    {
+      "no": 151,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "하단 공통 영역",
+      "sub2": "신고하기 버튼",
+      "sub3": "",
+      "expectationResult": "결과창 하단의 신고하기 버튼 터치 시, 신고하기 화면이 출력된다.",
+      "comment": "기획서 하단 멀티 공통 영역"
+    },
+    {
+      "no": 152,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "하단 공통 영역",
+      "sub2": "유저 상태 표시",
+      "sub3": "다시하기 체크 마크",
+      "expectationResult": "결과창에서 유저가 다시하기 버튼을 눌렀을 시, 해당 유저에 체크 마크가 표시된다.",
+      "comment": "기획서 하단 멀티 공통 영역"
+    },
+    {
+      "no": 153,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "하단 공통 영역",
+      "sub2": "유저 상태 표시",
+      "sub3": "나감 X 마크",
+      "expectationResult": "결과창에서 유저가 나갔을 시, 해당 유저에 X 마크가 표시된다.",
+      "comment": "기획서 하단 멀티 공통 영역"
+    },
+    {
+      "no": 154,
+      "priority": "Critical",
+      "main": "결과창",
+      "sub1": "다시하기 버튼",
+      "sub2": "제한시간 내 동작",
+      "sub3": "",
+      "expectationResult": "결과창에서 제한시간 내에 다시하기 버튼 터치 시, 다시하기를 누른 멤버와 함께 매칭이 진행된다.",
+      "comment": "기획서 다시하기 버튼"
+    },
+    {
+      "no": 155,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "다시하기 버튼",
+      "sub2": "전원 다시하기 처리",
+      "sub3": "",
+      "expectationResult": "파티 내 모든 유저가 다시하기 선택 시, 로딩창이 출력된다.",
+      "comment": "기획서 다시하기 버튼"
+    },
+    {
+      "no": 156,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "다시하기 버튼",
+      "sub2": "일부 유저 다시하기 처리",
+      "sub3": "",
+      "expectationResult": "파티 내 일부 유저가 나간 후 다시하기 선택 시, 매칭 로딩창이 출력된다.",
+      "comment": "기획서 다시하기 버튼"
+    },
+    {
+      "no": 157,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "다시하기 버튼",
+      "sub2": "제한시간 종료 비활성화",
+      "sub3": "",
+      "expectationResult": "결과창의 다시하기 제한시간 종료 시, 다시하기 버튼이 회색으로 비활성화된다.",
+      "comment": "기획서 다시하기 버튼"
+    },
+    {
+      "no": 158,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "나가기 버튼",
+      "sub2": "플레이 로비 이동",
+      "sub3": "",
+      "expectationResult": "결과창에서 나가기 버튼 터치 시, 결과창이 닫히고 플레이 로비로 이동된다.",
+      "comment": "기획서 나가기 버튼"
+    },
+    {
+      "no": 159,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "함께한 유저 다시 초대 팝업",
+      "sub2": "유저 리스트 표기",
+      "sub3": "",
+      "expectationResult": "결과창에서 나가기 후 플레이 로비 이동 시, 함께한 유저 다시 초대 팝업이 출력되며 유저 닉네임/점수 리스트가 표시된다.",
+      "comment": "기획서 함께한 유저 다시 초대"
+    },
+    {
+      "no": 160,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "함께한 유저 다시 초대 팝업",
+      "sub2": "친구 초대 버튼",
+      "sub3": "",
+      "expectationResult": "함께한 유저 다시 초대 팝업의 친구 초대 버튼 터치 시, 해당 유저에게 친구 초대가 발송된다.",
+      "comment": "기획서 함께한 유저 다시 초대"
+    },
+    {
+      "no": 161,
+      "priority": "Major",
+      "main": "결과창",
+      "sub1": "함께한 유저 다시 초대 팝업",
+      "sub2": "파티 초대 버튼",
+      "sub3": "",
+      "expectationResult": "함께한 유저 다시 초대 팝업의 파티 초대 버튼 터치 시, 해당 유저에게 파티 초대가 발송된다.",
+      "comment": "기획서 함께한 유저 다시 초대"
+    },
+    {
+      "no": 162,
+      "priority": "Normal",
+      "main": "결과창",
+      "sub1": "함께한 유저 다시 초대 팝업",
+      "sub2": "오늘 하루 보지 않기",
+      "sub3": "",
+      "expectationResult": "함께한 유저 다시 초대 팝업에서 '오늘 하루동안 보지 않기' 체크 시, 당일 동안 해당 팝업이 재노출되지 않는다.",
+      "comment": "기획서 함께한 유저 다시 초대"
+    },
+    {
+      "no": 163,
+      "priority": "Normal",
+      "main": "튜토리얼",
+      "sub1": "일기페이 가이드",
+      "sub2": "발동 조건",
+      "sub3": "유실물 보유 후 트랜짓 입장",
+      "expectationResult": "유실물 상자를 보유한 상태로 이벤트 모드에 입장 시, 일기페이 가이드 튜토리얼이 발동된다.",
+      "comment": "기획서 14. 튜토리얼 검수"
+    },
+    {
+      "no": 164,
+      "priority": "Normal",
+      "main": "튜토리얼",
+      "sub1": "일기페이 가이드",
+      "sub2": "가이드 멘트 출력",
+      "sub3": "작전 보고록 안내",
+      "expectationResult": "튜토리얼 진행 시, '효의 작전 브리핑을 시작할게!' 및 쿠키 선택 안내 가이드 멘트가 순차적으로 출력된다.",
+      "comment": "기획서 14. 튜토리얼 검수"
+    },
+    {
+      "no": 165,
+      "priority": "Normal",
+      "main": "튜토리얼",
+      "sub1": "일기페이 가이드",
+      "sub2": "가이드 멘트 출력",
+      "sub3": "유실물 정화 안내",
+      "expectationResult": "튜토리얼 진행 시, '유실물을 찾았구나!' 및 유실물 정화 안내 가이드 멘트가 출력된다.",
+      "comment": "기획서 14. 튜토리얼 검수"
+    },
+    {
+      "no": 166,
+      "priority": "Critical",
+      "main": "예외 처리",
+      "sub1": "네트워크 이슈",
+      "sub2": "개별 디스커넥션",
+      "sub3": "방 존재 시 복귀",
+      "expectationResult": "개별 디스커넥션 발생 후 방이 존재할 시, 재접속 시 해당 방으로 복귀된다.",
+      "comment": "기획서 16. 예외/에러 케이스"
+    },
+    {
+      "no": 167,
+      "priority": "Major",
+      "main": "예외 처리",
+      "sub1": "네트워크 이슈",
+      "sub2": "개별 디스커넥션",
+      "sub3": "방 종료 시 보상/기록 제외",
+      "expectationResult": "개별 디스커넥션 발생 후 방이 이미 종료되었을 시, 해당 판의 보상 및 퀘스트 기록이 반영되지 않는다.",
+      "comment": "기획서 16. 예외/에러 케이스"
+    },
+    {
+      "no": 168,
+      "priority": "Major",
+      "main": "예외 처리",
+      "sub1": "네트워크 이슈",
+      "sub2": "전원 디스커넥션",
+      "sub3": "인게임 종료 처리",
+      "expectationResult": "모든 유저 디스커넥션 발생 시, 인게임 플레이가 종료되고 모든 유저의 보상 및 퀘스트 기록이 반영되지 않는다.",
+      "comment": "기획서 16. 예외/에러 케이스"
+    },
+    {
+      "no": 169,
+      "priority": "Major",
+      "main": "예외 처리",
+      "sub1": "중단하기 투표",
+      "sub2": "일시정지 화면 진입",
+      "sub3": "",
+      "expectationResult": "인게임 일시정지 화면에서 중단하기 버튼 터치 시, 중단하기 투표가 시작된다.",
+      "comment": "기획서 중단하기"
+    },
+    {
+      "no": 170,
+      "priority": "Major",
+      "main": "예외 처리",
+      "sub1": "중단하기 투표",
+      "sub2": "3명 파티 투표",
+      "sub3": "",
+      "expectationResult": "3명 파티에서 중단하기 투표 시, 2명 이상 동의할 경우 플레이가 중단된다.",
+      "comment": "기획서 중단하기"
+    },
+    {
+      "no": 171,
+      "priority": "Major",
+      "main": "예외 처리",
+      "sub1": "중단하기 투표",
+      "sub2": "2명 파티 투표",
+      "sub3": "",
+      "expectationResult": "2명 파티에서 중단하기 투표 시, 2명 모두 동의할 경우 플레이가 중단된다.",
+      "comment": "기획서 중단하기"
+    },
+    {
+      "no": 172,
+      "priority": "Major",
+      "main": "예외 처리",
+      "sub1": "중단하기 투표",
+      "sub2": "1명 파티 투표",
+      "sub3": "",
+      "expectationResult": "1명 파티에서 중단하기 투표 시, 본인 동의 시 즉시 플레이가 중단된다.",
+      "comment": "기획서 중단하기"
+    }
+  ],
+  "generatedAt": "2026-05-15T07:24:46.441Z",
+  "tokenUsage": {
+    "inputTokens": 160,
+    "outputTokens": 119949,
+    "cacheReadTokens": 2324570,
+    "cacheCreationTokens": 463269,
+    "totalCostUsd": 7.16983525
+  },
+  "planText": "### 기능 목록\n\n**1. 이벤트 진입/종료 처리**\n- 이벤트 시작 시 모드리스트 노출 (NEW 배지)\n- 이벤트 종료 시 모드리스트 제거\n- 이벤트 종료 시점 대기/매칭/인게임 상태별 처리\n- 이벤트 종료 30분 전 매칭 lock\n- 미수령 보상 우편 지급\n- 이벤트 종료까지 남은 시간 2단위 표기 (1일 이하 시 빨간색)\n\n**2. 모드리스트**\n- 이벤트 탭 하위 노출\n- 신규 모드 느낌표닷\n- 보상 획득 가능 모드 레드닷\n- 상자 슬롯 진행도 표기 (없음/진행중/오픈 가능)\n- 주간 미션 진행도/남은 시간 표기\n\n**3. 플레이 로비 (메인 허브)**\n- 이벤트 타이틀 표기\n- 시즌 정보/서브타이틀\n- 플레이 마감까지 남은 시간 (2단위)\n- 유저 정보 영역 (칭호/길드/닉네임/쿠키 모델링)\n- 유저 상태 표시 (준비중/READY/쿠키 설정중)\n- 가이드북/랭킹/도감/채팅 버튼\n- PLAY 버튼 (매칭 전/중/완료)\n- 매칭 진행 시간/취소 버튼\n- 파티 초대 (친구/길드/최근 함께한 유저/ID 참가)\n- 파티 인원 변경 시 레디 취소\n- 3인 파티 매칭 스킵\n\n**4. 쿠키 선택**\n- 쿠키 리스트 화면 진입\n- 좌측 쿠키 모델링/타입/성급/레벨\n- 자세히 보기 버튼/팝업\n- 우측 쿠키 리스트 (스틸 버튼/성급/레벨/타입)\n- 무작위 픽 (최상단 정렬, 히든 쿠키 안내)\n- 다른 유저 선택 쿠키 제외\n- 미보유 쿠키 0% 확률 처리\n- 선택 완료 후 공개\n\n**5. 유실물 센터 (보상 상자)**\n- 슬롯 상태 (수령 가능/진행중/빈 슬롯)\n- 빈 슬롯 노란닷\n- 수령 가능 슬롯 레드닷\n- 상자 선택 팝업 (3종 상자, 보유 개수, 미보유 표기)\n- 상자 상세 확률 팝업 (보상 리스트 확률/대체 보상 확률)\n- 시간 단축권 사용 팝업 (토글바, MAX 버튼)\n- 슬롯 장착 후 해제 불가\n- 상자 오픈 연출 (페이드 아웃 → 보상 노출)\n- 푸시 알람 발송\n- Last One 보상\n- 대체 보상 지급 (모두 소진 후)\n\n**6. 유실물 게시판 (보상 리스트)**\n- 보상 리스트 정렬 (레어리티/개수 내림차순)\n- 획득량 프로그레스\n- 마일스톤 보상 (좌우 스크롤)\n- 수령 가능 보상 레드닷/모두 받기\n- 수령 완료 시 완료 마크+딤드\n- 아이템 툴팁\n- 대체 보상 리스트\n\n**7. 주간 스탬프 (주간 미션)**\n- 주간 미션 진행도/남은 시간 표기\n- 레드닷 알림\n- 스탬프 진행도 UI (미완료 딤드/완료 표시)\n- 주간 미션 팝업\n- 매주 수요일 9:00 초기화\n\n**8. 도감**\n- 쿠키 패널/드래프트 패널 탭 구분\n- 쿠키 해금 상태 (해금/잠금/선택됨/미션 달성)\n- 잠금 해제 시 활성화 + 느낌표닷\n- 잠금 쿠키 회색/잠금 아이콘/해금 조건 표기\n- 드래프트 패널 (사용함/사용 안 함/히든)\n- 도감 달성도 팝업\n- 쿠키 미션 달성도/드래프트 미션 달성도\n- 신규 항목 추가 시 토스트\n- 시즌 변경 시 초기화\n\n**9. 가이드북**\n- 이벤트 타이틀 모드 탭\n- 라운드 규칙 탭\n- 보상 상자 탭\n\n**10. 랭킹**\n- 리더보드 탭/랭킹 보상 탭\n- 상위 1000위 노출\n- 본인 100위 이상 시 \"???\" 표기\n- 상위 10위 노란색 강조\n- 본인 초록색 강조\n- 무기록자 참여 독려 텍스트\n- 등급 보상 (C/B/A/S/S+/L/N)\n- 랭크 최초 달성 시 보상 지급\n\n**11. 인게임 로딩창**\n- 유저 카드 (칭호/닉네임/길드/쿠키)\n- 무작위 픽 시 선택된 쿠키 공개\n- 로딩 문구/로딩 바\n\n**12. 결과창 (RESULT)**\n- 점수/New Record/Grade 표시\n- 플레이 정보 (별사탕/처치/소생)\n- 드래프트 사용 목록\n- 쿠키 영역 (본인 중앙, 본인 초록색/타인 흰색)\n- Disconnected 표기\n- 다시하기 (제한시간/회색 비활성화)\n- 나가기\n- 이모지/신고하기/유저 상태(체크/X)\n- 함께한 유저 다시 초대 팝업\n- \"오늘 하루동안 보지 않기\"\n\n**13. 튜토리얼**\n- 밀키웨이 가이드 멘트\n- 유실물 상자 보유 후 트랜짓 입장 시 발동\n\n**14. 예외 처리**\n- 개별/전원 발주/디스커넥션\n- 중단하기 투표 (3명/2명/1명)\n- 매칭 중 이벤트 종료\n- 인게임 중 이벤트 종료\n\n### 카테고리 구조\n\n```\n├─ 이벤트 진입 (main)\n│  ├─ 모드리스트 (sub1)\n│  │  ├─ 노출 조건 (sub2)\n│  │  │  ├─ 이벤트 시작 시 노출 (sub3)\n│  │  │  └─ 이벤트 종료 시 제거 (sub3)\n│  │  ├─ 알림 표기 (sub2)\n│  │  │  ├─ NEW 배지 (sub3)\n│  │  │  ├─ 느낌표닷 (sub3)\n│  │  │  └─ 레드닷 (sub3)\n│  │  ├─ 상자 슬롯 진행도 (sub2)\n│  │  │  ├─ 보유 상자 없음 (sub3)\n│  │  │  ├─ 여는 중 (sub3)\n│  │  │  └─ 열림 가능 (sub3)\n│  │  └─ 화면 전환 (sub2)\n│  │     └─ 플레이 로비 진입 (sub3)\n│  └─ 예외 처리 (sub1)\n│     ├─ 이벤트 종료 처리 (sub2)\n│     │  ├─ 대기 중 강제 이동 (sub3)\n│     │  ├─ 매칭 중 강제 종료 (sub3)\n│     │  ├─ 인게임 중 정상 완료 (sub3)\n│     │  └─ 토스트 메시지 출력 (sub3)\n│     └─ 미수령 보상 처리 (sub2)\n│        └─ 우편 지급 (sub3)\n├─ 플레이 로비 (main)\n│  ├─ 타이틀 영역 (sub1)\n│  │  ├─ 이벤트 타이틀 (sub2)\n│  │  ├─ 시즌 정보 (sub2)\n│  │  └─ 타임바 (sub2)\n│  │     ├─ 남은 시간 표기 (sub3)\n│  │     └─ 1일 이하 빨간색 표기 (sub3)\n│  ├─ 유저 정보 영역 (sub1)\n│  │  ├─ 쿠키 모델링 (sub2)\n│  │  │  └─ idle 애니메이션 재생 (sub3)\n│  │  ├─ 칭호/닉네임/길드명 (sub2)\n│  │  └─ 유저 상태 (sub2)\n│  │     ├─ 준비 중 표시 (sub3)\n│  │     ├─ READY 표시 (sub3)\n│  │     └─ 쿠키 설정 중 표시 (sub3)\n│  ├─ 기능 버튼 (sub1)\n│  │  ├─ 가이드북 버튼 (sub2)\n│  │  ├─ 랭킹 버튼 (sub2)\n│  │  ├─ 도감 버튼 (sub2)\n│  │  └─ 채팅 버튼 (sub2)\n│  ├─ PLAY 버튼/매칭 (sub1)\n│  │  ├─ 매칭 전 상태 (sub2)\n│  │  │  ├─ PLAY 버튼 표기 (sub3)\n│  │  │  └─ 전원 PLAY 미선택 시 매칭 차단 (sub3)\n│  │  ├─ 매칭 중 상태 (sub2)\n│  │  │  ├─ 매칭 진행 시간 표기 (sub3)\n│  │  │  ├─ 매칭 유저 시각 표시 (sub3)\n│  │  │  └─ 매칭 취소 버튼 (sub3)\n│  │  ├─ 매칭 완료 상태 (sub2)\n│  │  │  └─ 인게임 이동 (sub3)\n│  │  ├─ 3인 파티 매칭 (sub2)\n│  │  │  └─ 매칭 단계 스킵 (sub3)\n│  │  └─ 매칭 lock 처리 (sub2)\n│  │     └─ 종료 30분 전 매칭 차단 (sub3)\n│  └─ 파티 초대 (sub1)\n│     ├─ 파티 초대 진입 (sub2)\n│     ├─ 친구 탭 (sub2)\n│     │  └─ 친구 초대 (sub3)\n│     ├─ 내 길드 탭 (sub2)\n│     │  └─ 길드원 초대 (sub3)\n│     ├─ 최근 함께한 유저 탭 (sub2)\n│     │  └─ 유저 초대 (sub3)\n│     ├─ ID로 참가 (sub2)\n│     │  ├─ 파티 ID 생성 (sub3)\n│     │  └─ ID 입력 참가 (sub3)\n│     └─ 파티 변동 (sub2)\n│        ├─ 인원 변경 시 레디 취소 (sub3)\n│        └─ 초대 거절 처리 (sub3)\n├─ 쿠키 선택 (main)\n│  ├─ 쿠키 리스트 화면 (sub1)\n│  │  ├─ 좌측 쿠키 정보 (sub2)\n│  │  │  ├─ 쿠키 모델링 (sub3)\n│  │  │  ├─ 타입/성급/레벨 출력 (sub3)\n│  │  │  └─ 자세히 보기 버튼 (sub3)\n│  │  └─ 우측 쿠키 리스트 (sub2)\n│  │     ├─ 스틸 버튼 (sub3)\n│  │     └─ 성급/레벨/타입 출력 (sub3)\n│  ├─ 자세히 보기 팝업 (sub1)\n│  │  └─ 쿠키 정보 출력 (sub2)\n│  ├─ 무작위 픽 (sub1)\n│  │  ├─ 최상단 정렬 (sub2)\n│  │  ├─ 히든 쿠키 안내 툴팁 (sub2)\n│  │  ├─ 다른 유저 선택 쿠키 제외 (sub2)\n│  │  └─ 선택 완료 후 공개 (sub2)\n│  └─ 화면 전환 (sub1)\n│     └─ 플레이 로비 복귀 (sub2)\n├─ 유실물 센터 (main)\n│  ├─ 슬롯 영역 (sub1)\n│  │  ├─ 수령 가능 슬롯 (sub2)\n│  │  │  ├─ 레드닷 표기 (sub3)\n│  │  │  └─ 보상 랜덤 1개 획득 (sub3)\n│  │  ├─ 진행 중 슬롯 (sub2)\n│  │  │  ├─ 상자 아이콘 출력 (sub3)\n│  │  │  ├─ 남은 시간 표기 (sub3)\n│  │  │  └─ 슬롯 장착 해제 차단 (sub3)\n│  │  └─ 빈 슬롯 (sub2)\n│  │     ├─ 노란닷 표기 (sub3)\n│  │     └─ 상자 선택 팝업 진입 (sub3)\n│  ├─ 상자 선택 팝업 (sub1)\n│  │  ├─ 상자 리스트 (sub2)\n│  │  │  ├─ 상자별 보유 개수 표기 (sub3)\n│  │  │  ├─ 미보유 표기 (sub3)\n│  │  │  └─ 선택 시 강조색 테두리 (sub3)\n│  │  ├─ 선택하기 버튼 (sub2)\n│  │  │  ├─ 버튼 활성화/비활성화 (sub3)\n│  │  │  └─ 슬롯 장착 처리 (sub3)\n│  │  └─ 상세 확률 팝업 (sub2)\n│  │     ├─ 보상 리스트 확률 탭 (sub3)\n│  │     └─ 대체 보상 확률 탭 (sub3)\n│  ├─ 시간 단축권 사용 팝업 (sub1)\n│  │  ├─ 좌측 상자 정보 (sub2)\n│  │  │  ├─ 상자 이미지 출력 (sub3)\n│  │  │  └─ 남은 시간 프로그레스 (sub3)\n│  │  ├─ 우측 사용권 정보 (sub2)\n│  │  ├─ 토글바 (sub2)\n│  │  │  ├─ 사용 수량 조정 (sub3)\n│  │  │  ├─ 필요 수량 초과 제한 (sub3)\n│  │  │  └─ MAX 버튼 (sub3)\n│  │  └─ 사용하기 버튼 (sub2)\n│  │     └─ 남은 시간 차감 (sub3)\n│  ├─ 보상 획득 연출 (sub1)\n│  │  ├─ 상자 오픈 연출 (sub2)\n│  │  ├─ 보상 팝업 노출 (sub2)\n│  │  └─ 푸시 알람 발송 (sub2)\n│  └─ 유실물 게시판 (sub1)\n│     ├─ 타이틀/마일스톤 진행도 (sub2)\n│     ├─ 보상 리스트 (sub2)\n│     │  ├─ 정렬 규칙 (sub3)\n│     │  ├─ 획득량 프로그레스 (sub3)\n│     │  ├─ 수령 완료 표시 (sub3)\n│     │  └─ 아이템 툴팁 (sub3)\n│     ├─ 마일스톤 영역 (sub2)\n│     │  ├─ 마일스톤 포인트 표기 (sub3)\n│     │  ├─ 좌우 스크롤 (sub3)\n│     │  ├─ 수령 가능 레드닷 (sub3)\n│     │  └─ 한번에 받기 (sub3)\n│     └─ 대체 보상 리스트 (sub2)\n│        └─ 모든 보상 수령 완료 시 전환 (sub3)\n├─ 주간 스탬프 (main)\n│  ├─ 진행도 UI (sub1)\n│  │  ├─ 미완료 보상 표시 (sub2)\n│  │  ├─ 완료 보상 표시 (sub2)\n│  │  └─ 레드닷 표기 (sub2)\n│  ├─ 주간 스탬프 팝업 (sub1)\n│  │  ├─ 팝업 진입 (sub2)\n│  │  ├─ 진행도 확인 (sub2)\n│  │  └─ 보상 수령 (sub2)\n│  └─ 초기화 처리 (sub1)\n│     └─ 매주 수요일 9:00 초기화 (sub2)\n├─ 도감 (main)\n│  ├─ 쿠키 도감 (sub1)\n│  │  ├─ 쿠키 패널 (sub2)\n│  │  │  ├─ 잠금 해제 쿠키 (sub3)\n│  │  │  ├─ 잠금 쿠키 (sub3)\n│  │  │  ├─ 선택된 쿠키 강조 (sub3)\n│  │  │  ├─ 미션 달성 아이콘 (sub3)\n│  │  │  └─ 정보 미확인 느낌표닷 (sub3)\n│  │  ├─ 정보 패널 (sub2)\n│  │  │  ├─ 해금 쿠키 정보 출력 (sub3)\n│  │  │  ├─ 잠금 쿠키 해금 조건 출력 (sub3)\n│  │  │  └─ 자세히 보기 버튼 (sub3)\n│  │  └─ 쿠키 미션 달성도 (sub2)\n│  │     ├─ 진행 중 표시 (sub3)\n│  │     ├─ 수령 가능 표시 (sub3)\n│  │     └─ 수령 완료 표시 (sub3)\n│  ├─ 드래프트 도감 (sub1)\n│  │  ├─ 드래프트 패널 (sub2)\n│  │  │  ├─ 사용한 적 있는 드래프트 (sub3)\n│  │  │  ├─ 사용한 적 없는 드래프트 (sub3)\n│  │  │  ├─ 히든 드래프트 (sub3)\n│  │  │  └─ 선택된 드래프트 강조 (sub3)\n│  │  ├─ 정보 패널 (sub2)\n│  │  │  └─ 드래프트 상세 출력 (sub3)\n│  │  └─ 드래프트 미션 달성도 (sub2)\n│  └─ 신규 항목 알림 (sub1)\n│     ├─ 토스트 노출 (sub2)\n│     └─ 시즌 초기화 (sub2)\n├─ 가이드북 (main)\n│  ├─ 이벤트 타이틀 모드 탭 (sub1)\n│  ├─ 라운드 규칙 탭 (sub1)\n│  └─ 보상 상자 탭 (sub1)\n├─ 랭킹 (main)\n│  ├─ 랭킹 탭 (sub1)\n│  │  ├─ 리더보드 리스트 (sub2)\n│  │  │  ├─ 상위 1000위 노출 (sub3)\n│  │  │  ├─ 상위 10위 노란색 강조 (sub3)\n│  │  │  ├─ 본인 초록색 강조 (sub3)\n│  │  │  ├─ 본인 100위 이상 표기 (sub3)\n│  │  │  └─ 무기록자 텍스트 노출 (sub3)\n│  │  └─ 본인 정보 영역 (sub2)\n│  │     └─ 기록 없음 표기 (sub3)\n│  └─ 랭킹 보상 탭 (sub1)\n│     ├─ 등급 보상 표기 (sub2)\n│     ├─ 현재 등급 강조 (sub2)\n│     ├─ 보상 수령 (sub2)\n│     │  ├─ 수령 완료 딤 처리 (sub3)\n│     │  └─ 한번에 수령 (sub3)\n│     └─ 랭크 최초 달성 보상 (sub2)\n├─ 인게임 로딩 (main)\n│  └─ 로딩창 (sub1)\n│     ├─ 유저 카드 (sub2)\n│     │  ├─ 칭호/닉네임/길드 출력 (sub3)\n│     │  └─ 쿠키 정보 출력 (sub3)\n│     ├─ 무작위 픽 공개 (sub2)\n│     ├─ 로딩 문구 (sub2)\n│     └─ 로딩 바 (sub2)\n├─ 결과창 (main)\n│  ├─ 타이틀/점수 영역 (sub1)\n│  │  ├─ RESULT 타이틀 (sub2)\n│  │  ├─ 클리어 라운드 표기 (sub2)\n│  │  ├─ 플레이 타임 (sub2)\n│  │  ├─ 점수/Grade (sub2)\n│  │  └─ New Record 표기 (sub2)\n│  ├─ 쿠키 영역 (sub1)\n│  │  ├─ 본인 중앙 배치 (sub2)\n│  │  ├─ 닉네임 색상 구분 (sub2)\n│  │  ├─ 성공 모션 재생 (sub2)\n│  │  └─ Disconnected 표기 (sub2)\n│  ├─ 플레이 정보 영역 (sub1)\n│  │  ├─ 별사탕/처치/소생 표기 (sub2)\n│  │  └─ 드래프트 사용 목록 (sub2)\n│  ├─ 보상 영역 (sub1)\n│  │  ├─ 획득 보상 출력 (sub2)\n│  │  └─ 보상 툴팁 (sub2)\n│  ├─ 하단 공통 영역 (sub1)\n│  │  ├─ 이모지 버튼 (sub2)\n│  │  ├─ 신고하기 버튼 (sub2)\n│  │  └─ 유저 상태 표시 (sub2)\n│  │     ├─ 다시하기 체크 마크 (sub3)\n│  │     └─ 나감 X 마크 (sub3)\n│  ├─ 다시하기 버튼 (sub1)\n│  │  ├─ 제한시간 내 동작 (sub2)\n│  │  ├─ 전원 다시하기 처리 (sub2)\n│  │  ├─ 일부 유저 다시하기 처리 (sub2)\n│  │  └─ 제한시간 종료 비활성화 (sub2)\n│  ├─ 나가기 버튼 (sub1)\n│  │  └─ 플레이 로비 이동 (sub2)\n│  └─ 함께한 유저 다시 초대 팝업 (sub1)\n│     ├─ 유저 리스트 표기 (sub2)\n│     ├─ 친구 초대 버튼 (sub2)\n│     ├─ 파티 초대 버튼 (sub2)\n│     └─ 오늘 하루 보지 않기 (sub2)\n├─ 튜토리얼 (main)\n│  └─ 일기페이 가이드 (sub1)\n│     ├─ 발동 조건 (sub2)\n│     │  └─ 유실물 보유 후 트랜짓 입장 (sub3)\n│     └─ 가이드 멘트 출력 (sub2)\n│        ├─ 작전 보고록 안내 (sub3)\n│        └─ 유실물 정화 안내 (sub3)\n└─ 예외 처리 (main)\n   ├─ 네트워크 이슈 (sub1)\n   │  ├─ 개별 디스커넥션 (sub2)\n   │  │  ├─ 방 존재 시 복귀 (sub3)\n   │  │  └─ 방 종료 시 보상/기록 제외 (sub3)\n   │  └─ 전원 디스커넥션 (sub2)\n   │     └─ 인게임 종료 처리 (sub3)\n   └─ 중단하기 투표 (sub1)\n      ├─ 일시정지 화면 진입 (sub2)\n      ├─ 3명 파티 투표 (sub2)\n      ├─ 2명 파티 투표 (sub2)\n      └─ 1명 파티 투표 (sub2)\n```\n\n### TC 건수 배분\n\n**전체 목표: 약 145건**\n\n| main 카테고리 | 예상 건수 | Critical | Major | Normal |\n|---|---|---|---|---|\n| 이벤트 진입 | 12 | 2 | 7 | 3 |\n| 플레이 로비 | 30 | 4 | 18 | 8 |\n| 쿠키 선택 | 12 | 1 | 7 | 4 |\n| 유실물 센터 | 28 | 4 | 16 | 8 |\n| 주간 스탬프 | 7 | 1 | 4 | 2 |\n| 도감 | 18 | 1 | 10 | 7 |\n| 가이드북 | 4 | 0 | 2 | 2 |\n| 랭킹 | 12 | 1 | 7 | 4 |\n| 인게임 로딩 | 5 | 0 | 3 | 2 |\n| 결과창 | 18 | 2 | 9 | 7 |\n| 튜토리얼 | 3 | 0 | 1 | 2 |\n| 예외 처리 | 6 | 1 | 4 | 1 |\n| **합계** | **155** | **17 (≈11%)** | **88 (≈57%)** | **50 (≈32%)** |\n\n※ Critical은 11% 수준으로 보수적으로 배분, Major는 약간 높게 배분하되 Normal 비중도 35% 가까이 유지\n\n### 중점 확인 사항\n\n1. **이벤트 시간 경계 처리**\n   - 이벤트 종료 30분 전 매칭 lock, 종료 시점 대기/매칭/인게임 상태별 분기 처리가 명확하게 구분되도록 작성\n   - 이벤트 종료 1일 이하 시 타임바 색상 변경, 토스트 메시지 출력\n\n2. **유실물 슬롯 상태 분기**\n   - 빈 슬롯/진행 중/수령 가능 3가지 상태별 UI(노란닷·레드닷·배경) 및 상호작용 구분\n   - 슬롯 장착 후 해제 불가, 시간 단축권 사용 시 필요 수량 초과 제한·MAX 동작 등 정밀한 조건 분기\n\n3. **매칭 플로우**\n   - 매칭 전/중/완료/취소/매칭 lock의 5단계, 3인 파티 시 매칭 스킵\n   - 파티원 변경 시 레디 자동 취소, ID 참가/거절/가득 참 등 파티 초대 예외\n\n4. **쿠키 선택 - 무작위 픽**\n   - 다른 유저가 선택한 쿠키 제외, 미보유 쿠키 낮은 확률 처리, 모든 유저 선택 완료 후 공개 시점\n   - 무작위 픽 시 로딩 화면에서 쿠키 공개되는 흐름\n\n5. **도감 상태 분기**\n   - 쿠키/드래프트 패널의 잠금/해제/선택/미션 달성/히든 5가지 상태별 UI 표시\n   - 신규 항목 추가 시 토스트, 시즌 초기화 동작\n\n6. **결과창 다시하기**\n   - 제한시간 내 다시하기 시 전원/일부 차이에 따른 로딩창 분기, 제한시간 종료 시 비활성화\n   - 함께한 유저 다시 초대 팝업 노출 타이밍 (나가기 → 로비 이동 후) 및 \"오늘 하루동안 보지 않기\" 동작\n\n7. **네트워크/중단 예외**\n   - 개별/전원 디스커넥션 시 보상·기록 처리, Disconnected 표시\n   - 중단하기 투표 인원별 동의 조건 (3·2명/1명)\n\n8. **알림 시스템**\n   - 모드리스트의 느낌표닷/레드닷/NEW 배지/상자 슬롯 상태 표기가 모드 진입 전부터 확인 가능한지\n   - 쿠키 도감 정보 미확인 시 느낌표닷, 확인 후 제거\n\n9. **카테고리 통합**\n   - 플레이 로비에서 진입하는 가이드북/랭킹/도감/유실물 게시판 등은 별도 main으로 분리하지 않고 적절한 main 하위로 통합 배치 (단, 유실물 센터는 슬롯/팝업이 다양해 별도 main으로 분리)\n   - 화면 이동 케이스는 각 카테고리 끝, 예외 케이스는 최하위 카테고리 끝에 배치",
+  "materialId": "mat_1778829395710_p265",
+  "planId": "plan_1778829395744_jovj"
+}
