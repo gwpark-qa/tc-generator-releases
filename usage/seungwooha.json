@@ -2,12 +2,12 @@
   "2026-05": {
     "user": "seungwooha",
     "month": "2026-05",
-    "totalCostUsd": 112.81277925,
-    "callCount": 11,
+    "totalCostUsd": 114.37542075,
+    "callCount": 12,
     "byMode": {
-      "cli": 112.81277925,
+      "cli": 114.37542075,
       "api": 0
     },
-    "updatedAt": "2026-05-18T04:38:32.362Z"
+    "updatedAt": "2026-05-18T05:27:16.119Z"
   }
 }
