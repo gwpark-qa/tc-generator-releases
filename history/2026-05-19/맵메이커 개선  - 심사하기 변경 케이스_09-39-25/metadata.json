@@ -1,0 +1,21 @@
+{
+  "contentName": "맵메이커 개선  - 심사하기 변경 케이스",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778746369813_7gkwhp",
+  "promptName": "콘텐츠_아웃게임_강화1차",
+  "focusPoints": null,
+  "elapsedSeconds": 7,
+  "tokenUsage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheReadTokens": 0,
+    "cacheCreationTokens": 0,
+    "totalCostUsd": 0
+  },
+  "cost": "$0.0000",
+  "appVersion": "1.4.4",
+  "generatedAt": "2026-05-19T09:39:25.356Z"
+}
