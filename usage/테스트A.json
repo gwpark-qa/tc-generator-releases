@@ -1,0 +1,14 @@
+{
+  "2026-05": {
+    "user": "테스트A",
+    "month": "2026-05",
+    "totalCostUsd": 0,
+    "callCount": 0,
+    "byMode": {
+      "cli": 0,
+      "api": 0
+    },
+    "updatedAt": "2026-05-19T05:22:09.586Z",
+    "deviceId": "Macboock Pro_devsisters"
+  }
+}
