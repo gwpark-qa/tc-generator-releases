@@ -1,0 +1,15 @@
+{
+  "contentName": "맵메이커 개선  - 심사하기 변경 케이스",
+  "testCases": [],
+  "generatedAt": "2026-05-19T09:39:25.356Z",
+  "tokenUsage": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "cacheReadTokens": 0,
+    "cacheCreationTokens": 0,
+    "totalCostUsd": 0
+  },
+  "planText": "Credit balance is too low",
+  "materialId": "mat_1779183565213_p4pb",
+  "planId": "plan_1779183565348_ti5d"
+}
