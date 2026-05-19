@@ -1,0 +1,21 @@
+{
+  "contentName": "맵메이커 개선 추가 TC",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778746369813_7gkwhp",
+  "promptName": "콘텐츠_아웃게임_강화1차",
+  "focusPoints": "1) 기획서의 흐름은 첨부한 기획서의 번호(오름차순)대로 진행됩니다. \n2) 맨 앞의 번호를 대분류로 취급합니다.",
+  "elapsedSeconds": 278,
+  "tokenUsage": {
+    "inputTokens": 34,
+    "outputTokens": 31253,
+    "cacheReadTokens": 139514,
+    "cacheCreationTokens": 105911,
+    "totalCostUsd": 1.54555075
+  },
+  "cost": "$2.3445",
+  "appVersion": "1.4.4",
+  "generatedAt": "2026-05-19T05:06:44.239Z"
+}
