@@ -1,0 +1,1466 @@
+{
+  "contentName": "맵메이커 개선 추가 TC",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Normal",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 편집 진입",
+      "sub2": "편집 진입 화면",
+      "sub3": "화면 출력",
+      "expectationResult": "맵 미리보기 상단에 맵 타이틀(예: 진짜! 잘만든 맵1)이 출력된다.",
+      "comment": "참고 화면: 맵 만들기 > 나의 맵 > 편집하기 진입"
+    },
+    {
+      "no": 2,
+      "priority": "Normal",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 편집 진입",
+      "sub2": "편집 진입 화면",
+      "sub3": "버튼 출력",
+      "expectationResult": "하단에 공개하기(보라), 편집하기(노랑) 버튼이 출력된다.",
+      "comment": "참고 화면: 맵 편집 진입 화면 하단"
+    },
+    {
+      "no": 3,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 편집 진입",
+      "sub2": "룰 버튼 동작",
+      "sub3": "맵 설정 팝업 출력",
+      "expectationResult": "맵 설정 팝업이 출력된다.",
+      "comment": "참고 화면: 맵 설정 팝업 진입"
+    },
+    {
+      "no": 4,
+      "priority": "Normal",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "좌측 탭 영역",
+      "sub3": "탭 출력",
+      "expectationResult": "좌측 탭으로 맵 정보, 플레이어 설정, 추가 규칙이 출력된다.",
+      "comment": "참고 화면: 맵 설정 팝업 좌측 탭"
+    },
+    {
+      "no": 5,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "좌측 탭 영역",
+      "sub3": "탭 전환",
+      "expectationResult": "터치한 탭의 화면으로 전환된다.",
+      "comment": "참고 화면: 맵 설정 팝업 좌측 탭"
+    },
+    {
+      "no": 6,
+      "priority": "Normal",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "추가 규칙 탭",
+      "sub3": "적용 슬롯 표시",
+      "expectationResult": "상단에 적용된 규칙(N/3) 카운트가 출력된다.",
+      "comment": "참고 화면: 추가 규칙 탭 상단"
+    },
+    {
+      "no": 7,
+      "priority": "Normal",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "추가 규칙 탭",
+      "sub3": "규칙 리스트 출력",
+      "expectationResult": "각 규칙 행에 규칙 아이콘, 규칙명, 설명, 수치(< -20% >), 적용 버튼이 출력된다.",
+      "comment": "참고 화면: 추가 규칙 리스트"
+    },
+    {
+      "no": 8,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "추가 규칙 탭",
+      "sub3": "수치 조절",
+      "expectationResult": "규칙 수치가 단계별로 증감된다.",
+      "comment": "참고 화면: 규칙 수치 조절 화살표"
+    },
+    {
+      "no": 9,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "추가 규칙 탭",
+      "sub3": "적용 버튼 동작",
+      "expectationResult": "적용 버튼이 [✓ 적용중] 상태로 전환되고 상단 적용 카운트가 1 증가된다.",
+      "comment": "참고 화면: 적용 버튼 → 적용중 상태 전환"
+    },
+    {
+      "no": 10,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "추가 규칙 탭",
+      "sub3": "3개 적용 시 버튼 딤드",
+      "expectationResult": "남은 규칙들의 [적용] 버튼이 딤드(비활성화) 상태로 표시된다.",
+      "comment": "참고 화면: 적용 3/3 상태 버튼 딤드"
+    },
+    {
+      "no": 11,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "추가 규칙 탭",
+      "sub3": "기본값으로 버튼",
+      "expectationResult": "적용된 모든 규칙이 초기 기본값으로 리셋된다.",
+      "comment": "참고 화면: 좌측 하단 기본값으로 버튼"
+    },
+    {
+      "no": 12,
+      "priority": "Critical",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "추가 규칙 탭",
+      "sub3": "저장하기 버튼",
+      "expectationResult": "변경한 규칙이 저장되고 맵 상세 보기에 반영된다.",
+      "comment": "참고 화면: 저장하기 버튼"
+    },
+    {
+      "no": 13,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "저장 미반영 처리",
+      "sub3": "미저장 시 미반영",
+      "expectationResult": "변경된 규칙이 반영되지 않고 이전 상태로 표시된다.",
+      "comment": "참고 화면: 미저장 시 변경 미반영"
+    },
+    {
+      "no": 14,
+      "priority": "Normal",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "플레이어 설정 탭",
+      "sub3": "시간 조절 화살표",
+      "expectationResult": "시간 수치가 단계별로 증��된다.",
+      "comment": "참고 화면: 플레이어 설정 - 시간 조절"
+    },
+    {
+      "no": 15,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "플레이어 설정 탭",
+      "sub3": "숫자 직접 입력 말풍선",
+      "expectationResult": "입력한 숫자로 시간 값이 변경된다.",
+      "comment": "참고 화면: 시간 수정 말풍선"
+    },
+    {
+      "no": 16,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 설정 팝업",
+      "sub2": "플레이어 설정 탭",
+      "sub3": "MAX 버튼",
+      "expectationResult": "시간 값이 최대값으로 변경된다.",
+      "comment": "참고 화면: 시간 수정 말풍선 MAX 버튼"
+    },
+    {
+      "no": 17,
+      "priority": "Normal",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 상세 적용 규칙 표시",
+      "sub2": "우상단 아이콘 출력",
+      "sub3": "적용 규칙 1~3개 표시",
+      "expectationResult": "적용된 규칙 개수만큼 아이콘이 우상단에 출력된다.",
+      "comment": "참고 화면: 맵 상세 우상단 적용 규칙 아이콘"
+    },
+    {
+      "no": 18,
+      "priority": "Major",
+      "main": "맵메이커 - 세부 규칙 설정",
+      "sub1": "맵 상세 적용 규칙 표시",
+      "sub2": "추가규칙 보기 팝업",
+      "sub3": "팝업 출력",
+      "expectationResult": "추가규칙 보기 팝업이 출력되고 적용된 규칙명/수치/설명이 항목별로 출력된다.",
+      "comment": "참고 화면: 추가규칙 보기 팝업"
+    },
+    {
+      "no": 19,
+      "priority": "Normal",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "진입",
+      "sub3": "기본 설정 탭 위치",
+      "expectationResult": "맵 설정 팝업의 첫 화면이 기본 설정 탭에 위치한다.",
+      "comment": "참고 화면: PopMapMakerSetting.ccb 진입 시"
+    },
+    {
+      "no": 20,
+      "priority": "Normal",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "젤리 획득 미션",
+      "sub3": "미션 출력",
+      "expectationResult": "젤리 종류 아이콘, 개수 입력, 이상/이하/일치 조건 선택, 적용하기 버튼이 출력된다.",
+      "comment": "참고 화면: 젤리 획득 미션 영역"
+    },
+    {
+      "no": 21,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "젤리 획득 미션",
+      "sub3": "젤리 아이콘 변경 말풍선",
+      "expectationResult": "선택한 젤리 종류로 변경된다.",
+      "comment": "참고 화면: 젤리 변경 말풍선"
+    },
+    {
+      "no": 22,
+      "priority": "Normal",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "젤리 획득 미션",
+      "sub3": "말풍선 젤리 스크롤",
+      "expectationResult": "젤리 리스트가 스크롤된다.",
+      "comment": "참고 화면: 젤리 변경 말풍선 스크롤"
+    },
+    {
+      "no": 23,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "젤리 획득 미션",
+      "sub3": "숫자/조건 조절",
+      "expectationResult": "숫자/조건(이상/이하/일치)이 단계별로 변경된다.",
+      "comment": "참고 화면: 젤리 획득 미션 조절"
+    },
+    {
+      "no": 24,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "젤리 획득 미션",
+      "sub3": "적용 상태 전환",
+      "expectationResult": "[적용하기] 버튼이 [✓ 적용중] 상태로 전환된다.",
+      "comment": "참고 화면: 적용중 체크 상태"
+    },
+    {
+      "no": 25,
+      "priority": "Normal",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "클리어 타임 미션",
+      "sub3": "미션 출력",
+      "expectationResult": "시간 입력, 이내(이하) 조건, 적용하기 버튼이 출력된다.",
+      "comment": "참고 화면: 클리어 타임 미션 영역"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "클리어 타임 미션",
+      "sub3": "적용 상태 전환",
+      "expectationResult": "[적용하기] 버튼이 [✓ 적용중] 상태로 전환된다.",
+      "comment": "참고 화면: 적용중 체크 상태"
+    },
+    {
+      "no": 27,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "단일 적용 제한",
+      "sub3": "1개만 적용 가능",
+      "expectationResult": "클리어 타임 미션이 적용중으로 전환되고 기존 젤리 획득 미션의 적용중 상태는 해제된다.",
+      "comment": "참고 화면: 클리어 조건 1개만 적용 가능"
+    },
+    {
+      "no": 28,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "하단 버튼",
+      "sub3": "초기화 버튼",
+      "expectationResult": "적용된 클리어 조건이 초기 상태로 리셋된다.",
+      "comment": "참고 화면: 클리어 조��� 팝업 초기화 버튼"
+    },
+    {
+      "no": 29,
+      "priority": "Critical",
+      "main": "클리어 조건 설정",
+      "sub1": "클리어 조건 팝업",
+      "sub2": "하단 버튼",
+      "sub3": "저장하기 버튼",
+      "expectationResult": "변경한 클리어 조건이 저장되어 맵에 반영된다.",
+      "comment": "참고 화면: 클리어 조건 팝업 저장하기"
+    },
+    {
+      "no": 30,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "인게임 미션 표시",
+      "sub2": "시작 팝업",
+      "sub3": "Mission 팝업 출력 후 사라짐",
+      "expectationResult": "게임 시작 시 Mission 안내 팝업(예: 무지개곰젤리 50개 이하로 먹기!)이 출력된 후 자동으로 사라진다.",
+      "comment": "참고 화면: 인게임 시작 Mission 팝업"
+    },
+    {
+      "no": 31,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "인게임 미션 표시",
+      "sub2": "좌측 상단 카운트",
+      "sub3": "카운트 출력",
+      "expectationResult": "좌측 상단에 보너스 타임 게이지와 현재 획득/목표 카운트(예: 0/50)가 출력된다.",
+      "comment": "참고 화면: 인게임 좌측 상단 HUD"
+    },
+    {
+      "no": 32,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "인게임 미션 표시",
+      "sub2": "젤리 미션 분기 표시",
+      "sub3": "N개 이상 성공",
+      "expectationResult": "카운트가 N/50 → 60/50 ✅(성공) 표기로 출력된다.",
+      "comment": "참고 화면: 젤리 N개 이상 미션 분기"
+    },
+    {
+      "no": 33,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "인게임 미션 표시",
+      "sub2": "젤리 미션 분기 표시",
+      "sub3": "N개 이하 성공/실패",
+      "expectationResult": "이하 시 40/50 ✅, 초과 시 60/50 ❌로 표시된다.",
+      "comment": "참고 화면: 젤리 N개 이하 미션 분기"
+    },
+    {
+      "no": 34,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "인게임 미션 표시",
+      "sub2": "젤리 미션 분기 표시",
+      "sub3": "N개 일치 성공/실패",
+      "expectationResult": "정확히 일치 시 50/50 ✅, 불일치 시 60/50 ❌로 표시된다.",
+      "comment": "참고 화면: 젤리 N개 일치 미션 분기"
+    },
+    {
+      "no": 35,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "인게임 미션 표시",
+      "sub2": "시간 미션 분기 표시",
+      "sub3": "N초 이상 완주",
+      "expectationResult": "남은 시간 ≥ 0 상태로 ✅ 성공 표기가 출력된다.",
+      "comment": "참고 화면: 시간 N초 이상 미션 분기"
+    },
+    {
+      "no": 36,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "인게임 미션 표시",
+      "sub2": "시간 미션 분기 표시",
+      "sub3": "N초 이하 성공/실패",
+      "expectationResult": "시간 내 도달 시 ✅, 남은 시간 = 0 시 ❌로 표시된다.",
+      "comment": "참고 화면: 시간 N초 이하 미션 분기"
+    },
+    {
+      "no": 37,
+      "priority": "Normal",
+      "main": "클리어 조건 설정",
+      "sub1": "결과화면",
+      "sub2": "PERFECT 표기",
+      "sub3": "퍼펙트 성공 표시",
+      "expectationResult": "결과화면에 PERFECT! 도장이 표시된다.",
+      "comment": "참고 화면: 결과화면 PERFECT 연출"
+    },
+    {
+      "no": 38,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "결과화면",
+      "sub2": "클리어 조건 체크리스트",
+      "sub3": "성공 체크 표시",
+      "expectationResult": "각 충족 조건에 ✅(체크) 표시가 슬롯에 하나씩 출력된다.",
+      "comment": "참고 화면: 결과화면 클리어 조건 체크리스트"
+    },
+    {
+      "no": 39,
+      "priority": "Major",
+      "main": "클리어 조건 설정",
+      "sub1": "결과화면",
+      "sub2": "클리어 조건 체크리스트",
+      "sub3": "실패 X 표시",
+      "expectationResult": "미충족 조건에 ❌(X) 표시가 출력된다.",
+      "comment": "참고 화면: 클리어 조건 일부 실패 케이스"
+    },
+    {
+      "no": 40,
+      "priority": "Normal",
+      "main": "맵 찾아보기",
+      "sub1": "메인 화면",
+      "sub2": "상단 영역",
+      "sub3": "재화 표시",
+      "expectationResult": "다이아(💎)와 코인(💰) 보유량이 출력된다.",
+      "comment": "참고 화면: 맵 찾아보기 메인 우상단"
+    },
+    {
+      "no": 41,
+      "priority": "Normal",
+      "main": "맵 찾아보기",
+      "sub1": "메인 화면",
+      "sub2": "상단 영역",
+      "sub3": "설정/홈/메뉴",
+      "expectationResult": "설정(톱니바퀴), 홈, 메뉴(≡) 아이콘이 출력된다.",
+      "comment": "참고 화면: 맵 찾아보기 메인 우상단 아이콘"
+    },
+    {
+      "no": 42,
+      "priority": "Normal",
+      "main": "맵 찾아보기",
+      "sub1": "메인 화면",
+      "sub2": "상단 탭 영역",
+      "sub3": "탭 출력",
+      "expectationResult": "추천맵, 인기맵, 신규맵, 명예의 전당, 코드로 찾기, 즐겨찾기 탭이 출력된다.",
+      "comment": "참고 화면: 맵 찾아보기 상단 탭"
+    },
+    {
+      "no": 43,
+      "priority": "Major",
+      "main": "맵 찾아���기",
+      "sub1": "메인 화면",
+      "sub2": "상단 탭 영역",
+      "sub3": "탭 전환",
+      "expectationResult": "터치한 탭의 화면으로 전환된다.",
+      "comment": "참고 화면: 맵 찾아보기 탭 전환"
+    },
+    {
+      "no": 44,
+      "priority": "Normal",
+      "main": "맵 찾아보기",
+      "sub1": "메인 화면",
+      "sub2": "맵 그리드",
+      "sub3": "카드 정보 출력",
+      "expectationResult": "카드에 썸네일, 맵 코드, 좋아요 수(❤), 플레이수, 작성자 닉네임, 맵 이름이 출력된다.",
+      "comment": "참고 화면: 맵 카드"
+    },
+    {
+      "no": 45,
+      "priority": "Normal",
+      "main": "맵 찾아보기",
+      "sub1": "메인 화면",
+      "sub2": "맵 그리드",
+      "sub3": "스크롤",
+      "expectationResult": "맵 카드 리스트가 스크롤된다.",
+      "comment": "참고 화면: 맵 그리드 스크롤"
+    },
+    {
+      "no": 46,
+      "priority": "Normal",
+      "main": "맵 찾아보기",
+      "sub1": "메인 화면",
+      "sub2": "정렬 드롭다운",
+      "sub3": "정렬 옵션 출력",
+      "expectationResult": "별점순, 이름순, 좋아요순, 플레이순 정렬 옵션이 출력된다.",
+      "comment": "참고 화면: 정렬 드롭다운"
+    },
+    {
+      "no": 47,
+      "priority": "Major",
+      "main": "맵 찾아보기",
+      "sub1": "메인 화면",
+      "sub2": "정렬 드롭다운",
+      "sub3": "정렬 적용",
+      "expectationResult": "맵 리스트가 선택한 기준으로 정렬되어 출력된다.",
+      "comment": "참고 화면: 정렬 옵션 선택"
+    },
+    {
+      "no": 48,
+      "priority": "Normal",
+      "main": "맵 찾아보기",
+      "sub1": "오늘의 PICK",
+      "sub2": "인포 버튼",
+      "sub3": "안내 팝업 출력",
+      "expectationResult": "안내 문구 팝업이 출력된다.",
+      "comment": "참고 화면: 오늘의 PICK 인포 버튼"
+    },
+    {
+      "no": 49,
+      "priority": "Major",
+      "main": "맵 찾아보기",
+      "sub1": "맵 달려보기",
+      "sub2": "카드 터치",
+      "sub3": "달려보기 진입",
+      "expectationResult": "해당 맵 달려보기 화면으로 전환된다.",
+      "comment": "참고 화면: 맵 카드 터치 → 달려보기"
+    },
+    {
+      "no": 50,
+      "priority": "Major",
+      "main": "맵 찾아보기",
+      "sub1": "홍보하기",
+      "sub2": "홍보 팝업",
+      "sub3": "팝업 출력",
+      "expectationResult": "내 맵 홍보하기 팝업이 출력되고 본인 맵 카드 리스트가 노출된다.",
+      "comment": "참고 화면: 내 맵 홍보하기 팝업"
+    },
+    {
+      "no": 51,
+      "priority": "Major",
+      "main": "맵 찾아보기",
+      "sub1": "홍보하기",
+      "sub2": "홍보 팝업",
+      "sub3": "맵 선택",
+      "expectationResult": "선택한 맵이 강조 표시(체크)된다.",
+      "comment": "참고 화면: 내 맵 홍보하기 카드 선택"
+    },
+    {
+      "no": 52,
+      "priority": "Critical",
+      "main": "맵 찾아보기",
+      "sub1": "홍보하기",
+      "sub2": "홍보 팝업",
+      "sub3": "홍보하기 버튼",
+      "expectationResult": "다이아 2,000이 차감되고 선택한 맵이 홍보중 상태로 등록된다.",
+      "comment": "참고 화면: 홍보하기 버튼 - 재화 차감"
+    },
+    {
+      "no": 53,
+      "priority": "Major",
+      "main": "맵 찾아보기",
+      "sub1": "홍보하기",
+      "sub2": "홍보중 상태",
+      "sub3": "버튼 상태 변경",
+      "expectationResult": "버튼이 [홍보종료] 또는 홍보중 상태 표기로 변경된다.",
+      "comment": "참고 화면: 홍보중 상태 버튼"
+    },
+    {
+      "no": 54,
+      "priority": "Major",
+      "main": "맵 찾아보기",
+      "sub1": "홍보하기",
+      "sub2": "홍보중 상태",
+      "sub3": "24시간 카운트다운",
+      "expectationResult": "홍보 잔여 시간이 카운트다운(예: 23:59:59 남음) 형식으로 출력된다.",
+      "comment": "참고 화면: 홍보종료 카운트다운"
+    },
+    {
+      "no": 55,
+      "priority": "Normal",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "인기맵 탭",
+      "sub2": "맵 리스트 영역",
+      "sub3": "100개 맵 출력",
+      "expectationResult": "최근 7일간 평가받은 최대 100개의 맵이 순위와 함께 출력된다.",
+      "comment": "참고 화면: 인기맵 탭"
+    },
+    {
+      "no": 56,
+      "priority": "Normal",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "인기맵 탭",
+      "sub2": "맵 리스트 영역",
+      "sub3": "미평가 맵 표시",
+      "expectationResult": "평가받지 않은 맵에 \"-\" 형태로 표시된다.",
+      "comment": "참고 화면: 인기맵 미평가 표시"
+    },
+    {
+      "no": 57,
+      "priority": "Major",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "인기맵 탭",
+      "sub2": "결과 발표 팝업",
+      "sub3": "팝업 출력",
+      "expectationResult": "최종 인기 점수 발표 팝업이 출력되고 달린 횟수, 좋아요 수, 명예의 전당 후보 안내, 상위 % 및 보상이 표시된다.",
+      "comment": "참고 화면: 최종 인기 점수 발표 팝업"
+    },
+    {
+      "no": 58,
+      "priority": "Major",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "인기맵 탭",
+      "sub2": "결과 발표 팝업",
+      "sub3": "확인 버튼",
+      "expectationResult": "팝업이 닫히고 메인화면으로 이동된다.",
+      "comment": "참고 화면: 최종 인기 점수 발표 확인 버튼"
+    },
+    {
+      "no": 59,
+      "priority": "Normal",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "신규맵 탭",
+      "sub2": "NEW 뱃지",
+      "sub3": "뱃지 출력",
+      "expectationResult": "신규 등록된 맵 카드에 NEW 뱃지가 출력된다.",
+      "comment": "참고 화면: 신규맵 NEW 뱃지"
+    },
+    {
+      "no": 60,
+      "priority": "Major",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "신규맵 탭",
+      "sub2": "NEW 뱃지",
+      "sub3": "상세 확인 후 제거",
+      "expectationResult": "해당 맵의 NEW 뱃지가 사라진다.",
+      "comment": "참고 화면: 신규맵 상세 확인 후 NEW 제거"
+    },
+    {
+      "no": 61,
+      "priority": "Normal",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "명예의 전당 탭",
+      "sub2": "진입 시 최신달 표시",
+      "sub3": "최신달 디폴트",
+      "expectationResult": "후보달을 제외한 최신달의 명예의 전당 리스트가 디폴트로 출력된다.",
+      "comment": "참고 화면: 명예의 전당 진입 시 최신달"
+    },
+    {
+      "no": 62,
+      "priority": "Major",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "명예의 전당 탭",
+      "sub2": "후보달 셀렉터",
+      "sub3": "화살표 전환",
+      "expectationResult": "이전 달 또는 현재 진행중인 후보달의 명예의 전당으로 화면이 전환된다.",
+      "comment": "참고 화면: 명예의 전당 월 화살표 네비게이션"
+    },
+    {
+      "no": 63,
+      "priority": "Major",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "명예의 전당 탭",
+      "sub2": "발표 팝업",
+      "sub3": "상위 3개 카드 출력",
+      "expectationResult": "명예의 전당 발표 팝업이 출력되고 1, 2, 3위 맵 카드와 점수/닉네임이 출력된다.",
+      "comment": "참고 화면: 명예의 전당 발표 팝업"
+    },
+    {
+      "no": 64,
+      "priority": "Normal",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "명예의 전당 탭",
+      "sub2": "발표 팝업",
+      "sub3": "100개 맵 자동 스크롤",
+      "expectationResult": "100개의 맵 썸네일이 저속으로 자동 스크롤된다.",
+      "comment": "참고 화면: 명예의 전당 100개 맵 자동 스크롤"
+    },
+    {
+      "no": 65,
+      "priority": "Major",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "명예의 전당 탭",
+      "sub2": "발표 팝업",
+      "sub3": "내 기록 없음 분기",
+      "expectationResult": "100개의 맵 리스트만 출력되고 \"나의 결과\" 영역은 출력되지 않는다.",
+      "comment": "참고 화면: 명예의 전당 발표 - 내 기록 없음"
+    },
+    {
+      "no": 66,
+      "priority": "Major",
+      "main": "인기맵/신규맵/명예의 전당 탭",
+      "sub1": "명예의 전당 탭",
+      "sub2": "발표 팝업",
+      "sub3": "내 기록 있음 분기",
+      "expectationResult": "100개 맵 리스트 하단에 \"나의 결과\" + 상위 % + 보상(💎)이 출력된다.",
+      "comment": "참고 화면: 명예의 전당 발표 - 내 기록 있음"
+    },
+    {
+      "no": 67,
+      "priority": "Normal",
+      "main": "코드로 찾기",
+      "sub1": "입력 영역",
+      "sub2": "입력 필드",
+      "sub3": "코드 입력",
+      "expectationResult": "입력 필드에 입력한 코드가 출력된다.",
+      "comment": "참고 화면: 코드로 찾기 입력 필드"
+    },
+    {
+      "no": 68,
+      "priority": "Major",
+      "main": "코드로 찾기",
+      "sub1": "입력 영역",
+      "sub2": "입력 필드",
+      "sub3": "초기화 버튼",
+      "expectationResult": "입력된 코드가 모두 삭제된다.",
+      "comment": "참고 화면: 입력 필드 초기화 버튼"
+    },
+    {
+      "no": 69,
+      "priority": "Critical",
+      "main": "코드로 찾기",
+      "sub1": "입력 영역",
+      "sub2": "찾기 버튼",
+      "sub3": "맵 검색",
+      "expectationResult": "입력한 코드에 해당하는 맵의 상세 화면으로 전환된다.",
+      "comment": "참고 화면: 코드로 찾기 - 찾기 버튼"
+    },
+    {
+      "no": 70,
+      "priority": "Major",
+      "main": "즐겨찾기",
+      "sub1": "즐겨찾기 등록",
+      "sub2": "빈 별 슬롯 동작",
+      "sub3": "토스트 출력",
+      "expectationResult": "즐겨찾기 등록 토스트 메시지가 출력된다.",
+      "comment": "참고 화면: 빈 별 슬롯 클릭 - 토스트"
+    },
+    {
+      "no": 71,
+      "priority": "Critical",
+      "main": "즐겨찾기",
+      "sub1": "즐겨찾기 등록",
+      "sub2": "빈 별 슬롯 동작",
+      "sub3": "즐겨찾기 추가",
+      "expectationResult": "해당 맵이 즐겨찾기 리스트에 추가된다.",
+      "comment": "참고 화면: 즐겨찾기 추가 처리"
+    },
+    {
+      "no": 72,
+      "priority": "Major",
+      "main": "즐겨찾기",
+      "sub1": "즐겨찾기 등록",
+      "sub2": "채워진 슬롯 동작",
+      "sub3": "토스트 출력",
+      "expectationResult": "즐겨찾기 취소 토스트 메시지가 출력된다.",
+      "comment": "참고 화면: 채워진 별 슬롯 클릭 - 토스트"
+    },
+    {
+      "no": 73,
+      "priority": "Critical",
+      "main": "즐겨찾기",
+      "sub1": "즐겨찾기 등록",
+      "sub2": "채워진 슬롯 동작",
+      "sub3": "즐겨찾기 제거",
+      "expectationResult": "해당 맵이 즐겨찾기 리스트에서 제거된다.",
+      "comment": "참고 화면: 즐겨찾기 제거 처리"
+    },
+    {
+      "no": 74,
+      "priority": "Major",
+      "main": "즐겨찾기",
+      "sub1": "즐겨찾기 등록",
+      "sub2": "최대 개수 도달",
+      "sub3": "안내 출력",
+      "expectationResult": "최대 개수 도달 안내 토스트가 출력된다.",
+      "comment": "참고 화면: 즐겨찾기 최대 개수 토스트"
+    },
+    {
+      "no": 75,
+      "priority": "Major",
+      "main": "즐겨찾기",
+      "sub1": "즐겨찾기 등록",
+      "sub2": "최대 개수 도달",
+      "sub3": "추가 차단",
+      "expectationResult": "해당 맵이 즐겨찾기 리스트에 추가되지 않는다.",
+      "comment": "참고 화면: 즐겨찾기 최대 개수 - 추가 차단"
+    },
+    {
+      "no": 76,
+      "priority": "Normal",
+      "main": "즐겨찾기",
+      "sub1": "즐겨찾기 탭",
+      "sub2": "맵 리스트 출력",
+      "sub3": "리스트 표시",
+      "expectationResult": "즐겨찾기 등록된 맵 카드 리스트가 출력된다.",
+      "comment": "참고 화면: 즐겨찾기 탭"
+    },
+    {
+      "no": 77,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 메인",
+      "sub2": "맵 만들기 버튼",
+      "sub3": "맵메이커 진입",
+      "expectationResult": "맵메이커 화면으로 전환된다.",
+      "comment": "참고 화면: 랭킹 메인 맵 만들기 버튼"
+    },
+    {
+      "no": 78,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "맵짱 랭킹",
+      "sub2": "내 기록 없음",
+      "sub3": "안내 문구",
+      "expectationResult": "내 기록이 없을 경우 안내 문구가 출력된다.",
+      "comment": "참고 화면: 내 기록 없음 안내"
+    },
+    {
+      "no": 79,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "맵짱 랭킹",
+      "sub2": "Top 3 강조",
+      "sub3": "강조 표시",
+      "expectationResult": "내 랭킹 영역이 강조 표시된다.",
+      "comment": "참고 화면: Top 3 강조 표시"
+    },
+    {
+      "no": 80,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "맵짱 랭킹",
+      "sub2": "랭킹 표시",
+      "sub3": "Top 3 노출",
+      "expectationResult": "맵 랭킹은 Top 3까지 노출된다.",
+      "comment": "참고 화면: 추천맵 달려보기 - Top 3 랭킹"
+    },
+    {
+      "no": 81,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "치트 퍼펙트 랭킹",
+      "sub2": "전체 랭킹",
+      "sub3": "전체 탭 표시",
+      "expectationResult": "Top 100 형태의 전체 랭킹 보드가 출력된다.",
+      "comment": "참고 화면: 치트 퍼펙트 전체 랭킹"
+    },
+    {
+      "no": 82,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "치트 퍼펙트 랭킹",
+      "sub2": "월간 랭킹",
+      "sub3": "월간 탭 표시",
+      "expectationResult": "월간 집계 랭킹 보드가 출력된다.",
+      "comment": "참고 화면: 치트 퍼펙트 월간 랭킹"
+    },
+    {
+      "no": 83,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "명예의 전당 점수 1등 맵 개수",
+      "sub2": "랭킹 화면",
+      "sub3": "1등 맵 개수 랭킹 출력",
+      "expectationResult": "상위 랭킹 유저 리스트와 1등 맵 개수가 출력된다.",
+      "comment": "참고 화면: 명예의 전당 점수 1등 맵 개수 랭킹"
+    },
+    {
+      "no": 84,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "심사 진입",
+      "sub2": "캠프 화면",
+      "sub3": "심사하기 버튼",
+      "expectationResult": "맵 심사하기 화면으로 전환된다.",
+      "comment": "참고 화면: 캠프 - 심사하기 버튼"
+    },
+    {
+      "no": 85,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "심사 진입",
+      "sub2": "상단 배너",
+      "sub3": "횟수 표시",
+      "expectationResult": "오늘의 심사 횟수(N/3) 표기가 출력된다.",
+      "comment": "참고 화면: 심사하기 상단 횟수"
+    },
+    {
+      "no": 86,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "맵 후보 선택",
+      "sub2": "진입 연출",
+      "sub3": "등장 연출",
+      "expectationResult": "맵 카드 3개가 우→좌 방향으로 등장 연출과 함께 출력된다.",
+      "comment": "참고 화면: 맵 등장 연출"
+    },
+    {
+      "no": 87,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "맵 후보 선택",
+      "sub2": "진입 연출",
+      "sub3": "타이틀 연출",
+      "expectationResult": "타이틀이 작아졌다 커지는 연출이 재생된다.",
+      "comment": "참고 화면: 타이틀 펄럭 연출"
+    },
+    {
+      "no": 88,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "맵 후보 선택",
+      "sub2": "셀 선택",
+      "sub3": "확대 유지",
+      "expectationResult": "선택된 셀이 1.2배 확대된 상태로 유지된다.",
+      "comment": "참고 화면: 셀 1.2배 확대"
+    },
+    {
+      "no": 89,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "맵 후보 선택",
+      "sub2": "셀 선택",
+      "sub3": "확정하기 노출",
+      "expectationResult": "하단에 [확정하기] 노란 버튼이 출력된다.",
+      "comment": "참고 화면: 확정하기 버튼 노출"
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "맵 후보 선택",
+      "sub2": "확정",
+      "sub3": "선택률 % 표시",
+      "expectationResult": "각 맵 카드 하단에 선택률 %(예: 6.25% / 37.5% / 56.25%)가 출력된다.",
+      "comment": "참고 화면: 선택률 % 표시"
+    },
+    {
+      "no": 91,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "맵 후보 선택",
+      "sub2": "확정",
+      "sub3": "강조 연출",
+      "expectationResult": "미선택 맵이 사라지고 선택한 맵이 중앙으로 이동되며 캐릭터/말풍선이 출력된다.",
+      "comment": "참고 화면: 선택 맵 중앙 이동 연출"
+    },
+    {
+      "no": 92,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "맵 후보 선택",
+      "sub2": "횟수 소진",
+      "sub3": "안내 출력",
+      "expectationResult": "\"오늘의 심사 완료!\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: 심사 횟수 소진"
+    },
+    {
+      "no": 93,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "맵 후보 선택",
+      "sub2": "횟수 소진",
+      "sub3": "카운트다운",
+      "expectationResult": "다음 심사 가능 시간이 99:99:99 형식의 카운트다운으로 출력된다.",
+      "comment": "참고 화면: 심사 횟수 소진 카운트다운"
+    },
+    {
+      "no": 94,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "심사 팝업",
+      "sub2": "맵 정보 영역",
+      "sub3": "작성자/맵코드/등록일",
+      "expectationResult": "맵 이름, 작성자 닉네임, 맵 코드, 등록일이 출력된다.",
+      "comment": "참고 화면: 심사하기 맵 정보 영역"
+    },
+    {
+      "no": 95,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "심사 팝업",
+      "sub2": "맵 정보 영역",
+      "sub3": "클리어 조건 표시",
+      "expectationResult": "해당 맵의 클리어 조건이 출력된다.",
+      "comment": "참고 화면: 심사하기 클리어 조건 표시"
+    },
+    {
+      "no": 96,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "심사 팝업",
+      "sub2": "맵 정보 영역",
+      "sub3": "추가 규칙 가변 표시",
+      "expectationResult": "적용된 규칙 개수만큼 1~3개의 항목이 출력된다.",
+      "comment": "참고 화면: 심사하기 추가 규칙 가변 표시"
+    },
+    {
+      "no": 97,
+      "priority": "Critical",
+      "main": "맵 심사하기",
+      "sub1": "심사 팝업",
+      "sub2": "PLAY 버튼",
+      "sub3": "인게임 진입",
+      "expectationResult": "심사 대상 맵의 인게임으로 진입된다.",
+      "comment": "참고 화면: 심사하기 PLAY 버튼"
+    },
+    {
+      "no": 98,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "일시정지 팝업",
+      "sub3": "계속하기 버튼",
+      "expectationResult": "일시정지가 해제되고 인게임이 재개된다.",
+      "comment": "참고 화면: 일시정지 팝업 계속하기"
+    },
+    {
+      "no": 99,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "일시정지 팝업",
+      "sub3": "그만하기 버튼",
+      "expectationResult": "인게임이 종료되고 결과 화면으로 전환된다.",
+      "comment": "참고 화면: 일시정지 팝업 그만하기"
+    },
+    {
+      "no": 100,
+      "priority": "Critical",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "평가 가능 상태",
+      "sub3": "좋아요 선택",
+      "expectationResult": "해당 맵에 좋아요 평가가 등록된다.",
+      "comment": "참고 화면: 일시정지 좋아요 평가"
+    },
+    {
+      "no": 101,
+      "priority": "Critical",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "평가 가능 상태",
+      "sub3": "별로에요 선택",
+      "expectationResult": "해당 맵에 별로에요 평가가 등록된다.",
+      "comment": "참고 화면: 일시정지 별로에요 평가"
+    },
+    {
+      "no": 102,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "평가 불가 상태",
+      "sub3": "자물쇠 표시",
+      "expectationResult": "좋아요/별로에요 버튼 위에 자물쇠(🔒) 아이콘이 출력된다.",
+      "comment": "참고 화면: 평가 불가 자물쇠 표시"
+    },
+    {
+      "no": 103,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "평가 불가 상태",
+      "sub3": "안내 문구",
+      "expectationResult": "\"아직 평가할 수 없어요\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: 평가 불가 안내 문구"
+    },
+    {
+      "no": 104,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "즐겨찾기 등록 버튼",
+      "sub3": "등록 동작",
+      "expectationResult": "해당 맵이 즐겨찾기에 등록된다.",
+      "comment": "참고 화면: 일시정지 즐겨찾기 등록"
+    },
+    {
+      "no": 105,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "즐겨찾기 등록 버튼",
+      "sub3": "취소 동작",
+      "expectationResult": "해당 맵이 즐겨찾기에서 해제된다.",
+      "comment": "참고 화면: 일시정지 즐겨찾기 취소"
+    },
+    {
+      "no": 106,
+      "priority": "Major",
+      "main": "맵 심사하기",
+      "sub1": "일시정지 평가",
+      "sub2": "신고하기 버튼",
+      "sub3": "신고 동작",
+      "expectationResult": "신고 관련 화면 또는 팝업이 출력된다.",
+      "comment": "참고 화면: 일시정지 신고하기"
+    },
+    {
+      "no": 107,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "결과 화면 평가",
+      "sub2": "Result 화면 출력",
+      "sub3": "결과 정보 표시",
+      "expectationResult": "Result 타이틀, 맵 점수, 젤리 획득 수, 심사 보상(💰50)이 출력된다.",
+      "comment": "참고 화면: Result 화면 - 심사"
+    },
+    {
+      "no": 108,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "결과 화면 평가",
+      "sub2": "평가 패널 펼침",
+      "sub3": "토글 동작",
+      "expectationResult": "평가 패널이 펼쳐지며 별로에요/좋아요 버튼이 출력된다.",
+      "comment": "참고 화면: 결과 화면 평가 패널 토글"
+    },
+    {
+      "no": 109,
+      "priority": "Critical",
+      "main": "맵 심사하기",
+      "sub1": "결과 화면 평가",
+      "sub2": "평가 패널 펼침",
+      "sub3": "좋아요 선택",
+      "expectationResult": "해당 맵에 좋아요가 등록되고 심사 보상(💰50)이 지급된다.",
+      "comment": "참고 화면: 결과 화면 좋아요"
+    },
+    {
+      "no": 110,
+      "priority": "Critical",
+      "main": "맵 심사하기",
+      "sub1": "결과 화면 평가",
+      "sub2": "평가 패널 펼침",
+      "sub3": "별로에요 선택",
+      "expectationResult": "해당 맵에 별로에요가 등록되고 심사 보상(💰50)이 지급된다.",
+      "comment": "참고 화면: 결과 화면 별로에요"
+    },
+    {
+      "no": 111,
+      "priority": "Normal",
+      "main": "맵 심사하기",
+      "sub1": "결과 화면 평가",
+      "sub2": "달성목록 펼침",
+      "sub3": "토글 동작",
+      "expectationResult": "클리어 조건 달성 목록이 펼쳐져 출력된다.",
+      "comment": "참고 화면: 결과 화면 달성목록 토글"
+    },
+    {
+      "no": 112,
+      "priority": "Normal",
+      "main": "조합 고정 & 능력",
+      "sub1": "조합 및 능력 탭",
+      "sub2": "기본 상태",
+      "sub3": "최초 진입 기본값",
+      "expectationResult": "쿠키/펫/보물 능력 사용 ON, 고정 조합 없음 상태로 출력된다.",
+      "comment": "참고 화면: 조합 및 능력 탭 최초 기본값"
+    },
+    {
+      "no": 113,
+      "priority": "Major",
+      "main": "조합 고정 & 능력",
+      "sub1": "조합 및 능력 탭",
+      "sub2": "능력 사용 토글",
+      "sub3": "ON 동작",
+      "expectationResult": "공개하기 화면 하단 띠가 \"쿠키/펫/보물 능력 ON!\"으로 출력된다.",
+      "comment": "참고 화면: 능력 ON 동작"
+    },
+    {
+      "no": 114,
+      "priority": "Major",
+      "main": "조합 고정 & 능력",
+      "sub1": "조합 및 능력 탭",
+      "sub2": "능력 사용 토글",
+      "sub3": "OFF 동작",
+      "expectationResult": "공개하기 화면 하단 띠가 \"쿠키/펫/보물 능력 OFF\"로 출력된다.",
+      "comment": "참고 화면: 능력 OFF 동작"
+    },
+    {
+      "no": 115,
+      "priority": "Major",
+      "main": "조합 고정 & 능력",
+      "sub1": "조합 및 능력 탭",
+      "sub2": "고정조합 설정 버튼",
+      "sub3": "설정 화면 진입",
+      "expectationResult": "쿠키 조합 변경 화면으로 전환된다.",
+      "comment": "참고 화면: 고정 조합 설정 진입"
+    },
+    {
+      "no": 116,
+      "priority": "Normal",
+      "main": "조합 고정 & 능력",
+      "sub1": "고정 조합 설정",
+      "sub2": "캐릭터 선택",
+      "sub3": "선택 표시",
+      "expectationResult": "선택된 캐릭터에 녹색 테두리 강조 표시가 출력된다.",
+      "comment": "참고 화면: 캐릭터 선택 강조 표시"
+    },
+    {
+      "no": 117,
+      "priority": "Normal",
+      "main": "조합 고정 & 능력",
+      "sub1": "고정 조합 설정",
+      "sub2": "캐릭터 선택",
+      "sub3": "검색/정렬",
+      "expectationResult": "검색/정렬 UI가 출력된다.",
+      "comment": "참고 화면: 검색/정렬 드롭다운"
+    },
+    {
+      "no": 118,
+      "priority": "Critical",
+      "main": "조합 고정 & 능력",
+      "sub1": "고정 조합 설정",
+      "sub2": "조합 저장",
+      "sub3": "저장 동작",
+      "expectationResult": "선택한 조합이 고정 조합으로 저장된다.",
+      "comment": "참고 화면: 조합 저장하기"
+    },
+    {
+      "no": 119,
+      "priority": "Normal",
+      "main": "조합 고정 & 능력",
+      "sub1": "고정 조합 설정",
+      "sub2": "해제하기",
+      "sub3": "초기화 안내",
+      "expectationResult": "\"초기화할까요?\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: 해제하기 초기화 안내"
+    },
+    {
+      "no": 120,
+      "priority": "Critical",
+      "main": "조합 고정 & 능력",
+      "sub1": "고정 조합 설정",
+      "sub2": "해제하기",
+      "sub3": "리셋 동작",
+      "expectationResult": "고정 조합이 리셋되어 미설정 상태로 출력된다.",
+      "comment": "참고 화면: 조합 리셋"
+    },
+    {
+      "no": 121,
+      "priority": "Normal",
+      "main": "조합 고정 & 능력",
+      "sub1": "고정 조합 설정",
+      "sub2": "저장 후 화면",
+      "sub3": "캐릭터 아이콘 출력",
+      "expectationResult": "저장된 펫/쿠키 아이콘이 출력된다.",
+      "comment": "참고 화면: 조합 저장 후 아이콘 표시"
+    },
+    {
+      "no": 122,
+      "priority": "Major",
+      "main": "조합 고정 & 능력",
+      "sub1": "고정 조합 설정",
+      "sub2": "저장 후 화면",
+      "sub3": "삭제 버튼",
+      "expectationResult": "해당 슬롯의 캐릭터가 삭제된다.",
+      "comment": "참고 화면: 조합 저장 후 삭제 버튼"
+    },
+    {
+      "no": 123,
+      "priority": "Major",
+      "main": "조합 고정 & 능력",
+      "sub1": "조합 변경",
+      "sub2": "변경 불가 안내",
+      "sub3": "고정 조합 변경 차단",
+      "expectationResult": "고정된 조합은 변경 불가 상태로 그리드가 비활성화된다.",
+      "comment": "참고 화면: 고정 조합 변경 불가"
+    },
+    {
+      "no": 124,
+      "priority": "Normal",
+      "main": "조합 고정 & 능력",
+      "sub1": "조합 변경",
+      "sub2": "변경 불가 안내",
+      "sub3": "미고정 조합 변경 가능",
+      "expectationResult": "고정되지 않은 조합은 변경 가능하며 [조합 저장하기] 버튼이 활성화된다.",
+      "comment": "참고 화면: 미고정 조합 변경 가능"
+    },
+    {
+      "no": 125,
+      "priority": "Normal",
+      "main": "공개하기/달려보기",
+      "sub1": "공개하기 화면",
+      "sub2": "능력 OFF 표시",
+      "sub3": "OFF 띠 출력",
+      "expectationResult": "화면 하단에 \"쿠키/펫/보물 능력 OFF\" 띠가 출력된다.",
+      "comment": "참고 화면: 공개하기 능력 OFF 표시"
+    },
+    {
+      "no": 126,
+      "priority": "Normal",
+      "main": "공개하기/달려보기",
+      "sub1": "공개하기 화면",
+      "sub2": "능력 ON 표시",
+      "sub3": "ON 띠 출력",
+      "expectationResult": "화면 하단에 \"쿠키/펫/보물 능력 ON!\" 띠가 출력된다.",
+      "comment": "참고 화면: 공개하기 능력 ON 표시"
+    },
+    {
+      "no": 127,
+      "priority": "Major",
+      "main": "공개하기/달려보기",
+      "sub1": "공개하기 화면",
+      "sub2": "등록 테스트 버튼",
+      "sub3": "문구 변경",
+      "expectationResult": "OFF 시 \"쿠키/펫/보물 능력 OFF\", ON 시 \"쿠키/펫/보물 능력 ON!\" 문구로 변경 출력된다.",
+      "comment": "참고 화면: 등록 테스트 버튼 상단 문구"
+    },
+    {
+      "no": 128,
+      "priority": "Critical",
+      "main": "공개하기/달려보기",
+      "sub1": "공개하기 화면",
+      "sub2": "등록 테스트 버튼",
+      "sub3": "등록 테스트 진입",
+      "expectationResult": "등록 테스트 인게임으로 진입된다.",
+      "comment": "참고 화면: 등록 테스트 버튼"
+    },
+    {
+      "no": 129,
+      "priority": "Major",
+      "main": "공개하기/달려보기",
+      "sub1": "공개하기 화면",
+      "sub2": "공개 토글",
+      "sub3": "등록 테스트 미완료 시 비활성",
+      "expectationResult": "맵 코드/등록일 영역에 \"등록 테스트 필요\" 문구가 출력되고 공개하기 토글이 비활성화된다.",
+      "comment": "참고 화면: 등록 테스트 미완료 공개 비활성"
+    },
+    {
+      "no": 130,
+      "priority": "Critical",
+      "main": "공개하기/달려보기",
+      "sub1": "공개하기 화면",
+      "sub2": "공개 토글",
+      "sub3": "공개하기 동작",
+      "expectationResult": "해당 맵이 공개 상태로 등록된다.",
+      "comment": "참고 화면: 공개하기 동작"
+    },
+    {
+      "no": 131,
+      "priority": "Normal",
+      "main": "공개하기/달려보기",
+      "sub1": "달려보기 화면",
+      "sub2": "화면 출력",
+      "sub3": "달려보기 정보 표시",
+      "expectationResult": "맵 미리보기, 캐릭터 슬롯, 능력 OFF 표시 띠, [등록 테스트] 버튼이 출력된다.",
+      "comment": "참고 화면: 달려보기 화면"
+    },
+    {
+      "no": 132,
+      "priority": "Major",
+      "main": "공개하기/달려보기",
+      "sub1": "맵 공개 성공",
+      "sub2": "황금셀 팝업",
+      "sub3": "팝업 출력",
+      "expectationResult": "\"맵 공개 성공!\" 팝업이 출력된다.",
+      "comment": "참고 화면: 맵 공개 성공 황금셀 팝업"
+    },
+    {
+      "no": 133,
+      "priority": "Normal",
+      "main": "공개하기/달려보기",
+      "sub1": "맵 공개 성공",
+      "sub2": "황금셀 팝업",
+      "sub3": "평가 결과 표시",
+      "expectationResult": "달린 횟수, 좋아요 수, \"공개 후 7일간 측정한 인기도로 명예의 전당에 도전해보세요!\" 안내 문구가 출력된다.",
+      "comment": "참고 화면: 맵 공개 성공 본문"
+    },
+    {
+      "no": 134,
+      "priority": "Normal",
+      "main": "공개하기/달려보기",
+      "sub1": "맵 공개 성공",
+      "sub2": "황금셀 팝업",
+      "sub3": "확인 버튼",
+      "expectationResult": "팝업이 닫힌다.",
+      "comment": "참고 화면: 맵 공개 성공 확인 버튼"
+    },
+    {
+      "no": 135,
+      "priority": "Major",
+      "main": "공개하기/달려보기",
+      "sub1": "맵 공개 성공",
+      "sub2": "공개 후 셀 상태",
+      "sub3": "인기도 측정 카운트다운",
+      "expectationResult": "셀 하단에 \"인기도 측정중... N일\" 카운트다운과 잠금(🔒) 아이콘이 출력된다.",
+      "comment": "참고 화면: 공개 후 셀 상태"
+    },
+    {
+      "no": 136,
+      "priority": "Major",
+      "main": "Result 화면",
+      "sub1": "클리어 조건 표시",
+      "sub2": "슬롯 순차 출력",
+      "sub3": "조건 슬롯 등장",
+      "expectationResult": "클리어 조건 슬롯이 하나씩 순차적으로 출력된다.",
+      "comment": "참고 화면: Result 슬롯 순차 표시"
+    },
+    {
+      "no": 137,
+      "priority": "Major",
+      "main": "Result 화면",
+      "sub1": "클리어 조건 표시",
+      "sub2": "성공 체크",
+      "sub3": "✅ 표시",
+      "expectationResult": "충족된 조건에 ✅(체크) 표시가 출력된다.",
+      "comment": "참고 화면: Result 성공 체크"
+    },
+    {
+      "no": 138,
+      "priority": "Major",
+      "main": "Result 화면",
+      "sub1": "클리어 조건 표시",
+      "sub2": "실패 X",
+      "sub3": "❌ 표시",
+      "expectationResult": "미충족 조건에 ❌(X) 표시가 출력된다.",
+      "comment": "참고 화면: Result 실패 X 표시"
+    },
+    {
+      "no": 139,
+      "priority": "Normal",
+      "main": "Result 화면",
+      "sub1": "PERFECT 연출",
+      "sub2": "도장 연출",
+      "sub3": "PERFECT 도장 등장",
+      "expectationResult": "일정 시간 후 클리어 조건 위로 PERFECT! 도장 연출이 재생된다.",
+      "comment": "참고 화면: PERFECT 도장 연출"
+    },
+    {
+      "no": 140,
+      "priority": "Normal",
+      "main": "Result 화면",
+      "sub1": "PERFECT 연출",
+      "sub2": "접힘 연출",
+      "sub3": "조건 영역 접힘",
+      "expectationResult": "일정 시간 후 클리어 조건 영역이 접힌다.",
+      "comment": "참고 화면: PERFECT 접힘 연출"
+    },
+    {
+      "no": 141,
+      "priority": "Major",
+      "main": "Result 화면",
+      "sub1": "평가/달성 토글",
+      "sub2": "▼ 평가 펼침",
+      "sub3": "평가 패널 토글",
+      "expectationResult": "평가 패널(별로에요/좋아요)이 펼쳐진다.",
+      "comment": "참고 화면: Result 평가 펼침"
+    },
+    {
+      "no": 142,
+      "priority": "Major",
+      "main": "Result 화면",
+      "sub1": "평가/달성 토글",
+      "sub2": "▲ 달성목록 펼침",
+      "sub3": "달성목록 토글",
+      "expectationResult": "클리어 조건 달성 목록이 펼쳐진다.",
+      "comment": "참고 화면: Result 달성목록 펼침"
+    },
+    {
+      "no": 143,
+      "priority": "Normal",
+      "main": "Result 화면",
+      "sub1": "맵 상세정보 진입",
+      "sub2": "맵 코드 표시",
+      "sub3": "맵 코드 출력",
+      "expectationResult": "맵 코드(예: ABCDEFG1234567)와 복사 아이콘이 출력된다.",
+      "comment": "참고 화면: 맵 상세 - 맵 코드"
+    },
+    {
+      "no": 144,
+      "priority": "Major",
+      "main": "Result 화면",
+      "sub1": "맵 상세정보 진입",
+      "sub2": "공개하기 버튼",
+      "sub3": "공개하기 진입",
+      "expectationResult": "공개하기 화면으로 전환된다.",
+      "comment": "참고 화면: 맵 상세 - 공개하기 버튼"
+    },
+    {
+      "no": 145,
+      "priority": "Major",
+      "main": "Result 화면",
+      "sub1": "맵 상세정보 진입",
+      "sub2": "편집하기 버튼",
+      "sub3": "편집하기 진입",
+      "expectationResult": "맵 편집 화면으로 전환된다.",
+      "comment": "참고 화면: 맵 상세 - 편집하기 버튼"
+    }
+  ],
+  "generatedAt": "2026-05-19T05:19:57.719Z",
+  "tokenUsage": {
+    "inputTokens": 124,
+    "outputTokens": 108326,
+    "cacheReadTokens": 1350662,
+    "cacheCreationTokens": 317401,
+    "totalCostUsd": 5.444031250000001
+  },
+  "planText": "### 기능 목록\n\n**대분류 1. 맵메이커 개선 - 세부 규칙 설정**\n- 맵 만들기 > 나의 맵 > 편집하기 진입 화면 (맵 타이틀, 환경/닫기 아이콘, 공개하기/편집하기 버튼)\n- 룰(니바퀴) 버튼 터치 시 맵 설정 팝업 출력\n- 맵 설정 팝업 좌측 탭: 맵 정보 / 플레이어 설정 / 추가 규칙\n- 추가 규칙 탭 - 최대 3개까지 적용 가능 (적용된 규칙 3/3 표시)\n- 규칙 리스트(아이콘+규칙명+설명+수치+적용 버튼) 출력\n- 규칙 3개 적용 시 4번째 [적용] 버튼 딤드\n- [기본값으로] / [저장하기] 버튼 동작\n- [저장하기] 미클릭 시 규칙 미반영\n- 맵 상세보기 화면 우상단에 적용 규칙 아이콘 표시 (1개/2개/3개 분기)\n- 규칙 아이콘 터치 시 \"추가규칙 보기\" 팝업 출력 (적용된 규칙 항목별 노출)\n- 플레이어 설정 탭 - 시간 수정 (숫자 < > 조절, 이하 < > 조절, 적용하기)\n- 숫자 터치 시 말풍선(직접 입력/MAX 버튼) 출력\n\n**대분류 2. 클리어 조건 설정**\n- 맵 설정 팝업 진입 시 첫 화면 기본 설정 탭 위치\n- 플레이어 설정 탭 - 클리어 조건 영역\n- 젤리 획득 미션 (아이콘, 숫자, 이상/이하/일치 선택)\n- 클리어 타임 미션 (숫자, 이상/이하 선택)\n- 클리어 조건은 1개만 적용 가능\n- [적용하기] 터치 시 [✓ 적용중] 상태 전환\n- [추가] / [저장하기] 버튼 동작\n- 젤리 아이콘 터치 시 말풍선(젤리 종류 스크롤 변경) 출력\n- 인게임 시작 시 클리어 조건 미션 팝업 출력 후 사라짐\n- 인게임 상단 좌측에 보너스 타임 게이지 + 카운트(0/50) 출력\n- 젤리 미션 카운트 표시 (N개 이상/이하/일치 분기별 ✅/❌)\n- 시간 미션 카운트 표시 (N초 이상/이하 분기별 ✅/❌)\n- 결과화면 PERFECT 표기 / 클리어 조건 일부 실패 X 표기\n\n**대분류 3. 맵 찾아보기 개선**\n- 맵 찾아보기 메인 진입 (상단 통화, 설정/홈/메뉴)\n- 상단 탭 (신규맵 / 명예의 전당 / 엘도라 찾기 / 나의 맵 찾기 / 내맵고)\n- 맵 카드(좋아요/플레이/작성자 ID/맵 이름) 출력\n- 나의 맵 표시 인포 버튼 터치 시 안내 팝업 출력\n- 맵 그리드 스크롤\n- PICK 진입 축하 팝업 출력\n- 맵 카드 터치 시 달려보기 진입\n- 내 맵 홍보하기 팝업 (홍보 가능 슬롯, 안내문, 맵 리스트)\n- 홍보하기 버튼 터치 시 💎2,000 소비 + 24시간 카운트다운\n- 홍보중 상태 버튼 변경 (홍보 후 23:59:59 남음)\n- 명예의 전당 등록 안내 / 랭킹 Top 3 강조\n\n**대분류 4. 랭킹 추가 기능**\n- 랭킹 메인 화면 - 맵 만들기 버튼\n- 맵 점수 랭킹 / 퍼펙트 클리어 표시\n- 내 기록 없을 시 안내 문구\n- 내 랭킹 Top 3 진입 시 강조 표시\n- 명예의 전당 점수 1등 맵 개수 랭킹\n\n**대분류 5. 맵 심사하기 개선**\n- 심사하기 진입 시 상단 배너 (오늘의 심사 횟수 0/3)\n- 맵 후보 3개 가로 배열 (작성자/등록일/맵이름)\n- 진입 시 맵 등장 연출 (우→좌)\n- 타이틀 펄럭 연출\n- 셀 선택 시 1.2배 확대 유지\n- [확정하기] 노란 버튼 노출\n- 확정 시 % 표시 (선택률)\n- 미선택 맵 사라지고 선택 맵 중앙 이동, 캐릭터/말풍선 등장\n- [심사하기] 버튼 출력\n- 심사 횟수 소진 시 안내 + 99:99:99 카운트다운\n- 일시정지 팝업 - 계속하기/그만하기 버튼\n- 평가 패널 - 별로에요/좋아요 + 즐겨찾기 등록/신고하기\n- 평가 불가 상태 - 자물쇠 표시 + \"아직 평가할 수 없어요\"\n- 선택 시 좋아요/싫어요 강조\n- 즐겨찾기 등록 시 ★ 강조 / 취소 시 해제\n- 결과 화면 - Result 타이틀, 점수/젤리/심사 보상 ♥50\n- 결과 화면 - 평가 옵션\n\n**대분류 6. 인기맵/명예의 전당 탭 (10번)**\n- 상단 탭 - 추천맵/인기맵/신규맵/명예의 전당/코드로 찾기/즐겨찾기\n- 인기맵 탭 - 최근 7일 평가받은 100개 맵 노출\n- 7일간 평가받지 않은 경우 \"-\" 표시\n- 인기맵 결과발표 팝업 (7일 경과 후 진입 시) - 인기 점수 / 명예의 전당 후보 / 상위 30% / 보상\n- 신규맵 탭 - NEW 뱃지 / 새로고침 버튼\n- 신규맵 상세 확인 시 NEW 사라짐\n- 명예의 전당 탭 - 최신달 / 후보달 화살표 전환\n\n**대분류 7. 맵 공개 성공 & 즐겨찾기 (11번)**\n- 맵 공개 성공 팝업 - 평가 결과 표시 / 인기도 도전 안내\n- 황금셀 터치 시 팝업 출력\n- 맵 상세 - 즐겨찾기 등록/취소\n- 즐겨찾기 최대 개수 처리\n\n**대분류 8. 치트 퍼펙트 랭킹 & 토스트 (12번)**\n- 치트 퍼펙트 성공 횟수 랭킹 - 전체/월간\n- 빈 벨 슬롯 터치 시 토스트 + 즐겨찾기 추가\n- 채워진 벨 슬롯 터치 시 토스트 + 즐겨찾기 제거\n\n**대분류 9. 조합 고정 & 능력 ON/OFF (13~15번)**\n- 맵 설정 - 조합 및 능력 탭\n- 쿠키/펫/보물 능력 사용 토글 (ON/OFF)\n- 고정 조합 사용 - [고정조합 설정] 버튼\n- 초기 상태: 능력 ON, 고정조합 없음\n- 고정 조합 설정 - 캐릭터 그리드 선택 / [조합 저장하기] / [해제하기]\n- 조합 저장 후 설정 화면에 캐릭터 아이콘 + 🗑 삭제 버튼 표시\n- [해제하기] 터치 시 \"초기화할까요?\" 안내 + 리셋\n- 쿠키 조합 변경 화면 (검색/정렬 드롭다운)\n- 고정된 조합은 변경 불가\n- 반복펫은 각각 다른 개체\n\n**대분류 10. Result 화면 & 맵 상세정보 (16~17번)**\n- Result - 클리어 조건 체크리스트 (✅/❌)\n- 슬롯이 하나씩 뜨고 체크/X 표시\n- PERFECT! 도장 연출\n- PERFECT 옆 ▼/▲ 토글 - 평가/달성목록 펼침\n- 평가 옵션 - 별로에요/좋아요\n- 맵 상세정보 - 맵 코드/공개하기/편집하기\n- 규칙 상세 정보 팝업\n\n**대분류 11. 명예의 전당 발표 & 코드로 찾기 (18~19번)**\n- 명예의 전당 발표 팝업 (KST 0시) - 상위 3개 맵 카드\n- 후보 100개 맵 표시 - 자동 스크롤\n- 내 기록 없을 시 / 있을 시 분기\n- 코드로 찾기 탭 - 입력 필드 / [찾기] 버튼\n- 명예의 전당 등록 결과 - 상위 30% / 보상\n- 일시정지 화면 (즐겨찾기 등록 포함)\n- 즐겨찾기 탭 - 즐겨찾기 등록 맵 리스트\n\n**대분류 12. 즐겨찾기 & 정렬 (20번)**\n- 빈 별 슬롯 클릭 시 토스트 + 추가 안 됨\n- 즐겨찾기 취소 가능 상태 - 일시정지 팝업\n- 즐겨찾기 맵 최대 개수 도달 시 안내 + 추가 차단\n- 정렬 드롭다운 - 별점순/이름순/좋아요순/플레이순\n\n**대분류 13. 공개하기/달려보기/심사하기 변경 (21~22번)**\n- 공개하기 화면 - 쿠키/펫/보물 능력 OFF\n- 능력 ON 시 등록테스트 버튼 상단 문구 \"ON!\"\n- 달려보기 화면 - 동일 레이아웃\n- 심사하기 진입 - 캠프 배경 + 심사하기 버튼\n- 심사하기 팝업 - 맵 이름/작성자/맵 코드/등록일/클리어 조건/PLAY 버튼\n- 추가 규칙 1~3개 가변 표시\n\n### 카테고리 구조\n\n```\n├─ 맵메이커 - 세부 규칙 설정 (main)\n│  ├─ 맵 편집 진입 (sub1)\n│  │  ├─ 편집 진입 화면 (sub2)\n│  │  │  ├─ 화면 출력 (sub3)\n│  │  │  └─ 버튼 출력 (sub3)\n│  │  └─ 룰 버튼 동작 (sub2)\n│  │     └─ 맵 설정 팝업 출력 (sub3)\n│  ├─ 맵 설정 팝업 (sub1)\n│  │  ├─ 좌측 탭 영역 (sub2)\n│  │  │  ├─ 탭 출력 (sub3)\n│  │  │  └─ 탭 전환 (sub3)\n│  │  ├─ 추가 규칙 탭 (sub2)\n│  │  │  ├─ 적용 슬롯 표시 (sub3)\n│  │  │  ├─ 규칙 리스트 출력 (sub3)\n│  │  │  ├─ 적용 버튼 동작 (sub3)\n│  │  │  ├─ 3개 적용 시 버튼 딤드 (sub3)\n│  │  │  ├─ 기본값으로 버튼 (sub3)\n│  │  │  └─ 저장하기 ��튼 (sub3)\n│  │  ├─ 플레이어 설정 탭 (sub2)\n│  │  │  ├─ 시간 조절 화살표 (sub3)\n│  │  │  ├─ 이상/이하 선택 (sub3)\n│  │  │  ├─ 숫자 직접 입력 말풍선 (sub3)\n│  │  │  └─ MAX 버튼 (sub3)\n│  │  └─ 저장 미반영 처리 (sub2)\n│  │     └─ 미저장 시 미반영 (sub3)\n│  └─ 맵 상세 적용 규칙 표시 (sub1)\n│     ├─ 우상단 아이콘 출력 (sub2)\n│     │  ├─ 1개 적용 (sub3)\n│     │  ├─ 2개 적용 (sub3)\n│     │  └─ 3개 적용 (sub3)\n│     └─ 추가규칙 보기 팝업 (sub2)\n│        └─ 팝업 출력 (sub3)\n├─ 클리어 조건 설정 (main)\n│  ├─ 클리어 조건 팝업 (sub1)\n│  │  ├─ 진입 (sub2)\n│  │  │  └─ 기본 설정 탭 위치 (sub3)\n│  │  ├─ 젤리 획득 미션 (sub2)\n│  │  │  ├─ 미션 출력 (sub3)\n│  │  │  ├─ 젤리 아이콘 변경 말풍선 (sub3)\n│  │  │  ├─ 숫자/조건 조절 (sub3)\n│  │  │  └─ 적용 상태 전환 (sub3)\n│  │  ├─ 클리어 타임 미션 (sub2)\n│  │  │  ├─ 미션 출력 (sub3)\n│  │  │  ├─ 시간/조건 조절 (sub3)\n│  │  │  └─ 적용 상태 전환 (sub3)\n│  │  ├─ 단일 적용 제한 (sub2)\n│  │  │  └─ 1개만 적용 가능 (sub3)\n│  │  └─ 하단 버튼 (sub2)\n│  │     ├─ 추가 버튼 (sub3)\n│  │     └─ 저장하기 버튼 (sub3)\n│  ├─ 인게임 미션 표시 (sub1)\n│  │  ├─ 시작 팝업 (sub2)\n│  │  │  └─ Mission 팝업 출력 후 사라짐 (sub3)\n│  │  ├─ 좌측 상단 카운트 (sub2)\n│  │  │  └─ 카운트 출력 (sub3)\n│  │  ├─ 젤리 미션 분기 표시 (sub2)\n│  │  │  ├─ N개 이상 성공/실패 (sub3)\n│  │  │  ├─ N개 이하 성공/실패 (sub3)\n│  │  │  └─ N개 일치 성공/실패 (sub3)\n│  │  └─ 시간 미션 분기 표시 (sub2)\n│  │     ├─ N초 이상 (sub3)\n│  │     └─ N초 이하 (sub3)\n│  └─ 결과화면 (sub1)\n│     ├─ PERFECT 표기 (sub2)\n│     └─ 클리어 조건 체크리스트 (sub2)\n│        ├─ 슬롯 순차 표시 (sub3)\n│        ├─ 성공 체크 표시 (sub3)\n│        └─ 실패 X 표시 (sub3)\n├─ 맵 찾아보기 (main)\n│  ├─ 메인 화면 (sub1)\n│  │  ├─ 상단 영역 (sub2)\n│  │  │  ├─ 재화 표시 (sub3)\n│  │  │  └─ 설정/홈/메뉴 (sub3)\n│  │  ├─ 상단 탭 영역 (sub2)\n│  │  │  ├─ 탭 출력 (sub3)\n│  │  │  └─ 탭 전환 (sub3)\n│  │  ├─ 맵 그리드 (sub2)\n│  │  │  ├─ 카드 정보 출력 (sub3)\n│  │  │  └─ 스크롤 (sub3)\n│  │  └─ 정렬 드롭다운 (sub2)\n│  │     ├─ 정렬 옵션 출력 (sub3)\n│  │     └─ 정렬 적용 (sub3)\n│  ├─ 오늘의 PICK (sub1)\n│  │  ├─ 인포 버튼 (sub2)\n│  │  │  └─ 안내 팝업 출력 (sub3)\n│  │  └─ PICK 진입 (sub2)\n│  │     └─ 축하 팝업 출력 (sub3)\n│  ├─ 맵 달려보기 (sub1)\n│  │  └─ 카드 터치 (sub2)\n│  │     └─ 달려보기 진입 (sub3)\n│  └─ 홍보하기 (sub1)\n│     ├─ 홍보 팝업 (sub2)\n│     │  ├─ 팝업 출력 (sub3)\n│     │  ├─ 맵 선택 (sub3)\n│     │  └─ 홍보하기 버튼 (sub3)\n│     └─ 홍보중 상태 (sub2)\n│        ├─ 버튼 상태 변경 (sub3)\n│        └─ 24시간 카운트다운 (sub3)\n├─ 인기맵/신규맵/명예의 전당 탭 (main)\n│  ├─ 인기맵 탭 (sub1)\n│  │  ├─ 맵 리스트 영역 (sub2)\n│  │  │  ├─ 100개 맵 출력 (sub3)\n│  │  │  └─ 미평가 맵 표시 (sub3)\n│  │  └─ 결과 발표 팝업 (sub2)\n│  │     ├─ 팝업 출력 (sub3)\n│  │     └─ 확인 버튼 (sub3)\n│  ├─ 신규맵 탭 (sub1)\n│  │  ├─ NEW 뱃지 (sub2)\n│  │  │  ├─ 뱃지 출력 (sub3)\n│  │  │  └─ 상세 확인 후 제거 (sub3)\n│  │  └─ 새로고침 버튼 (sub2)\n│  │     └─ 새로고침 동작 (sub3)\n│  └─ 명예의 전당 탭 (sub1)\n│     ├─ 진입 시 최신달 표시 (sub2)\n│     ├─ 후보달 셀렉터 (sub2)\n│     │  └─ 화살표 전환 (sub3)\n│     └─ 발표 팝업 (sub2)\n│        ├─ 상위 3개 카드 출력 (sub3)\n│        ├─ 100개 맵 자동 스크롤 (sub3)\n│        ├─ 내 기록 없음 분기 (sub3)\n│        └─ 내 기록 있음 분기 (sub3)\n├─ 코드로 찾기 (main)\n│  └─ 입력 영역 (sub1)\n│     ├─ 입력 필드 (sub2)\n│     │  ├─ 코드 입력 (sub3)\n│     │  └─ 초기화 버튼 (sub3)\n│     └─ 찾기 버튼 (sub2)\n│        └─ 맵 검색 (sub3)\n├─ 즐겨찾기 (main)\n│  ├─ 즐겨찾기 등록 (sub1)\n│  │  ├─ 빈 별 슬롯 동작 (sub2)\n│  │  │  ├─ 토스트 출력 (sub3)\n│  │  │  └─ 미추가 처리 (sub3)\n│  │  ├─ 채워진 슬롯 동작 (sub2)\n│  │  │  ├─ 토스트 출력 (sub3)\n│  │  │  └─ 제거 처리 (sub3)\n│  │  └─ 최대 개수 도달 (sub2)\n│  │     ├─ 안내 출력 (sub3)\n│  │     └─ 추가 차단 (sub3)\n│  └─ 즐겨찾기 탭 (sub1)\n│     └─ 맵 리스트 출력 (sub2)\n├─ 랭킹 (main)\n│  ├─ 랭킹 메인 (sub1)\n│  │  └─ 맵 만들기 버튼 (sub2)\n│  │     └─ 맵메이커 진입 (sub3)\n│  ├─ 맵짱 랭킹 (sub1)\n│  │  ├─ 내 기록 없음 (sub2)\n│  │  │  └─ 안내 문구 (sub3)\n│  │  ├─ Top 3 강조 (sub2)\n│  │  └─ 산정 마감 카운트 (sub2)\n│  └─ 치트 퍼펙트 랭킹 (sub1)\n│     ├─ 전체 랭킹 (sub2)\n│     └─ 월간 랭킹 (sub2)\n├─ 맵 심사하기 (main)\n│  ├─ 심사 진입 (sub1)\n│  │  ├─ 캠프 화면 (sub2)\n│  │  │  └─ 심사하기 버튼 (sub3)\n│  │  └─ 상단 배너 (sub2)\n│  │     └─ 횟수 표시 (sub3)\n│  ├─ 맵 후보 선택 (sub1)\n│  │  ├─ 진입 연출 (sub2)\n│  │  │  ├─ 등장 연출 (sub3)\n│  │  │  └─ 타이틀 연출 (sub3)\n│  │  ├─ 셀 선택 (sub2)\n│  │  │  ├─ 확대 유지 (sub3)\n│  │  │  └─ 확정하기 노출 (sub3)\n│  │  ├─ 확정 (sub2)\n│  │  │  ├─ 선택률 % 표시 (sub3)\n│  │  │  └─ 강조 연출 (sub3)\n│  │  └─ 횟수 소진 (sub2)\n│  │     ├─ 안내 출력 (sub3)\n│  │     └─ 카운트다운 (sub3)\n│  ├─ 심사 팝업 (sub1)\n│  │  ├─ 맵 정보 영역 (sub2)\n│  │  │  ├─ 작성자/맵코드/등록일 (sub3)\n│  │  │  ├─ 클리어 조건 표시 (sub3)\n│  │  │  └─ 추가 규칙 1~3개 가변 표시 (sub3)\n│  │  └─ PLAY 버튼 (sub2)\n│  │     └─ 인게임 진입 (sub3)\n│  ├─ 일시정지 평가 (sub1)\n│  │  ├─ 일시정지 팝업 (sub2)\n│  │  │  ├─ 계속하기 버튼 (sub3)\n│  │  │  └─ 그만하기 버튼 (sub3)\n│  │  ├─ 평가 가능 상태 (sub2)\n│  │  │  ├─ 좋아요 선택 (sub3)\n│  │  │  └─ 별로에요 선택 (sub3)\n│  │  ├─ 평가 불가 상태 (sub2)\n│  │  │  ├─ 자물쇠 표시 (sub3)\n│  │  │  └─ 안내 문구 (sub3)\n│  │  ├─ 즐겨찾기 등록 버튼 (sub2)\n│  │  │  ├─ 등록 동작 (sub3)\n│  │  │  └─ 취소 동작 (sub3)\n│  │  └─ 신고하기 버튼 (sub2)\n│  │     └─ 신고 동작 (sub3)\n│  └─ 결과 화면 평가 (sub1)\n│     ├─ Result 화면 출력 (sub2)\n│     ├─ 평가 패널 펼침 (sub2)\n│     │  ├─ 토글 동작 (sub3)\n│     │  ├─ 좋아요 (sub3)\n│     │  └─ 별로에요 (sub3)\n│     ├─ 달성목록 펼침 (sub2)\n│     │  └─ 토글 동작 (sub3)\n│     └─ 심사 보상 표시 (sub2)\n├─ 조합 고정 & 능력 (main)\n│  ├─ 조합 및 능력 탭 (sub1)\n│  │  ├─ 기본 상태 (sub2)\n│  │  │  ├─ 능력 ON (sub3)\n│  │  │  └─ 고정조합 없음 (sub3)\n│  │  ├─ 능력 사용 토글 (sub2)\n│  │  │  ├─ ON 동작 (sub3)\n│  │  │  └─ OFF 동작 (sub3)\n│  │  └─ 고정조합 설정 버튼 (sub2)\n│  │     └─ 설정 화면 진입 (sub3)\n│  ├─ 고정 조합 설정 (sub1)\n│  │  ├─ 캐릭터 선택 (sub2)\n│  │  │  ├─ 선택 표시 (sub3)\n│  │  │  └─ 검색/정렬 (sub3)\n│  │  ├─ 조합 저장 (sub2)\n│  │  │  └─ 저장 동작 (sub3)\n│  │  ├─ 해제하기 (sub2)\n│  │  │  ├─ 초기화 안내 (sub3)\n│  │  │  └─ 리셋 동작 (sub3)\n│  │  └─ 저장 후 화면 (sub2)\n│  │     ├─ 캐릭터 아이콘 출력 (sub3)\n│  │     └─ 삭제 버튼 (sub3)\n│  └─ 조합 변경 (sub1)\n│     └─ 변경 불가 안내 (sub2)\n├─ 공개하기/달려보기 (main)\n│  ├─ 공개하기 화면 (sub1)\n│  │  ├─ 능력 OFF 표시 (sub2)\n│  │  ├─ 능력 ON 표시 (sub2)\n│  │  ├─ 등록 테스트 버튼 (sub2)\n│  │  │  └─ 문구 변경 (sub3)\n│  │  └─ 공개 토글 (sub2)\n│  │     └─ ON/OFF 동작 (sub3)\n│  ├─ 달려보기 화면 (sub1)\n│  │  └─ 화면 출력 (sub2)\n│  └─ 맵 공개 성공 (sub1)\n│     └─ 황금셀 팝업 (sub2)\n│        ├─ 팝업 출력 (sub3)\n│        ├─ 평가 결과 표시 (sub3)\n│        └─ 확인 버튼 (sub3)\n└─ Result 화면 (main)\n   ├─ 클리어 조건 표시 (sub1)\n   │  ├─ 슬롯 순차 출력 (sub2)\n   │  ├─ 성공 체크 (sub2)\n   │  └─ 실패 X (sub2)\n   ├─ PERFECT 연출 (sub1)\n   │  ├─ 도장 연출 (sub2)\n   │  └─ 접힘 연출 (sub2)\n   ├─ 평가/달성 토글 (sub1)\n   │  ├─ ▼ 평가 펼침 (sub2)\n   │  └─ ▲ 달성목록 펼침 (sub2)\n   └─ 맵 상세정보 진입 (sub1)\n      ├─ 맵 코드 표시 (sub2)\n      ├─ 공개하기 버튼 (sub2)\n      └─ 편집하기 버튼 (sub2)\n```\n\n### TC 건수 배분\n\n- 전체 목표: 약 145건\n- Critical: 약 18건 (12%) - 저장, 보상 지급, 결제(다이아 소비), 핵심 기능 동작\n- Major: 약 65건 (45%) - 핵심 화면 전환, 적용 동작, 조건 분기, 상태 변경\n- Normal: 약 62건 (43%) - 표시, 연출, 안내 문구, 토스트 등\n\n카테고리별 분배:\n- 맵메이커 세부 규칙 설정: 약 18건\n- 클리어 조건 설정: 약 20건\n- 맵 찾아보기: 약 15건\n- 인기맵/신규맵/명예의 전당 탭: 약 14건\n- 코드로 찾기: 약 4건\n- 즐겨찾기: 약 9건\n- 랭킹: 약 8건\n- 맵 심사하기: 약 25건\n- 조합 고정 & 능력: 약 14건\n- 공개하기/달려보기: 약 9건\n- Result 화면: 약 9건\n\n### 중점 확인 사항\n\n1. **3개 적용 제한 / 1개 적용 제한 분기**: 추가 규칙 3개 적용 시 4번째 버튼 딤드, 클리어 조건은 1개만 적용 가능 - 양/음 분기 명확히 작성\n2. **저장하기 미클릭 시 미반영**: [저장하기] 버튼을 눌러야만 변경사항이 적용되는 동작 검증\n3. **미션 카운트 분기**: 젤리 미션 3분기(이상/이하/일치), 시간 미션 2분기(이상/이하) 각각 성공/실패 케이스 분리\n4. **재화 소비 동작**: 홍보하기 💎2,000 소비 - Critical 처리\n5. **시간 제한 기능**: 홍보 24시간 카운트다운, 심사 횟수 일일 3회 + 99:99:99 카운트다운, 명예의 전당 KST 0시 발표\n6. **즐겨찾기 최대 개수**: 도달 시 추가 차단 + 토스트 출력\n7. **상태별 분기**: 평가 가능/불가(자물쇠), 능력 ON/OFF, 조합 미설정/고정/미고정 상태별 동작\n8. **연출 케이스**: PERFECT 도장, 셀 1.2배 확대 유지, 자동 스크롤, 진입 등장 연출 - 게임 동작 기준 서술\n9. **분기별 UI 표시**: 적용 규칙 1/2/3개 아이콘 표시, 명예의 전당 내 기록 유무 분기\n10. **튜토리얼성 안내 팝업**: 진입/출력 단위 위주, 페이지별 세부 분해 금지",
+  "materialId": "mat_1779167204179_oofz",
+  "planId": "plan_1779167204233_9p3b"
+}
