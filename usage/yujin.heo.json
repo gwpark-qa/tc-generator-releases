@@ -2,12 +2,12 @@
   "2026-05": {
     "user": "yujin.heo",
     "month": "2026-05",
-    "totalCostUsd": 1.4971740000000002,
-    "callCount": 1,
+    "totalCostUsd": 5.354673,
+    "callCount": 2,
     "byMode": {
       "api": 0,
-      "cli": 1.4971740000000002
+      "cli": 5.354673
     },
-    "updatedAt": "2026-05-19T05:06:44.177Z"
+    "updatedAt": "2026-05-19T05:19:57.710Z"
   }
 }
