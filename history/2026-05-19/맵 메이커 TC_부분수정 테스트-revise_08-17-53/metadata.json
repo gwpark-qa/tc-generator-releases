@@ -1,0 +1,21 @@
+{
+  "contentName": "맵 메이커 TC_부분수정 테스트",
+  "testCaseCount": 133,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778576623272_b0nc62",
+  "promptName": "📝 콘텐츠_TC수정",
+  "focusPoints": "- 각 케이스별로 첨부한 기획서는 상단부터 좌측 -> 우측으로 흐름이 이어집니다.",
+  "elapsedSeconds": 238,
+  "tokenUsage": {
+    "inputTokens": 13,
+    "outputTokens": 21312,
+    "cacheReadTokens": 175846,
+    "cacheCreationTokens": 37429,
+    "totalCostUsd": 0.8788132500000001
+  },
+  "cost": "$1.5986",
+  "appVersion": "1.4.5",
+  "generatedAt": "2026-05-19T08:17:53.139Z"
+}
