@@ -3,11 +3,11 @@
     "user": "yujin.heo",
     "month": "2026-05",
     "totalCostUsd": 5.354673,
-    "callCount": 2,
+    "callCount": 4,
     "byMode": {
       "api": 0,
       "cli": 5.354673
     },
-    "updatedAt": "2026-05-19T05:19:57.710Z"
+    "updatedAt": "2026-05-19T09:39:25.212Z"
   }
 }
