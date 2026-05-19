@@ -1,0 +1,21 @@
+{
+  "contentName": "19_(C)어드벤처모드_인게임관련콘텐츠(4챕터)",
+  "testCaseCount": 41,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778655034189_51k84k",
+  "promptName": "🚧 TC -> 체크리스트",
+  "focusPoints": "전체 TC를 빠른 검증용 체크리스트로 압축\n한 케이스 안에 여러 항목을 뭉쳐넣지 않음 (한 케이스 당 하나의 동작을 체크)",
+  "elapsedSeconds": 65,
+  "tokenUsage": {
+    "inputTokens": 6,
+    "outputTokens": 4624,
+    "cacheReadTokens": 17826,
+    "cacheCreationTokens": 43535,
+    "totalCostUsd": 0.43043875
+  },
+  "cost": "$0.3469",
+  "appVersion": "1.4.4",
+  "generatedAt": "2026-05-19T07:24:13.187Z"
+}
