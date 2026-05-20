@@ -1,0 +1,21 @@
+{
+  "contentName": "23이벤트모드 인게임",
+  "testCaseCount": 185,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "ingame",
+  "promptName": "🎮 콘텐츠_인게임",
+  "focusPoints": null,
+  "elapsedSeconds": 832,
+  "tokenUsage": {
+    "inputTokens": 115,
+    "outputTokens": 108943,
+    "cacheReadTokens": 1466939,
+    "cacheCreationTokens": 410099,
+    "totalCostUsd": 6.1272442499999995
+  },
+  "cost": "$8.1724",
+  "appVersion": "1.4.5",
+  "generatedAt": "2026-05-20T04:55:59.576Z"
+}
