@@ -48,6 +48,7 @@ jobs:
           fi
 
           # === 1단계: 메인 메시지 (간단 안내 + 다운로드 버튼) ===
+          # 한국어 boundary 이슈로 *bold* / _italic_ 사용 X → emoji prefix로 강조
           MAIN_PAYLOAD=$(jq -n \
             --arg ch "$SLACK_CHANNEL" \
             --arg tag "$TAG" \
@@ -72,7 +73,7 @@ jobs:
                   type: "section",
                   text: {
                     type: "mrkdwn",
-                    text: ($here + "새 버전이 배포되었어요.\n자세한 내용은 *스레드*를 참고 부탁드립니다." + (if $name != "" and $name != $tag then "\n_" + $name + "_" else "" end))
+                    text: ($here + "새 버전이 배포되었어요.\n💬 자세한 내용은 아래 스레드를 확인해 주세요." + (if $name != "" and $name != $tag then "\n📦 " + $name else "" end))
                   }
                 },
                 {
