@@ -19,11 +19,26 @@ jobs:
           PRERELEASE: ${{ github.event.release.prerelease }}
           ASSETS_JSON: ${{ toJSON(github.event.release.assets) }}
         run: |
+          # @here 콜 토글 — release body에 [silent] 또는 [no-here] 토큰이 있으면 생략
+          SILENT="false"
+          if printf '%s' "$BODY" | grep -qiE '\[silent\]|\[no-here\]'; then
+            SILENT="true"
+            # 토큰을 body에서 제거 (slack 메시지에는 노출 안 함) + 앞쪽 빈 줄 정리
+            BODY=$(printf '%s\n' "$BODY" | sed -E 's/\[(silent|no-here)\]//gi' | awk 'NF{flag=1} flag')
+          fi
+
+          if [ "$SILENT" = "true" ]; then
+            HERE_PREFIX=""
+            FALLBACK_TEXT="TC Generator $TAG 출시"
+          else
+            HERE_PREFIX="<!here> "
+            FALLBACK_TEXT="<!here> TC Generator $TAG 출시"
+          fi
+
           # release assets 중 .dmg 파일의 직접 다운로드 URL 추출
           DMG_URL=$(printf '%s' "$ASSETS_JSON" | jq -r 'map(select(.name | endswith(".dmg"))) | .[0].browser_download_url // ""')
           DMG_NAME=$(printf '%s' "$ASSETS_JSON" | jq -r 'map(select(.name | endswith(".dmg"))) | .[0].name // ""')
 
-          # DMG가 첨부됐으면 다운로드 버튼, 없으면 릴리즈 페이지 버튼으로 fallback
           if [ -n "$DMG_URL" ] && [ "$DMG_URL" != "null" ]; then
             BTN_URL="$DMG_URL"
             BTN_TEXT="📥 ${DMG_NAME:-DMG} 다운로드"
@@ -32,17 +47,19 @@ jobs:
             BTN_TEXT="릴리즈 페이지 열기"
           fi
 
-          PAYLOAD=$(jq -n \
+          # === 1단계: 메인 메시지 (간단 안내 + 다운로드 버튼) ===
+          MAIN_PAYLOAD=$(jq -n \
             --arg ch "$SLACK_CHANNEL" \
             --arg tag "$TAG" \
             --arg name "$NAME" \
             --arg url "$BTN_URL" \
             --arg btext "$BTN_TEXT" \
-            --arg body "$BODY" \
             --arg pre "$PRERELEASE" \
+            --arg here "$HERE_PREFIX" \
+            --arg fb "$FALLBACK_TEXT" \
             '{
               channel: $ch,
-              text: ("<!here> TC Generator " + $tag + " 출시 — DMG 다운로드 링크 포함"),
+              text: $fb,
               blocks: [
                 {
                   type: "header",
@@ -55,16 +72,9 @@ jobs:
                   type: "section",
                   text: {
                     type: "mrkdwn",
-                    text: ("<!here> 새 버전이 배포되었어요." + (if $name != "" and $name != $tag then "\n*" + $name + "*" else "" end))
+                    text: ($here + "새 버전이 배포되었어요.\n자세한 내용은 *스레드*를 참고 부탁드립니다." + (if $name != "" and $name != $tag then "\n_" + $name + "_" else "" end))
                   }
                 },
-                (if $body != "" then {
-                  type: "section",
-                  text: {
-                    type: "mrkdwn",
-                    text: (if ($body | length) > 2800 then ($body[0:2800] + "\n…(생략)") else $body end)
-                  }
-                } else empty end),
                 {
                   type: "actions",
                   elements: [
@@ -82,13 +92,49 @@ jobs:
           curl -sS -X POST \
             -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
             -H "Content-Type: application/json; charset=utf-8" \
-            --data "$PAYLOAD" \
+            --data "$MAIN_PAYLOAD" \
             https://slack.com/api/chat.postMessage \
             | tee /tmp/slack-resp.json
 
           OK=$(jq -r '.ok' /tmp/slack-resp.json)
           if [ "$OK" != "true" ]; then
-            echo "::error::Slack 전송 실패"
+            echo "::error::Slack 메인 메시지 전송 실패"
             cat /tmp/slack-resp.json
             exit 1
+          fi
+          THREAD_TS=$(jq -r '.ts' /tmp/slack-resp.json)
+
+          # === 2단계: body가 있으면 thread reply로 전체 release note 전송 ===
+          if [ -n "$BODY" ] && [ "$BODY" != "null" ]; then
+            THREAD_PAYLOAD=$(jq -n \
+              --arg ch "$SLACK_CHANNEL" \
+              --arg ts "$THREAD_TS" \
+              --arg body "$BODY" \
+              '{
+                channel: $ch,
+                thread_ts: $ts,
+                text: "릴리즈 노트",
+                blocks: [
+                  {
+                    type: "section",
+                    text: {
+                      type: "mrkdwn",
+                      text: (if ($body | length) > 2800 then ($body[0:2800] + "\n…(생략)") else $body end)
+                    }
+                  }
+                ]
+              }')
+
+            curl -sS -X POST \
+              -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
+              -H "Content-Type: application/json; charset=utf-8" \
+              --data "$THREAD_PAYLOAD" \
+              https://slack.com/api/chat.postMessage \
+              | tee /tmp/slack-thread-resp.json
+
+            T_OK=$(jq -r '.ok' /tmp/slack-thread-resp.json)
+            if [ "$T_OK" != "true" ]; then
+              echo "::warning::Slack thread 전송 실패 (메인 메시지는 성공)"
+              cat /tmp/slack-thread-resp.json
+            fi
           fi
