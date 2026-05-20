@@ -2,13 +2,13 @@
   "2026-05": {
     "user": "박건우",
     "month": "2026-05",
-    "totalCostUsd": 88.94289149999997,
+    "totalCostUsd": 89.13981524999998,
     "callCount": 22,
     "byMode": {
-      "cli": 88.94289149999997,
+      "cli": 89.13981524999998,
       "api": 0
     },
-    "updatedAt": "2026-05-19T08:17:53.111Z",
+    "updatedAt": "2026-05-20T09:01:02.898Z",
     "deviceId": "gwpark_devsisters"
   }
 }
