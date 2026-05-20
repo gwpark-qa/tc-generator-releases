@@ -1,0 +1,14 @@
+{
+  "2026-05": {
+    "user": "이상민",
+    "month": "2026-05",
+    "totalCostUsd": 1.9277085,
+    "callCount": 1,
+    "byMode": {
+      "api": 0,
+      "cli": 1.9277085
+    },
+    "updatedAt": "2026-05-20T06:00:59.787Z",
+    "deviceId": "sangmin.lee_devsisters"
+  }
+}
