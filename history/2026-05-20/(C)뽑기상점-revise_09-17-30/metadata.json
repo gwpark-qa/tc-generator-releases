@@ -1,0 +1,21 @@
+{
+  "contentName": "(C)뽑기상점",
+  "testCaseCount": 43,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778655034189_51k84k",
+  "promptName": "🚧 TC -> 체크리스트",
+  "focusPoints": null,
+  "elapsedSeconds": 79,
+  "tokenUsage": {
+    "inputTokens": 5,
+    "outputTokens": 5826,
+    "cacheReadTokens": 18223,
+    "cacheCreationTokens": 46917,
+    "totalCostUsd": 0.48249675
+  },
+  "cost": "$0.4370",
+  "appVersion": "1.4.7",
+  "generatedAt": "2026-05-20T09:17:30.041Z"
+}
