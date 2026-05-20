@@ -1,0 +1,21 @@
+{
+  "contentName": "어드벤처 스페셜 챕터 1 아웃게임",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": null,
+  "elapsedSeconds": 558,
+  "tokenUsage": {
+    "inputTokens": 3,
+    "outputTokens": 37620,
+    "cacheReadTokens": 36229,
+    "cacheCreationTokens": 22034,
+    "totalCostUsd": 1.096342
+  },
+  "cost": "$2.8215",
+  "appVersion": "1.4.5",
+  "generatedAt": "2026-05-20T02:12:50.171Z"
+}
