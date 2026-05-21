@@ -2,13 +2,13 @@
   "2026-05": {
     "user": "하승우",
     "month": "2026-05",
-    "totalCostUsd": 135.72662999999997,
-    "callCount": 20,
+    "totalCostUsd": 137.67889874999997,
+    "callCount": 21,
     "byMode": {
-      "cli": 135.72662999999997,
+      "cli": 137.67889874999997,
       "api": 0
     },
-    "updatedAt": "2026-05-21T07:51:23.904Z",
+    "updatedAt": "2026-05-21T09:23:06.346Z",
     "deviceId": "seungwooha_macbook-seungwooha"
   }
 }
