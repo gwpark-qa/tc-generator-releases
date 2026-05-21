@@ -1,0 +1,1746 @@
+{
+  "contentName": "비용 테스트",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 걸림",
+      "sub2": "부여 조건",
+      "sub3": "오르골 작동",
+      "expectationResult": "오르골 작동 시, 범위 내 몬스터에게 수면 디버프가 부여된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 2,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 걸림",
+      "sub2": "부여 조건",
+      "sub3": "달빛술사 공격",
+      "expectationResult": "달빛술사 쿠키의 일부 공격 적중 시, 대상 몬스터에게 수면 디버프가 부여된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 3,
+      "priority": "Critical",
+      "main": "수면 시스템",
+      "sub1": "수면 걸림",
+      "sub2": "적용 대상",
+      "sub3": "일반 몬스터 적용",
+      "expectationResult": "중간보스 및 보스를 제외한 모든 몬스터에게 수면이 적용된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 4,
+      "priority": "Critical",
+      "main": "수면 시스템",
+      "sub1": "수면 걸림",
+      "sub2": "적용 대상",
+      "sub3": "중간보스/보스 면역",
+      "expectationResult": "중간보스 및 보스에게는 수면 디버프가 적용되지 않는다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 5,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 중 상태",
+      "sub2": "행동 제어",
+      "sub3": "스킬 캔슬",
+      "expectationResult": "스킬 사용 중인 몬스터에 수면 적용 시, 사용 중인 스킬이 끊기고 BT 처음으로 돌아간다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 6,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 중 상태",
+      "sub2": "행동 제어",
+      "sub3": "행동 정지",
+      "expectationResult": "수면 상태의 몬스터는 시간 경과 또는 피격 전까지 아무런 행동을 하지 않는다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 7,
+      "priority": "Normal",
+      "main": "수면 시스템",
+      "sub1": "수면 중 상태",
+      "sub2": "전용 애니메이션",
+      "sub3": "Sleep 파라미터 재생",
+      "expectationResult": "수면 상태의 몬스터에게 Sleep 파라미터 기반 전용 애니메이션이 재생된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 8,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 중 상태",
+      "sub2": "Fly 몬스터 추락",
+      "sub3": "지상 강제 낙하",
+      "expectationResult": "Fly 속성 몬스터에게 수면 적용 시, 지상으로 추락된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 9,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 해제",
+      "sub2": "시간 경과 해제",
+      "sub3": "자동 해제",
+      "expectationResult": "수면 적용 후 지정 시간(N초) 경과 시, 수면 디버프가 자동 해제된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 10,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 해제",
+      "sub2": "피격 해제",
+      "sub3": "일반 데미지",
+      "expectationResult": "수면 상태에서 일반 데미지 피격 시, 수면 디버프가 즉시 해제된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 11,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 해제",
+      "sub2": "피격 해제",
+      "sub3": "틱뎀 예외",
+      "expectationResult": "수면 상태에서 틱뎀(DOT) 데미지 피격 시, 수면 디버프가 해제되지 않는다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 12,
+      "priority": "Major",
+      "main": "수면 시스템",
+      "sub1": "수면 후 디버프",
+      "sub2": "달빛술사 피해 증가",
+      "sub3": "디버프 부여",
+      "expectationResult": "수면 해제 직후, 해당 몬스터에게 달빛술사 피해 증가 디버프가 부여된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 13,
+      "priority": "Normal",
+      "main": "수면 시스템",
+      "sub1": "수면 이펙트",
+      "sub2": "머리 위 표시",
+      "sub3": "전용 이펙트 출력",
+      "expectationResult": "수면 상태 몬스터의 머리 위에 전용 수면 이펙트가 출력된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 14,
+      "priority": "Normal",
+      "main": "수면 시스템",
+      "sub1": "수면 이펙트",
+      "sub2": "동시 다수 적용",
+      "sub3": "다중 몬스터 출력",
+      "expectationResult": "여러 마리 몬스터가 동시에 수면에 빠진 경우, 각 몬스터 머리 위에 수면 이펙트가 모두 출력된다.",
+      "comment": "어드벤처 인게임 기믹_1.pdf (수면)"
+    },
+    {
+      "no": 15,
+      "priority": "Critical",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "활성화 범위",
+      "sub3": "실선 출력",
+      "expectationResult": "오르골 활성화 상태 시, 오르골 중심으로부터 반지름 10.5m에 해당하는 실선이 출력된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 16,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "활성화 범위",
+      "sub3": "바닥 차오름 이펙트 출력",
+      "expectationResult": "오르골 활성화 상태 시, 오르골 중심에서 바닥 선까지 차오름 이펙트가 출력된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 17,
+      "priority": "Critical",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "게이지 차오름",
+      "sub3": "진입 시 차오름 시작",
+      "expectationResult": "플레이어가 실선 범위 내 진입 시, 약 6초에 걸쳐 게이지가 차오른다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 18,
+      "priority": "Major",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "게이지 차오름",
+      "sub3": "적 사망 시 가속",
+      "expectationResult": "실선 범위 안에서 몬스터 사망 시, 게이지 차오름 시간이 0.5초 단축된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 19,
+      "priority": "Major",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "게이지 차오름",
+      "sub3": "범위 이탈 시 감소",
+      "expectationResult": "플레이어가 실선 범위 밖으로 이탈 시, 설정된 Delay 후 게이지가 감소되기 시작한다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 20,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "게이지 차오름",
+      "sub3": "차오름 색상 표현",
+      "expectationResult": "게이지 차오름 시 푸른/노란 빛, 줄어듦 시 붉은 빛으로 색상이 다르게 표현된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 21,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "활성화 애니메이션",
+      "sub3": "Loop 재생",
+      "expectationResult": "오르골 활성화 상태 시, 별과 우측 태엽이 천천히 회전하는 Loop 애니메이션이 재생된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 22,
+      "priority": "Critical",
+      "main": "오르골 기믹",
+      "sub1": "작동 상태",
+      "sub2": "작동 발동",
+      "sub3": "게이지 가득 참",
+      "expectationResult": "게이지가 가득 차면, 오르골이 활성화 상태에서 작동 상태로 전환된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 23,
+      "priority": "Critical",
+      "main": "오르골 기믹",
+      "sub1": "작동 상태",
+      "sub2": "수면 디버프 부여",
+      "sub3": "범위 내 Enemy 적용",
+      "expectationResult": "오르골 작동 시, 정해진 영역 내 모든 Enemy에게 수면 디버프가 부여된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 24,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "작동 상태",
+      "sub2": "작동 애니메이션",
+      "sub3": "재생",
+      "expectationResult": "오르골 작동 시, 별이 빠르게 회전하며 밝은 빛을 뿜는 약 0.8초 애니메이션이 재생된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 25,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "작동 상태",
+      "sub2": "수면 퍼짐 이펙트",
+      "sub3": "이펙트 출력",
+      "expectationResult": "오르골 작동 시, 중앙으로부터 최대 반지름 8m까지 수면 퍼짐 이펙트가 출력된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "오르골 기믹",
+      "sub1": "비활성화 상태",
+      "sub2": "실선 미표시",
+      "sub3": "범위 미출력",
+      "expectationResult": "오르골 비활성화 상태 시, 실선 범위가 출력되지 않는다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 27,
+      "priority": "Major",
+      "main": "오르골 기믹",
+      "sub1": "비활성화 상태",
+      "sub2": "게이지 미동작",
+      "sub3": "차오름 미발생",
+      "expectationResult": "오르골 비활성화 상태에서 플레이어가 주변에 있어도 게이지가 차오르지 않는다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 28,
+      "priority": "Major",
+      "main": "오르골 기믹",
+      "sub1": "비활성화 상태",
+      "sub2": "재활성화 대기",
+      "sub3": "지정 시간 후 재활성화",
+      "expectationResult": "오르골 비활성화 후 지정 시간(N초) 경과 시, 다시 활성화 상태로 전환된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 29,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "비활성화 상태",
+      "sub2": "비활성화 애니메이션",
+      "sub3": "재생",
+      "expectationResult": "오르골 비활성화 시, 별이 멈춘 뒤 회색으로 변하고 모든 움직임이 정지하는 애니메이션이 재생된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 30,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "비활성화 상태",
+      "sub2": "재활성화 대기",
+      "sub3": "GmTile별 개별 설정",
+      "expectationResult": "비활성화 시간은 GmTile별로 따로 설정된 값이 적용된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 31,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "활성화 범위",
+      "sub3": "작동 시 실선 사라짐",
+      "expectationResult": "오르골 작동 상태로 전환 시, 바닥 실선이 사라진다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 32,
+      "priority": "Normal",
+      "main": "오르골 기믹",
+      "sub1": "활성화 상태",
+      "sub2": "게이지 차오름",
+      "sub3": "적 사망 시 순간 차오름 표현",
+      "expectationResult": "실선 범위 안에서 적 사망 시, 바닥 차오름 이펙트가 순간적으로 차오르는 연출이 출력된다.",
+      "comment": "어드벤처 인게임 기믹_3.pdf (오르골)"
+    },
+    {
+      "no": 33,
+      "priority": "Critical",
+      "main": "수면 보호막",
+      "sub1": "보호막 부여",
+      "sub2": "부여자 체력 비례",
+      "sub3": "보호막 양 산정",
+      "expectationResult": "수면 보호막 부여 시, 보호막 부여자의 최대 체력에 비례한 양으로 부여된다.",
+      "comment": "어드벤처 인게임 기믹_2.pdf (수면 보호막)"
+    },
+    {
+      "no": 34,
+      "priority": "Major",
+      "main": "수면 보호막",
+      "sub1": "보호막 부여",
+      "sub2": "중첩 처리",
+      "sub3": "중첩 불가",
+      "expectationResult": "이미 수면 보호막을 보유한 몬스터는 추가 보호막이 중첩되지 않는다.",
+      "comment": "어드벤처 인게임 기믹_2.pdf (수면 보호막)"
+    },
+    {
+      "no": 35,
+      "priority": "Major",
+      "main": "수면 보호막",
+      "sub1": "보호막 해제",
+      "sub2": "수면 피격 시 소멸",
+      "sub3": "즉시 제거",
+      "expectationResult": "수면 보호막 보유 상태에서 수면 상태이상 적용 시, 보호막이 즉시 소멸된다.",
+      "comment": "어드벤처 인게임 기믹_2.pdf (수면 보호막)"
+    },
+    {
+      "no": 36,
+      "priority": "Major",
+      "main": "수면 보호막",
+      "sub1": "보호막 해제",
+      "sub2": "일반 피격 시 소멸",
+      "sub3": "피격 누적 시 제거",
+      "expectationResult": "수면 보호막 보유 몬스터에 일반 피격이 누적될 경우, 보호막이 소멸된다.",
+      "comment": "어드벤처 인게임 기믹_2.pdf (수면 보호막)"
+    },
+    {
+      "no": 37,
+      "priority": "Major",
+      "main": "수면 보호막",
+      "sub1": "적용 제외 대상",
+      "sub2": "",
+      "sub3": "중간보스 이상 미사용",
+      "expectationResult": "중간보스 이상의 몬스터에게는 수면 보호막이 부여되지 않는다.",
+      "comment": "어드벤처 인게임 기믹_2.pdf (수면 보호막)"
+    },
+    {
+      "no": 38,
+      "priority": "Normal",
+      "main": "수면 보호막",
+      "sub1": "보호막 UI",
+      "sub2": "",
+      "sub3": "전용 UI 표시",
+      "expectationResult": "수면 보호막 보유 몬스터의 체력바 위에 전용 보호막 게이지 UI가 출력된다.",
+      "comment": "어드벤처 인게임 기믹_2.pdf (수면 보호막)"
+    },
+    {
+      "no": 39,
+      "priority": "Normal",
+      "main": "수면 보호막",
+      "sub1": "보호막 UI",
+      "sub2": "",
+      "sub3": "이펙트 색상 매칭",
+      "expectationResult": "수면 보호막 UI는 이펙트와 어울리는 색상으로 표시된다.",
+      "comment": "어드벤처 인게임 기믹_2.pdf (수면 보호막)"
+    },
+    {
+      "no": 40,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "대기 패턴",
+      "sub2": "패트롤 및 인식",
+      "sub3": "랜덤 위치 패트롤",
+      "expectationResult": "플레이어 미발견 상태 시, 악몽 요정이 랜덤 위치를 패트롤한다.",
+      "comment": "어드벤처 인게임 몬스터_1.pdf (악몽 요정)"
+    },
+    {
+      "no": 41,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "대기 패턴",
+      "sub2": "패트롤 및 인식",
+      "sub3": "20m 인식",
+      "expectationResult": "악몽 요정의 플레이어 인식 거리는 20m 이상으로 적용된다.",
+      "comment": "어드벤처 인게임 몬스터_1.pdf (악몽 요정)"
+    },
+    {
+      "no": 42,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "이동 패턴",
+      "sub2": "발견 시 \"!\" 표시",
+      "sub3": "출력",
+      "expectationResult": "악몽 요정이 플레이어 발견 시, 머리 위에 \"!\" 표시가 출력된 뒤 잠깐 대기한다.",
+      "comment": "어드벤처 인게임 몬스터_1.pdf (악몽 요정)"
+    },
+    {
+      "no": 43,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "이동 패턴",
+      "sub2": "추적 이동",
+      "sub3": "이동속도 적용",
+      "expectationResult": "악몽 요정이 플레이어 추적 시, 이동속도 700이 적용된다.",
+      "comment": "어드벤처 인게임 몬스터_1.pdf (악몽 요정)"
+    },
+    {
+      "no": 44,
+      "priority": "Critical",
+      "main": "악몽 요정",
+      "sub1": "Skill_A (Sting)",
+      "sub2": "공격 시작 조건",
+      "sub3": "12m 진입",
+      "expectationResult": "플레이어가 12m 앞에 위치 시, 악몽 요정의 Sting 스킬이 시작된다.",
+      "comment": "어드벤처 인게임 몬스터_1.pdf (악몽 요정)"
+    },
+    {
+      "no": 45,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "Skill_A (Sting)",
+      "sub2": "데미지 적용 범위",
+      "sub3": "1.5m 데미지",
+      "expectationResult": "악몽 요정 주변 영역 1.5m 안에 플레이어가 들어올 시, 지속 데미지가 적용된다.",
+      "comment": "어드벤처 인게임 몬스터_1.pdf (악몽 요정)"
+    },
+    {
+      "no": 46,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "Skill_A (Sting)",
+      "sub2": "Stagger 중단 처리",
+      "sub3": "_Skill_A_03 전환 후 복귀",
+      "expectationResult": "Stagger 효과로 공격이 끊긴 경우, _Skill_A_03 애니로 전환된 후 플레이어를 응시한 뒤 _Skill_A_01로 복귀된다.",
+      "comment": "어드벤처 인게임 몬스터_1.pdf (악몽 요정)"
+    },
+    {
+      "no": 47,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "배치",
+      "sub2": "",
+      "sub3": "전투 공간 배치 수",
+      "expectationResult": "악몽 요정은 전투 공간당 4~6마리 범위로 배치된다.",
+      "comment": "어드벤처 인게임 몬스터_1.pdf (악몽 요정)"
+    },
+    {
+      "no": 48,
+      "priority": "Normal",
+      "main": "악몽의 아가양",
+      "sub1": "대기 패턴",
+      "sub2": "",
+      "sub3": "랜덤 위치 패트롤",
+      "expectationResult": "플레이어 미발견 상태 시, 악몽의 아가양이 랜덤 위치를 통통 튀듯 패트롤한다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 49,
+      "priority": "Normal",
+      "main": "악몽의 아가양",
+      "sub1": "이동 패턴",
+      "sub2": "발견 시 \"!\" 표시",
+      "sub3": "출력",
+      "expectationResult": "악몽의 아가양이 플레이어 발견 시, 머리 위에 \"!\" 표시가 출력된 뒤 잠깐 대기한다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 50,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "이동 패턴",
+      "sub2": "추적 이동",
+      "sub3": "이동속도 적용",
+      "expectationResult": "악몽의 아가양 추적 이동 시, 기본 이동속도 600이 적용된다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 51,
+      "priority": "Critical",
+      "main": "악몽의 아가양",
+      "sub1": "Skill_A (Rush)",
+      "sub2": "공격 시작 조건",
+      "sub3": "15m 진입",
+      "expectationResult": "플레이어가 15m 앞에 위치 시, 악몽의 아가양의 돌진 공격이 시작된다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 52,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "Skill_A (Rush)",
+      "sub2": "가속도 처리",
+      "sub3": "Curve 가속",
+      "expectationResult": "악몽의 아가양 돌진 시, 속도가 처음에는 느렸다가 2초에 걸쳐 점점 빨라지는 Curve 가속이 적용된다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 53,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "Skill_A (Rush)",
+      "sub2": "타겟 지나침 정지",
+      "sub3": "90도 이상 이탈 시 정지",
+      "expectationResult": "돌진 중 진행방향 기준 타겟이 90도 이상 떨어진 경우, 지나친 것으로 판정되어 정지된다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 54,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "Skill_A (Rush)",
+      "sub2": "타겟 지나침 정지",
+      "sub3": "공격 판정 소멸",
+      "expectationResult": "돌진으로 타겟을 한 번 지나친 후에는 공격 판정이 발생하지 않는다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 55,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "Skill_A (Rush)",
+      "sub2": "낙사 지형 정지",
+      "sub3": "즉시 멈춤",
+      "expectationResult": "돌진 중 전방이 낙사 지형으로 감지될 시, 악몽의 아가양이 즉시 멈춘다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 56,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "Skill_A (Rush)",
+      "sub2": "충돌 성공 애니",
+      "sub3": "재생",
+      "expectationResult": "돌진 중 쿠키/벽/상자 등 오브젝트에 충돌 시, _Skill_A_03 충돌 성공 애니가 재생된다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 57,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "Skill_A (Rush)",
+      "sub2": "충돌 실패 애니",
+      "sub3": "재생",
+      "expectationResult": "돌진 중 어떤 오브젝트와도 충돌하지 않고 종료 시, _Skill_A_04 충돌 실패 애니가 재생된다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 58,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "Skill_A (Rush)",
+      "sub2": "충돌 시 플레이어 밀림",
+      "sub3": "넉백 적용",
+      "expectationResult": "돌진이 플레이어에 적중 시, 플레이어가 뒤쪽으로 밀려나는 넉백이 적용된다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 59,
+      "priority": "Major",
+      "main": "악몽의 아가양",
+      "sub1": "배치 및 면역",
+      "sub2": "",
+      "sub3": "공격 중 경직 면역",
+      "expectationResult": "악몽의 아가양이 공격을 실행하는 동안에는 경직에 면역된다.",
+      "comment": "어드벤처 인게임 몬스터_2.pdf (악몽의 아가양)"
+    },
+    {
+      "no": 60,
+      "priority": "Normal",
+      "main": "노래하는 인형",
+      "sub1": "대기 및 이동",
+      "sub2": "패트롤",
+      "sub3": "졸린 듯 배회",
+      "expectationResult": "노래하는 인형은 대기 상태에서 몽롱하게 졸린 듯이 주변을 배회한다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 61,
+      "priority": "Normal",
+      "main": "노래하는 인형",
+      "sub1": "대기 및 이동",
+      "sub2": "발견 시 \"!\" 표시",
+      "sub3": "출력",
+      "expectationResult": "노래하는 인형이 플레이어 발견 시, 머리 위에 \"!\" 표시가 출력된 뒤 잠깐 대기한다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 62,
+      "priority": "Major",
+      "main": "노래하는 인형",
+      "sub1": "대기 및 이동",
+      "sub2": "타겟 이동",
+      "sub3": "가장 가까운 몬스터 추적",
+      "expectationResult": "노래하는 인형은 플레이어 발견 시, 가장 가까운 몬스터를 타겟으로 잡은 후 4m 거리까지 이동된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 63,
+      "priority": "Major",
+      "main": "노래하는 인형",
+      "sub1": "Skill_A (노래)",
+      "sub2": "공격 시작 범위",
+      "sub3": "15m 진입 시 발동",
+      "expectationResult": "노래하는 인형은 플레이어가 공격 시작 범위 15m 안으로 들어오면 Skill_A 노래를 시작한다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 64,
+      "priority": "Critical",
+      "main": "노래하는 인형",
+      "sub1": "Skill_A (노래)",
+      "sub2": "보호막 부여 처리",
+      "sub3": "3회 부여",
+      "expectationResult": "Skill_A 시전 시, 3초간 노래를 부르며 처음 실행 시와 이후 1초 간격으로 총 3회 보호막이 부여된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 65,
+      "priority": "Major",
+      "main": "노래하는 인형",
+      "sub1": "Skill_A (노래)",
+      "sub2": "보호막 부여 처리",
+      "sub3": "보호막 보유자 TargetList 제외",
+      "expectationResult": "이미 수면 보호막을 보유한 몬스터는 Skill_A의 TargetList에서 제외된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 66,
+      "priority": "Major",
+      "main": "노래하는 인형",
+      "sub1": "Skill_A (노래)",
+      "sub2": "보호막 부여 처리",
+      "sub3": "9m 범위 적용",
+      "expectationResult": "Skill_A 시전 시, 자신을 중심으로 반지름 9m 안의 모든 몬스터에게 보호막이 부여된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 67,
+      "priority": "Normal",
+      "main": "노래하는 인형",
+      "sub1": "Skill_A (노래)",
+      "sub2": "노래 애니메이션",
+      "sub3": "재생",
+      "expectationResult": "Skill_A 시전 시, 노래 준비(0.5초) → 노래 Loop(3초) → 노래 끝(0.5초) 애니메이션이 순차 재생된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 68,
+      "priority": "Normal",
+      "main": "노래하는 인형",
+      "sub1": "수면 및 기상",
+      "sub2": "수면 진입 자세",
+      "sub3": "엎어져 잠",
+      "expectationResult": "노래하는 인형은 수면에 걸리는 순간 엎어져서 자는 자세의 _Sleep_01 애니가 재생된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 69,
+      "priority": "Major",
+      "main": "노래하는 인형",
+      "sub1": "수면 및 기상",
+      "sub2": "기상 복귀 시간",
+      "sub3": "3초 소요",
+      "expectationResult": "노래하는 인형의 수면이 끝났을 때, 약 3초에 걸쳐 전투에 복귀된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 70,
+      "priority": "Major",
+      "main": "노래하는 인형",
+      "sub1": "도망",
+      "sub2": "발동 조건",
+      "sub3": "주변 몬스터 0 + 2초 경과",
+      "expectationResult": "주위 다른 몬스터가 1마리도 없어진 후 약 2초가 지나면, 노래하는 인형의 도망이 시작된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 71,
+      "priority": "Major",
+      "main": "노래하는 인형",
+      "sub1": "도망",
+      "sub2": "포탈 소환 및 Despawn",
+      "sub3": "3초간 사라짐",
+      "expectationResult": "도망 발동 시, 포탈을 소환한 후 약 3초에 걸쳐 화면에서 사라지며 Despawn 처리된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 72,
+      "priority": "Major",
+      "main": "노래하는 인형",
+      "sub1": "도망",
+      "sub2": "도주 중 경직 면역",
+      "sub3": "면역 적용",
+      "expectationResult": "노래하는 인형이 도망 행동 중에는 경직에 면역된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 73,
+      "priority": "Critical",
+      "main": "노래하는 인형",
+      "sub1": "도망",
+      "sub2": "카운트 처리",
+      "sub3": "Enemy remains 포함 / 수집품 미포함",
+      "expectationResult": "Despawn 처리된 노래하는 인형은 Enemy remains 조건에는 포함되지만, 수집품 수에는 카운트되지 않는다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 74,
+      "priority": "Normal",
+      "main": "노래하는 인형",
+      "sub1": "배치",
+      "sub2": "",
+      "sub3": "전투 공간 배치 수",
+      "expectationResult": "노래하는 인형은 전투 공간당 1~2마리 범위로 배치된다.",
+      "comment": "어드벤처 인게임 몬스터_3.pdf (노래하는 인형)"
+    },
+    {
+      "no": 75,
+      "priority": "Normal",
+      "main": "악몽 램프",
+      "sub1": "대기 패턴",
+      "sub2": "",
+      "sub3": "랜덤 방향 응시",
+      "expectationResult": "악몽 램프는 플레이어 발견 전까지 이동 없이 랜덤한 방향을 바라본다.",
+      "comment": "어드벤처 인게임 몬스터_4.pdf (악몽 램프)"
+    },
+    {
+      "no": 76,
+      "priority": "Critical",
+      "main": "악몽 램프",
+      "sub1": "Skill_A (Area Attack)",
+      "sub2": "공격 발동",
+      "sub3": "인지 즉시 공격",
+      "expectationResult": "악몽 램프는 플레이어 인지 시작 시 즉시 Skill_A 공격을 시작한다.",
+      "comment": "어드벤처 인게임 몬스터_4.pdf (악몽 램프)"
+    },
+    {
+      "no": 77,
+      "priority": "Major",
+      "main": "악몽 램프",
+      "sub1": "Skill_A (Area Attack)",
+      "sub2": "십자 패턴",
+      "sub3": "4방향 인디케이터 생성",
+      "expectationResult": "Skill_A 시전 시, 쿠키 발 아래 및 4방향으로 사각 인디케이터가 십자 형태로 생성된다.",
+      "comment": "어드벤처 인게임 몬스터_4.pdf (악몽 램프)"
+    },
+    {
+      "no": 78,
+      "priority": "Major",
+      "main": "악몽 램프",
+      "sub1": "Skill_A (Area Attack)",
+      "sub2": "X자 회전 분기",
+      "sub3": "45도 회전 스폰",
+      "expectationResult": "악몽 램프 Skill_A 사용 시, 경우에 따라 45도 돌려진 마름모형 패턴으로 스폰된다.",
+      "comment": "어드벤처 인게임 몬스터_4.pdf (악몽 램프)"
+    },
+    {
+      "no": 79,
+      "priority": "Normal",
+      "main": "악몽 램프",
+      "sub1": "Skill_A (Area Attack)",
+      "sub2": "인디케이터 출력",
+      "sub3": "약 2초간 차오름",
+      "expectationResult": "Skill_A 시전 시, 인디케이터가 약 2초에 걸쳐 차오른 후 폭발 데미지가 발생한다.",
+      "comment": "어드벤처 인게임 몬스터_4.pdf (악몽 램프)"
+    },
+    {
+      "no": 80,
+      "priority": "Major",
+      "main": "악몽 램프",
+      "sub1": "배치 및 면역",
+      "sub2": "",
+      "sub3": "경직 면역 적용",
+      "expectationResult": "악몽 램프는 경직에 면역되며 느린 공격 속도가 적용된다.",
+      "comment": "어드벤처 인게임 몬스터_4.pdf (악몽 램프)"
+    },
+    {
+      "no": 81,
+      "priority": "Normal",
+      "main": "악몽 램프",
+      "sub1": "배치 및 면역",
+      "sub2": "",
+      "sub3": "2마리 배치 시 1초 텀",
+      "expectationResult": "악몽 램프 2마리 배치 시, 출현 시간에 1초 이상의 텀을 두어 번갈아 공격된다.",
+      "comment": "어드벤처 인게임 몬스터_4.pdf (악몽 램프)"
+    },
+    {
+      "no": 82,
+      "priority": "Normal",
+      "main": "꿈꾸는 모빌",
+      "sub1": "대기 및 이동",
+      "sub2": "",
+      "sub3": "랜덤 위치 패트롤",
+      "expectationResult": "꿈꾸는 모빌은 플레이어 미발견 시 랜덤 위치를 패트롤한다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 83,
+      "priority": "Normal",
+      "main": "꿈꾸는 모빌",
+      "sub1": "대기 및 이동",
+      "sub2": "",
+      "sub3": "발견 시 \"!\" 표시",
+      "expectationResult": "꿈꾸는 모빌이 플레이어 발견 시, 머리 위에 \"!\" 표시가 출력된 뒤 잠깐 대기한 후 소환이 시작된다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 84,
+      "priority": "Major",
+      "main": "꿈꾸는 모빌",
+      "sub1": "Skill_A (몬스터 소환)",
+      "sub2": "별 투사체 발사",
+      "sub3": "4.5~9m 범위 발사",
+      "expectationResult": "Skill_A 사용 시, 꿈꾸는 모빌 주변 4.5m~9m 범위로 별 모양 투사체가 발사된다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 85,
+      "priority": "Critical",
+      "main": "꿈꾸는 모빌",
+      "sub1": "Skill_A (몬스터 소환)",
+      "sub2": "최대 소환 수 제한",
+      "sub3": "3마리 제한",
+      "expectationResult": "꿈꾸는 모빌은 최대 3마리까지만 몬스터를 소환한다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 86,
+      "priority": "Major",
+      "main": "꿈꾸는 모빌",
+      "sub1": "Skill_A (몬스터 소환)",
+      "sub2": "소환 종류 랜덤",
+      "sub3": "3종 중 1종 선정",
+      "expectationResult": "꿈꾸는 모빌이 소환하는 몬스터는 아가양/악몽요정/악몽램프 중 1종이 랜덤으로 선정된다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 87,
+      "priority": "Major",
+      "main": "꿈꾸는 모빌",
+      "sub1": "Skill_B (모여드는 항성)",
+      "sub2": "영역 소환",
+      "sub3": "3m 범위 Area Attack 소환",
+      "expectationResult": "Skill_B 시전 시, 플레이어 중심 근처 3m 범위에 항성 모양 Area Attack 투사체가 소환된다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 88,
+      "priority": "Major",
+      "main": "꿈꾸는 모빌",
+      "sub1": "Skill_B (모여드는 항성)",
+      "sub2": "흔들림 대기",
+      "sub3": "3.5초 대기",
+      "expectationResult": "Skill_B 투사체는 약 3.5초간 불안정하게 흔들리며 대기하는 동안 어떤 영향도 주지 않는다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 89,
+      "priority": "Critical",
+      "main": "꿈꾸는 모빌",
+      "sub1": "Skill_B (모여드는 항성)",
+      "sub2": "가운데 흡인 발동",
+      "sub3": "영역 내 끌어당김",
+      "expectationResult": "Skill_B 발동 시, 5m 영역 내 모든 적과 플레이어가 가운데로 빨려들어가며 약간의 데미지를 받는다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "꿈꾸는 모빌",
+      "sub1": "수면 및 기상",
+      "sub2": "수면 시 추락",
+      "sub3": "지상 낙하",
+      "expectationResult": "꿈꾸는 모빌은 수면에 걸리는 순간 빠르게 바닥으로 추락한다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 91,
+      "priority": "Major",
+      "main": "꿈꾸는 모빌",
+      "sub1": "수면 및 기상",
+      "sub2": "소환 몬스터 전부 사망",
+      "sub3": "동시 사망 처리",
+      "expectationResult": "꿈꾸는 모빌이 수면에 걸릴 시, 자신이 소환했던 모든 몬스터가 사망 처리된다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 92,
+      "priority": "Major",
+      "main": "꿈꾸는 모빌",
+      "sub1": "수면 및 기상",
+      "sub2": "기상 시 공중 복귀",
+      "sub3": "3초간 부상",
+      "expectationResult": "꿈꾸는 모빌의 수면이 끝나면 약 3초에 걸쳐 다시 공중으로 떠오른다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 93,
+      "priority": "Major",
+      "main": "꿈꾸는 모빌",
+      "sub1": "배치 및 면역",
+      "sub2": "",
+      "sub3": "경직 면역 적용",
+      "expectationResult": "꿈꾸는 모빌은 경직에 면역되며, 전투 공간당 1마리만 배치된다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 94,
+      "priority": "Normal",
+      "main": "꿈꾸는 모빌",
+      "sub1": "Skill_A (몬스터 소환)",
+      "sub2": "별 투사체 발사",
+      "sub3": "투사체 데미지 없음",
+      "expectationResult": "꿈꾸는 모빌의 소환 별 투사체 자체에는 데미지가 적용되지 않는다.",
+      "comment": "어드벤처 인게임 몬스터_5.pdf (꿈꾸는 모빌)"
+    },
+    {
+      "no": 95,
+      "priority": "Normal",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "대기 및 이동",
+      "sub2": "",
+      "sub3": "랜덤 위치 패트롤",
+      "expectationResult": "악몽의 양은 대기 상태에서 가볍게 공중을 통통 튀듯 랜덤 위치를 패트롤한다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 96,
+      "priority": "Critical",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_A (돌진)",
+      "sub2": "돌진 기본 동작",
+      "sub3": "가속 돌진",
+      "expectationResult": "악몽의 양 Skill_A 시전 시, 기본 이동 속도의 절반~2배까지 2초에 걸쳐 가속되는 돌진 공격이 발동된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 97,
+      "priority": "Major",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_A (돌진)",
+      "sub2": "충돌 시 스턴 부여",
+      "sub3": "플레이어 스턴",
+      "expectationResult": "악몽의 양의 돌진 공격에 플레이어가 적중 시, 스턴 상태이상이 부여된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 98,
+      "priority": "Major",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_A (돌진)",
+      "sub2": "3연속 사용",
+      "sub3": "연속 발동",
+      "expectationResult": "악몽의 양 Skill_A는 한 번에 최대 3번까지 연속으로 사용된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 99,
+      "priority": "Major",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_A (돌진)",
+      "sub2": "고난이도 추가 투사체",
+      "sub3": "Skill_B 투사체 1회 낙하",
+      "expectationResult": "높은 난이도에서 악몽의 양 Skill_A가 오브젝트에 부딪힐 경우, 주변에 Skill_B의 투사체가 1회 낙하된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 100,
+      "priority": "Major",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_B (High Angle Fire)",
+      "sub2": "투사체 발사",
+      "sub3": "12m 사거리 곡선 발사",
+      "expectationResult": "악몽의 양 Skill_B는 공격 시작 범위 12m에서 Flight Time 1초로 별 투사체를 곡선 발사한다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 101,
+      "priority": "Major",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_B (High Angle Fire)",
+      "sub2": "바닥 충돌 후 튕김",
+      "sub3": "4m 거리 2회 추가 튕김",
+      "expectationResult": "Skill_B 투사체는 바닥 첫 충돌 이후 랜덤 방향 4m 거리로 2회 추가 튕긴 뒤 제거된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 102,
+      "priority": "Normal",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_B (High Angle Fire)",
+      "sub2": "인디케이터 출력",
+      "sub3": "출력",
+      "expectationResult": "Skill_B 시전 시, 인디케이터가 잠시 출력된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 103,
+      "priority": "Major",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_C (Area Attack)",
+      "sub2": "별똥별 낙하",
+      "sub3": "2초 후 영역 공격",
+      "expectationResult": "악몽의 양 Skill_C는 공격까지 2초 대기 후 반지름 3.5m 범위로 별똥별 영역 공격이 발동된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 104,
+      "priority": "Normal",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_C (Area Attack)",
+      "sub2": "인디케이터 출력",
+      "sub3": "플레이어 위치 표시",
+      "expectationResult": "Skill_C 시전 시, 플레이어 위치로 잠시 인디케이터가 출력된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 105,
+      "priority": "Major",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_C (Area Attack)",
+      "sub2": "고난이도 추가 투사체",
+      "sub3": "Skill_B 투사체 1회 낙하",
+      "expectationResult": "높은 난이도에서 Skill_C 발동 후, 주변에 Skill_B의 투사체가 1회 추가로 낙하된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 106,
+      "priority": "Normal",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "Skill_C (Area Attack)",
+      "sub2": "낮은 체력 강화",
+      "sub3": "별똥별 갯수 증가",
+      "expectationResult": "낮은 체력 시 Skill_C의 함성 시간이 길어지고, 낙하하는 별똥별의 갯수가 증가된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 107,
+      "priority": "Major",
+      "main": "악몽의 양 (중간보스)",
+      "sub1": "배치 및 면역",
+      "sub2": "",
+      "sub3": "공격 중 경직 면역",
+      "expectationResult": "악몽의 양은 한 번 공격을 실행하는 동안 경직에 면역된다.",
+      "comment": "어드벤처 인게임 몬스터_6.pdf (악몽의 양)"
+    },
+    {
+      "no": 108,
+      "priority": "Major",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "대기 및 이동",
+      "sub2": "공중 부유 및 선회",
+      "sub3": "맵 주변 선회",
+      "expectationResult": "꿈을 쏟아내는 모빌은 공중에서 둥둥 떠있는 상태로 맵 주변을 빙글빙글 선회한다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 109,
+      "priority": "Critical",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "Skill_A (다중 소환)",
+      "sub2": "3개 동시 투사체",
+      "sub3": "한 번에 3개 발사",
+      "expectationResult": "꿈을 쏟아내는 모빌의 Skill_A는 플레이어 주변 3m~12m 범위로 별 투사체 3개를 동시에 발사한다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 110,
+      "priority": "Critical",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "Skill_A (다중 소환)",
+      "sub2": "재소환 조건",
+      "sub3": "2마리 이하 재발동",
+      "expectationResult": "꿈을 쏟아내는 모빌은 소환한 몬스터가 2마리 이하로 남았을 때 Skill_A를 재사용한다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 111,
+      "priority": "Major",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "Skill_A (다중 소환)",
+      "sub2": "소환 종류",
+      "sub3": "3종 중 1종 랜덤",
+      "expectationResult": "꿈을 쏟아내는 모빌의 소환 몬스터는 아가양/악몽요정/노래하는 인형 중 1종이 랜덤으로 선정된다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 112,
+      "priority": "Major",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "Skill_B (강화 항성)",
+      "sub2": "",
+      "sub3": "15m 범위 Area Attack",
+      "expectationResult": "꿈을 쏟아내는 모빌의 Skill_B는 플레이어 중심 근처 15m 범위에 Area Attack을 소환하며, 기본 몬스터보다 더 자주 사용된다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 113,
+      "priority": "Major",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "수면 및 기상",
+      "sub2": "수면 시 추락",
+      "sub3": "지상 빠른 낙하",
+      "expectationResult": "꿈을 쏟아내는 모빌은 수면에 걸리는 순간 빠르게 바닥으로 떨어진다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 114,
+      "priority": "Major",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "수면 및 기상",
+      "sub2": "소환 몬스터 전부 사망",
+      "sub3": "동시 사망 처리",
+      "expectationResult": "꿈을 쏟아내는 모빌이 수면에 걸릴 시, 자신이 소환했던 몬스터가 전부 사망 처리된다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 115,
+      "priority": "Major",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "수면 및 기상",
+      "sub2": "기상 후 지상 체류",
+      "sub3": "5초간 타격 가능",
+      "expectationResult": "꿈을 쏟아내는 모빌이 수면에서 깨어난 후 약 5초간 지상에 가까이 머물며 추가 타격이 가능하다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 116,
+      "priority": "Normal",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "수면 및 기상",
+      "sub2": "공중 복귀",
+      "sub3": "0.5초간 부상",
+      "expectationResult": "지상 체류 5초 종료 후, 약 0.5초간 다시 공중으로 떠오른다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 117,
+      "priority": "Critical",
+      "main": "꿈을 쏟아내는 모빌 (중간보스)",
+      "sub1": "Hide 상태 처리",
+      "sub2": "",
+      "sub3": "기믹 작동 전 타격 불가",
+      "expectationResult": "꿈을 쏟아내는 모빌은 맵 중앙 기믹 작동 전까지 Hide 상태로 타격이 불가하다.",
+      "comment": "어드벤처 인게임 몬스터_7.pdf (꿈을 쏟아내는 모빌)"
+    },
+    {
+      "no": 118,
+      "priority": "Normal",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "대기",
+      "sub2": "",
+      "sub3": "고정형 유지",
+      "expectationResult": "거대한 악몽 램프는 이동하지 않는 고정형으로 대기 상태가 유지된다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 119,
+      "priority": "Major",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_A (십자 장판)",
+      "sub2": "25 포인트 선정",
+      "sub3": "TargetPosition 산출",
+      "expectationResult": "Skill_A 시전 시, 몬스터 중심 좌우 12m 내 25개 포인트 중 쿠키 근처를 Center로 잡고 상하좌우 4개 포인트가 선정된다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 120,
+      "priority": "Major",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_A (십자 장판)",
+      "sub2": "인디케이터 차오름",
+      "sub3": "약 2초 차오름",
+      "expectationResult": "Skill_A 시전 시, 약 2초간 인디케이터가 차오른 뒤 6m×6m 십자 패턴 폭발이 발생한다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 121,
+      "priority": "Normal",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_A (십자 장판)",
+      "sub2": "단독 위치 타격 분기",
+      "sub3": "쿠키 포지션 단독 공격",
+      "expectationResult": "Skill_A 사용 시 가끔 십자 패턴이 아닌 쿠키가 서있는 단독 포지션을 타격하는 분기가 발동된다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 122,
+      "priority": "Major",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_B (부채꼴 빛)",
+      "sub2": "인디케이터 차오름",
+      "sub3": "1.8초 차오름",
+      "expectationResult": "Skill_B 시전 시, 약 1.8초간 반지름 8m / 120도 부채꼴 인디케이터가 차오른다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 123,
+      "priority": "Major",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_B (부채꼴 빛)",
+      "sub2": "빛 분사",
+      "sub3": "Melee 공격 발동",
+      "expectationResult": "Skill_B 인디케이터 차오름 종료 후, 갓이 위로 들리며 전방으로 강한 빛 공격이 분사된다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 124,
+      "priority": "Major",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_C (레이저)",
+      "sub2": "인디케이터 출력",
+      "sub3": "1초 출력",
+      "expectationResult": "Skill_C 시전 시, 쿠키가 있던 위치로 약 1초간 인디케이터가 출력된 뒤 사라진다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 125,
+      "priority": "Critical",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_C (레이저)",
+      "sub2": "레이저 발사",
+      "sub3": "3~15m 직선 발사",
+      "expectationResult": "Skill_C는 자신의 바로 앞 3m~15m 범위로 약 0.5초간 직선 레이저가 발사된다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 126,
+      "priority": "Critical",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "페이즈 전환",
+      "sub2": "2페이즈 진입",
+      "sub3": "패턴 변경",
+      "expectationResult": "일정 체력 이하 진입 시, 거대한 악몽 램프는 1페이즈에서 2페이즈로 전환되어 정해진 모양의 패턴 공격을 수행한다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 127,
+      "priority": "Major",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "페이즈 전환",
+      "sub2": "카메라 고정 패턴 공격",
+      "sub3": "카메라 후방 고정",
+      "expectationResult": "2페이즈 진입 시, 카메라가 후방으로 고정되며 바닥에 정해진 패턴을 그리는 공격이 발동된다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 128,
+      "priority": "Normal",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_A (십자 장판)",
+      "sub2": "인디케이터 차오름",
+      "sub3": "2페이즈 연속 폭발",
+      "expectationResult": "2페이즈에서는 Skill_A 사용 시 매당 한번에 여러번 연속으로 바닥이 폭발한다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 129,
+      "priority": "Normal",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_A (십자 장판)",
+      "sub2": "인디케이터 차오름",
+      "sub3": "빛 차오름 연출",
+      "expectationResult": "Skill_A 준비 단계에서 램프의 몸에서 빛이 서서히 밝아지는 연출이 출력된다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 130,
+      "priority": "Normal",
+      "main": "거대한 악몽 램프 (중간보스)",
+      "sub1": "Skill_B (부채꼴 빛)",
+      "sub2": "인디케이터 차오름",
+      "sub3": "고개 숙임 연출",
+      "expectationResult": "Skill_B 준비 단계에서 램프가 플레이어 방향으로 고개를 숙이는 애니가 재생된다.",
+      "comment": "어드벤처 인게임 몬스터_8.pdf (거대한 악몽 램프)"
+    },
+    {
+      "no": 131,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "맵 구성",
+      "sub2": "1페이즈 맵",
+      "sub3": "낙사 불가",
+      "expectationResult": "1페이즈 진입 시, 3가지 컨셉이 섞인 직사각형 맵(x:66m, z:54m)에서 낙사가 불가능하다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 132,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "맵 구성",
+      "sub2": "2페이즈 맵",
+      "sub3": "낙사 가능 전환",
+      "expectationResult": "2페이즈 진입 시, 뒤틀리고 어두운 공간으로 변경되며 낙사가 가능한 상태로 전환된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 133,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "낙사 시스템",
+      "sub2": "맵 가장자리 소멸",
+      "sub3": "별의 분노 발동",
+      "expectationResult": "2페이즈 진입 후 보스 오프닝 패턴 '별의 분노' 발동 시, 맵 가장자리가 소멸되어 전투 공간이 줄어든다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 134,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "낙사 시스템",
+      "sub2": "낙사 시 피해",
+      "sub3": "최대 체력 비례 피해",
+      "expectationResult": "낙사 시점에 플레이어 최대 체력 비례 20%~30%의 피해가 즉시 적용된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 135,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "낙사 시스템",
+      "sub2": "안개 붙잡힘 상태",
+      "sub3": "매초 5~10% 피해",
+      "expectationResult": "낙사 후 안개에 붙잡힌 상태에서, 매초 최대 체력 비례 5%~10%의 피해가 적용된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 136,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "낙사 시스템",
+      "sub2": "버튼 연타 탈출",
+      "sub3": "필드 복귀",
+      "expectationResult": "안개 붙잡힘 상태에서 버튼 연타 시, 플레이어가 탈출하여 필드로 복귀된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 137,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "낙사 시스템",
+      "sub2": "버튼 연타 탈출",
+      "sub3": "누적 횟수 증가",
+      "expectationResult": "개인 단위로 낙사가 누적될수록, 탈출에 요구되는 버튼 연타 횟수가 증가된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 138,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽의 허상 기믹",
+      "sub2": "허상 시각 효과",
+      "sub3": "공통 색상 표시",
+      "expectationResult": "보스가 가하는 모든 공격에 허상이 섞여 발생하며, 모든 허상은 공통 시각 효과(동일 색상)로 표시된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 139,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽의 허상 기믹",
+      "sub2": "허상 데미지 무효",
+      "sub3": "피격 시 피해 X",
+      "expectationResult": "허상 투사체 적중 시, 플레이어에게 피해가 적용되지 않는다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 140,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽의 허상 기믹",
+      "sub2": "인디케이터 구분 불가",
+      "sub3": "동일 인디케이터 출력",
+      "expectationResult": "허상 공격은 인디케이터로 실제 공격과 구분할 수 없도록 동일하게 출력된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 141,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 방출",
+      "sub2": "거리 벌리기",
+      "sub3": "타겟 방향 방출",
+      "expectationResult": "악몽 방출 시, 보스가 빠르게 타겟과 거리를 벌린 후 타겟 방향으로 악몽을 방출한다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 142,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 방출",
+      "sub2": "관통 발사 및 고정",
+      "sub3": "최대 거리 고정",
+      "expectationResult": "방출된 악몽은 관통되어 날아가다가 최대 거리에 도달하면 해당 위치에 고정되어 대기한다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 143,
+      "priority": "Normal",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 방출",
+      "sub2": "강화 발사",
+      "sub3": "다채로운 발사 방향",
+      "expectationResult": "강화 시, 동시에 발사하는 수와 발사 방향이 다채롭게 구성되어 직선/전방위 발사 형태로 진행된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 144,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 회수",
+      "sub2": "이동 후 회수",
+      "sub3": "타겟 근처 이동",
+      "expectationResult": "악몽 회수 시, 보스가 타겟 근처로 빠르게 이동한 후 필드의 고정된 악몽을 자신을 향해 회수한다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 145,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 회수",
+      "sub2": "경로 피해",
+      "sub3": "경로 대상 피해",
+      "expectationResult": "악몽 회수 중 회수 경로상에 있는 대상에게 피해가 적용된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 146,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "심연의 손길",
+      "sub2": "1차 손 솟음",
+      "sub3": "타겟 아래 손 출현",
+      "expectationResult": "심연의 손길 1차 공격 시, 필드 위 모든 타겟 아래에서 빠른 속도로 손이 솟아난다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 147,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "심연의 손길",
+      "sub2": "속박 적용",
+      "sub3": "N초 속박",
+      "expectationResult": "심연의 손길에 붙잡힌 대상은 N초 동안 속박된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 148,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "심연의 손길",
+      "sub2": "2차 폭발",
+      "sub3": "속박 대상 폭발 피해",
+      "expectationResult": "캐스팅 종료 시 속박된 대상이 있는 경우, 손이 폭발하며 주변에 강력한 피해가 적용된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 149,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "심연의 손길",
+      "sub2": "대상 없을 시 종료",
+      "sub3": "즉시 스킬 종료",
+      "expectationResult": "캐스팅 종료 시 속박된 대상이 없는 경우, 심연의 손길 스킬이 즉시 종료된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 150,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "진짜 찾기",
+      "sub2": "분신 생성",
+      "sub3": "보스 위치 랜덤",
+      "expectationResult": "진짜 찾기 발동 시, 본체와 분신이 생성되며 보스 위치가 랜덤으로 배치된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 151,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "진짜 찾기",
+      "sub2": "A/B 캐스팅 분기",
+      "sub3": "본체/분신 다른 공격",
+      "expectationResult": "보스는 A/B 두 가지 공격 중 하나를 본체가 시전하며, 분신은 본체와 다른 공격을 시전한다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 152,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "진짜 찾기",
+      "sub2": "본체 무력화 성공",
+      "sub3": "공격 저지 및 기절",
+      "expectationResult": "시간 안에 본체 무력화 성공 시, 보스 공격이 저지되고 짧은 시간 보스가 기절되며 분신이 소멸된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 153,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "진짜 찾기",
+      "sub2": "분신 타격 무효",
+      "sub3": "스탯 영향 X",
+      "expectationResult": "진짜 찾기 진행 중 분신을 타격해도 보스의 체력 및 무력화 수치에 영향이 적용되지 않는다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 154,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "진짜 찾기",
+      "sub2": "실패 시 광역 공격",
+      "sub3": "본체 기준 넓은 범위",
+      "expectationResult": "시간 안에 무력화 실패 시, 본체 기준 넓은 범위 공격이 시전되며 분신이 소멸된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 155,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 폭주",
+      "sub2": "즉시 시전",
+      "sub3": "별도 애니 없이 발동",
+      "expectationResult": "보스가 악몽을 흡수한 경우, 별도 애니메이션 없이 악몽 폭주가 즉시 시전된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 156,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 폭주",
+      "sub2": "흡수 수 비례 데미지",
+      "sub3": "최대 체력 비례 고정 피해",
+      "expectationResult": "악몽 폭주 발동 시, 모든 플레이어에게 흡수한 악몽 수에 비례한 최대 체력 비례 고정 피해가 적용된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 157,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "잠식",
+      "sub2": "기본 덩어리 낙하",
+      "sub3": "랜덤 위치 낙하",
+      "expectationResult": "잠식 기본 패턴 발동 시, 보스 주변 랜덤한 위치에 악몽 덩어리가 낙하된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 158,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "잠식",
+      "sub2": "웅덩이 효과",
+      "sub3": "이동속도 감소 및 주기 피해",
+      "expectationResult": "악몽 웅덩이 범위 안에 들어온 대상에게 이동속도 감소 효과와 일정 시간마다 피해가 적용된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 159,
+      "priority": "Normal",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "잠식",
+      "sub2": "강화 점점 커짐",
+      "sub3": "공간 압박",
+      "expectationResult": "잠식 강화 패턴 시, 떨어진 위치에 생성된 웅덩이가 일정 시간 동안 크기가 증가되어 공간을 압박한다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 160,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "잠식",
+      "sub2": "강화2 허상 분기",
+      "sub3": "허상 즉시 소멸",
+      "expectationResult": "잠식 강화2 시, 큰 악몽 덩어리 4개 중 n개는 허상으로 떨어지는 동시에 소멸되며, 진짜는 광역 피해와 웅덩이를 생성한다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 161,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "보스 무적 진입",
+      "sub3": "맵 전역 잠식",
+      "expectationResult": "악몽 정화 필살기 시작 시, 보스가 필드 중앙으로 이동 후 맵 전역을 악몽으로 물들이며 무적 상태가 된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 162,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "밀쳐냄 정화",
+      "sub3": "경로 정화",
+      "expectationResult": "맵이 악몽으로 물든 직후 플레이어가 강하게 밀쳐지며, 밀쳐진 경로만큼 공간이 정화된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 163,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "파괴 보호막 분신",
+      "sub3": "성공 처리",
+      "expectationResult": "파괴 보호막 보스 분신에 대해 제한 시간 안에 보호막 파괴 성공 시, 공격이 저지되고 주변 필드가 정화된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 164,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "파괴 보호막 분신",
+      "sub3": "실패 처리",
+      "expectationResult": "파괴 보호막 분신 보호막 파괴 실패 시, 광역 공격이 시전되어 주변 필드가 악몽으로 물든다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 165,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "무력화 분신",
+      "sub3": "성공 처리",
+      "expectationResult": "무력화를 요구하는 분신에 대해 제한 시간 안에 무력화 성공 시, 공격이 저지되고 주변 필드가 정화된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 166,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "무력화 분신",
+      "sub3": "실패 처리",
+      "expectationResult": "무력화 분신 무력화 실패 시, 광역 공격이 시전되어 주변 필드가 악몽으로 물든다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 167,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "상쇄 분신",
+      "sub3": "성공 처리",
+      "expectationResult": "상쇄 가능한 공격을 시전하는 보스 분신에 대해 상쇄 성공 시, 공격이 저지되고 주변 필드가 정화된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 168,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "상쇄 분신",
+      "sub3": "실패 처리",
+      "expectationResult": "상쇄 분신 상쇄 실패 시, 광역 공격이 시전되어 주변 필드가 악몽으로 물든다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 169,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "정화 불가 필드 전환",
+      "sub3": "일정 시간 방치 시 전환",
+      "expectationResult": "악몽으로 물든 구역을 일정 시간 동안 정화하지 않고 방치 시, 해당 구역이 정화 불가능한 필드로 전환된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 170,
+      "priority": "Critical",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "결과 판정",
+      "sub3": "성공 그로기",
+      "expectationResult": "시간 종료 시 필드의 정화 정도가 성공 기준 충족 시, 보스가 그로기 상태로 전환된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 171,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "악몽 정화 필살기",
+      "sub2": "결과 판정",
+      "sub3": "실패 전투 지속",
+      "expectationResult": "시간 종료 시 정화 실패 판정 시, 기믹 종료 후 전투가 이어지며 일반 몬스터가 계속 생성되어 압박한다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 172,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "유틸 패턴",
+      "sub2": "이동기",
+      "sub3": "정해진 방향 고속 이동",
+      "expectationResult": "이동기 사용 시, 보스가 정해진 방향으로 빠른 속도로 이동되며 악몽 방출 & 회수에 연계되어 사용된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    },
+    {
+      "no": 173,
+      "priority": "Major",
+      "main": "어비스레이드: 악몽A (보스)",
+      "sub1": "유틸 패턴",
+      "sub2": "텔레포트",
+      "sub3": "순간이동 + 전조",
+      "expectationResult": "텔레포트 사용 시, 약간의 전조 시간을 보장한 후 보스가 목표 지점으로 빠른 속도로 순간이동된다.",
+      "comment": "어드벤처 인게임 보스.pdf (악몽A)"
+    }
+  ],
+  "generatedAt": "2026-05-21T09:03:39.302Z",
+  "tokenUsage": {
+    "inputTokens": 357,
+    "outputTokens": 255612,
+    "cacheReadTokens": 2421080,
+    "cacheCreationTokens": 1296181,
+    "totalCostUsd": 15.756051249999999
+  },
+  "planText": "### 기능 목록\n\n**1. 수면 시스템 (CC기)**\n- 수면 걸림 조건 (오르골 작동 / 달빛술사 쿠키 공격)\n- 수면 적용 대상 (중간보스/보스 제외 모든 몬스터)\n- 수면 상태 처리 (스턴과 동일, 스킬 캔슬, BT 초기화)\n- 수면 전용 애니메이션 (Sleep Parameter)\n- Fly 몬스터 추락 처리\n- 수면 해제 조건 (시간 경과 N초 / 피격)\n- 틱뎀(DOT) 예외 처리\n- 수면 해제 후 달빛술사 피해 증가 디버프\n- 수면 이펙트 (머리 위 표시 / 동시 다수 적용)\n\n**2. 오르골 기믹**\n- 상태 머신 (비활성화 → 활성화 → 작동 → 비활성화)\n- 활성화 범위 (반지름 10.5m 실선 표시)\n- 게이지 차오름 (약 6초)\n- 영역 내 적 사망 시 게이지 가속 (0.5초 단축)\n- 범위 이탈 시 게이지 감소 (Delay 후 시작)\n- 작동 효과 (Enemy 수면 디버프 부여)\n- 비활성화 대기 시간 ({N}초, GmTile별 설정)\n- 애니메이션 (활성화/작동/비활성화)\n- 이펙트 (실선/차오름 색상/수면 퍼짐)\n\n**3. 수면 보호막**\n- 부여자 최대 체력 비례 보호막 양\n- 수면 피격 시 즉시 소멸\n- 일반 피격 시 소멸\n- 중첩 불가\n- 중간보스 이상 미사용\n- 전용 UI (색상 차별화)\n\n**4. 악몽 요정 (일반 몬스터)**\n- 패트롤 대기 (인식 거리 20m)\n- 플레이어 발견 시 \"!\" 표시\n- 이동속도 700\n- Sting 스킬 (12m 시작, 1.5m 데미지)\n- Stagger로 공격 중단 시 _Skill_A_03 → _Skill_A_01 복귀\n- 배치 수 4~6마리\n\n**5. 악몽의 아가양 (일반 몬스터)**\n- 패트롤 대기\n- 플레이어 발견 시 \"!\" 표시\n- 이동속도 600\n- Rush 스킬 (15m 시작)\n- 가속도 Curve (2초)\n- 90도 이상 벗어남 시 정지\n- 낙사 지형 앞 즉시 정지\n- 충돌 성공/실패 애니 분기\n- 충돌 시 플레이어 뒤로 밀림\n- 공격 중 경직 면역\n- 배치 수 1~3마리\n\n**6. 노래하는 인형 (일반 몬스터)**\n- 패트롤 대기 (몽롱하게 졸린 듯)\n- 가장 가까운 몬스터 4m 거리까지 이동\n- 이동속도 500~600\n- Skill_A (3초간 노래, 반지름 9m, 3회 보호막 부여)\n- 보호막 받은 몬스터 TargetList 제외\n- 수면 진입 시 엎어져 잠\n- 기상 시 3초 소요\n- 도망 (주변 몬스터 0 + 2초 후, 3초 소요 Despawn)\n- Enemy remains 카운트 O / 수집품 카운트 X\n- 배치 수 1~2마리\n\n**7. 악몽 램프 (일반 몬스터)**\n- 고정형 (이동 X)\n- 랜덤 방향 대기\n- Skill_A (Area Attack, 십자 패턴, 인디케이터 2초)\n- 경우에 따라 45도 회전(X자) 분기\n- 경직 면역\n- 배치 수 1마리 (경우에 따라 2마리, 1초 텀)\n\n**8. 꿈꾸는 모빌 (엘리트 몬스터)**\n- 패트롤 대기 → 플레이어 발견 시 소환 시작\n- 이동속도 500~600\n- Skill_A (별 투사체, 4.5~9m, 최대 3마리 소환)\n- 소환 몬스터 랜덤 (아가양/악몽요정/악몽램프)\n- Skill_B (모여드는 항성, 3m 범위, 5m 영역, 3.5초 대기 후 흡인)\n- 수면 시 추락 + 추락 데미지\n- 수면 시 소환 몬스터 전부 사망\n- 기상 시 3초간 공중 복귀\n- 경직 면역\n- 배치 수 1마리\n\n**9. 악몽의 양 (중간보스)**\n- 패트롤 대기\n- 이동속도 600\n- Skill_A (Rush, 무한 사거리, 스턴 부여, 최대 3연속)\n- Skill_A 고난이도: 오브젝트 충돌 시 Skill_B 투사체 1회 낙하\n- Skill_B (High Angle Fire + Add on, 12m, Flight 1초, 반지름 2m, 4m 튕김 2회 추가)\n- Skill_C (Area Attack, 무한 사거리, 2초, 반지름 3.5m)\n- Skill_C 낮은 체력 시 별똥별 갯수 증가\n- 공격 중 경직 면역\n- 배치 수 1~3마리\n\n**10. 꿈을 쏟아내는 모빌 (중간보스)**\n- 공중 부유 (지상 7m, Hide 상태)\n- 맵 주변 선회 이동\n- Skill_A (3개 동시 투사체, 3m~12m, 매 3마리 소환)\n- 소환 몬스터 2마리 이하 시 재소환\n- Skill_A 소환 종류 (아가양/악몽요정/노래하는 인형)\n- Skill_B (Area Attack, 15m, 더 자주 사용)\n- 수면 시 추락 + 소환 몬스터 전부 사망\n- 기상 후 5초간 지상 체류 (추가 타격 가능)\n- 이후 0.5초간 공중 복귀\n\n**11. 거대한 악몽 램프 (중간보스)**\n- 고정형\n- Skill_A (Summon + Area Attack Deliverers, 6m×6m 십자, 25 포인트 중 선정, 인디케이터 2초)\n- Skill_A 예외: 가끔 쿠키 단독 위치 타격\n- Skill_B (Melee, 반지름 8m, 120도 부채꼴, 인디케이터 1.8초)\n- Skill_C (Laser, 3~15m 직선, 인디케이터 1초, 0.5초 발사)\n- 1페이즈 / 2페이즈 분기 (체력 일정 이하 시)\n- 2페이즈 카메라 후방 고정, 정해진 패턴 공격\n\n**12. 어비스레이드: 악몽A (보스)**\n- 맵 구성 (66m×54m 직사각형)\n- 1페이즈 (낙사 불가)\n- 2페이즈 진입 (별의 분노로 맵 가장자리 소멸, 낙사 가능)\n- 낙사 시 안개 붙잡힘 (체력 비례 20~30% 피해)\n- 붙잡힌 상태 매초 5~10% 피해\n- 버튼 연타 탈출 (누적 시 횟수 증가)\n- 악몽의 허상 기믹 (시각만, 데미지 X)\n- 악몽 방출 (관통 후 고정)\n- 악몽 회수 (경로 피해)\n- 심연의 손길 (1차 속박, 2차 폭발)\n- 진짜 찾기 (분신/본체 구분, A/B 캐스팅)\n- 악몽 폭주 (흡수 악몽 수 비례 데미지)\n- 잠식 (덩어리 낙하 → 웅덩이, 강화/강화2 분기)\n- 악몽 정화 필살기 (9단계 흐름, 파괴/무력화/상쇄 분신, 성공 시 그로기/실패 시 전투 지속)\n- 이동기 (정해진 방향 고속 이동)\n- 텔레포트 (전조 후 순간이동)\n\n### 카테고리 구조\n\n```\n├─ 수면 시스템 (main)\n│  ├─ 수면 걸림 (sub1)\n│  │  ├─ 부여 조건 (sub2)\n│  │  └─ 적용 대상 (sub2)\n│  ├─ 수면 중 상태 (sub1)\n│  │  ├─ 행동 제어 (sub2)\n│  │  ├─ 전용 애니메이션 (sub2)\n│  │  └─ Fly 몬스터 추락 (sub2)\n│  ├─ 수면 해제 (sub1)\n│  │  ├─ 시간 경과 해제 (sub2)\n│  │  └─ 피격 해제 (sub2)\n│  │     ├─ 일반 데미지 (sub3)\n│  │     └─ 틱뎀 예외 (sub3)\n│  ├─ 수면 후 디버프 (sub1)\n│  │  └─ 달빛술사 피해 증가 (sub2)\n│  └─ 수면 이펙트 (sub1)\n│     ├─ 머리 위 표시 (sub2)\n│     └─ 동시 다수 적용 (sub2)\n├─ 오르골 기믹 (main)\n│  ├─ 활성화 상태 (sub1)\n│  │  ├─ 활성화 범위 (sub2)\n│  │  │  ├─ 실선 출력 (sub3)\n│  │  │  └─ 바닥 차오름 이펙트 출력 (sub3)\n│  │  ├─ 게이지 차오름 (sub2)\n│  │  │  ├─ 진입 시 차오름 시작 (sub3)\n│  │  │  ├─ 적 사망 시 가속 (sub3)\n│  │  │  └─ 범위 이탈 시 감소 (sub3)\n│  │  └─ 활성화 애니메이션 (sub2)\n│  ├─ 작동 상태 (sub1)\n│  │  ├─ 작동 발동 (sub2)\n│  │  ├─ 수면 디버프 부여 (sub2)\n│  │  ├─ 작동 애니메이션 (sub2)\n│  │  └─ 수면 퍼짐 이펙트 (sub2)\n│  └─ 비활성화 상태 (sub1)\n│     ├─ 실선 미표시 (sub2)\n│     ├─ 게이지 미동작 (sub2)\n│     ├─ 재활성화 대기 (sub2)\n│     └─ 비활성화 애니메이션 (sub2)\n├─ 수면 보호막 (main)\n│  ├─ 보호막 부여 (sub1)\n│  │  ├─ 부여자 체력 비례 (sub2)\n│  │  └─ 중첩 처리 (sub2)\n│  ├─ 보호막 해제 (sub1)\n│  │  ├─ 수면 피격 시 소멸 (sub2)\n│  │  └─ 일반 피격 시 소멸 (sub2)\n│  ├─ 적용 제외 대상 (sub1)\n│  └─ 보호막 UI (sub1)\n├─ 악몽 요정 (main)\n│  ├─ 대기 패턴 (sub1)\n│  │  └─ 패트롤 및 인식 (sub2)\n│  ├─ 이동 패턴 (sub1)\n│  │  ├─ 발견 시 \"!\" 표시 (sub2)\n│  │  └─ 추적 이동 (sub2)\n│  ├─ Skill_A (Sting) (sub1)\n│  │  ├─ 공격 시작 조건 (sub2)\n│  │  ├─ 데미지 적용 범위 (sub2)\n│  │  └─ Stagger 중단 처리 (sub2)\n│  └─ 배치 (sub1)\n├─ 악몽의 아가양 (main)\n│  ├─ 대기 패턴 (sub1)\n│  ├─ 이동 패턴 (sub1)\n│  │  ├─ 발견 시 \"!\" 표시 (sub2)\n│  │  └─ 추적 이동 (sub2)\n│  ├─ Skill_A (Rush) (sub1)\n│  │  ├─ 공격 시작 조건 (sub2)\n│  │  ├─ 가속도 처리 (sub2)\n│  │  ├─ 타겟 지나침 정지 (sub2)\n│  │  ├─ 낙사 지형 정지 (sub2)\n│  │  ├─ 충돌 성공 애니 (sub2)\n│  │  ├─ 충돌 실패 애니 (sub2)\n│  │  └─ 충돌 시 플레이어 밀림 (sub2)\n│  └─ 배치 및 면역 (sub1)\n├─ 노래하는 인형 (main)\n│  ├─ 대기 및 이동 (sub1)\n│  │  ├─ 패트롤 (sub2)\n│  │  ├─ 발견 시 \"!\" 표시 (sub2)\n│  │  └─ 타겟 이동 (sub2)\n│  ├─ Skill_A (노래) (sub1)\n│  │  ├─ 공격 시작 범위 (sub2)\n│  │  ├─ 보호막 부여 처리 (sub2)\n│  │  │  ├─ 3회 부여 (sub3)\n│  │  │  └─ 보호막 보유자 TargetList 제외 (sub3)\n│  │  └─ 노래 애니메이션 (sub2)\n│  ├─ 수면 및 기상 (sub1)\n│  │  ├─ 수면 진입 자세 (sub2)\n│  │  └─ 기상 복귀 시간 (sub2)\n│  ├─ 도망 (sub1)\n│  │  ├─ 발동 조건 (sub2)\n│  │  ├─ 포탈 소환 및 Despawn (sub2)\n│  │  ├─ 도주 중 경직 면역 (sub2)\n│  │  └─ 카운트 처리 (sub2)\n│  └─ 배치 (sub1)\n├─ 악몽 램프 (main)\n│  ├─ 대기 패턴 (sub1)\n│  ├─ Skill_A (Area Attack) (sub1)\n│  │  ├─ 공격 발동 (sub2)\n│  │  ├─ 십자 패턴 (sub2)\n│  │  ├─ X자 회전 분기 (sub2)\n│  │  └─ 인디케이터 출력 (sub2)\n│  └─ 배치 및 면역 (sub1)\n├─ 꿈꾸는 모빌 (main)\n│  ├─ 대기 및 이동 (sub1)\n│  ├─ Skill_A (몬스터 소환) (sub1)\n│  │  ├─ 별 투사체 발사 (sub2)\n│  │  ├─ 최대 소환 수 제한 (sub2)\n│  │  └─ 소환 종류 랜덤 (sub2)\n│  ├─ Skill_B (모여드는 항성) (sub1)\n│  │  ├─ 영역 소환 (sub2)\n│  │  ├─ 흔들림 대기 (sub2)\n│  │  └─ 가운데 흡인 발동 (sub2)\n│  ├─ 수면 및 기상 (sub1)\n│  │  ├─ 수면 시 추락 (sub2)\n│  │  ├─ 소환 몬스터 전부 사망 (sub2)\n│  │  └─ 기상 시 공중 복귀 (sub2)\n│  └─ 배치 및 면역 (sub1)\n├─ 악몽의 양 (중간보스) (main)\n│  ├─ 대기 및 이동 (sub1)\n│  ├─ Skill_A (돌진) (sub1)\n│  │  ├─ 돌진 기본 동작 (sub2)\n│  │  ├─ 충돌 시 스턴 부여 (sub2)\n│  │  ├─ 3연속 사용 (sub2)\n│  │  └─ 고난이도 추가 투사체 (sub2)\n│  ├─ Skill_B (High Angle Fire) (sub1)\n│  │  ├─ 투사체 발사 (sub2)\n│  │  ├─ 바닥 충돌 후 튕김 (sub2)\n│  │  └─ 인디케이터 출력 (sub2)\n│  ├─ Skill_C (Area Attack) (sub1)\n│  │  ├─ 별똥별 낙하 (sub2)\n│  │  ├─ 인디케이터 출력 (sub2)\n│  │  ├─ 고난이도 추가 투사체 (sub2)\n│  │  └─ 낮은 체력 강화 (sub2)\n│  └─ 배치 및 면역 (sub1)\n├─ 꿈을 쏟아내는 모빌 (중간보스) (main)\n│  ├─ 대기 및 이동 (sub1)\n│  │  └─ 공중 부유 및 선회 (sub2)\n│  ├─ Skill_A (다중 소환) (sub1)\n│  │  ├─ 3개 동시 투사체 (sub2)\n│  │  ├─ 재소환 조건 (sub2)\n│  │  └─ 소환 종류 (sub2)\n│  ├─ Skill_B (강화 항성) (sub1)\n│  ├─ 수면 및 기상 (sub1)\n│  │  ├─ 수면 시 추락 (sub2)\n│  │  ├─ 소환 몬스터 전부 사망 (sub2)\n│  │  ├─ 기상 후 지상 체류 (sub2)\n│  │  └─ 공중 복귀 (sub2)\n│  └─ Hide 상태 처리 (sub1)\n├─ 거대한 악몽 램프 (중간보스) (main)\n│  ├─ 대기 (sub1)\n│  ├─ Skill_A (십자 장판) (sub1)\n│  │  ├─ 25 포인트 선정 (sub2)\n│  │  ├─ 인디케이터 차오름 (sub2)\n│  │  └─ 단독 위치 타격 분기 (sub2)\n│  ├─ Skill_B (부채꼴 빛) (sub1)\n│  │  ├─ 인디케이터 차오름 (sub2)\n│  │  └─ 빛 분사 (sub2)\n│  ├─ Skill_C (레이저) (sub1)\n│  │  ├─ 인디케이터 출력 (sub2)\n│  │  └─ 레이저 발사 (sub2)\n│  └─ 페이즈 전환 (sub1)\n│     ├─ 2페이즈 진입 (sub2)\n│     └─ 카메라 고정 패턴 공격 (sub2)\n└─ 어비스레이드: 악몽A (보스) (main)\n   ├─ 맵 구성 (sub1)\n   │  ├─ 1페이즈 맵 (sub2)\n   │  └─ 2페이즈 맵 (sub2)\n   ├─ 낙사 시스템 (sub1)\n   │  ├─ 맵 가장자리 소멸 (sub2)\n   │  ├─ 낙사 시 피해 (sub2)\n   │  ├─ 안개 붙잡힘 상태 (sub2)\n   │  └─ 버튼 연타 탈출 (sub2)\n   │     └─ 누적 횟수 증가 (sub3)\n   ├─ 악몽의 허상 기믹 (sub1)\n   │  ├─ 허상 시각 효과 (sub2)\n   │  ├─ 허상 데미지 무효 (sub2)\n   │  └─ 인디케이터 구분 불가 (sub2)\n   ├─ 악몽 방출 (sub1)\n   │  ├─ 거리 벌리기 (sub2)\n   │  ├─ 관통 발사 및 고정 (sub2)\n   │  └─ 강화 발사 (sub2)\n   ├─ 악몽 회수 (sub1)\n   │  ├─ 이동 후 회수 (sub2)\n   │  └─ 경로 피해 (sub2)\n   ├─ 심연의 손길 (sub1)\n   │  ├─ 1차 손 솟음 (sub2)\n   │  ├─ 속박 적용 (sub2)\n   │  ├─ 2차 폭발 (sub2)\n   │  └─ 대상 없을 시 종료 (sub2)\n   ├─ 진짜 찾기 (sub1)\n   │  ├─ 분신 생성 (sub2)\n   │  ├─ A/B 캐스팅 분기 (sub2)\n   │  ├─ 본체 무력화 성공 (sub2)\n   │  ├─ 분신 타격 무효 (sub2)\n   │  └─ 실패 시 광역 공격 (sub2)\n   ├─ 악몽 폭주 (sub1)\n   │  ├─ 즉시 시전 (sub2)\n   │  └─ 흡수 수 비례 데미지 (sub2)\n   ├─ 잠식 (sub1)\n   │  ├─ 기본 덩어리 낙하 (sub2)\n   │  ├─ 웅덩이 효과 (sub2)\n   │  ├─ 강화 점점 커짐 (sub2)\n   │  └─ 강화2 허상 분기 (sub2)\n   ├─ 악몽 정화 필살기 (sub1)\n   │  ├─ 보스 무적 진입 (sub2)\n   │  ├─ 밀쳐냄 정화 (sub2)\n   │  ├─ 파괴 보호막 분신 (sub2)\n   │  │  ├─ 성공 처리 (sub3)\n   │  │  └─ 실패 처리 (sub3)\n   │  ├─ 무력화 분신 (sub2)\n   │  │  ├─ 성공 처리 (sub3)\n   │  │  └─ 실패 처리 (sub3)\n   │  ├─ 상쇄 분신 (sub2)\n   │  │  ├─ 성공 처리 (sub3)\n   │  │  └─ 실패 처리 (sub3)\n   │  ├─ 정화 불가 필드 전환 (sub2)\n   │  └─ 결과 판정 (sub2)\n   │     ├─ 성공 그로기 (sub3)\n   │     └─ 실패 전투 지속 (sub3)\n   └─ 유틸 패턴 (sub1)\n      ├─ 이동기 (sub2)\n      └─ 텔레포트 (sub2)\n```\n\n### TC 건수 배분\n\n**전체 목표: 약 150~165건**\n\n| 카테고리 | 예상 건수 | Critical | Major | Normal |\n|---|---|---|---|---|\n| 수면 시스템 | 14 | 2 | 8 | 4 |\n| 오르골 기믹 | 18 | 3 | 9 | 6 |\n| 수면 보호막 | 7 | 1 | 4 | 2 |\n| 악몽 요정 | 7 | 1 | 3 | 3 |\n| 악몽의 아가양 | 11 | 1 | 7 | 3 |\n| 노래하는 인형 | 13 | 2 | 7 | 4 |\n| 악몽 램프 | 7 | 1 | 4 | 2 |\n| 꿈꾸는 모빌 | 13 | 2 | 7 | 4 |\n| 악몽의 양 | 13 | 1 | 7 | 5 |\n| 꿈을 쏟아내는 모빌 | 11 | 2 | 6 | 3 |\n| 거대한 악몽 램프 | 13 | 2 | 7 | 4 |\n| 어비스레이드: 악몽A | 33 | 4 | 17 | 12 |\n| **합계** | **160** | **22 (14%)** | **86 (54%)** | **52 (32%)** |\n\n- Critical 22건 (약 14%): 핵심 진입/조작 경로, 데이터 무결성, 게임 진행 가능 여부 직결 케이스\n- Major 86건 (약 54%): 스킬 동작, 상태 전환, 조건 분기, 디버프 적용 등 주요 기능\n- Normal 52건 (약 32%): 애니메이션, 이펙트, 사운드, 인디케이터 출력 등 보조 요소\n\n### 중점 확인 사항\n\n1. **상태 머신 정확성**: 오르골(비활성화↔활성화↔작동), 꿈꾸는 모빌/꿈을 쏟아내는 모빌(부유↔수면↔기상), 거대한 악몽 램프(1페이즈↔2페이즈) 등 상태 전환 조건과 시각/UI 변화를 빠짐없이 검증.\n\n2. **수치 경계값 검증**: 수면 해제 시간(N초), 오르골 활성화 범위(반지름 10.5m), 게이지 차오름(6초)/적 사망 감소(0.5초), 악몽 요정 인식 거리(20m)/공격 시작(12m)/데미지(1.5m), 악몽의 아가양 사거리(15m)/가속도 2초, 악몽의 양 Skill_B Flight Time(1초)·튕김 4m·2회 추가 등.\n\n3. **조건 분기/예외 처리**: ① 보호막+수면 동시 진입 시 보호막 즉시 소멸 우선 적용, ② Fly 몬스터 수면 시 추락, ③ 꿈꾸는 모빌/꿈을 쏟아내는 모빌 수면 시 소환 몬스터 전부 사망, ④ 악몽의 양 90도 지나침/낙사 지형 즉시 정지, ⑤ 악몽 램프 X자(45도 회전) 분기, ⑥ 진짜 찾기에서 분신 타격 시 본체 스탯 미반영.\n\n4. **면역 처리**: 중간보스/보스의 수면 면역, 꿈꾸는 모빌·꿈을 쏟아내는 모빌·악몽 램프·악몽의 양의 경직 면역, 노래하는 인형 도주 중 경직 면역.\n\n5. **인디케이터·이펙트 출력**: 인디케이터 차오름 시간(악몽 램프 2초, 거대한 악몽 램프 Skill_B 1.8초/Skill_C 1초), 인디케이터 잠시 표시 후 사라짐 동작, 수면 머리 위 이펙트 다수 동시 출력.\n\n6. **악몽의 허상 기믹**: 허상이 시각만 동일하고 인디케이터/색상으로 구분 불가, 데미지 0 처리, 스킬별 허상 섞임 검증(악몽 방출/심연의 손길/잠식/별의 분노/악몽 정화).\n\n7. **악몽 정화 필살기 9단계 흐름**: 파괴 보호막/무력화/상쇄 분신 3종 각각의 성공/실패 분기, 보스 무적 유지, 일정 시간 방치 시 정화 불가 필드 전환, 종료 시 정화 비율 기반 성공(그로기)/실패(전투 지속+몬스터 압박) 판정.\n\n8. **낙사 시스템 변경**: 2페이즈 진입 시 맵 가장자리 소멸, 낙사 즉시 20~30% 피해 + 안개 붙잡힘 + 매초 5~10% 피해 + 버튼 연타 탈출, 개인별 누적 시 연타 횟수 증가.\n\n9. **노래하는 인형 도주 특수 처리**: 주변 몬스터 0 + 2초 경과 시 도주, Despawn 처리되지만 Enemy remains 카운트 O / 수집품 카운트 X.\n\n10. **소환 한도 및 재소환 트리거**: 꿈꾸는 모빌 최대 3마리, 꿈을 쏟아내는 모빌 최대 5마리(2마리 이하 시 재소환), 소환 종류 랜덤(꿈꾸는 모빌은 아가양/악몽요정/악몽램프 / 꿈을 쏟아내는 모빌은 아가양/악몽요정/노래하는 인형 — 고정형 램프 제외).",
+  "materialId": "mat_1779352748683_mb28",
+  "planId": "plan_1779352748733_bcb2"
+}
