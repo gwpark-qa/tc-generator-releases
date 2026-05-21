@@ -1,0 +1,1536 @@
+{
+  "contentName": "꿈 열차를 부탁해 아웃게임",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Major",
+      "main": "모드리스트",
+      "sub1": "진입",
+      "sub2": "모드리스트 배너",
+      "sub3": "배너 출력",
+      "expectationResult": "꿈세계 배경에 멀어지는 기차 모습의 이벤트 모드 배너가 출력된다",
+      "comment": "참고: 1__플로우_아웃게임_모드리스트"
+    },
+    {
+      "no": 2,
+      "priority": "Normal",
+      "main": "모드리스트",
+      "sub1": "진입",
+      "sub2": "모드리스트 배너",
+      "sub3": "알림 표시",
+      "expectationResult": "신규 이벤트 모드 배너에 느낌표닷이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 3,
+      "priority": "Major",
+      "main": "모드리스트",
+      "sub1": "진입",
+      "sub2": "모드리스트 배너",
+      "sub3": "알림 표시",
+      "expectationResult": "이벤트 모드 배너에 레드닷이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 4,
+      "priority": "Critical",
+      "main": "모드리스트",
+      "sub1": "진입",
+      "sub2": "화면 전환",
+      "sub3": "플레이 로비 이동",
+      "expectationResult": "꿈열차를 부탁해 플레이 로비 화면으로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 5,
+      "priority": "Major",
+      "main": "모드리스트",
+      "sub1": "이벤트 기간",
+      "sub2": "이벤트 종료 처리",
+      "sub3": "종료 후 배너 처리",
+      "expectationResult": "이벤트 모드 배너가 모드리스트에서 제거된다",
+      "comment": "이벤트 기간 2026.6.24~2026.8.5"
+    },
+    {
+      "no": 6,
+      "priority": "Normal",
+      "main": "모드리스트",
+      "sub1": "이벤트 기간",
+      "sub2": "이벤트 종료 처리",
+      "sub3": "카운트다운 갱신",
+      "expectationResult": "이벤트 종료까지 남은 시간이 카운트다운으로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 7,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "튜토리얼",
+      "sub2": "NPC 대사",
+      "sub3": "최초 진입 대사 출력",
+      "expectationResult": "차장 NPC의 안내 대사(주간 스탬프, 유실물 안내 등)가 PlayDialogue로 출력된다",
+      "comment": "참고: 인트로 대사"
+    },
+    {
+      "no": 8,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "튜토리얼",
+      "sub2": "NPC 대사",
+      "sub3": "스킵 동작",
+      "expectationResult": "대사가 다음 단계로 진행되거나 스킵된다",
+      "comment": ""
+    },
+    {
+      "no": 9,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "튜토리얼",
+      "sub2": "NPC 대사",
+      "sub3": "재진입 시 미출력",
+      "expectationResult": "NPC 대사가 재출력되지 않는다",
+      "comment": ""
+    },
+    {
+      "no": 10,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "튜토리얼",
+      "sub2": "4컷 가이드 팝업",
+      "sub3": "가이드 출력",
+      "expectationResult": "꿈세계/유실물/모양 분류/악몽 영역의 4컷 가이드가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 11,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "튜토리얼",
+      "sub2": "4컷 가이드 팝업",
+      "sub3": "페이지 전환",
+      "expectationResult": "다음/이전 페이지로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 12,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "튜토리얼",
+      "sub2": "4컷 가이드 팝업",
+      "sub3": "팝업 닫기",
+      "expectationResult": "4컷 가이드 팝업이 닫힌다",
+      "comment": ""
+    },
+    {
+      "no": 13,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "헤더 영역",
+      "sub2": "타이틀/카운트다운",
+      "sub3": "이벤트 타이틀 출력",
+      "expectationResult": "이벤트 타이틀이 출력된다",
+      "comment": "참고: 9__플로우_아웃게임_로비"
+    },
+    {
+      "no": 14,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "헤더 영역",
+      "sub2": "타이틀/카운트다운",
+      "sub3": "종료 카운트다운 출력",
+      "expectationResult": "이벤트 종료까지 남은 시간이 카운트다운으로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 15,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "헤더 영역",
+      "sub2": "뒤로가기 버튼",
+      "sub3": "모드리스트 이동",
+      "expectationResult": "모드리스트 화면으로 이동된다",
+      "comment": ""
+    },
+    {
+      "no": 16,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "헤더 영역",
+      "sub2": "인포 버튼",
+      "sub3": "이벤트 안내 팝업",
+      "expectationResult": "이벤트 안내 팝업이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 17,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "상단 메뉴",
+      "sub2": "가이드북",
+      "sub3": "가이드북 팝업",
+      "expectationResult": "가이드북 팝업이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 18,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "상단 메뉴",
+      "sub2": "랭킹 진입",
+      "sub3": "랭킹 화면 이동",
+      "expectationResult": "랭킹 화면으로 이동된다",
+      "comment": ""
+    },
+    {
+      "no": 19,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "상단 메뉴",
+      "sub2": "랭킹 진입",
+      "sub3": "레드닷 표시",
+      "expectationResult": "랭킹 아이콘에 레드닷이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 20,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "상단 메뉴",
+      "sub2": "도감 진입",
+      "sub3": "도감 화면 이동",
+      "expectationResult": "도감 화면으로 이동된다",
+      "comment": "기획 코멘트: 일부 아이콘 더미 가능"
+    },
+    {
+      "no": 21,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "상단 메뉴",
+      "sub2": "햄버거 버튼",
+      "sub3": "메뉴 슬라이드",
+      "expectationResult": "우측에서 햄버거 메뉴가 슬라이드 인된다",
+      "comment": ""
+    },
+    {
+      "no": 22,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "탑바",
+      "sub2": "재화 표시",
+      "sub3": "2주년 코인 출력",
+      "expectationResult": "2주년 코인 재화바와 보유 수량이 출력된다",
+      "comment": "참고: 9__로비 26.04.29 갱신본"
+    },
+    {
+      "no": 23,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "탑바",
+      "sub2": "재화 표시",
+      "sub3": "일반 재화 출력",
+      "expectationResult": "보유 일반 재화(코인/크리스탈 등)가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 24,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "탑바",
+      "sub2": "알림 아이콘",
+      "sub3": "메일/알림 노출",
+      "expectationResult": "메일/알림 아이콘에 수신 개수가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 25,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 슬롯",
+      "sub2": "유저 정보",
+      "sub3": "닉네임/길드명 출력",
+      "expectationResult": "각 슬롯에 유저 닉네임과 길드명이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 슬롯",
+      "sub2": "유저 정보",
+      "sub3": "캐릭터 모델링 출력",
+      "expectationResult": "각 유저가 선택한 쿠키 모델링이 idle 애니메이션으로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 27,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 슬롯",
+      "sub2": "유저 상태",
+      "sub3": "기본 상태",
+      "expectationResult": "유저 슬롯에 별도 상태 표시가 출력되지 않는다",
+      "comment": ""
+    },
+    {
+      "no": 28,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 슬롯",
+      "sub2": "유저 상태",
+      "sub3": "쿠키 세팅 중",
+      "expectationResult": "해당 유저 슬롯에 회색 박스 '쿠키 세팅 중'이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 29,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 슬롯",
+      "sub2": "유저 상태",
+      "sub3": "READY 상태",
+      "expectationResult": "해당 유저 슬롯에 녹색 박스 'READY'가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 30,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "파티 슬롯",
+      "sub2": "유저 상태",
+      "sub3": "상태 동기화",
+      "expectationResult": "모든 유저 화면에서 동일한 상태가 동기화 출력된다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 31,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "파티 슬롯",
+      "sub2": "채팅",
+      "sub3": "채팅 아이콘 동작",
+      "expectationResult": "채팅 입력 UI가 출력된다",
+      "comment": "위치: 좌하단 → 우상단 탑인포 이동 예정"
+    },
+    {
+      "no": 32,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "내 최고 기록",
+      "sub2": "기록 표시",
+      "sub3": "등급/점수 출력",
+      "expectationResult": "등급 아이콘과 점수(천 단위 콤마)가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 33,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "내 최고 기록",
+      "sub2": "기록 표시",
+      "sub3": "기록 없음 출력",
+      "expectationResult": "회색 처리된 '기록 없음' 박스가 출력되고 점수는 비노출된다",
+      "comment": ""
+    },
+    {
+      "no": 34,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "내 최고 기록",
+      "sub2": "인포 버튼",
+      "sub3": "내 랭킹 화면 이동",
+      "expectationResult": "내 랭킹 화면으로 이동된다",
+      "comment": ""
+    },
+    {
+      "no": 35,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 상태",
+      "sub3": "NoItem 상태 출력",
+      "expectationResult": "NoItem 상태로 슬롯 배경이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 36,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 상태",
+      "sub3": "Empty 배치 가능 출력",
+      "expectationResult": "갈색 배경에 '+ 배치 가능' 텍스트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 37,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 상태",
+      "sub3": "InProgress 정화 중 출력",
+      "expectationResult": "파란/보라 배경에 유실물 아이콘과 잔여시간(00Hr 00Min)이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 38,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 상태",
+      "sub3": "Complete 정화 완료 출력",
+      "expectationResult": "녹색 배경에 '정화 완료!' 텍스트와 완료 이펙트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 39,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 상태",
+      "sub3": "SlotOpen 트윈 연출",
+      "expectationResult": "SlotOpen 보상 수령 연출이 재생된다",
+      "comment": ""
+    },
+    {
+      "no": 40,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "알림 표시",
+      "sub3": "뉴 닷 출력",
+      "expectationResult": "슬롯에 뉴 닷이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 41,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "알림 표시",
+      "sub3": "레드 닷 출력",
+      "expectationResult": "슬롯에 레드 닷이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 42,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 터치 동작",
+      "sub3": "NoItem 시 안내",
+      "expectationResult": "등록 가능한 유실물이 없다는 안내가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 43,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 터치 동작",
+      "sub3": "Empty 시 피냐타 선택 팝업",
+      "expectationResult": "피냐타 선택 팝업이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 44,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 터치 동작",
+      "sub3": "InProgress 시 시간 단축 팝업",
+      "expectationResult": "시간 단축권 사용 팝업이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 45,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "슬롯 터치 동작",
+      "sub3": "Complete 시 보상 수령",
+      "expectationResult": "SlotOpen 연출 후 공용 보상 수령 팝업이 출력되고 보상이 지급된다",
+      "comment": ""
+    },
+    {
+      "no": 46,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "예외 처리",
+      "sub3": "앱 종료 후 재진입 시간 차감",
+      "expectationResult": "경과한 실제 시간만큼 정화 잔여시간이 차감되어 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 47,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "유실물 정화 슬롯",
+      "sub2": "예외 처리",
+      "sub3": "시즌 종료 시 미완료 처리",
+      "expectationResult": "미완료 슬롯에 대한 처리 안내가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 48,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "보상 리스트 탭",
+      "sub3": "피냐타 슬롯 출력",
+      "expectationResult": "보유 피냐타 슬롯 3개와 각 정화 소요 시간이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 49,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "보상 리스트 탭",
+      "sub3": "자동 선택 처리",
+      "expectationResult": "보유 피냐타 중 가장 높은 등급이 자동 선택된다",
+      "comment": ""
+    },
+    {
+      "no": 50,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "보상 리스트 탭",
+      "sub3": "보상 확률 출력",
+      "expectationResult": "각 보상 아이템과 획득 확률(%)이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 51,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "대체 보상 탭",
+      "sub3": "탭 전환",
+      "expectationResult": "대체 보상 탭 화면으로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 52,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "대체 보상 탭",
+      "sub3": "대체 보상 리스트 출력",
+      "expectationResult": "등급별 대체 보상 리스트와 안내 문구가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 53,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "선택 버튼",
+      "sub3": "슬롯 배치 처리",
+      "expectationResult": "선택한 피냐타가 정화 슬롯에 배치되고 InProgress 상태로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 54,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "선택 버튼",
+      "sub3": "미보유 토스트",
+      "expectationResult": "'소지한 피냐타가 없습니다' 토스트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 55,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "닫기 버튼",
+      "sub3": "팝업 닫기",
+      "expectationResult": "피냐타 선택 팝업이 닫힌다",
+      "comment": ""
+    },
+    {
+      "no": 56,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "피냐타 선택 팝업",
+      "sub2": "보상 리스트 탭",
+      "sub3": "미보유 시 회색 처리",
+      "expectationResult": "미보유 피냐타 슬롯이 회색으로 딤 처리되고 수량 0으로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 57,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "사용 입력",
+      "sub3": "슬라이더 증감",
+      "expectationResult": "사용 횟수가 1단위로 증감된다",
+      "comment": ""
+    },
+    {
+      "no": 58,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "사용 입력",
+      "sub3": "MAX 버튼",
+      "expectationResult": "보유량 또는 정화 잔여시간에 맞는 최대값이 자동 설정된다",
+      "comment": ""
+    },
+    {
+      "no": 59,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "사용 입력",
+      "sub3": "보유량 초과 캡",
+      "expectationResult": "정화 잔여시간을 모두 차감할 수 있는 최대 횟수에서 자동 캡된다",
+      "comment": ""
+    },
+    {
+      "no": 60,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "사용하기 버튼",
+      "sub3": "단축 적용",
+      "expectationResult": "입력한 횟수 × 10분만큼 정화 잔여시간이 차감되고 단축권이 소모된다",
+      "comment": ""
+    },
+    {
+      "no": 61,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "사용하기 버튼",
+      "sub3": "즉시 Complete 전환",
+      "expectationResult": "팝업이 닫히고 슬롯이 즉시 Complete 상태로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 62,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "사용하기 버튼",
+      "sub3": "보유 0개 시 비활성",
+      "expectationResult": "팝업은 열리되 사용하기 버튼이 비활성화 상태로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 63,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "사용 입력",
+      "sub3": "빠른 연속 탭 중복 방지",
+      "expectationResult": "중복 사용되지 않고 1회만 처리된다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 64,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "닫기 버튼",
+      "sub3": "팝업 닫기",
+      "expectationResult": "시간 단축권 팝업이 닫힌다",
+      "comment": ""
+    },
+    {
+      "no": 65,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "시간 단축권 팝업",
+      "sub2": "사용 입력",
+      "sub3": "시계 아이콘 연출",
+      "expectationResult": "시계바늘이 움직이는 연출이 재생된다",
+      "comment": ""
+    },
+    {
+      "no": 66,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "보상 획득",
+      "sub2": "SlotOpen 연출",
+      "sub3": "트윈 애니메이션 재생",
+      "expectationResult": "가방이 흔들리며 열리고 빛이 뿜어져 나오는 SlotOpen 연출이 재생된다",
+      "comment": "연출 B안"
+    },
+    {
+      "no": 67,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "보상 획득",
+      "sub2": "획득 완료 팝업",
+      "sub3": "보상 리스트 출력",
+      "expectationResult": "획득 완료 타이틀과 보상 아이템 리스트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 68,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "보상 획득",
+      "sub2": "획득 완료 팝업",
+      "sub3": "확인하기 버튼",
+      "expectationResult": "팝업이 닫히고 슬롯 상태가 Empty 또는 NoItem으로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 69,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "보상 획득",
+      "sub2": "획득 완료 팝업",
+      "sub3": "보상 수량 표시",
+      "expectationResult": "보상 표시 수량과 실제 지급 수량이 일치한다",
+      "comment": ""
+    },
+    {
+      "no": 70,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "보상 획득",
+      "sub2": "획득 완료 팝업",
+      "sub3": "동시 완료 시 큐 처리",
+      "expectationResult": "보상 팝업이 순차적으로 출력되어 연출 충돌이 발생하지 않는다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 71,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "보상 획득",
+      "sub2": "획득 완료 팝업",
+      "sub3": "네트워크 끊김",
+      "expectationResult": "재연결 후 보상이 중복 지급되지 않고 정합성이 유지된다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 72,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 유실물 미션",
+      "sub2": "진행도 영역",
+      "sub3": "게이지/카운트 출력",
+      "expectationResult": "진행도(예: 40/76)와 완료 보상이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 73,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 유실물 미션",
+      "sub2": "진행도 영역",
+      "sub3": "레드닷 노출",
+      "expectationResult": "미션 영역에 레드닷이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 74,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 유실물 미션",
+      "sub2": "유실물 게시판 팝업",
+      "sub3": "유실물 카드 그리드 출력",
+      "expectationResult": "유실물 리스트 그리드와 각 항목 진행도가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 75,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 유실물 미션",
+      "sub2": "유실물 게시판 팝업",
+      "sub3": "진행도 보상 게이지 출력",
+      "expectationResult": "50/100/150/200 구간별 보상 게이지가 출력되고 달성/미달성이 구분된다",
+      "comment": ""
+    },
+    {
+      "no": 76,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "주간 유실물 미션",
+      "sub2": "유실물 게시판 팝업",
+      "sub3": "보상 수령",
+      "expectationResult": "보상이 지급되고 해당 구간이 완료 처리된다",
+      "comment": ""
+    },
+    {
+      "no": 77,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "주간 유실물 미션",
+      "sub2": "유실물 게시판 팝업",
+      "sub3": "대체 보상 안내",
+      "expectationResult": "대체 보상 안내 팝업이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 78,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "주간 유실물 미션",
+      "sub2": "유실물 게시판 팝업",
+      "sub3": "보너스 보상",
+      "expectationResult": "보너스 보상이 출력되고 획득 가능 상태로 표시된다",
+      "comment": ""
+    },
+    {
+      "no": 79,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "주간 유실물 미션",
+      "sub2": "유실물 게시판 팝업",
+      "sub3": "팝업 닫기",
+      "expectationResult": "유실물 게시판 팝업이 닫힌다",
+      "comment": ""
+    },
+    {
+      "no": 80,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "스탬프 진행도",
+      "sub3": "스탬프 5종 출력",
+      "expectationResult": "스탬프 5개 아이콘이 가로 배열로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 81,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "스탬프 진행도",
+      "sub3": "진행 상태 출력",
+      "expectationResult": "완료된 스탬프는 녹색 배경+체크로, 미완료는 회색 빈 스탬프로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 82,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "스탬프 진행도",
+      "sub3": "알림 닷 노출",
+      "expectationResult": "스탬프 영역에 레드 닷이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 83,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "미션 팝업",
+      "sub3": "미션 노드 출력",
+      "expectationResult": "성좌/별자리 형태의 미션 노드가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 84,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "미션 팝업",
+      "sub3": "개별 진행도 출력",
+      "expectationResult": "각 미션의 진행도(X/Y)와 보상이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 85,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "미션 팝업",
+      "sub3": "초기화 카운트다운 출력",
+      "expectationResult": "'초기화까지 00시간 00분' 카운트다운이 출력된다",
+      "comment": "매주 수요일 KST 9:00 초기화"
+    },
+    {
+      "no": 86,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "미션 팝업",
+      "sub3": "미션 보상 수령",
+      "expectationResult": "보상이 지급되고 해당 노드가 수령 완료로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 87,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "완료 보너스",
+      "sub3": "보너스 활성화",
+      "expectationResult": "완료 보너스가 녹색 버튼+레드닷으로 활성화되어 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 88,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "완료 보너스",
+      "sub3": "보상 수령 처리",
+      "expectationResult": "보너스 보상이 지급되고 영역이 제거된다",
+      "comment": ""
+    },
+    {
+      "no": 89,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "예외 처리",
+      "sub3": "초기화 시점 동기화",
+      "expectationResult": "모든 미션 진행도가 초기화되고 미수령 보상은 소실 안내된다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 90,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "예외 처리",
+      "sub3": "외부 영역 강제 오픈",
+      "expectationResult": "미션 팝업이 강제로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 91,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "주간 꿈세계 스탬프",
+      "sub2": "미션 팝업",
+      "sub3": "팝업 닫기",
+      "expectationResult": "미션 팝업이 닫힌다",
+      "comment": ""
+    },
+    {
+      "no": 92,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "이벤트 상점 바로가기",
+      "sub2": "상점 진입",
+      "sub3": "화면 전환",
+      "expectationResult": "이벤트 상점 화면으로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 93,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼",
+      "sub2": "매칭 큐 등록",
+      "sub3": "매칭 중 UI 출력",
+      "expectationResult": "PLAY 버튼이 '매칭 중...' 상태로 전환되고 카운트가 표시된다",
+      "comment": ""
+    },
+    {
+      "no": 94,
+      "priority": "Normal",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼",
+      "sub2": "매칭 큐 등록",
+      "sub3": "카운트다운 출력",
+      "expectationResult": "매칭 대기 시간이 카운트다운으로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 95,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼",
+      "sub2": "매칭 취소",
+      "sub3": "취소 버튼 동작",
+      "expectationResult": "매칭이 취소되고 PLAY 버튼이 원래 상태로 복귀된다",
+      "comment": ""
+    },
+    {
+      "no": 96,
+      "priority": "Critical",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼",
+      "sub2": "매칭 완료",
+      "sub3": "인게임 진입",
+      "expectationResult": "'매칭 완료!' 표시 후 로딩 화면으로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 97,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼",
+      "sub2": "예외 처리",
+      "sub3": "매칭 타임아웃",
+      "expectationResult": "매칭 실패 안내가 출력되고 매칭이 취소된다",
+      "comment": ""
+    },
+    {
+      "no": 98,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼",
+      "sub2": "예외 처리",
+      "sub3": "네트워크 끊김",
+      "expectationResult": "매칭이 자동 취소되고 네트워크 오류 안내가 출력된다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 99,
+      "priority": "Major",
+      "main": "플레이 로비",
+      "sub1": "PLAY 버튼",
+      "sub2": "예외 처리",
+      "sub3": "이벤트 종료 시 비활성",
+      "expectationResult": "PLAY 버튼이 비활성화 상태로 출력된다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 100,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 그리드",
+      "sub2": "쿠키 리스트",
+      "sub3": "쿠키 셀 출력",
+      "expectationResult": "3x3 그리드에 쿠키 썸네일이 출력된다",
+      "comment": "참고: 8__플로우_쿠키 선택"
+    },
+    {
+      "no": 101,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 그리드",
+      "sub2": "쿠키 리스트",
+      "sub3": "5성 60레벨 고정 안내",
+      "expectationResult": "'쿠키는 5성 60레벨로 고정됩니다' 안내 문구가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 102,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 그리드",
+      "sub2": "쿠키 리스트",
+      "sub3": "왕관/Shiny 이펙트 출력",
+      "expectationResult": "왕관 아이콘에 Shiny 이펙트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 103,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 그리드",
+      "sub2": "정렬/필터",
+      "sub3": "추천순 정렬 적용",
+      "expectationResult": "기본값 '추천순'으로 쿠키가 정렬되어 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 104,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 그리드",
+      "sub2": "쿠키 선택",
+      "sub3": "쿠키 선택 동작",
+      "expectationResult": "해당 쿠키가 선택 상태로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 105,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 그리드",
+      "sub2": "쿠키 선택",
+      "sub3": "쿠키 미리보기 갱신",
+      "expectationResult": "선택한 쿠키의 전신 일러스트와 Lv.60, 5성 표기가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 106,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 그리드",
+      "sub2": "쿠키 선택",
+      "sub3": "중복 선택 처리",
+      "expectationResult": "중복 선택 정책에 따라 처리되거나 안내가 출력된다",
+      "comment": "10종 풀에서 3인 선택"
+    },
+    {
+      "no": 107,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "해금/히든 쿠키",
+      "sub2": "미션 해금 쿠키",
+      "sub3": "해금 전 선택 불가",
+      "expectationResult": "잠금 상태로 표시되고 선택되지 않는다",
+      "comment": ""
+    },
+    {
+      "no": 108,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "해금/히든 쿠키",
+      "sub2": "기간 해금 쿠키",
+      "sub3": "업데이트 전 노출 처리",
+      "expectationResult": "잠금 또는 미노출 상태로 표시된다",
+      "comment": ""
+    },
+    {
+      "no": 109,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "해금/히든 쿠키",
+      "sub2": "히든 쿠키 슬롯",
+      "sub3": "물음표 슬롯 출력",
+      "expectationResult": "보라색 카드에 물음표와 히든 관련 안내 텍스트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 110,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "해금/히든 쿠키",
+      "sub2": "히든 쿠키 슬롯",
+      "sub3": "무작위 픽 처리",
+      "expectationResult": "낮은 확률로 달빛술사 쿠키가 등장하여 플레이된다",
+      "comment": ""
+    },
+    {
+      "no": 111,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "해금/히든 쿠키",
+      "sub2": "히든 쿠키 슬롯",
+      "sub3": "일반 풀 미노출",
+      "expectationResult": "일반 쿠키 풀에서는 달빛술사 쿠키가 노출되지 않는다",
+      "comment": ""
+    },
+    {
+      "no": 112,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 미션 영역",
+      "sub2": "미션 표시",
+      "sub3": "왕관 아이콘 출력",
+      "expectationResult": "왕관 아이콘이 미션 진행도(예: 3개 중 X)로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 113,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 미션 영역",
+      "sub2": "미션 표시",
+      "sub3": "미션 진행 정보 출력",
+      "expectationResult": "쿠키 미션 진행 정보(왕관 + 미션 텍스트)가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 114,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 미션 영역",
+      "sub2": "미션 리스트 패널",
+      "sub3": "패널 출력",
+      "expectationResult": "하단에 주간 미션 리스트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 115,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 미션 영역",
+      "sub2": "미션 리스트 패널",
+      "sub3": "패널 닫기",
+      "expectationResult": "미션 리스트 패널이 닫힌다",
+      "comment": ""
+    },
+    {
+      "no": 116,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 자세히 보기 팝업",
+      "sub2": "쿠키 정보",
+      "sub3": "등급/속성 출력",
+      "expectationResult": "팝업 좌측에 EPIC 등급 배지와 속성 아이콘이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 117,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 자세히 보기 팝업",
+      "sub2": "쿠키 정보",
+      "sub3": "이름/역할/타입 출력",
+      "expectationResult": "쿠키 이름, 역할군 태그, 타입 태그가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 118,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 자세히 보기 팝업",
+      "sub2": "쿠키 정보",
+      "sub3": "일러스트 출력",
+      "expectationResult": "선택한 쿠키의 메인 일러스트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 119,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 자세히 보기 팝업",
+      "sub2": "스킬 패널",
+      "sub3": "스킬 5종 출력",
+      "expectationResult": "패시브/기본 공격/특수 스킬/대시/궁극기 5종이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 120,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 자세히 보기 팝업",
+      "sub2": "스킬 패널",
+      "sub3": "스킬 태그 출력",
+      "expectationResult": "속성 표식, 디버프 등 태그가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 121,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 자세히 보기 팝업",
+      "sub2": "쿠키 승급 정보",
+      "sub3": "승급 정보 팝업",
+      "expectationResult": "쿠키 승급 정보 팝업이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 122,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 자세히 보기 팝업",
+      "sub2": "닫기 버튼",
+      "sub3": "팝업 닫기",
+      "expectationResult": "쿠키 자세히 보기 팝업이 닫힌다",
+      "comment": ""
+    },
+    {
+      "no": 123,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "준비/뒤로가기",
+      "sub2": "준비 완료",
+      "sub3": "READY 상태 전환",
+      "expectationResult": "자신의 파티 슬롯이 'READY' 상태로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 124,
+      "priority": "Major",
+      "main": "쿠키 선택",
+      "sub1": "준비/뒤로가기",
+      "sub2": "뒤로가기",
+      "sub3": "플레이 로비 복귀",
+      "expectationResult": "플레이 로비 화면으로 복귀된다",
+      "comment": ""
+    },
+    {
+      "no": 125,
+      "priority": "Normal",
+      "main": "쿠키 선택",
+      "sub1": "쿠키 그리드",
+      "sub2": "정렬/필터",
+      "sub3": "필터 보유/전체 표시",
+      "expectationResult": "필터 카운트(예: 57/57)가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 126,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "랭킹 리스트 탭",
+      "sub2": "헤더 영역",
+      "sub3": "타이틀/카운트다운 출력",
+      "expectationResult": "랭킹 타이틀과 이벤트 종료 카운트다운이 출력된다",
+      "comment": "참고: 4__플로우_랭킹"
+    },
+    {
+      "no": 127,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 리스트 탭",
+      "sub2": "헤더 영역",
+      "sub3": "뒤로가기",
+      "expectationResult": "플레이 로비로 복귀된다",
+      "comment": ""
+    },
+    {
+      "no": 128,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 리스트 탭",
+      "sub2": "리스트 영역",
+      "sub3": "Rank/Player/Tier/Cookie/Score 출력",
+      "expectationResult": "각 행에 Rank, Player, Tier, Cookie, Score가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 129,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 리스트 탭",
+      "sub2": "리스트 영역",
+      "sub3": "본인 행 강조",
+      "expectationResult": "본인 행이 강조 표시로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 130,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "랭킹 리스트 탭",
+      "sub2": "리스트 영역",
+      "sub3": "빈 리스트 처리",
+      "expectationResult": "빈 리스트 안내가 출력된다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 131,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 리스트 탭",
+      "sub2": "페이지네이션",
+      "sub3": "페이지 이동",
+      "expectationResult": "다음/이전 페이지가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 132,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 정보 탭",
+      "sub2": "탭 전환",
+      "sub3": "등급 보상 화면 출력",
+      "expectationResult": "등급별 보상 화면으로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 133,
+      "priority": "Major",
+      "main": "랭킹",
+      "sub1": "랭킹 정보 탭",
+      "sub2": "등급 보상 리스트",
+      "sub3": "등급별 보상 출력",
+      "expectationResult": "각 등급별 점수 조건과 보상 상자가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 134,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "랭킹 정보 탭",
+      "sub2": "등급 보상 리스트",
+      "sub3": "현재 등급 강조",
+      "expectationResult": "현재 등급 행이 녹색 테두리/오렌지 배경으로 강조 표시된다",
+      "comment": ""
+    },
+    {
+      "no": 135,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "내 최고 기록 패널",
+      "sub2": "기록 있음",
+      "sub3": "점수/등급 출력",
+      "expectationResult": "등급 아이콘과 점수가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 136,
+      "priority": "Normal",
+      "main": "랭킹",
+      "sub1": "내 최고 기록 패널",
+      "sub2": "기록 없음",
+      "sub3": "안내 문구 출력",
+      "expectationResult": "'기록 없음 / 랭킹에 도전해 명예와 보상을 획득하세요!' 안내가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 137,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 리스트 출력",
+      "sub3": "",
+      "expectationResult": "이벤트 모드 사용 가능 쿠키 리스트가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 138,
+      "priority": "Major",
+      "main": "도감",
+      "sub1": "드래프트 도감",
+      "sub2": "드래프트 리스트 출력",
+      "sub3": "",
+      "expectationResult": "드래프트 종류별 리스트(메인/서브, 특화)가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 139,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "미션 보상 팝업",
+      "sub2": "보상 수령",
+      "sub3": "보상 지급 처리",
+      "expectationResult": "보상이 지급되고 미션이 수령 완료로 처리된다",
+      "comment": ""
+    },
+    {
+      "no": 140,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "미션 보상 팝업",
+      "sub2": "닫기 버튼",
+      "sub3": "팝업 닫기",
+      "expectationResult": "미션 보상 팝업이 닫힌다",
+      "comment": ""
+    },
+    {
+      "no": 141,
+      "priority": "Normal",
+      "main": "도감",
+      "sub1": "쿠키 도감",
+      "sub2": "쿠키 셀 터치",
+      "sub3": "상세 정보 출력",
+      "expectationResult": "해당 쿠키의 상세 정보 화면이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 142,
+      "priority": "Major",
+      "main": "인게임 진입",
+      "sub1": "로딩 화면",
+      "sub2": "로딩 출력",
+      "sub3": "",
+      "expectationResult": "로딩 화면이 출력된 후 인게임으로 진입된다",
+      "comment": "인게임 이후 케이스는 작성 제외"
+    },
+    {
+      "no": 143,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "결과 표시",
+      "sub2": "클리어/실패 결과 출력",
+      "sub3": "",
+      "expectationResult": "클리어/실패 결과와 플레이 정보, 획득 보상이 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 144,
+      "priority": "Critical",
+      "main": "결과 화면",
+      "sub1": "나가기",
+      "sub2": "플레이 로비 복귀",
+      "sub3": "",
+      "expectationResult": "화면이 닫히고 플레이 로비로 이동된다",
+      "comment": ""
+    },
+    {
+      "no": 145,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "함께한 유저 다시 초대하기 팝업",
+      "sub2": "유저 리스트",
+      "sub3": "닉네임/KDA 출력",
+      "expectationResult": "함께 플레이한 유저 3인의 닉네임과 KDA가 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 146,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "함께한 유저 다시 초대하기 팝업",
+      "sub2": "유저 리스트",
+      "sub3": "점수 미집계 처리",
+      "expectationResult": "점수 영역이 0 또는 미집계 표시로 출력된다",
+      "comment": ""
+    },
+    {
+      "no": 147,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "함께한 유저 다시 초대하기 팝업",
+      "sub2": "친구 초대",
+      "sub3": "친구 초대 동작",
+      "expectationResult": "해당 유저에게 친구 초대가 발송된다",
+      "comment": ""
+    },
+    {
+      "no": 148,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "함께한 유저 다시 초대하기 팝업",
+      "sub2": "친구 초대",
+      "sub3": "이미 친구인 경우 처리",
+      "expectationResult": "친구 초대 버튼이 비활성화 또는 미노출 처리된다",
+      "comment": ""
+    },
+    {
+      "no": 149,
+      "priority": "Major",
+      "main": "결과 화면",
+      "sub1": "함께한 유저 다시 초대하기 팝업",
+      "sub2": "파티 초대",
+      "sub3": "파티 초대 발송",
+      "expectationResult": "해당 유저에게 파티 초대가 발송된다",
+      "comment": ""
+    },
+    {
+      "no": 150,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "함께한 유저 다시 초대하기 팝업",
+      "sub2": "오늘 하루 보지 않기",
+      "sub3": "체크박스 동작",
+      "expectationResult": "체크박스가 체크 상태로 전환된다",
+      "comment": ""
+    },
+    {
+      "no": 151,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "함께한 유저 다시 초대하기 팝업",
+      "sub2": "오늘 하루 보지 않기",
+      "sub3": "자정 경과 후 재노출",
+      "expectationResult": "다음 날 팝업이 재노출된다",
+      "comment": "예외사항"
+    },
+    {
+      "no": 152,
+      "priority": "Normal",
+      "main": "결과 화면",
+      "sub1": "함께한 유저 다시 초대하기 팝업",
+      "sub2": "닫기 버튼",
+      "sub3": "팝업 닫기",
+      "expectationResult": "함께한 유저 다시 초대하기 팝업이 닫힌다",
+      "comment": ""
+    }
+  ],
+  "generatedAt": "2026-05-21T05:47:34.660Z",
+  "tokenUsage": {
+    "inputTokens": 93,
+    "outputTokens": 88805,
+    "cacheReadTokens": 996158,
+    "cacheCreationTokens": 433893,
+    "totalCostUsd": 5.4963482500000005
+  },
+  "planText": "### 기능 목록\n\n**1. 모드리스트/진입**\n- 이벤트 모드 진입 (꿈세계 배경, 멀어지는 기차)\n- 모드리스트 알림 (느낌표닷/레드닷)\n- 이벤트 종료 카운트다운\n\n**2. 플레이 로비**\n- 헤더 영역: 뒤로가기, 이벤트 타이틀, 인포(i), 이벤트 종료 카운트다운\n- 상단 메뉴: 가이드북, 랭킹, 도감, 햄버거 버튼, 홈\n- 탑바: 2주년 코인 재화바, 일반 재화, 메일/알림, 친구 등\n- 메인 영역: 길드/유저 3인 슬롯 (캐릭터 모델링, 닉네임, 길드명)\n- 유저 상태 표시 (기본/쿠키 세팅 중/READY)\n- 채팅 아이콘\n- 우측 패널: 내 최고 기록 (등급, 점수, 인포)\n- 우측 패널: 피냐타(유실물) 정화 슬롯 (배치 가능/정화 중/완료)\n- 우측 패널: 주간 유실물 미션 진행도/보상\n- 하단: 주간 꿈세계 스탬프 진행도 + 보상\n- 이벤트 상점 바로가기 버튼\n- PLAY 버튼\n\n**3. 매칭 시스템**\n- 매칭 큐 등록 (매칭 중... 카운트)\n- 매칭 취소 버튼\n- 매칭 완료 상태\n- 매칭 실패/타임아웃\n- 매칭 중 네트워크 끊김\n\n**4. 튜토리얼/안내**\n- 차장 NPC PlayDialogue 대사 (최초 1회)\n- 모드 라이트팝 4컷 가이드\n- 가이드북\n\n**5. 쿠키 선택**\n- 쿠키 그리드 (10종, 5성 60레벨 고정)\n- 정렬/필터 (추천순, 57/57)\n- 쿠키 미리보기 (전신, Lv.60, 5성)\n- 쿠키 정보 버튼 (돋보기)\n- 쿠키 미션 영역 (왕관 아이콘)\n- 무작위/히든 쿠키 슬롯 (?, 달빛술사 쿠키)\n- 해금 쿠키 (미션 조건/기간 조건)\n- 스타트 쿠키 4종\n- 동일 쿠키 중복 선택 여부\n- Shiny 이펙트 (미션 완료 시)\n\n**6. 쿠키 자세히 보기 팝업**\n- 쿠키 등급/속성/이름/역할/타입\n- 스킬 패널 5종 (패시브/기본공격/특수스킬/대시/궁극기)\n- 스킬 태그 표시\n- 쿠키 승급 정보 버튼\n- 팝업 닫기\n\n**7. 인게임 진입**\n- 로딩 화면\n\n**8. 결과 화면 (RESULT)**\n- 클리어 결과 표시\n- 나가기 버튼 → 플레이 로비 복귀\n\n**9. 함께한 유저 다시 초대하기 팝업**\n- 유저 리스트 (3명, 닉네임, 점수/KDA)\n- 친구 초대 버튼\n- 파티 초대 버튼\n- \"오늘 하루동안 보지 않기\" 체크박스\n- 닫기 버튼\n\n**10. 랭킹**\n- 진입 (내 최고 기록 박스 터치, 인포 버튼)\n- 랭킹 리스트 탭 (Rank/Player/Tier/Cookie/Score)\n- 페이지네이션\n- 랭킹 정보 탭 (등급별 보상 리스트)\n- 기록 없음 케이스\n- 랭킹 보상 레드닷\n\n**11. 도감**\n- 쿠키 도감\n- 드래프트 도감\n- 미션 보상 팝업\n\n**12. 유실물 정화 슬롯**\n- 슬롯 상태 5종 (NoItem/Empty/InProgress/Complete/SlotOpen)\n- 정화 중 이펙트\n- 정화 완료 이펙트\n- 타임 게이지/잔여시간 표시\n- 뉴 닷/레드 닷 알림\n- 슬롯 터치 → 시간 단축 팝업\n\n**13. 피냐타(유실물) 선택 팝업**\n- 보상 리스트 탭\n- 대체 보상 탭\n- 보상 확률 표시\n- 피냐타 슬롯 3개 (자동 선택)\n- 미보유 시 토스트\n- 선택 버튼\n\n**14. 시간 단축권(달빛 정수/꿈나라 포션) 팝업**\n- 셀 터치 진입\n- 사용 횟수 슬라이더 (-/+/MAX)\n- 사용하기 버튼\n- 보유 0개 시 처리\n- 10분 단위 차감\n- 사용 후 슬롯 상태 갱신\n\n**15. 보상 획득 팝업**\n- SlotOpen 트윈 애니메이션\n- 획득 완료 팝업 (보상 아이템 리스트)\n- 확인하기 버튼\n\n**16. 유실물 게시판/주간 유실물 미션**\n- 진행도 표시 (123/250)\n- 유실물 카드 그리드\n- 진행도 보상 게이지 (50/100/150/200)\n- 대체 보상 안내\n\n**17. 주간 꿈세계 스탬프 미션**\n- 스탬프 5종 진행도\n- 미션 팝업 (성좌/별자리 맵)\n- 미션 노드 (개별 진행도)\n- 초기화 카운트다운 (수요일 KST 9:00)\n- 완료 보너스\n- 보상 수령\n- 미션 종류 10종 (특정 쿠키/무작위/별석탄/약초/몬스터 처치/점수/드래프트/소생 등)\n\n**18. 햄버거 메뉴**\n- 다른 콘텐츠 이동 시 버그 검증\n\n### 카테고리 구조\n\n```\n├─ 모드리스트 (main)\n│  ├─ 진입 (sub1)\n│  │  ├─ 모드리스트 배너 (sub2)\n│  │  │  ├─ 배너 출력 (sub3)\n│  │  │  └─ 알림 표시 (sub3)\n│  │  └─ 화면 전환 (sub2)\n│  │     └─ 플레이 로비 이동 (sub3)\n│  └─ 이벤트 기간 (sub1)\n│     └─ 이벤트 종료 처리 (sub2)\n├─ 플레이 로비 (main)\n│  ├─ 튜토리얼 (sub1)\n│  │  ├─ NPC 대사 (sub2)\n│  │  │  ├─ 최초 진입 대사 출력 (sub3)\n│  │  │  └─ 스킵 동작 (sub3)\n│  │  └─ 4컷 가이드 팝업 (sub2)\n│  │     ├─ 가이드 출력 (sub3)\n│  │     ├─ 페이지 전환 (sub3)\n│  │     └─ 팝업 닫기 (sub3)\n│  ├─ 헤더 영역 (sub1)\n│  │  ├─ 타이틀/카운트다운 (sub2)\n│  │  │  ├─ 이벤트 타이틀 출력 (sub3)\n│  │  │  └─ 종료 카운트다운 출력 (sub3)\n│  │  ├─ 뒤로가기 버튼 (sub2)\n│  │  │  └─ 모드리스트 이동 (sub3)\n│  │  └─ 인포 버튼 (sub2)\n│  │     └─ 이벤트 안내 팝업 (sub3)\n│  ├─ 상단 메뉴 (sub1)\n│  │  ├─ 가이드북 (sub2)\n│  │  │  └─ 가이드북 팝업 (sub3)\n│  │  ├─ 랭킹 진입 (sub2)\n│  │  │  ├─ 랭킹 화면 이동 (sub3)\n│  │  │  └─ 레드닷 표시 (sub3)\n│  │  ├─ 도감 진입 (sub2)\n│  │  │  └─ 도감 화면 이동 (sub3)\n│  │  └─ 햄버거 버튼 (sub2)\n│  │     └─ 메뉴 슬라이드 (sub3)\n│  ├─ 탑바 (sub1)\n│  │  ├─ 재화 표시 (sub2)\n│  │  │  ├─ 2주년 코인 출력 (sub3)\n│  │  │  └─ 일반 재화 출력 (sub3)\n│  │  └─ 알림 아이콘 (sub2)\n│  │     └─ 메일/알림 노출 (sub3)\n│  ├─ 파티 슬롯 (sub1)\n│  │  ├─ 유저 정보 (sub2)\n│  │  │  ├─ 닉네임/길드명 출력 (sub3)\n│  │  │  └─ 캐릭터 모델링 출력 (sub3)\n│  │  ├─ 유저 상태 (sub2)\n│  │  │  ├─ 기본 상태 (sub3)\n│  │  │  ├─ 쿠키 세팅 중 (sub3)\n│  │  │  └─ READY 상태 (sub3)\n│  │  └─ 채팅 (sub2)\n│  │     └─ 채팅 아이콘 동작 (sub3)\n│  ├─ 내 최고 기록 (sub1)\n│  │  ├─ 기록 표시 (sub2)\n│  │  │  ├─ 등급/점수 출력 (sub3)\n│  │  │  └─ 기록 없음 출력 (sub3)\n│  │  └─ 인포 버튼 (sub2)\n│  │     └─ 내 랭킹 화면 이동 (sub3)\n│  ├─ 유실물 정화 슬롯 (sub1)\n│  │  ├─ 슬롯 상태 (sub2)\n│  │  │  ├─ NoItem 상태 출력 (sub3)\n│  │  │  ├─ Empty 배치 가능 출력 (sub3)\n│  │  │  ├─ InProgress 정화 중 출력 (sub3)\n│  │  │  ├─ Complete 정화 완료 출력 (sub3)\n│  │  │  └─ SlotOpen 트윈 연출 (sub3)\n│  │  ├─ 알림 표시 (sub2)\n│  │  │  ├─ 뉴 닷 출력 (sub3)\n│  │  │  └─ 레드 닷 출력 (sub3)\n│  │  ├─ 슬롯 터치 동작 (sub2)\n│  │  │  ├─ NoItem 시 안내 (sub3)\n│  │  │  ├─ Empty 시 피냐타 선택 팝업 (sub3)\n│  │  │  ├─ InProgress 시 시간 단축 팝업 (sub3)\n│  │  │  └─ Complete 시 보상 수령 (sub3)\n│  │  └─ 예외 처리 (sub2)\n│  │     └─ 앱 종료 후 재진입 시간 차감 (sub3)\n│  ├─ 피냐타 선택 팝업 (sub1)\n│  │  ├─ 보상 리스트 탭 (sub2)\n│  │  │  ├─ 피냐타 슬롯 출력 (sub3)\n│  │  │  ├─ 자동 선택 처리 (sub3)\n│  │  │  └─ 보상 확률 출력 (sub3)\n│  │  ├─ 대체 보상 탭 (sub2)\n│  │  │  ├─ 탭 전환 (sub3)\n│  │  │  └─ 대체 보상 리스트 출력 (sub3)\n│  │  ├─ 선택 버튼 (sub2)\n���  │  │  ├─ 슬롯 배치 처리 (sub3)\n│  │  │  └─ 미보유 토스트 (sub3)\n│  │  └─ 닫기 버튼 (sub2)\n│  │     └─ 팝업 닫기 (sub3)\n│  ├─ 시간 단축권 팝업 (sub1)\n│  │  ├─ 사용 입력 (sub2)\n│  │  │  ├─ 슬라이더 증감 (sub3)\n│  │  │  ├─ MAX 버튼 (sub3)\n│  │  │  └─ 보유량 초과 캡 (sub3)\n│  │  ├─ 사용하기 버튼 (sub2)\n│  │  │  ├─ 단축 적용 (sub3)\n│  │  │  ├─ 즉시 Complete 전환 (sub3)\n│  │  │  └─ 보유 0개 시 비활성 (sub3)\n│  │  └─ 닫기 버튼 (sub2)\n│  │     └─ 팝업 닫기 (sub3)\n│  ├─ 보상 획득 (sub1)\n│  │  ├─ SlotOpen 연출 (sub2)\n│  │  │  └─ 트윈 애니메이션 재생 (sub3)\n│  │  └─ 획득 완료 팝업 (sub2)\n│  │     ├─ 보상 리스트 출력 (sub3)\n│  │     └─ 확인하기 버튼 (sub3)\n│  ├─ 주간 유실물 미션 (sub1)\n│  │  ├─ 진행도 영역 (sub2)\n│  │  │  ├─ 게이지/카운트 출력 (sub3)\n│  │  │  └─ 레드닷 노출 (sub3)\n│  │  └─ 유실물 게시판 팝업 (sub2)\n│  │     ├─ 유실물 카드 그리드 출력 (sub3)\n│  │     ├─ 진행도 보상 게이지 출력 (sub3)\n│  │     ├─ 보상 수령 (sub3)\n│  │     └─ 대체 보상 안내 (sub3)\n│  ├─ 주간 꿈세계 스탬프 (sub1)\n│  │  ├─ 스탬프 진행도 (sub2)\n│  │  │  ├─ 스탬프 5종 출력 (sub3)\n│  │  │  └─ 알림 닷 노출 (sub3)\n│  │  ├─ 미션 팝업 (sub2)\n│  │  │  ├─ 미션 노드 출력 (sub3)\n│  │  │  ├─ 개별 진행도 출력 (sub3)\n│  │  │  ├─ 초기화 카운트다운 출력 (sub3)\n│  │  │  └─ 미션 보상 수령 (sub3)\n│  │  ├─ 완료 보너스 (sub2)\n│  │  │  ├─ 보너스 활성화 (sub3)\n│  │  │  └─ 보상 수령 처리 (sub3)\n│  │  └─ 예외 처리 (sub2)\n│  │     └─ 초기화 시점 동기화 (sub3)\n│  ├─ 이벤트 상점 바로가기 (sub1)\n│  │  └─ 상점 진입 (sub2)\n│  │     └─ 화면 전환 (sub3)\n│  └─ PLAY 버튼 (sub1)\n│     ├─ 매칭 큐 등록 (sub2)\n│     │  ├─ 매칭 중 UI 출력 (sub3)\n│     │  └─ 카운트다운 출력 (sub3)\n│     ├─ 매칭 취소 (sub2)\n│     │  └─ 취소 버튼 동작 (sub3)\n│     ├─ 매칭 완료 (sub2)\n│     │  └─ 인게임 진입 (sub3)\n│     └─ 예외 처리 (sub2)\n│        ├─ 매칭 타임아웃 (sub3)\n│        └─ 네트워크 끊김 (sub3)\n├─ 쿠키 선택 (main)\n│  ├─ 쿠키 그리드 (sub1)\n│  │  ├─ 쿠키 리스트 (sub2)\n│  │  │  ├─ 쿠키 셀 출력 (sub3)\n│  │  │  ├─ 5성 60레벨 고정 안내 (sub3)\n│  │  │  └─ 왕관/Shiny 이펙트 출력 (sub3)\n│  │  ├─ 정렬/필터 (sub2)\n│  │  │  └─ 추천순 정렬 적용 (sub3)\n│  │  └─ 쿠키 선택 (sub2)\n│  │     ├─ 쿠키 선택 동작 (sub3)\n│  │     ├─ 쿠키 미리보기 갱신 (sub3)\n│  │     └─ 중복 선택 처리 (sub3)\n│  ├─ 해금/히든 쿠키 (sub1)\n│  │  ├─ 미션 해금 쿠키 (sub2)\n│  │  │  └─ 해금 전 선택 불가 (sub3)\n│  │  ├─ 기간 해금 쿠키 (sub2)\n│  │  │  └─ 업데이트 전 노출 처리 (sub3)\n│  │  └─ 히든 쿠키 슬롯 (sub2)\n│  │     ├─ 물음표 슬롯 출력 (sub3)\n│  │     └─ 무작위 픽 처리 (sub3)\n│  ├─ 쿠키 미션 영역 (sub1)\n│  │  ├─ 미션 표시 (sub2)\n│  │  │  ├─ 왕관 아이콘 출력 (sub3)\n│  │  │  └─ 미션 진행 정보 출력 (sub3)\n│  │  └─ 미션 리스트 패널 (sub2)\n│  │     ├─ 패널 출력 (sub3)\n│  │     └─ 패널 닫기 (sub3)\n│  ├─ 쿠키 자세히 보기 팝업 (sub1)\n│  │  ├─ 쿠키 정보 (sub2)\n│  │  │  ├─ 등급/속성 출력 (sub3)\n│  │  │  ├─ 이름/역할/타입 출력 (sub3)\n│  │  │  └─ 일러스트 출력 (sub3)\n│  │  ├─ 스킬 패널 (sub2)\n│  │  │  ├─ 스킬 5종 출력 (sub3)\n│  │  │  └─ 스킬 태그 출력 (sub3)\n│  │  ├─ 쿠키 승급 정보 (sub2)\n│  │  │  └─ 승급 정보 팝업 (sub3)\n│  │  └─ 닫기 버튼 (sub2)\n│  │     └─ 팝업 닫기 (sub3)\n│  └─ 준비/뒤로가기 (sub1)\n│     ├─ 준비 완료 (sub2)\n│     │  └─ READY 상태 전환 (sub3)\n│     └─ 뒤로가기 (sub2)\n│        └─ 플레이 로비 복귀 (sub3)\n├─ 랭킹 (main)\n│  ├─ 랭킹 리스트 탭 (sub1)\n│  │  ├─ 헤더 영역 (sub2)\n│  │  │  ├─ 타이틀/카운트다운 출력 (sub3)\n│  │  │  └─ 뒤로가기 (sub3)\n│  │  ├─ 리스트 영역 (sub2)\n│  │  │  ├─ Rank/Player/Tier/Cookie/Score 출력 (sub3)\n│  │  │  ├─ 본인 행 강조 (sub3)\n│  │  │  └─ 빈 리스트 처리 (sub3)\n│  │  └─ 페이지네이션 (sub2)\n│  │     └─ 페이지 이동 (sub3)\n│  ├─ 랭킹 정보 탭 (sub1)\n│  │  ├─ 탭 전환 (sub2)\n│  │  │  └─ 등급 보상 화면 출력 (sub3)\n│  │  └─ 등급 보상 리스트 (sub2)\n│  │     ├─ 등급별 보상 출력 (sub3)\n│  │     └─ 현재 등급 강조 (sub3)\n│  └─ 내 최고 기록 패널 (sub1)\n│     ├─ 기록 있음 (sub2)\n│     │  └─ 점수/등급 출력 (sub3)\n│     └─ 기록 없음 (sub2)\n│        └─ 안내 문구 출력 (sub3)\n├─ 도감 (main)\n│  ├─ 쿠키 도감 (sub1)\n│  │  └─ 쿠키 리스트 출력 (sub2)\n│  ├─ 드래프트 도감 (sub1)\n│  │  └─ 드래프트 리스트 출력 (sub2)\n│  └─ 미션 보상 팝업 (sub1)\n│     ├─ 보상 수령 (sub2)\n│     │  └─ 보상 지급 처리 (sub3)\n│     └─ 닫기 버튼 (sub2)\n│        └─ 팝업 닫기 (sub3)\n├─ 인게임 진입 (main)\n│  └─ 로딩 화면 (sub1)\n│     └─ 로딩 출력 (sub2)\n└─ 결과 화면 (main)\n   ├─ 결과 표시 (sub1)\n   │  └─ 클리어/실패 결과 출력 (sub2)\n   ├─ 나가기 (sub1)\n   │  └─ 플레이 로비 복귀 (sub2)\n   └─ 함께한 유저 다시 초대하기 팝업 (sub1)\n      ├─ 유저 리스트 (sub2)\n      │  ├─ 닉네임/KDA 출력 (sub3)\n      │  └─ 점수 미집계 처리 (sub3)\n      ├─ 친구 초대 (sub2)\n      │  ├─ 친구 초대 동작 (sub3)\n      │  └─ 이미 친구인 경우 처리 (sub3)\n      ├─ 파티 초대 (sub2)\n      │  └─ 파티 초대 발송 (sub3)\n      ├─ 오늘 하루 보지 않기 (sub2)\n      │  ├─ 체크박스 동작 (sub3)\n      │  └─ 자정 경과 후 재노출 (sub3)\n      └─ 닫기 버튼 (sub2)\n         └─ 팝업 닫기 (sub3)\n```\n\n### TC 건수 배분\n\n**총 목표: 약 130~140건**\n\n| 카테고리 | 예상 건수 | Critical | Major | Normal |\n|---|---|---|---|---|\n| 모드리스트 | 6 | 1 | 3 | 2 |\n| 플레이 로비 - 튜토리얼/헤더/상단메뉴/탑바 | 15 | 1 | 7 | 7 |\n| 플레이 로비 - 파티 슬롯/내 최고 기록 | 10 | 1 | 5 | 4 |\n| 플레이 로비 - 유실물 정화 슬롯 | 14 | 2 | 8 | 4 |\n| 플레이 로비 - 피냐타 선택 팝업 | 10 | 1 | 6 | 3 |\n| 플레이 로비 - 시간 단축권 팝업 | 9 | 2 | 5 | 2 |\n| 플레이 로비 - 보상 획득 | 6 | 1 | 3 | 2 |\n| 플레이 로비 - 주간 유실물 미션 | 8 | 1 | 4 | 3 |\n| 플레이 로비 - 주간 꿈세계 스탬프 | 12 | 2 | 6 | 4 |\n| 플레이 로비 - 이벤트 상점/PLAY/매칭 | 10 | 2 | 5 | 3 |\n| 쿠키 선택 - 그리드/해금/히든 | 12 | 1 | 6 | 5 |\n| 쿠키 선택 - 미션 영역/자세히 보기 | 10 | 0 | 5 | 5 |\n| 쿠키 선택 - 준비/뒤로가기 | 3 | 0 | 2 | 1 |\n| 랭킹 | 10 | 0 | 5 | 5 |\n| 도감 | 5 | 0 | 2 | 3 |\n| 인게임 진입 | 1 | 0 | 1 | 0 |\n| 결과 ��면/재초대 팝업 | 10 | 1 | 5 | 4 |\n| **합계** | **151** | **16 (10.6%)** | **78 (51.7%)** | **57 (37.7%)** |\n\n### 중점 확인 사항\n\n1. **슬롯 상태 5종(NoItem/Empty/InProgress/Complete/SlotOpen) 분기**: 각 상태별 UI 표기, 알림 닷 종류, 터치 시 동작이 모두 다르므로 상태별로 명확히 분리하여 작성한다.\n\n2. **시간 단축권 사용 로직**: 10분 단위 차감, MAX 버튼 동작, 보유 0개일 때 팝업은 열리되 사용 불가, 잔여 시간보다 보유량이 많을 때 자동 캡 등 엣지 케이스를 꼼꼼히 반영한다.\n\n3. **주간 미션 초기화(수요일 KST 9:00)**: 보상 미수령 상태 초기화, 진행 중 미션 카운트 처리, 시간대 변경 등 시점 동기화 케이스를 다룬다.\n\n4. **쿠키 5성 60레벨 고정 정책**: 실제 보유 여부와 무관하게 고정 능력치 적용, 아티팩트/장비/잠재력 미장착 상태 안내가 화면에 명시되어야 한다.\n\n5. **유저 상태 3종(기본/쿠키 세팅 중/READY) 표시 일관성**: 멀티 콘텐츠 통일 정책이므로 상태 전환과 동기화 케이스를 별도로 작성한다.\n\n6. **알림 닷 일관성 (뉴 닷/레드 닷)**: 외부 버튼 ↔ 팝업 내부 표기 동기화, 우선순위(둘 다 조건 충족 시), 수령 후 제거 케이스를 분리한다.\n\n7. **PLAY 버튼 → 매칭 → 인게임 진입 플로우**: 매칭 중 취소, 매칭 완료, 타임아웃, 네트워크 끊김 등 케이스를 다루되, 인게임 진입 이후는 작성 제외한다.\n\n8. **쿠키 선택 - 히든 쿠키(달빛술사)**: 일반 풀에서 선택 불가, 무작위 픽으로만 등장하는 정책 검증.\n\n9. **결과창 → 플레이 로비 복귀 → 재초대 팝업 자동 노출**: \"오늘 하루 보지 않기\" 체크 상태 유지/자정 후 재노출 케이스.\n\n10. **이벤트 종료 시점 처리**: 카운트다운 00:00 도달 시 PLAY 버튼 비활성, 정화 미완료 슬롯, 미사용 시간 단축권 소실, 보상 미수령 우편 지급 여부.\n\n11. **Critical 분류 엄격 적용**: 게임 진행 불가/재화 손실/결제 오류/핵심 진입 차단에 직접 해당하는 케이스(매칭 진입, 보상 지급, 슬롯 정화 시간 보존, 시간 단축권 차감)에만 부여하여 전체의 10~11% 수준으로 유지한다.",
+  "materialId": "mat_1779340091112_e1tz",
+  "planId": "plan_1779340091170_vmsc"
+}
