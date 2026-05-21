@@ -1,0 +1,21 @@
+{
+  "contentName": "어드벤처 스페셜 챕터 인게임",
+  "testCaseCount": 0,
+  "stage": "plan_only",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "ingame",
+  "promptName": "🎮 콘텐츠_인게임",
+  "focusPoints": null,
+  "elapsedSeconds": 717,
+  "tokenUsage": {
+    "inputTokens": 51,
+    "outputTokens": 90461,
+    "cacheReadTokens": 280488,
+    "cacheCreationTokens": 341723,
+    "totalCostUsd": 4.5377927499999995
+  },
+  "cost": "$6.7853",
+  "appVersion": "1.4.11",
+  "generatedAt": "2026-05-21T07:21:42.858Z"
+}
