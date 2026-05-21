@@ -1,0 +1,20 @@
+{
+  "contentName": "꿈 열차를 부탁해 아웃게임",
+  "testCaseCount": 152,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptName": "콘텐츠_아웃게임_강화1차",
+  "focusPoints": "- 각종 예상되는 예외 케이스 및 ng 케이스들을 예측하여 작성하되, 너무 과하지는 않게 주의\n- case에서 중복되는 카테고리들을 sub 항목에 꼼꼼하게 정리",
+  "elapsedSeconds": 262,
+  "tokenUsage": {
+    "inputTokens": 93,
+    "outputTokens": 88805,
+    "cacheReadTokens": 996158,
+    "cacheCreationTokens": 433893,
+    "totalCostUsd": 5.4963482500000005
+  },
+  "cost": "$6.6618",
+  "appVersion": "1.4.8",
+  "generatedAt": "2026-05-21T05:47:34.660Z"
+}
