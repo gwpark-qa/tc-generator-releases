@@ -1,0 +1,21 @@
+{
+  "contentName": "비용 테스트",
+  "testCaseCount": 173,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": null,
+  "elapsedSeconds": 1442,
+  "tokenUsage": {
+    "inputTokens": 357,
+    "outputTokens": 255612,
+    "cacheReadTokens": 2421080,
+    "cacheCreationTokens": 1296181,
+    "totalCostUsd": 15.756051249999999
+  },
+  "cost": "$19.1763",
+  "appVersion": "1.4.11",
+  "generatedAt": "2026-05-21T09:03:39.302Z"
+}
