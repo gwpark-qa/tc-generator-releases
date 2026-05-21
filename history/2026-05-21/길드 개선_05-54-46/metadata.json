@@ -1,0 +1,21 @@
+{
+  "contentName": "길드 개선",
+  "testCaseCount": 148,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "prompt_1778746369813_7gkwhp",
+  "promptName": "콘텐츠_아웃게임_강화1차",
+  "focusPoints": "기획서 파일 중 01번, 02번 파일은 03~12번 까지 기능들의 필요 이유와 명세적인 기능만 적혀있는 것으로 케이스에 적지않고 참고 해야하는 파일이다.\n기획서 03~12번 파일까지 적혀있는 Description을 기준으로 케이스를 작성하되 왼쪽의 이미지와 너무 맞지 않거나 UI플로우와 맞지 않다면 케이스에 확인 필요 표시를 추가한다.",
+  "elapsedSeconds": 1030,
+  "tokenUsage": {
+    "inputTokens": 31,
+    "outputTokens": 117090,
+    "cacheReadTokens": 172754,
+    "cacheCreationTokens": 231086,
+    "totalCostUsd": 4.4580695
+  },
+  "cost": "$8.7822",
+  "appVersion": "1.4.9",
+  "generatedAt": "2026-05-21T05:54:46.622Z"
+}
