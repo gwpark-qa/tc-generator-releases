@@ -1,0 +1,21 @@
+{
+  "contentName": "PDF 테스트",
+  "testCaseCount": 33,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": null,
+  "elapsedSeconds": 172,
+  "tokenUsage": {
+    "inputTokens": 12,
+    "outputTokens": 13305,
+    "cacheReadTokens": 114495,
+    "cacheCreationTokens": 48119,
+    "totalCostUsd": 0.71913925
+  },
+  "cost": "$0.9981",
+  "appVersion": "1.4.7",
+  "generatedAt": "2026-05-21T03:07:36.570Z"
+}
