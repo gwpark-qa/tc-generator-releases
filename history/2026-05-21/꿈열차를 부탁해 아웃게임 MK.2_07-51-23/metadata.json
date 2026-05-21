@@ -1,0 +1,21 @@
+{
+  "contentName": "꿈열차를 부탁해 아웃게임 MK.2",
+  "testCaseCount": 211,
+  "stage": "completed",
+  "mode": "cli",
+  "model": "claude-opus-4-20250514",
+  "promptId": "outgame",
+  "promptName": "💡 콘텐츠_아웃게임",
+  "focusPoints": "- 각종 예상되는 예외 케이스 및 오류를 예측하여 예외 케이스 작성 (너무 과하지 않게 주의)\n- case에서 중복되는 카테고리들을 sub 항목에 꼼꼼하게 정리",
+  "elapsedSeconds": 1376,
+  "tokenUsage": {
+    "inputTokens": 229,
+    "outputTokens": 201692,
+    "cacheReadTokens": 2013903,
+    "cacheCreationTokens": 914783,
+    "totalCostUsd": 11.92014225
+  },
+  "cost": "$15.1303",
+  "appVersion": "1.4.11",
+  "generatedAt": "2026-05-21T07:51:23.946Z"
+}
