@@ -2,13 +2,13 @@
   "2026-05": {
     "user": "최진욱",
     "month": "2026-05",
-    "totalCostUsd": 5.3080004999999995,
-    "callCount": 2,
+    "totalCostUsd": 6.07530675,
+    "callCount": 4,
     "byMode": {
       "api": 0,
-      "cli": 5.3080004999999995
+      "cli": 6.07530675
     },
-    "updatedAt": "2026-05-20T02:39:41.510Z",
+    "updatedAt": "2026-05-21T02:23:35.084Z",
     "deviceId": "jinuk-choiB의 MacBook Pro_macbook-jinuk-choib"
   }
 }
