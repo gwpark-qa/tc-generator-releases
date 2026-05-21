@@ -1,0 +1,346 @@
+{
+  "contentName": "PDF 테스트",
+  "testCases": [
+    {
+      "no": 1,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "기본 정보",
+      "sub2": "등급",
+      "sub3": "출력",
+      "expectationResult": "악몽 요정 몬스터의 등급이 '일반'으로 적용된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 메타데이터 / 첨부 이미지"
+    },
+    {
+      "no": 2,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "기본 정보",
+      "sub2": "타입",
+      "sub3": "출력",
+      "expectationResult": "악몽 요정 몬스터의 타입이 '근거리', '비행형'으로 적용된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 메타데이터 / 첨부 이미지"
+    },
+    {
+      "no": 3,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "기본 정보",
+      "sub2": "챕터",
+      "sub3": "배치",
+      "expectationResult": "악몽 요정 몬스터가 어드벤처 모드 스페셜 챕터에 배치되어 등장한다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 메타데이터 / 첨부 이미지"
+    },
+    {
+      "no": 4,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "기본 정보",
+      "sub2": "크기",
+      "sub3": "출력",
+      "expectationResult": "악몽 요정 몬스터의 크기가 소형(동굴 테마 박쥐와 동일 사이즈)으로 출력된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 2. 아트"
+    },
+    {
+      "no": 5,
+      "priority": "Critical",
+      "main": "악몽 요정",
+      "sub1": "전투 배치",
+      "sub2": "배치 수",
+      "sub3": "최소 배치",
+      "expectationResult": "악몽 요정의 전투 공간 배치 시, 최소 4마리가 배치된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 1. 개요"
+    },
+    {
+      "no": 6,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "전투 배치",
+      "sub2": "배치 수",
+      "sub3": "최대 배치",
+      "expectationResult": "악몽 요정의 전투 공간 배치 시, 최대 6마리까지 배치된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 1. 개요"
+    },
+    {
+      "no": 7,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "전투 배치",
+      "sub2": "배치 수",
+      "sub3": "범위 초과 제한",
+      "expectationResult": "악몽 요정의 전투 공간 배치 수가 4~6마리 범위 외로 배치되지 않는다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 1. 개요"
+    },
+    {
+      "no": 8,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "대기 패턴",
+      "sub2": "Patrol",
+      "sub3": "랜덤 위치 이동",
+      "expectationResult": "플레이어를 인식하기 전, 악몽 요정이 랜덤 위치로 Patrol 이동을 수행한다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (1) 대기"
+    },
+    {
+      "no": 9,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "대기 패턴",
+      "sub2": "Patrol",
+      "sub3": "대기 모션",
+      "expectationResult": "Patrol 중 대기 상태 시, 공중에 가볍게 떠서 천천히 위아래로 흔들리는 _Idle 모션이 재생된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (_Idle)"
+    },
+    {
+      "no": 10,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "대기 패턴",
+      "sub2": "Patrol",
+      "sub3": "대기 표정",
+      "expectationResult": "대기 상태 시, 눈을 감은 표정으로 팔이 축 늘어진 채 공허하게 부유하는 모습이 출력된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (_Idle)"
+    },
+    {
+      "no": 11,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "대기 패턴",
+      "sub2": "플레이어 인식",
+      "sub3": "인식 거리",
+      "expectationResult": "악몽 요정의 플레이어 인식 거리가 20m 이상으로 적용된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (1) 대기"
+    },
+    {
+      "no": 12,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "이동 패턴",
+      "sub2": "플레이어 발견",
+      "sub3": "! 표시 출력",
+      "expectationResult": "플레이어 발견 시, 악몽 요정 머리 위에 '!' 표시가 출력된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (2) 이동"
+    },
+    {
+      "no": 13,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "이동 패턴",
+      "sub2": "플레이어 발견",
+      "sub3": "대기 동작",
+      "expectationResult": "플레이어 발견 후 '!' 표시 출력 시, 잠깐 대기 동작을 수행한 후 추적을 시작한다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (2) 이동"
+    },
+    {
+      "no": 14,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "이동 패턴",
+      "sub2": "추적",
+      "sub3": "추적 방향",
+      "expectationResult": "플레이어 발견 시, 공격 사거리 안에 들어올 때까지 플레이어 방향으로 추적이 이루어진다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (2) 이동"
+    },
+    {
+      "no": 15,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "이동 패턴",
+      "sub2": "추적",
+      "sub3": "이동 속도",
+      "expectationResult": "악몽 요정의 이동 속도가 700으로 적용된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (2) 이동"
+    },
+    {
+      "no": 16,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "이동 패턴",
+      "sub2": "추적",
+      "sub3": "이동 모션",
+      "expectationResult": "Patrol 이동 시, 느릿느릿 공중을 표류하듯 움직이는 _Move 모션이 재생된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (_Move)"
+    },
+    {
+      "no": 17,
+      "priority": "Critical",
+      "main": "악몽 요정",
+      "sub1": "공격 패턴",
+      "sub2": "Skill_A",
+      "sub3": "공격 시작 조건",
+      "expectationResult": "플레이어가 악몽 요정 앞 12m 범위 안에 위치 시, Sting 공격이 시작된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (3-1) Skill_A"
+    },
+    {
+      "no": 18,
+      "priority": "Critical",
+      "main": "악몽 요정",
+      "sub1": "공격 패턴",
+      "sub2": "Skill_A",
+      "sub3": "데미지 적용",
+      "expectationResult": "공격 시작 후 플레이어가 주변 영역 1.5m 안에 진입 시, 플레이어에게 데미지가 적용된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (3-1) Skill_A"
+    },
+    {
+      "no": 19,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "공격 패턴",
+      "sub2": "Skill_A",
+      "sub3": "데미지 미적용",
+      "expectationResult": "공격 시작 후 플레이어가 주변 영역 1.5m 밖에 있을 시, 플레이어에게 데미지가 적용되지 않는다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (3-1) Skill_A"
+    },
+    {
+      "no": 20,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "공격 패턴",
+      "sub2": "Skill_A",
+      "sub3": "공격 모션",
+      "expectationResult": "Skill_A 공격 시, 악몽 요정이 팔을 앞으로 들어올리는 공격 모션이 재생된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (3-1) Skill_A"
+    },
+    {
+      "no": 21,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "공격 패턴",
+      "sub2": "Skill_A",
+      "sub3": "표정 변화",
+      "expectationResult": "Skill_A 공격 시, 악몽 요정의 얼굴 표정이 변하여 공격 중임을 표현한다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 3. 패턴 (3-1) Skill_A"
+    },
+    {
+      "no": 22,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "추격 애니메이션",
+      "sub2": "Skill_A_01 Loop",
+      "sub3": "양팔 모션",
+      "expectationResult": "공격 사거리 안 진입 시, 악몽 요정이 양팔을 번쩍 치켜들고 유령처럼 빠르게 추격하는 _Skill_A_01 Loop 모션이 재생된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (_Skill_A_01)"
+    },
+    {
+      "no": 23,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "추격 애니메이션",
+      "sub2": "Skill_A_01 Loop",
+      "sub3": "표정 전환",
+      "expectationResult": "_Skill_A_01 모션 재생 시, 악몽 요정의 눈이 번쩍 뜨이며 공격적인 표정으로 전환된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (_Skill_A_01)"
+    },
+    {
+      "no": 24,
+      "priority": "Critical",
+      "main": "악몽 요정",
+      "sub1": "추격 애니메이션",
+      "sub2": "Skill_A_01 Loop",
+      "sub3": "지속 데미지",
+      "expectationResult": "_Skill_A_01 모션 재생 동안, 공격 범위 내 플레이어에게 지속 대미지가 적용된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (_Skill_A_01)"
+    },
+    {
+      "no": 25,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "추격 애니메이션",
+      "sub2": "Skill_A_01 Loop",
+      "sub3": "Loop 재생",
+      "expectationResult": "_Skill_A_01 모션은 Loop 형태로 반복 재생된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (_Skill_A_01)"
+    },
+    {
+      "no": 26,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "스태거 처리",
+      "sub2": "애니메이션 전환",
+      "sub3": "Skill_A_03 전환",
+      "expectationResult": "_Skill_A_01 진행 중 스태거 발생으로 공격이 끊길 시, _Skill_A_03 모션으로 전환된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션"
+    },
+    {
+      "no": 27,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "스태거 처리",
+      "sub2": "애니메이션 전환",
+      "sub3": "플레이어 응시",
+      "expectationResult": "_Skill_A_03 전환 시, 악몽 요정이 잠시 플레이어를 응시하는 동작이 출력된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션"
+    },
+    {
+      "no": 28,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "스태거 처리",
+      "sub2": "애니메이션 전환",
+      "sub3": "Skill_A_01 복귀",
+      "expectationResult": "_Skill_A_03 동작 종료 후, _Skill_A_01 모션으로 복귀된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션"
+    },
+    {
+      "no": 29,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "피격/사망 처리",
+      "sub2": "피격",
+      "sub3": "피격 모션",
+      "expectationResult": "악몽 요정이 플레이어에게 공격을 받을 시, _Damaged 피격 모션이 재생된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (_Damaged)"
+    },
+    {
+      "no": 30,
+      "priority": "Critical",
+      "main": "악몽 요정",
+      "sub1": "피격/사망 처리",
+      "sub2": "사망",
+      "sub3": "약 사망 모션",
+      "expectationResult": "악몽 요정이 일반 공격으로 처치 시, Die_Stand 사망(약) 모션이 재생된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (Die_Stand)"
+    },
+    {
+      "no": 31,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "피격/사망 처리",
+      "sub2": "사망",
+      "sub3": "강 사망 모션",
+      "expectationResult": "악몽 요정이 넉백 효과가 동반된 공격으로 처치 시, Die_Knockback 사망(강) 모션이 재생된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션 (Die_Knockback)"
+    },
+    {
+      "no": 32,
+      "priority": "Major",
+      "main": "악몽 요정",
+      "sub1": "피격/사망 처리",
+      "sub2": "사망",
+      "sub3": "오브젝트 제거",
+      "expectationResult": "사망 모션 재생 종료 후, 악몽 요정 오브젝트가 필드에서 제거된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션"
+    },
+    {
+      "no": 33,
+      "priority": "Normal",
+      "main": "악몽 요정",
+      "sub1": "피격/사망 처리",
+      "sub2": "피격",
+      "sub3": "공격 중 피격 처리",
+      "expectationResult": "_Skill_A_01 추격 중 피격 시, 피격 반응이 적용되며 스태거 조건 충족 시 _Skill_A_03 모션으로 전환된다.",
+      "comment": "기획서: 어드벤처 인게임 몬스터_1.pdf - 4. 애니메이션"
+    }
+  ],
+  "generatedAt": "2026-05-21T03:07:36.570Z",
+  "tokenUsage": {
+    "inputTokens": 12,
+    "outputTokens": 13305,
+    "cacheReadTokens": 114495,
+    "cacheCreationTokens": 48119,
+    "totalCostUsd": 0.71913925
+  },
+  "planText": "기획서를 분석하겠습니다. 첨부된 이미지를 확인한 결과, 악몽 요정(Moonlight_Enemy_Nightmare_Fairy)의 메타데이터(스페셜 챕터, 일반 등급, 근거리/비행형 타입, 어드벤처 모드)와 디자인 컨셉(어두운 보라색 톤의 부유형 요정)을 확인했습니다.\n\n### 기능 목록\n1. **기본 정보**\n   - 네이밍: Moonlight_Enemy_Nightmare_Fairy\n   - 챕터: 스페셜\n   - 등급: 일반\n   - 타입: 근거리, 비행형\n   - 모드: 어드벤처\n\n2. **배치**\n   - 전투 공간 배치 수: 4~6 마리\n\n3. **아트 (크기)**\n   - 몬스터 크기: 소형 (동굴 테마 박쥐와 동일 사이즈)\n\n4. **패턴 (1) 대기**\n   - 플레이어 인식 전 랜덤 위치 Patrol\n   - 플레이어 인식 거리 20m 이상\n\n5. **패턴 (2) 이동**\n   - 플레이어 발견 시 \"!\" 출력 및 잠깐 대기\n   - 공격 사거리 안에 들어올 때까지 플레이어 방향 추적\n   - 이동속도 700\n\n6. **패턴 (3) 공격 - Skill_A (Sting)**\n   - 공격 시작 범위: 12m\n   - 공격 범위: 1.5m\n   - 플레이어가 12m 앞 위치 시 공격 시작\n   - 1.5m 안 진입 시 데미지 적용\n   - 팔을 앞으로 들어올리는 공격 모션\n   - 얼굴 표정으로 공격 중임을 표현\n\n7. **애니메이션**\n   - _Idle (대기): 공중 부유, 천천히 위아래 흔들림, 눈 감은 표정, 축 늘어진 팔\n   - _Move (이동): 느릿느릿 공중 표류하듯 Patrol\n   - _Skill_A_01 (추격): Loop, 양팔 치켜들고 유령처럼 빠른 추격, 눈 번쩍 뜸, 공격적 표정, 지속 대미지 발생\n   - _Skill_A_03 (스태거 시 전환): 잠시 플레이어 응시 후 _Skill_A_01로 복귀\n   - _Damaged (피격)\n   - Die_Stand (사망 약)\n   - Die_Knockback (사망 강)\n\n### 카테고리 구조\n\n```\n└─ 악몽 요정 (main)\n   ├─ 기본 정보 (sub1)\n   │  ├─ 등급 (sub2)\n   │  │  └─ 출력 (sub3)\n   │  ├─ 타입 (sub2)\n   │  │  └─ 출력 (sub3)\n   │  ├─ 챕터 (sub2)\n   │  │  └─ 배치 (sub3)\n   │  └─ 크기 (sub2)\n   │     └─ 출력 (sub3)\n   ├─ 전투 배치 (sub1)\n   │  └─ 배치 수 (sub2)\n   │     ├─ 최소 배치 (sub3)\n   │     └─ 최대 배치 (sub3)\n   ├─ 대기 패턴 (sub1)\n   │  ├─ Patrol (sub2)\n   │  │  ├─ 랜덤 위치 이동 (sub3)\n   │  │  └─ 대기 모션 (sub3)\n   │  └─ 플레이어 인식 (sub2)\n   │     └─ 인식 거리 (sub3)\n   ├─ 이동 패턴 (sub1)\n   │  ├─ 플레이어 발견 (sub2)\n   │  │  ├─ ! 표시 출력 (sub3)\n   │  │  └─ 대기 동작 (sub3)\n   │  └─ 추적 (sub2)\n   │     ├─ 추적 방향 (sub3)\n   │     ├─ 이동 속도 (sub3)\n   │     └─ 이동 모션 (sub3)\n   ├─ 공격 패턴 (sub1)\n   │  └─ Skill_A (sub2)\n   │     ├─ 공격 시작 조건 (sub3)\n   │     ├─ 데미지 적용 (sub3)\n   │     ├─ 공격 모션 (sub3)\n   │     └─ 표정 변화 (sub3)\n   ├─ 스태거 처리 (sub1)\n   │  └─ 애니메이션 전환 (sub2)\n   │     ├─ Skill_A_03 전환 (sub3)\n   │     ├─ 플레이어 응시 (sub3)\n   │     └─ Skill_A_01 복귀 (sub3)\n   ├─ 추격 애니메이션 (sub1)\n   │  └─ Skill_A_01 Loop (sub2)\n   │     ├─ 양팔 모션 (sub3)\n   │     ├─ 표정 전환 (sub3)\n   │     └─ 지속 데미지 (sub3)\n   └─ 피격/사망 처리 (sub1)\n      ├─ 피격 (sub2)\n      │  └─ 피격 모션 (sub3)\n      └─ 사망 (sub2)\n         ├─ 약 사망 모션 (sub3)\n         └─ 강 사망 모션 (sub3)\n```\n\n### TC 건수 배분\n\n기획서 규모가 작아(몬스터 1종, 단일 스킬, 7종 애니메이션) 100% 커버리지 기준 약 **35~40건**으로 종료 예정입니다. 무리하게 100건을 채우지 않습니다.\n\n| 카테고리 | 예상 건수 | Critical | Major | Normal |\n|---|---|---|---|---|\n| 기본 정보 | 4 | 0 | 1 | 3 |\n| 전투 배치 | 3 | 1 | 2 | 0 |\n| 대기 패턴 | 4 | 0 | 2 | 2 |\n| 이동 패턴 | 5 | 0 | 3 | 2 |\n| 공격 패턴 (Skill_A) | 6 | 2 | 3 | 1 |\n| 스태거 처리 | 3 | 0 | 2 | 1 |\n| 추격 애니메이션 | 4 | 0 | 1 | 3 |\n| 피격/사망 처리 | 5 | 1 | 2 | 2 |\n| **합계** | **34** | **4 (12%)** | **16 (47%)** | **14 (41%)** |\n\n### 중점 확인 사항\n\n1. **수치 정확성**: 인식 거리 20m, 공격 시작 범위 12m, 공격 범위 1.5m, 이동속도 700, 배치 수 4~6마리 등 명시된 수치를 정확히 TC에 반영\n2. **공격 트리거 조건 분리**: \"12m 진입 시 공격 시작\"과 \"1.5m 진입 시 데미지 적용\"은 별도 TC로 분리 (조건/결과가 다름)\n3. **애니메이션-기능 분리**: 모션(_Idle, _Move, _Skill_A_01 등)의 시각적 동작과 게임 로직(데미지, 추적)을 각각 분리하여 작성\n4. **스태거 플로우**: _Skill_A_01 → 스태거 발생 → _Skill_A_03 전환 → 플레이어 응시 → _Skill_A_01 복귀의 전환 흐름을 단계별로 분리\n5. **사망 분기**: Die_Stand(약)와 Die_Knockback(강)은 사망 트리거 조건이 다르므로 분리\n6. **추격 모션 중 지속 데미지**: _Skill_A_01 Loop 동안 지속 대미지가 발생하는 특이 사항을 별도 TC로 명시\n7. **카테고리 단일성**: 본 기획서는 단일 몬스터 스펙이므로 main 카테고리는 \"악몽 요정\" 1개로 통합, sub1~sub3로 세분화\n8. **인게임 케이스 작성 예외**: 본 기획서가 인게임 몬스터 사양이므로 몬스터 AI/동작/애니메이션 케이스를 작성 (TC 제외 규칙의 일반 인게임 진행 케이스와는 구분)\n9. **기획상 비어있는 항목 제외**: 이펙트, 컨셉/원화 등 \"비어있음\" 항목은 추측하지 않고 TC에서 제외\n10. **문체 규칙 준수**: \"~시,\", 수동형 표현, \"정상\" 표현 금지를 모든 케이스에 적용",
+  "materialId": "mat_1779332784805_utqs",
+  "planId": "plan_1779332784806_n478"
+}
